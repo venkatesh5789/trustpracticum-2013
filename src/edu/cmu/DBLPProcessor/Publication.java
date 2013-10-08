@@ -20,8 +20,8 @@ public class Publication
 	private int id;
 	private String type;
 	private int citationcount;
-	private List<Integer> author;
-	private List<Integer> editor;
+	private List<Integer> author = new ArrayList<Integer>();
+	private List<Integer> editor = new ArrayList<Integer>();
 	private String title;
 	private String booktitle;
 	private String pages;
@@ -41,10 +41,10 @@ public class Publication
 	private String url;
 	private String ee;
 	private String cdrom;
-	private List<String> cite;
+	private List<String> cite = new ArrayList<String>();
 	private String publisher;
 	private String note;
-	private List<String> crossref;
+	private List<String> crossref = new ArrayList<String>();
 	private String isbn;
 	private String series;
 	private String school;
@@ -66,12 +66,8 @@ public class Publication
 		if(article.getAuthor()!=null)
 		{
 			List<String> getAuthor = article.getAuthor();
-			this.author = new ArrayList<Integer>();
-			//for(int i=0; i<getAuthor.size(); i++)
-				//this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
-			for(int i = 1; i<=3; i++) {
-				this.author.add(20 + i);
-			}
+			for(int i=0; i<getAuthor.size(); i++)
+				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
 		}
 		if(article.getEditor()!=null) 
 		{
@@ -95,8 +91,10 @@ public class Publication
 		{
 			List<String> citelist = article.getCite();
 			for(int i=0; i<citelist.size(); i++)
-			{
-				this.cite.add(DBLPParser.mapKeyTitle.get(citelist.get(i)));
+			{	
+				//venkatesh change, it was giving null pointer exception here, so added an if statement
+				if(DBLPParser.mapKeyTitle.get(citelist.get(i)) != null)
+					this.cite.add(DBLPParser.mapKeyTitle.get(citelist.get(i)));
 			}
 		}
 		if(article.getPublisher()!=null)this.publisher = article.getPublisher();

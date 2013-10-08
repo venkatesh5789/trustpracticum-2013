@@ -1,35 +1,36 @@
 package edu.cmu.DBLPProcessor;
-//package dataset.DBLPDataProcessing;
 //
-//import java.io.FileWriter;
-//import java.io.IOException;
-//import java.io.PrintWriter;
-//import java.util.HashMap;
-//import java.util.Iterator;
-//import java.util.List;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+
+import javax.xml.bind.JAXBException;
+
+import edu.cmu.dataset.*;
 //
-//import javax.xml.bind.JAXBException;
-//
-//import dataset.DBLPDataSource;
-//import dataset.DatasetInterface;
-//
-//public class WriteXML {
+public class WriteXML {
 //
 //	/**
 //	 * @author NASA-Trust-Team
 //	 * @throws JAXBException 
 //	 */
-//	public static void main(String[] args) throws IOException, JAXBException {
-//		DatasetInterface dblpDataset = new DBLPDataSource();
-//		HashMap<String,DBLPUser> dblp = dblpDataset.getDataset();
-//		Iterator<String> it = dblp.keySet().iterator();
-//		while (it.hasNext())
-//		{
-//			String key = it.next();
-//			DBLPUser author = dblp.get(key);
-//			writeAuthor(author);
-//		}
-//	}
+	public static void main(String[] args) throws IOException, JAXBException {
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		HashMap<String,DBLPUser> dblp = dblpDataset.getDataset();
+		Iterator<String> it = dblp.keySet().iterator();
+		while (it.hasNext())
+		{
+			String key = it.next();
+			DBLPUser author = dblp.get(key);
+			//writeAuthor(author);
+			System.out.println(author);
+			
+		}
+	}
+}
 //	
 //	public static void writeAuthor(DBLPUser author) throws IOException, JAXBException {
 //		FileWriter fileWriter = new FileWriter("DBLP_XML/user"+author.getId()+".xml");

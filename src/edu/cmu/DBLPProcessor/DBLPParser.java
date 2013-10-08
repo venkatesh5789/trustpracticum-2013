@@ -45,8 +45,8 @@ public class DBLPParser {
 	public static Map<String,DBLPUser> parseDBLP() throws JAXBException, IOException {
 		//This is main code for DBLP parser
 		DBLPParser dblpParser = new DBLPParser();
-//		dblpParser.parseDBLPXML("dblp_example.xml");
-		dblpParser.parseDBLPXML("xaa.xml");
+		dblpParser.parseDBLPXML("dblp_example.xml");
+//		dblpParser.parseDBLPXML("xaa.xml");
 //		dblpParser.parseDBLP("xab.xml");
 //		dblpParser.parseDBLP("xac.xml");
 //		dblpParser.parseDBLP("xad.xml");
@@ -168,8 +168,8 @@ public class DBLPParser {
 				dblpUserList.put(authorName.get(j),dblpuser);
 			}
 			}
-			String filename = "DBLP_XML/publication"+publication.getId()+".xml";
-			xmlWriter(publication,filename);
+			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
+			//xmlWriter(publication,filename);
 		}
 		
 		for(int i=0; i<bookList.size(); i++)
@@ -202,8 +202,8 @@ public class DBLPParser {
 				dblpUserList.put(authorName.get(j),dblpuser);
 			}
 			}
-			String filename = "DBLP_XML/publication"+publication.getId()+".xml";
-			xmlWriter(publication,filename);		
+			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
+			//xmlWriter(publication,filename);		
 		}
 		
 		for(int i=0; i<incollectionList.size(); i++)
@@ -236,8 +236,8 @@ public class DBLPParser {
 				dblpUserList.put(authorName.get(j),dblpuser);
 			}
 			}
-			String filename = "DBLP_XML/publication"+publication.getId()+".xml";
-			xmlWriter(publication,filename);
+			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
+			//xmlWriter(publication,filename);
 		}
 		
 		for(int i=0; i<inproceedingsList.size(); i++)
@@ -270,8 +270,8 @@ public class DBLPParser {
 				dblpUserList.put(authorName.get(j),dblpuser);
 			}
 			}
-			String filename = "DBLP_XML/publication"+publication.getId()+".xml";
-			xmlWriter(publication,filename);
+			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
+			//xmlWriter(publication,filename);
 		}
 		
 		for(int i=0; i<mastersthesisList.size(); i++)
@@ -304,8 +304,8 @@ public class DBLPParser {
 				dblpUserList.put(authorName.get(j),dblpuser);
 			}
 			}
-			String filename = "DBLP_XML/publication"+publication.getId()+".xml";
-			xmlWriter(publication,filename);
+			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
+			//xmlWriter(publication,filename);
 		}
 		
 		for(int i=0; i<phdthesisList.size(); i++)
@@ -338,8 +338,8 @@ public class DBLPParser {
 				dblpUserList.put(authorName.get(j),dblpuser);
 			}
 			}
-			String filename = "DBLP_XML/publication"+publication.getId()+".xml";
-			xmlWriter(publication,filename);
+			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
+			//xmlWriter(publication,filename);
 		}
 		
 		for(int i=0; i<proceedingsList.size(); i++)
@@ -372,8 +372,8 @@ public class DBLPParser {
 				dblpUserList.put(authorName.get(j),dblpuser);
 			}
 			}
-			String filename = "DBLP_XML/publication"+publication.getId()+".xml";
-			xmlWriter(publication,filename);
+			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
+			//xmlWriter(publication,filename);
 		}
 		
 		for(int i=0; i<wwwList.size(); i++)
@@ -406,8 +406,8 @@ public class DBLPParser {
 				dblpUserList.put(authorName.get(j),dblpuser);
 			}
 			}
-			String filename = "DBLP_XML/publication"+publication.getId()+".xml";
-			xmlWriter(publication,filename);
+			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
+			//xmlWriter(publication,filename);
 		}
 	}
 	
