@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -780,5 +781,20 @@ public class DBLPParser {
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		}
+	}
+	
+	public static DBLPUser getDBLPUserFromID(int id) {
+		Iterator<String> it = dblpUserList.keySet().iterator();
+		while (it.hasNext())
+		{
+			String key = it.next();
+			DBLPUser author = dblpUserList.get(key);
+			
+			if(author.getId()== id)
+				return author;
+			//System.out.println(author);
+		}
+		
+		return null;
 	}
 }
