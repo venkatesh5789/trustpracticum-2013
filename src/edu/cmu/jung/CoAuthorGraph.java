@@ -1,22 +1,5 @@
 package edu.cmu.jung;
 
-import edu.cmu.DBLPProcessor.Coauthorship;
-import edu.cmu.DBLPProcessor.DBLPParser;
-import edu.cmu.DBLPProcessor.DBLPUser;
-import edu.cmu.dataset.DBLPDataSource;
-import edu.cmu.dataset.DatasetInterface;
-import edu.uci.ics.jung.algorithms.layout.CircleLayout;
-import edu.uci.ics.jung.algorithms.layout.Layout;
-import edu.uci.ics.jung.graph.DirectedGraph;
-import edu.uci.ics.jung.graph.DirectedSparseMultigraph;
-import edu.uci.ics.jung.graph.Graph;
-import edu.uci.ics.jung.graph.SparseMultigraph;
-import edu.uci.ics.jung.graph.util.EdgeType;
-import edu.uci.ics.jung.visualization.BasicVisualizationServer;
-import edu.uci.ics.jung.visualization.VisualizationViewer;
-import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
-import edu.uci.ics.jung.visualization.renderers.Renderer.VertexLabel.Position;
-
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -26,10 +9,26 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+
 import javax.swing.JFrame;
 import javax.xml.bind.JAXBException;
 
 import org.apache.commons.collections15.Transformer;
+
+import edu.cmu.DBLPProcessor.Coauthorship;
+import edu.cmu.DBLPProcessor.DBLPParser;
+import edu.cmu.DBLPProcessor.DBLPUser;
+import edu.cmu.dataset.DBLPDataSource;
+import edu.cmu.dataset.DatasetInterface;
+import edu.cmu.jung.Node;
+import edu.uci.ics.jung.algorithms.layout.CircleLayout;
+import edu.uci.ics.jung.algorithms.layout.Layout;
+import edu.uci.ics.jung.graph.Graph;
+import edu.uci.ics.jung.graph.SparseMultigraph;
+import edu.uci.ics.jung.graph.util.EdgeType;
+import edu.uci.ics.jung.visualization.VisualizationViewer;
+import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
+import edu.uci.ics.jung.visualization.renderers.Renderer.VertexLabel.Position;
 
 /**
  *
@@ -103,19 +102,19 @@ public class CoAuthorGraph {
 		//System.out.println(myApp.g.toString());
 		
 		// This builds the graph
-		// Layout<V, E>, VisualizationComponent<V,E>
 		Layout<Node, Edge> layout = new CircleLayout<Node, Edge>(myApp.g);
 		layout.setSize(new Dimension(690,690));
 		//BasicVisualizationServer<Node,Edge> vv = new BasicVisualizationServer<Node,Edge>(layout);
 		VisualizationViewer<Node, Edge> vv = new VisualizationViewer<Node, Edge>(layout);
-		
 		vv.setPreferredSize(new Dimension(700,700));       
+		
 		// Setup up a new vertex to paint transformer...
 		Transformer<Integer,Paint> vertexPaint = new Transformer<Integer,Paint>() {
 			public Paint transform(Integer i) {
 				return Color.RED;
 			}
 		};  
+		
 		// Set up a new stroke Transformer for the edges
 		float dash[] = {10.0f};
 		final Stroke edgeStroke = new BasicStroke(1.0f, BasicStroke.CAP_BUTT,
@@ -129,9 +128,10 @@ public class CoAuthorGraph {
 		//            vv.getRenderContext().setVertexFillPaintTransformer(vertexPaint);
 		//            vv.getRenderContext().setEdgeStrokeTransformer(edgeStrokeTransformer);
 		
-		vv.setVertexToolTipTransformer(new ToStringLabeller<Node>() {
-			public String transform(Graph<Node, Edge> graph) {
-				return graph.getVertices().toString();
+		
+		vv.setVertexToolTipTransformer(new Transformer<Node, String>() {
+			public String transform(Node e) {
+				return "Name: " + e.getUser().getName() + ",\n Number of co-authors: " + e.getUser().countCoauthorship();
 			}
 		});
 		
