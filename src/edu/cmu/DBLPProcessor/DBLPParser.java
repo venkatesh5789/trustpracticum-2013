@@ -8,9 +8,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
+import java.util.Set;
 
 import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
@@ -56,6 +59,11 @@ public class DBLPParser {
 		printParseDBLPXML();
 		parseAuthor(); //without citations
 		System.out.println("Author : "+dblpUserList.size());
+		Set<String> hs = dblpUserList.keySet();
+		Iterator it = hs.iterator();
+		while (it.hasNext())
+			System.out.println(it.next() );
+			
 		return dblpUserList;
 	}
 
