@@ -63,7 +63,7 @@ public class DBLPParser {
 		Iterator it = hs.iterator();
 		while (it.hasNext())
 			System.out.println(it.next() );
-			
+
 		return dblpUserList;
 	}
 
@@ -148,7 +148,7 @@ public class DBLPParser {
 	{
 		//TODO Optimize by Reflection later
 		fillMapUserNameID();
-		
+
 		for(int i=0; i<articleList.size(); i++)
 		{
 			publicationcount++;
@@ -430,10 +430,10 @@ public class DBLPParser {
 			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
 			//xmlWriter(publication,filename);
 		}
-		
+
 
 	}
-	
+
 	/**
 	 * This function is necessary because in parseAuthor, while instantiating publication, the mapUserNameID is not complete
 	 * so it always gives the author list as <first ID>, null, null
@@ -456,7 +456,7 @@ public class DBLPParser {
 				}
 			}
 		}
-		
+
 		for(int i=0; i<wwwList.size(); i++)
 		{
 			Www www = wwwList.get(i);
@@ -474,7 +474,7 @@ public class DBLPParser {
 				}
 			}
 		}
-		
+
 		for(int i=0; i<proceedingsList.size(); i++)
 		{
 			Proceedings proceedings = proceedingsList.get(i);
@@ -492,7 +492,7 @@ public class DBLPParser {
 				}
 			}
 		}
-		
+
 		for(int i=0; i<phdthesisList.size(); i++)
 		{
 			Phdthesis phdthesis = phdthesisList.get(i);
@@ -510,7 +510,7 @@ public class DBLPParser {
 				}
 			}
 		}
-		
+
 		for(int i=0; i<mastersthesisList.size(); i++)
 		{
 			Mastersthesis mastersthesis = mastersthesisList.get(i);
@@ -528,7 +528,7 @@ public class DBLPParser {
 				}
 			}
 		}
-		
+
 		for(int i=0; i<incollectionList.size(); i++)
 		{
 			Incollection incollection = incollectionList.get(i);
@@ -545,7 +545,7 @@ public class DBLPParser {
 				}
 			}
 		}
-		
+
 		for(int i=0; i<bookList.size(); i++)
 		{
 			Book book = bookList.get(i);
@@ -563,7 +563,7 @@ public class DBLPParser {
 				}
 			}
 		}
-		
+
 		for(int i=0; i<articleList.size(); i++)
 		{
 			Article article = articleList.get(i);
@@ -790,19 +790,19 @@ public class DBLPParser {
 			ex.printStackTrace();
 		}
 	}
-	
+
 	public static DBLPUser getDBLPUserFromID(int id) {
 		Iterator<String> it = dblpUserList.keySet().iterator();
 		while (it.hasNext())
 		{
 			String key = it.next();
 			DBLPUser author = dblpUserList.get(key);
-			
+
 			if(author.getId()== id)
 				return author;
 			//System.out.println(author);
 		}
-		
+
 		return null;
 	}
 }

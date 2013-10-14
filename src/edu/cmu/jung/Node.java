@@ -130,8 +130,9 @@ public final class Node {
 import edu.cmu.DBLPProcessor.*;
 
 public class Node {
-	DBLPUser user = new DBLPUser();
-
+	private DBLPUser user = new DBLPUser();
+	private int level = 1;
+	
 	public Node(DBLPUser user) {
 		super();
 		this.user = user;
@@ -143,6 +144,14 @@ public class Node {
 
 	public void setUser(DBLPUser user) {
 		this.user = user;
+	}
+	
+	public void setLevel(int passedLevel) {
+		this.level = passedLevel;
+	}
+	
+	public int getLevel() {
+		return level;
 	}
 	
 	public boolean isThisPassedNode(DBLPUser user) {

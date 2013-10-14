@@ -69,6 +69,7 @@ public class UserCoAuthorSubgraph {
 		DBLPUser inputAuthor = dblp.get(key);
 		System.out.println(inputAuthor.getId());
 		Node currentNode = new Node(inputAuthor);
+		currentNode.setLevel(0);
 		nodes.add(currentNode);
 		nodesQueue.add(currentNode);
 
@@ -168,9 +169,12 @@ public class UserCoAuthorSubgraph {
 		vv.setPreferredSize(new Dimension(700,700));       
 
 		// Setup up a new vertex to paint transformer...
-		Transformer<Integer,Paint> vertexPaint = new Transformer<Integer,Paint>() {
-			public Paint transform(Integer i) {
-				return Color.RED;
+		Transformer<Node,Paint> vertexPaint = new Transformer<Node,Paint>() {
+			public Paint transform(Node e) {
+				if(e.getLevel() == 0)
+					return Color.GREEN;
+				else
+					return Color.RED;
 			}
 		};  
 
@@ -189,7 +193,8 @@ public class UserCoAuthorSubgraph {
 				return "Name: " + e.getUser().getName() ;
 			}
 		});
-
+		
+		vv.getRenderContext().setVertexFillPaintTransformer(vertexPaint);
 		vv.getRenderer().getVertexLabelRenderer().setPosition(Position.CNTR);        
 
 		JFrame frame = new JFrame("Co-authorship Graph View");
