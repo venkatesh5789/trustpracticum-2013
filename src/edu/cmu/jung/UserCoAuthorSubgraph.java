@@ -8,8 +8,11 @@ import java.awt.Stroke;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map.Entry;
+import java.util.Queue;
+import java.util.Scanner;
 
 import javax.swing.JFrame;
 import javax.xml.bind.JAXBException;
@@ -36,7 +39,7 @@ import edu.uci.ics.jung.visualization.renderers.Renderer.VertexLabel.Position;
  * @author NASA-Trust-team
  */
 
-public class NameGraph {
+public class UserCoAuthorSubgraph {
 
 	static int edgeCount = 0;  
 	Graph<Node, Edge> g;
@@ -44,27 +47,53 @@ public class NameGraph {
 	List<Node> nodes = new ArrayList<Node>();
 	HashMap<String,DBLPUser> dblp;
 
-	public NameGraph() {   
+	public UserCoAuthorSubgraph() {   
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset();		
 	}
 
 	/** Constructs an example directed graph with our vertex and edge classes 
 	 * @throws JAXBException */
-	public void constructGraph(String name) throws JAXBException {
+	public String constructGraph(String name, int noOfLevels) throws JAXBException {
 		g = new SparseMultigraph<Node, Edge>();
 		//g = new DirectedSparseMultigraph<Node, Edge>();
-		createNodes(name);
-		createEdges();     
+		createNodes(name, noOfLevels);
+		String result = createEdges();  
+		return result;
 	}
 
-	private void createNodes(String name) throws JAXBException {
-			String key = name;			
-			DBLPUser author = dblp.get(key);
-			System.out.println(author.getId());
-			Node currentNode = new Node(author);
-			nodes.add(currentNode);
-			List<Coauthorship> c = author.getCoAuthors();
+	private void createNodes(String name, int noOfLevels) throws JAXBException {
+		String key = name;	
+
+		Queue<Node> nodesQueue = new LinkedList<Node>();
+		DBLPUser inputAuthor = dblp.get(key);
+		System.out.println(inputAuthor.getId());
+		Node currentNode = new Node(inputAuthor);
+		nodes.add(currentNode);
+		nodesQueue.add(currentNode);
+
+		while(!nodesQueue.isEmpty() && noOfLevels > 0 ) {
+			Node r = nodesQueue.remove();
+			DBLPUser currentAuthor = r.getUser();
+			List<Coauthorship> c = currentAuthor.getCoAuthors();
+
+			for(int i =0;i<c.size();i++){
+				for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
+					if(entry.getValue() == c.get(i).getCoauthorid()){
+						DBLPUser coauthor = dblp.get(entry.getKey());
+						Node coauthorNode = new Node(coauthor);
+
+						if(!nodes.contains(coauthorNode)) {
+							nodes.add(coauthorNode);
+							nodesQueue.add(coauthorNode);
+						}
+					}
+				}
+			}	
+			noOfLevels--;
+		}
+
+		/*List<Coauthorship> c = inputAuthor.getCoAuthors();
 			for(int i =0;i<c.size();i++){
 				for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
 					if(entry.getValue() == c.get(i).getCoauthorid()){
@@ -73,26 +102,32 @@ public class NameGraph {
 						nodes.add(coauthorNode);
 					}
 				}
-			}		
+			}*/		
 	}
 
-	private void createEdges() throws JAXBException {
+	private String createEdges() throws JAXBException {
 		int startingNodeNumber = 10;
-		String key = nodes.get(0).getUser().getName();;
-		DBLPUser author = dblp.get(key);
-		startingNodeNumber = getNodeFromAuthor(author);		
-		List<Coauthorship> c = author.getCoAuthors(); 
+		String result = "";
+		
+		for(int j = 0; j<nodes.size(); j++){
+			String key = nodes.get(j).getUser().getName();;
+			DBLPUser author = dblp.get(key);
+			startingNodeNumber = getNodeFromAuthor(author);		
+			List<Coauthorship> c = author.getCoAuthors(); 
 
-		for(int i =0;i<c.size();i++){
-			for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
-				if(entry.getValue() == c.get(i).getCoauthorid()){
-					int endingNodeNumber;
-					DBLPUser coauthor = dblp.get(entry.getKey());
-					endingNodeNumber = getNodeFromAuthor(coauthor);	
-					g.addEdge(new Edge(),nodes.get(startingNodeNumber), nodes.get(endingNodeNumber), EdgeType.UNDIRECTED);
+			for(int i =0;i<c.size();i++){
+				for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
+					if(entry.getValue() == c.get(i).getCoauthorid()){
+						int endingNodeNumber;
+						DBLPUser coauthor = dblp.get(entry.getKey());
+						endingNodeNumber = getNodeFromAuthor(coauthor);	
+						g.addEdge(new Edge(),nodes.get(startingNodeNumber), nodes.get(endingNodeNumber), EdgeType.DIRECTED);
+						result += nodes.get(startingNodeNumber).getUser().getName() + "\t" + nodes.get(endingNodeNumber).getUser().getName() + "\n";
+					}
 				}
 			}
-		}
+		}	
+		return result;
 	}
 
 	private int getNodeFromAuthor(DBLPUser author) {
@@ -108,37 +143,53 @@ public class NameGraph {
 	 * @throws JAXBException 
 	 */
 	public static void main(String[] args) throws JAXBException {
-		NameGraph myApp = new NameGraph();
-		myApp.constructGraph("Javier Chorro");		
+		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph();
+		String inputAuthor;
+		int noOfLevels;
+		String result;
+		
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("\nEnter author's name- ");
+		inputAuthor = input.nextLine();
+
+		System.out.println("Enter number of sub levels- ");
+		noOfLevels = input.nextInt();
+
+		result = myApp.constructGraph(inputAuthor, noOfLevels);
+		
+		System.out.println(result);
+		
+		//myApp.constructGraph("Javier Chorro",1);		
 		// This builds the graph
 		Layout<Node, Edge> layout = new CircleLayout<Node, Edge>(myApp.g);
 		layout.setSize(new Dimension(650,650));
 		VisualizationViewer<Node, Edge> vv = new VisualizationViewer<Node, Edge>(layout);
 		vv.setPreferredSize(new Dimension(700,700));       
-		
+
 		// Setup up a new vertex to paint transformer...
 		Transformer<Integer,Paint> vertexPaint = new Transformer<Integer,Paint>() {
 			public Paint transform(Integer i) {
 				return Color.RED;
 			}
 		};  
-		
+
 		// Set up a new stroke Transformer for the edges
 		float dash[] = {10.0f};
 		final Stroke edgeStroke = new BasicStroke(1.0f, BasicStroke.CAP_BUTT,
 				BasicStroke.JOIN_MITER, 10.0f, dash, 0.0f);
-//		Transformer<String, Stroke> edgeStrokeTransformer = new Transformer<String, Stroke>() {
-//			public Stroke transform(String s) {
-//				return edgeStroke;
-//			}
-//		};	
-		
+		//		Transformer<String, Stroke> edgeStrokeTransformer = new Transformer<String, Stroke>() {
+		//			public Stroke transform(String s) {
+		//				return edgeStroke;
+		//			}
+		//		};	
+
 		vv.setVertexToolTipTransformer(new Transformer<Node, String>() {
 			public String transform(Node e) {
 				return "Name: " + e.getUser().getName() ;
 			}
 		});
-		
+
 		vv.getRenderer().getVertexLabelRenderer().setPosition(Position.CNTR);        
 
 		JFrame frame = new JFrame("Co-authorship Graph View");
@@ -146,7 +197,7 @@ public class NameGraph {
 		frame.getContentPane().add(vv);
 		frame.pack();
 		frame.setVisible(true);     
-
+		
 	}
 
 }
