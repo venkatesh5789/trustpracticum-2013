@@ -131,7 +131,7 @@ public class CoAuthorGraph {
 		
 		vv.setVertexToolTipTransformer(new Transformer<Node, String>() {
 			public String transform(Node e) {
-				return "Name: " + e.getUser().getName() + ",\n Number of co-authors: " + e.getUser().countCoauthorship();
+				return "Name: " + e.getUser().getName() + ", ID = " + e.getUser().getId()  + ",\n Number of co-authors: " + e.getUser().countCoauthorship();
 			}
 		});
 		

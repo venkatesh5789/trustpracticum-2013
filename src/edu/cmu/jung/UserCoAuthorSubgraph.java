@@ -182,11 +182,11 @@ public class UserCoAuthorSubgraph {
 		float dash[] = {10.0f};
 		final Stroke edgeStroke = new BasicStroke(1.0f, BasicStroke.CAP_BUTT,
 				BasicStroke.JOIN_MITER, 10.0f, dash, 0.0f);
-		//		Transformer<String, Stroke> edgeStrokeTransformer = new Transformer<String, Stroke>() {
-		//			public Stroke transform(String s) {
-		//				return edgeStroke;
-		//			}
-		//		};	
+				Transformer<Edge, Stroke> edgeStrokeTransformer = new Transformer<Edge, Stroke>() {
+					public Stroke transform(Edge e) {
+						return edgeStroke;
+					}
+				};	
 
 		vv.setVertexToolTipTransformer(new Transformer<Node, String>() {
 			public String transform(Node e) {
@@ -195,6 +195,7 @@ public class UserCoAuthorSubgraph {
 		});
 		
 		vv.getRenderContext().setVertexFillPaintTransformer(vertexPaint);
+		//vv.getRenderContext().setEdgeArrowStrokeTransformer(edgeStroke);
 		vv.getRenderer().getVertexLabelRenderer().setPosition(Position.CNTR);        
 
 		JFrame frame = new JFrame("Co-authorship Graph View");
