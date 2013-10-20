@@ -26,9 +26,15 @@ public class WriteXML {
 			String key = it.next();
 			DBLPUser author = dblp.get(key);
 			//writeAuthor(author);
-			System.out.println(author);
+			//if(author.getId()==116)
+				//author.getCoauthorship();
+			for(Coauthorship c: author.getCoAuthors()) {
+				System.out.print("\nUser ID :" + c.getUserid() + "	CoauthorID: " + c.getCoauthorid());
+			}
 			
+			//System.out.println(author);
 		}
+				
 	}
 }
 //	

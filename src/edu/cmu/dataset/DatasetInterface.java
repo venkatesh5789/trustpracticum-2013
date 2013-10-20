@@ -8,5 +8,6 @@ import java.util.HashMap;
  */
 public interface DatasetInterface {
 	public HashMap getDataset();
+	public HashMap getDataset(String fileName);
 
 }

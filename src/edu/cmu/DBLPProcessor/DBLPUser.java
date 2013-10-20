@@ -26,6 +26,7 @@ public class DBLPUser {
 	private String name;
 	private List<Publication> publication;
 	private List<Long> coauthorship;
+	private List<Coauthorship> coAuthors = new ArrayList<Coauthorship>();
 	
 	
 	public DBLPUser() {
@@ -72,6 +73,12 @@ public class DBLPUser {
 		return coauthorship;
 	}
 	
+	public List<Coauthorship> getCoAuthors() throws JAXBException {
+		Map<Integer,Integer> coauthors = listCoauthors();
+		processCoauthorship(coauthors);
+		return this.coAuthors;
+	}
+	
 	public void setPublication(List<Publication> publication) {
 		this.publication = publication;
 	}
@@ -82,6 +89,8 @@ public class DBLPUser {
 
 	public void processCoauthorship (Map<Integer,Integer> coauthors) throws JAXBException {
 		Iterator<Integer> iterator = coauthors.keySet().iterator();
+		this.coauthorship.clear();
+		this.coAuthors.clear();
 		while(iterator.hasNext())
 		{
 			Coauthorship coauthorshipObject = new Coauthorship();
@@ -91,9 +100,10 @@ public class DBLPUser {
 			coauthorshipObject.setCoauthorid(coauthorid);
 			coauthorshipObject.setCount(count);
 			long coauthorshipid = coauthorshipObject.getCoauthorshipid();
-			String filename = "DBLP_XML/coauthorship"+coauthorshipid+".xml";
-			writeXMLCoauthorship(coauthorshipObject, filename);
-			this.coauthorship.add(coauthorshipObject.getCoauthorshipid());
+			//String filename = "DBLP_XML/coauthorship"+coauthorshipid+".xml";
+			//writeXMLCoauthorship(coauthorshipObject, filename);
+			this.coauthorship.add(coauthorshipid);
+			this.coAuthors.add(coauthorshipObject);
 		}
 	}
 	
@@ -112,11 +122,13 @@ public class DBLPUser {
 				if(authors_id==null) authors_id = publication.get(i).getEditor();
 				for(int j=0; j<authors_id.size();j++)
 				{
-					int coauthorId = authors_id.get(i);
+					int coauthorId = authors_id.get(j);
 					if(coauthorId!=this.id)
 					{
 						int count = 1;
-						if(coauthors.containsKey(coauthorId)) count = coauthors.get(coauthorId)+1;
+						if(coauthors.containsKey(coauthorId)) 
+							count = coauthors.get(coauthorId)+1;
+						
 						coauthors.put(coauthorId, count);
 					}
 				}
