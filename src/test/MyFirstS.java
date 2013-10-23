@@ -138,7 +138,7 @@ public class MyFirstS extends HttpServlet {
 			
 			/////////////////////////////////////	
 			PrintWriter pw = response.getWriter();
-			pw.println(result+"\n");
+			pw.println(result);
 			pw.close();
 	}
 

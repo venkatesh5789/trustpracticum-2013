@@ -134,14 +134,13 @@ public class UserCoAuthorSubgraph {
 						g.addEdge(new Edge(),nodes.get(startingNodeNumber), nodes.get(endingNodeNumber), EdgeType.DIRECTED);
 						//result += nodes.get(startingNodeNumber).getUser().getName() + "\t" + nodes.get(endingNodeNumber).getUser().getName() + "\n";
 						resultJson.put("startNode", nodes.get(startingNodeNumber).getUser().getName());
-						resultJson.put("endNode", nodes.get(endingNodeNumber).getUser().getName());
-						resultJSONArray.put(resultJson);
-						
-					}
+						resultJson.put("endNode", nodes.get(endingNodeNumber).getUser().getName());	
+						resultJSONArray.put(resultJson.toString());
+					}					
 				}
 			}
 		}	
-		result = resultJSONArray.toString();
+		result = resultJSONArray.toString(1);
 		return result;
 	}
 
