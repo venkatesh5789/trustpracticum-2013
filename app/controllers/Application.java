@@ -111,7 +111,7 @@ public class Application extends Controller {
 		return result;
     	
     }
-    public static Result formSubmit(String name, Integer level) throws JAXBException{
+    public static Result formSubmit() throws JAXBException{
     	Form<Show> form = Form.form(Show.class).bindFromRequest();
     	if(form.hasErrors()) {
             return badRequest(index.render("Errors in form"));

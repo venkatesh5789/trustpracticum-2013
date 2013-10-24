@@ -7,3 +7,5 @@ eclipsify with-source=true
 eclipsifywith-source=true
 eclipsify with-source=true
 run
+eclipse
+run

@@ -602,7 +602,7 @@ public class DBLPParser {
 			JAXBContext jaxbContext = JAXBContext.newInstance(DBLPElement.class);
 
 			SAXParserFactory spf = SAXParserFactory.newInstance();
-			spf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, false);
+//			spf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, false);
 			XMLReader xmlReader = spf.newSAXParser().getXMLReader();
 			InputSource inputSource = new InputSource(new FileReader(filename));
 			SAXSource source = new SAXSource(xmlReader, inputSource);

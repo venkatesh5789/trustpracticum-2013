@@ -10,7 +10,8 @@ GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
 
 #
-POST     /show/:name/:level  					controllers.Application.formSubmit(name : String, level : Integer)
+GET     /show/:name/:level  					controllers.Application.myShow(name : String, level : Integer)
+
 
 #
-GET     /show/:name/:level  					controllers.Application.myShow(name : String, level : Integer)
+POST  	/show									controllers.Application.formSubmit()

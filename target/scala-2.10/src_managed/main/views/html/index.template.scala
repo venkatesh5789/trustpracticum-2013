@@ -32,9 +32,9 @@ Seq[Any](format.raw/*1.19*/("""
 
 <html>
   <FORM action = '/show' method = 'Post'>
-  name <Input type = 'text' name = 'name'>
-  level <Input type = 'number' name = 'level' >
-  <Input type = 'submit' value = 'OK'>
+	  name <Input type = 'text' name = 'name'>
+	  level <Input type = 'number' name = 'level' >
+	  <Input type = 'submit' value = 'OK'>
   </FORM>
 </html>
 
@@ -51,10 +51,10 @@ Seq[Any](format.raw/*1.19*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Oct 24 13:19:04 PDT 2013
-                    SOURCE: /Users/Shuai/test/app/views/index.scala.html
-                    HASH: c1dc119647dc10fc7a2ae86858fbad8d415a2db9
-                    MATRIX: 774->1|885->18|922->21|953->44|992->46|1224->247
+                    DATE: Thu Oct 24 14:21:12 PDT 2013
+                    SOURCE: /Users/Shuai/trustpracticum-2013/app/views/index.scala.html
+                    HASH: 6d00b3f0238ed06592e7d1f3e3f97a54b2ab248d
+                    MATRIX: 774->1|885->18|922->21|953->44|992->46|1227->250
                     LINES: 26->1|29->1|31->3|31->3|31->3|41->13
                     -- GENERATED --
                 */
