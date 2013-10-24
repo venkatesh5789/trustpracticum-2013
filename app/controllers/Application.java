@@ -49,85 +49,96 @@ import edu.uci.ics.jung.visualization.renderers.Renderer.VertexLabel.Position;
 
 public class Application extends Controller {
 
-    public static Result index() {
-        return ok(index.render(""));
-    }
-    
-    public static class Show {
-    	@Required public String name;
-    	@Required public Integer level;
-    }
-    
-    public static String myGraph(String name, Integer level) throws JAXBException {
-    	UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph();
+	public static Result index() {
+		return ok(index.render(""));
+	}
+
+	public static class Show {
+		@Required public String name;
+		@Required public Integer level;
+		public Integer renderGraph;
+	}
+
+	public static String myGraph(String name, Integer level, Integer renderGraph) throws JAXBException {
+		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph();
 		String result;
-		
+
 		result = myApp.constructGraph(name,level);;
-		
+
 		//System.out.println(result);
-				
+
 		// This builds the graph
-		Layout<Node, Edge> layout = new CircleLayout<Node, Edge>(myApp.g);
-		layout.setSize(new Dimension(650,650));
-		VisualizationViewer<Node, Edge> vv = new VisualizationViewer<Node, Edge>(layout);
-		vv.setPreferredSize(new Dimension(700,700));       
+		if(renderGraph != 0) {
+			Layout<Node, Edge> layout = new CircleLayout<Node, Edge>(myApp.g);
+			layout.setSize(new Dimension(650,650));
+			VisualizationViewer<Node, Edge> vv = new VisualizationViewer<Node, Edge>(layout);
+			vv.setPreferredSize(new Dimension(700,700));       
 
-		// Setup up a new vertex to paint transformer...
-		Transformer<Node,Paint> vertexPaint = new Transformer<Node,Paint>() {
-			public Paint transform(Node e) {
-				if(e.getLevel() == 0)
-					return Color.GREEN;
-				else
-					return Color.RED;
-			}
-		};  
+			// Setup up a new vertex to paint transformer...
+			Transformer<Node,Paint> vertexPaint = new Transformer<Node,Paint>() {
+				public Paint transform(Node e) {
+					if(e.getLevel() == 0)
+						return Color.GREEN;
+					else
+						return Color.RED;
+				}
+			};  
 
-		// Set up a new stroke Transformer for the edges
-		float dash[] = {10.0f};
-		final Stroke edgeStroke = new BasicStroke(1.0f, BasicStroke.CAP_BUTT,
-				BasicStroke.JOIN_MITER, 10.0f, dash, 0.0f);
-				Transformer<Edge, Stroke> edgeStrokeTransformer = new Transformer<Edge, Stroke>() {
-					public Stroke transform(Edge e) {
-						return edgeStroke;
-					}
-				};	
+			// Set up a new stroke Transformer for the edges
+			float dash[] = {10.0f};
+			final Stroke edgeStroke = new BasicStroke(1.0f, BasicStroke.CAP_BUTT,
+					BasicStroke.JOIN_MITER, 10.0f, dash, 0.0f);
+			Transformer<Edge, Stroke> edgeStrokeTransformer = new Transformer<Edge, Stroke>() {
+				public Stroke transform(Edge e) {
+					return edgeStroke;
+				}
+			};	
 
-		vv.setVertexToolTipTransformer(new Transformer<Node, String>() {
-			public String transform(Node e) {
-				return "Name: " + e.getUser().getName() ;
-			}
-		});
-		
-		vv.getRenderContext().setVertexFillPaintTransformer(vertexPaint);
-		//vv.getRenderContext().setEdgeArrowStrokeTransformer(edgeStroke);
-		vv.getRenderer().getVertexLabelRenderer().setPosition(Position.CNTR);        
+			vv.setVertexToolTipTransformer(new Transformer<Node, String>() {
+				public String transform(Node e) {
+					return "Name: " + e.getUser().getName() ;
+				}
+			});
 
-		JFrame frame = new JFrame("Co-authorship Graph View");
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().add(vv);
-		frame.pack();
-		frame.setVisible(true);     
+			vv.getRenderContext().setVertexFillPaintTransformer(vertexPaint);
+			//vv.getRenderContext().setEdgeArrowStrokeTransformer(edgeStroke);
+			vv.getRenderer().getVertexLabelRenderer().setPosition(Position.CNTR);        
+
+			JFrame frame = new JFrame("Co-authorship Graph View");
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			frame.getContentPane().add(vv);
+			frame.pack();
+			frame.setVisible(true);     
+
+		}
 
 		return result;
-    	
-    }
-    public static Result formSubmit() throws JAXBException{
-    	Form<Show> form = Form.form(Show.class).bindFromRequest();
-    	if(form.hasErrors()) {
-            return badRequest(index.render("Errors in form"));
-        } else {
-            Show data = form.get();
-            return ok(
-                show.render(myGraph(data.name, data.level))
-            		
-            );
-        }
-    }
-    
-    public static Result myShow(String name, Integer level) throws JAXBException{
-            return ok(
-                show.render(myGraph(name, level))
-            );
-        }
-   // }
+
+	}
+
+	public static Result formSubmit() throws JAXBException{
+		Form<Show> form = Form.form(Show.class).bindFromRequest();
+		if(form.hasErrors()) {
+			return badRequest(index.render("Errors in form"));
+		} else {
+			Show data = form.get();
+			return ok(
+					show.render(myGraph(data.name, data.level, data.renderGraph))
+
+					);
+		}
+	}
+
+	public static Result getGraphWithRender(String name, Integer level) throws JAXBException{
+		return ok(
+				show.render(myGraph(name, level, 1))
+				);
+	}
+	
+	public static Result getGraphWithoutRender(String name, Integer level) throws JAXBException{
+		return ok(
+				show.render(myGraph(name, level, 0))
+				);
+	}
+	
 }
