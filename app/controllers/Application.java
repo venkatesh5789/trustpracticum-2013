@@ -31,6 +31,7 @@ import javax.swing.JFrame;
 import javax.xml.bind.JAXBException;
 
 import org.apache.commons.collections15.Transformer;
+import org.json.JSONArray;
 
 import edu.cmu.DBLPProcessor.Coauthorship;
 import edu.cmu.DBLPProcessor.DBLPParser;
@@ -59,9 +60,9 @@ public class Application extends Controller {
 		public Integer renderGraph;
 	}
 
-	public static String myGraph(String name, Integer level, Integer renderGraph) throws JAXBException {
+	public static JSONArray myGraph(String name, Integer level, Integer renderGraph) throws JAXBException {
 		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph();
-		String result;
+		JSONArray result;
 
 		result = myApp.constructGraph(name,level);;
 
@@ -123,21 +124,20 @@ public class Application extends Controller {
 		} else {
 			Show data = form.get();
 			return ok(
-					show.render(myGraph(data.name, data.level, data.renderGraph))
-
+					show.render(myGraph(data.name, data.level, data.renderGraph).toString())
 					);
 		}
 	}
 
 	public static Result getGraphWithRender(String name, Integer level) throws JAXBException{
 		return ok(
-				show.render(myGraph(name, level, 1))
+				show.render(myGraph(name, level, 1).toString())
 				);
 	}
 	
 	public static Result getGraphWithoutRender(String name, Integer level) throws JAXBException{
 		return ok(
-				show.render(myGraph(name, level, 0))
+				show.render(myGraph(name, level, 0).toString())
 				);
 	}
 	

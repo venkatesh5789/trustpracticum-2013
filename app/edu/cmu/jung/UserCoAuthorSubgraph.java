@@ -18,6 +18,8 @@ import javax.swing.JFrame;
 import javax.xml.bind.JAXBException;
 
 import org.apache.commons.collections15.Transformer;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import edu.cmu.DBLPProcessor.Coauthorship;
 import edu.cmu.DBLPProcessor.DBLPParser;
@@ -27,6 +29,7 @@ import edu.cmu.dataset.DatasetInterface;
 import edu.cmu.jung.Node;
 import edu.uci.ics.jung.algorithms.layout.CircleLayout;
 import edu.uci.ics.jung.algorithms.layout.Layout;
+import edu.uci.ics.jung.graph.DirectedSparseMultigraph;
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.SparseMultigraph;
 import edu.uci.ics.jung.graph.util.EdgeType;
@@ -54,28 +57,29 @@ public class UserCoAuthorSubgraph {
 
 	/** Constructs an example directed graph with our vertex and edge classes 
 	 * @throws JAXBException */
-	public String constructGraph(String name, int noOfLevels) throws JAXBException {
-		g = new SparseMultigraph<Node, Edge>();
-		//g = new DirectedSparseMultigraph<Node, Edge>();
-		createNodes(name, noOfLevels);
-		String result = createEdges();  
+	public JSONArray constructGraph(String name, int noOfLevels) throws JAXBException {
+		//g = new SparseMultigraph<Node, Edge>();
+		g = new DirectedSparseMultigraph<Node, Edge>();
+		JSONArray result = createNodes(name, noOfLevels);
+		//JSONArray result = createEdges();  
 		return result;
 	}
 
-	private void createNodes(String name, int noOfLevels) throws JAXBException {
+	private JSONArray createNodes(String name, int noOfLevels) throws JAXBException {
 		String key = name;	
-
+		JSONArray resultJson = new JSONArray();
+		
 		Queue<Node> nodesQueue = new LinkedList<Node>();
 		DBLPUser inputAuthor = dblp.get(key);
 		System.out.println(inputAuthor.getId());
-		Node currentNode = new Node(inputAuthor);
-		currentNode.setLevel(0);
-		nodes.add(currentNode);
-		nodesQueue.add(currentNode);
-
+		Node firstNode = new Node(inputAuthor);
+		firstNode.setLevel(0);
+		nodes.add(firstNode);
+		nodesQueue.add(firstNode);
+		
 		while(!nodesQueue.isEmpty() && noOfLevels > 0 ) {
-			Node r = nodesQueue.remove();
-			DBLPUser currentAuthor = r.getUser();
+			Node currentNode = nodesQueue.remove();
+			DBLPUser currentAuthor = currentNode.getUser();
 			List<Coauthorship> c = currentAuthor.getCoAuthors();
 
 			for(int i =0;i<c.size();i++){
@@ -86,14 +90,21 @@ public class UserCoAuthorSubgraph {
 
 						if(!nodes.contains(coauthorNode)) {
 							nodes.add(coauthorNode);
-							nodesQueue.add(coauthorNode);
+							nodesQueue.add(coauthorNode);							
 						}
+						
+						JSONObject singleEdge = new JSONObject();
+						singleEdge.put("startingNode", currentAuthor.getName());
+						singleEdge.put("endingNode", coauthor.getName());
+						g.addEdge(new Edge(), currentNode, nodes.get(getNodeFromAuthor(coauthor)), EdgeType.DIRECTED);
+						resultJson.put(singleEdge);
 					}
 				}
 			}	
 			noOfLevels--;
 		}
-
+		
+		return resultJson;
 		/*List<Coauthorship> c = inputAuthor.getCoAuthors();
 			for(int i =0;i<c.size();i++){
 				for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
@@ -106,12 +117,15 @@ public class UserCoAuthorSubgraph {
 			}*/		
 	}
 
-	private String createEdges() throws JAXBException {
+	private JSONArray createEdges(String name, int noOfLevels) throws JAXBException {
+		String key = name;	
+
 		int startingNodeNumber = 10;
 		String result = "";
+		JSONArray resultJson = new JSONArray();
 		
-		for(int j = 0; j<nodes.size(); j++){
-			String key = nodes.get(j).getUser().getName();;
+		for(int j = 0; j<noOfLevels; j++){
+			//key = nodes.get(j).getUser().getName();;
 			DBLPUser author = dblp.get(key);
 			startingNodeNumber = getNodeFromAuthor(author);		
 			List<Coauthorship> c = author.getCoAuthors(); 
@@ -123,12 +137,18 @@ public class UserCoAuthorSubgraph {
 						DBLPUser coauthor = dblp.get(entry.getKey());
 						endingNodeNumber = getNodeFromAuthor(coauthor);	
 						g.addEdge(new Edge(),nodes.get(startingNodeNumber), nodes.get(endingNodeNumber), EdgeType.DIRECTED);
-						result += nodes.get(startingNodeNumber).getUser().getName() + "\t" + nodes.get(endingNodeNumber).getUser().getName() + "\n";
+						//result += nodes.get(startingNodeNumber).getUser().getName() + "\t" + nodes.get(endingNodeNumber).getUser().getName() + "\n";
+						JSONObject singleEdge = new JSONObject();
+						singleEdge.put("startingNode", nodes.get(startingNodeNumber).getUser().getName());
+						singleEdge.put("endingNode", nodes.get(endingNodeNumber).getUser().getName());
+						resultJson.put(singleEdge);
 					}
 				}
 			}
 		}	
-		return result;
+		
+		result = resultJson.toString();
+		return resultJson;
 	}
 
 	private int getNodeFromAuthor(DBLPUser author) {
