@@ -50,7 +50,7 @@ public class DBLPParser {
 	public static Map<String,DBLPUser> parseDBLP() throws JAXBException, IOException {
 		//This is main code for DBLP parser
 		DBLPParser dblpParser = new DBLPParser();
-		dblpParser.parseDBLPXML("dblp_example.xml");
+		dblpParser.parseDBLPXML("/dblp_example.xml");
 		//		dblpParser.parseDBLPXML("xaa.xml");
 		//		dblpParser.parseDBLP("xab.xml");
 		//		dblpParser.parseDBLP("xac.xml");
