@@ -32,6 +32,7 @@ import javax.xml.bind.JAXBException;
 
 import org.apache.commons.collections15.Transformer;
 import org.json.JSONArray;
+import org.json.JSONObject;
 
 import edu.cmu.DBLPProcessor.Coauthorship;
 import edu.cmu.DBLPProcessor.DBLPParser;
@@ -115,6 +116,28 @@ public class Application extends Controller {
 
 		return result;
 
+	}
+	
+	public static Result generateDummyJson(String name, Integer level) {
+//		JSONArray resultJson = new JSONArray();
+//		
+//		//ArrayList<JSONObject> singleEdge = new ArrayList<JSONObject>();
+//		JSONObject[] singleEdge = new JSONObject[5];
+//		
+//		singleEdge[0].put("startingNode", "Javier Chorro");
+//		singleEdge[0].put("endingNode", "Julio Gomis-Tena");
+//		singleEdge[1].put("startingNode", "Javier Chorro");
+//		singleEdge[1].put("endingNode", "Marta Monserrat");
+//		singleEdge[2].put("startingNode", "Javier Chorro");
+//		singleEdge[2].put("endingNode", "Javier Saiz");
+//		singleEdge[3].put("startingNode", "Javier Chorro");
+//		singleEdge[3].put("endingNode", "Jose Maria Ferrero");
+//		singleEdge[4].put("startingNode", "Javier Chorro");
+//		singleEdge[4].put("endingNode", "Karen Cardona");
+//	
+//		for(int i = 0; i<5; i++)
+//			resultJson.put(singleEdge[i]);
+		return ok(show.render("[{\"endingNode\":\"Julio Gomis-Tena\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Marta Monserrat\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Javier Saiz\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Jose Maria Ferrero\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Karen Cardona\",\"startingNode\":\"Javier Chorro\"}]"));
 	}
 
 	public static Result formSubmit() throws JAXBException{

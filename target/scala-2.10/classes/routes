@@ -9,8 +9,8 @@ GET     /                           					controllers.Application.index()
 GET     /assets/*file               					controllers.Assets.at(path="/public", file)
 
 #
-GET     /getGraphWithoutRender/:name/:level  			controllers.Application.getGraphWithoutRender(name : String, level : Integer)
-
+#GET     /getGraphWithoutRender/:name/:level  			controllers.Application.getGraphWithoutRender(name : String, level : Integer)
+GET     /getGraphWithoutRender/:name/:level  			controllers.Application.generateDummyJson(name : String, level : Integer)
 #
 GET     /getGraphWithRender/:name/:level  				controllers.Application.getGraphWithRender(name : String, level : Integer)
 
