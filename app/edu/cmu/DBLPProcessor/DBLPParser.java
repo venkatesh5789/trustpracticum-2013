@@ -55,7 +55,7 @@ public class DBLPParser {
 	public static Map<String,DBLPUser> parseDBLP() throws JAXBException, IOException {
 		//This is main code for DBLP parser
 		DBLPParser dblpParser = new DBLPParser();
-		dblpParser.parseDBLPXML("/public/dblp_example.xml");
+		dblpParser.parseDBLPXML(Play.application().path().getPath() + "/../../.." + "/public/dblp_example.xml");
 		//		dblpParser.parseDBLPXML("xaa.xml");
 		//		dblpParser.parseDBLP("xab.xml");
 		//		dblpParser.parseDBLP("xac.xml");
@@ -611,8 +611,7 @@ public class DBLPParser {
 			XMLReader xmlReader = spf.newSAXParser().getXMLReader();
 			
 			System.out.println(Play.application().path().getAbsolutePath());
-			System.out.println(Play.application().path().getPath());
-			InputSource inputSource = new InputSource(new FileReader(Play.application().path().getPath() + filename));
+			InputSource inputSource = new InputSource(new FileReader(filename));
 			SAXSource source = new SAXSource(xmlReader, inputSource);
 
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
