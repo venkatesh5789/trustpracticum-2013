@@ -610,7 +610,9 @@ public class DBLPParser {
 //			spf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, false);
 			XMLReader xmlReader = spf.newSAXParser().getXMLReader();
 			
-			InputSource inputSource = new InputSource(new FileReader(Play.application().path().getAbsolutePath() + filename));
+			System.out.println(Play.application().path().getAbsolutePath());
+			System.out.println(Play.application().path().getPath());
+			InputSource inputSource = new InputSource(new FileReader(Play.application().path().getPath() + filename));
 			SAXSource source = new SAXSource(xmlReader, inputSource);
 
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
