@@ -28,7 +28,7 @@ object show extends BaseScalaTemplate[play.api.templates.HtmlFormat.Appendable,F
 
 Seq[Any](format.raw/*1.18*/("""
 
-"""),_display_(Seq[Any](/*3.2*/main("Here is the result:")/*3.29*/ {_display_(Seq[Any](format.raw/*3.31*/("""
+"""),_display_(Seq[Any](/*3.2*/main("Co-Author Subgraph JSON")/*3.33*/ {_display_(Seq[Any](format.raw/*3.35*/("""
 	 """),_display_(Seq[Any](/*4.4*/result)),format.raw/*4.10*/(""" 
 """)))})))}
     }
@@ -42,10 +42,10 @@ Seq[Any](format.raw/*1.18*/("""
 }
                 /*
                     -- GENERATED --
-                    DATE: Thu Oct 24 23:35:07 PDT 2013
+                    DATE: Mon Oct 28 00:02:16 PDT 2013
                     SOURCE: /Users/Venkatesh/Documents/workspace/NASAPracticum-2013/app/views/show.scala.html
-                    HASH: 3e515866d3c3ca58dbadb3954b4edf5af7571f1c
-                    MATRIX: 773->1|883->17|920->20|955->47|994->49|1032->53|1059->59
+                    HASH: f25d3703ffea78401f7630ebcd8bc488bf9d17be
+                    MATRIX: 773->1|883->17|920->20|959->51|998->53|1036->57|1063->63
                     LINES: 26->1|29->1|31->3|31->3|31->3|32->4|32->4
                     -- GENERATED --
                 */

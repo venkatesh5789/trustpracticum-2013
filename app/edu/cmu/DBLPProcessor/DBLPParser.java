@@ -26,6 +26,11 @@ import javax.xml.transform.sax.SAXSource;
 import org.xml.sax.InputSource;
 import org.xml.sax.XMLReader;
 
+import play.Play;
+
+
+import scala.reflect.io.VirtualFile;
+
 /**
  * @author NASA-Trust-Team
  * 
@@ -50,7 +55,7 @@ public class DBLPParser {
 	public static Map<String,DBLPUser> parseDBLP() throws JAXBException, IOException {
 		//This is main code for DBLP parser
 		DBLPParser dblpParser = new DBLPParser();
-		dblpParser.parseDBLPXML("dblp_example.xml");
+		dblpParser.parseDBLPXML("/public/dblp_example.xml");
 		//		dblpParser.parseDBLPXML("xaa.xml");
 		//		dblpParser.parseDBLP("xab.xml");
 		//		dblpParser.parseDBLP("xac.xml");
@@ -604,7 +609,8 @@ public class DBLPParser {
 			SAXParserFactory spf = SAXParserFactory.newInstance();
 //			spf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, false);
 			XMLReader xmlReader = spf.newSAXParser().getXMLReader();
-			InputSource inputSource = new InputSource(new FileReader(filename));
+			
+			InputSource inputSource = new InputSource(new FileReader(Play.application().path().getAbsolutePath() + filename));
 			SAXSource source = new SAXSource(xmlReader, inputSource);
 
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
