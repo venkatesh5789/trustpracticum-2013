@@ -20,6 +20,7 @@ import javax.xml.bind.JAXBException;
 import org.apache.commons.collections15.Transformer;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.xml.sax.SAXException;
 
 import edu.cmu.DBLPProcessor.Coauthorship;
 import edu.cmu.DBLPProcessor.DBLPParser;
@@ -50,7 +51,7 @@ public class UserCoAuthorSubgraph {
 	List<Node> nodes = new ArrayList<Node>();
 	HashMap<String,DBLPUser> dblp;
 
-	public UserCoAuthorSubgraph() {   
+	public UserCoAuthorSubgraph() throws SAXException {   
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset();		
 	}

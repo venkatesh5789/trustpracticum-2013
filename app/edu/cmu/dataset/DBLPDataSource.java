@@ -5,11 +5,13 @@ import java.util.HashMap;
 
 import javax.xml.bind.JAXBException;
 
+import org.xml.sax.SAXException;
+
 import edu.cmu.DBLPProcessor.*;;
 
 public class DBLPDataSource implements DatasetInterface{
 
-	public HashMap<String,DBLPUser> getDataset()
+	public HashMap<String,DBLPUser> getDataset() throws SAXException
 	{
 		HashMap<String, DBLPUser> dblp = new HashMap<String,DBLPUser>();
 		try {

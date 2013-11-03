@@ -14,6 +14,7 @@ import javax.swing.JFrame;
 import javax.xml.bind.JAXBException;
 
 import org.apache.commons.collections15.Transformer;
+import org.xml.sax.SAXException;
 
 import edu.cmu.DBLPProcessor.Coauthorship;
 import edu.cmu.DBLPProcessor.DBLPParser;
@@ -43,7 +44,7 @@ public class CoAuthorGraph {
 	List<Node> nodes = new ArrayList<Node>();
 	HashMap<String,DBLPUser> dblp;
 
-	public CoAuthorGraph() {   
+	public CoAuthorGraph() throws SAXException {   
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset();		
 	}
@@ -95,8 +96,9 @@ public class CoAuthorGraph {
 	/**
 	 * @param args the command line arguments
 	 * @throws JAXBException 
+	 * @throws SAXException 
 	 */
-	public static void main(String[] args) throws JAXBException {
+	public static void main(String[] args) throws JAXBException, SAXException {
 		CoAuthorGraph myApp = new CoAuthorGraph();
 		myApp.constructGraph();
 		//System.out.println(myApp.g.toString());

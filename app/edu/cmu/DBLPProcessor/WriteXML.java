@@ -9,6 +9,8 @@ import java.util.List;
 
 import javax.xml.bind.JAXBException;
 
+import org.xml.sax.SAXException;
+
 import edu.cmu.dataset.*;
 //
 public class WriteXML {
@@ -17,7 +19,7 @@ public class WriteXML {
 //	 * @author NASA-Trust-Team
 //	 * @throws JAXBException 
 //	 */
-	public static void main(String[] args) throws IOException, JAXBException {
+	public static void main(String[] args) throws IOException, JAXBException, SAXException {
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		HashMap<String,DBLPUser> dblp = dblpDataset.getDataset();
 		Iterator<String> it = dblp.keySet().iterator();
