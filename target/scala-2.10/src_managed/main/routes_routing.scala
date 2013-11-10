@@ -1,6 +1,6 @@
 // @SOURCE:/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/conf/routes
-// @HASH:8f9f9fd2bb620b4660d35c98bcef54fd380c6468
-// @DATE:Fri Nov 01 14:25:52 PDT 2013
+// @HASH:af035c9b4b1116f2085bbaa8d39d9ab135184ad6
+// @DATE:Sat Nov 09 20:11:15 PST 2013
 
 
 import play.core._
@@ -40,14 +40,18 @@ private[this] lazy val controllers_Assets_at1 = Route("GET", PathPattern(List(St
 private[this] lazy val controllers_Application_getGraphWithoutRender2 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getGraphWithoutRender/"),DynamicPart("name", """[^/]+""",true),StaticPart("/"),DynamicPart("level", """[^/]+""",true))))
         
 
-// @LINE:15
+// @LINE:16
 private[this] lazy val controllers_Application_getGraphWithRender3 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getGraphWithRender/"),DynamicPart("name", """[^/]+""",true),StaticPart("/"),DynamicPart("level", """[^/]+""",true))))
         
 
-// @LINE:18
-private[this] lazy val controllers_Application_formSubmit4 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("show"))))
+// @LINE:19
+private[this] lazy val controllers_Application_getCoAuthorInformation4 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getCoAuthorInformation/"),DynamicPart("name", """[^/]+""",true))))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getGraphWithoutRender/$name<[^/]+>/$level<[^/]+>""","""controllers.Application.getGraphWithoutRender(name:String, level:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getGraphWithRender/$name<[^/]+>/$level<[^/]+>""","""controllers.Application.getGraphWithRender(name:String, level:Integer)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """show""","""controllers.Application.formSubmit()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:22
+private[this] lazy val controllers_Application_formSubmit5 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("show"))))
+        
+def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getGraphWithoutRender/$name<[^/]+>/$level<[^/]+>""","""controllers.Application.getGraphWithoutRender(name:String, level:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getGraphWithRender/$name<[^/]+>/$level<[^/]+>""","""controllers.Application.getGraphWithRender(name:String, level:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getCoAuthorInformation/$name<[^/]+>""","""controllers.Application.getCoAuthorInformation(name:String)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """show""","""controllers.Application.formSubmit()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]] 
 }}
@@ -79,17 +83,24 @@ case controllers_Application_getGraphWithoutRender2(params) => {
 }
         
 
-// @LINE:15
+// @LINE:16
 case controllers_Application_getGraphWithRender3(params) => {
    call(params.fromPath[String]("name", None), params.fromPath[Integer]("level", None)) { (name, level) =>
-        invokeHandler(controllers.Application.getGraphWithRender(name, level), HandlerDef(this, "controllers.Application", "getGraphWithRender", Seq(classOf[String], classOf[Integer]),"GET", """GET     /getGraphWithoutRender/:name/:level  			controllers.Application.generateDummyJson(name : String, level : Integer)
-""", Routes.prefix + """getGraphWithRender/$name<[^/]+>/$level<[^/]+>"""))
+        invokeHandler(controllers.Application.getGraphWithRender(name, level), HandlerDef(this, "controllers.Application", "getGraphWithRender", Seq(classOf[String], classOf[Integer]),"GET", """""", Routes.prefix + """getGraphWithRender/$name<[^/]+>/$level<[^/]+>"""))
    }
 }
         
 
-// @LINE:18
-case controllers_Application_formSubmit4(params) => {
+// @LINE:19
+case controllers_Application_getCoAuthorInformation4(params) => {
+   call(params.fromPath[String]("name", None)) { (name) =>
+        invokeHandler(controllers.Application.getCoAuthorInformation(name), HandlerDef(this, "controllers.Application", "getCoAuthorInformation", Seq(classOf[String]),"GET", """""", Routes.prefix + """getCoAuthorInformation/$name<[^/]+>"""))
+   }
+}
+        
+
+// @LINE:22
+case controllers_Application_formSubmit5(params) => {
    call { 
         invokeHandler(controllers.Application.formSubmit(), HandlerDef(this, "controllers.Application", "formSubmit", Nil,"POST", """""", Routes.prefix + """show"""))
    }

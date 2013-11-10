@@ -1,5 +1,6 @@
 package edu.cmu.DBLPProcessor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlElement;
@@ -16,6 +17,7 @@ public class Coauthorship {
 	private int coauthorid;
 	private int count;
 	private List<String> date;
+	private List<Publication> publicationList = new ArrayList<Publication>();
 	
 	public Coauthorship() {
 		super();
@@ -63,4 +65,18 @@ public class Coauthorship {
 	public void setDate(String date) {
 		this.date.add(date);
 	}
+	
+	@XmlElement(name = "publicationlist")
+	public List<Publication> getPublicationList() {
+		return publicationList;
+	}
+
+	public void setPublicationList(List<Publication> publicationList) {
+		this.publicationList = publicationList;
+	}
+	
+	public void addPublicationToList(Publication publication) {
+		this.publicationList.add(publication);
+	}
+	
 }

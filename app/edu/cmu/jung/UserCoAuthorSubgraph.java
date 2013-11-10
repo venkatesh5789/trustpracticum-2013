@@ -95,9 +95,19 @@ public class UserCoAuthorSubgraph {
 						}
 						
 						JSONObject singleEdge = new JSONObject();
+						
+						//create a new edge containing the relevant information
+						Edge edge = new Edge();
+						edge.setStartNode(currentNode);
+						edge.setEndNode(nodes.get(getNodeFromAuthor(coauthor)));
+						edge.setPublicationName(c.get(i).getPublicationList().get(0).getTitle());
+						
+						//and use it to fill the information for the return JSON
 						singleEdge.put("startingNode", currentAuthor.getName());
 						singleEdge.put("endingNode", coauthor.getName());
-						g.addEdge(new Edge(), currentNode, nodes.get(getNodeFromAuthor(coauthor)), EdgeType.DIRECTED);
+						singleEdge.put("publicationTitle", edge.getPublicationName());
+						
+						g.addEdge(edge , currentNode, nodes.get(getNodeFromAuthor(coauthor)), EdgeType.DIRECTED);
 						resultJson.put(singleEdge);
 					}
 				}

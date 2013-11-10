@@ -14,6 +14,8 @@ public final class Edge
 	private Node startNode;
 	private Node endNode;
 	private double edgeWeight;
+	private String publicationName;
+	
 	public Edge()
 	{
 		id = ++count;
@@ -62,5 +64,14 @@ public final class Edge
 	{
 		return "E " + this.id;
 	}
-
+	
+	public String getPublicationName() {
+		return publicationName;
+	}
+	
+	public void setPublicationName(String publicationName) {
+		this.publicationName = publicationName;
+	}
+	
+	
 }

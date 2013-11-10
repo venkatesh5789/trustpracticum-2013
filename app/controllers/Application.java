@@ -51,7 +51,7 @@ import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
 import edu.uci.ics.jung.visualization.renderers.Renderer.VertexLabel.Position;
 
 public class Application extends Controller {
-
+	
 	public static Result index() {
 		return ok(index.render(""));
 	}
@@ -66,7 +66,7 @@ public class Application extends Controller {
 		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph();
 		JSONArray result;
 
-		result = myApp.constructGraph(name,level);;
+		result = myApp.constructGraph(name,level);
 
 		//System.out.println(result);
 
@@ -120,24 +120,6 @@ public class Application extends Controller {
 	}
 	
 	public static Result generateDummyJson(String name, Integer level) throws SAXException {
-//		JSONArray resultJson = new JSONArray();
-//		
-//		//ArrayList<JSONObject> singleEdge = new ArrayList<JSONObject>();
-//		JSONObject[] singleEdge = new JSONObject[5];
-//		
-//		singleEdge[0].put("startingNode", "Javier Chorro");
-//		singleEdge[0].put("endingNode", "Julio Gomis-Tena");
-//		singleEdge[1].put("startingNode", "Javier Chorro");
-//		singleEdge[1].put("endingNode", "Marta Monserrat");
-//		singleEdge[2].put("startingNode", "Javier Chorro");
-//		singleEdge[2].put("endingNode", "Javier Saiz");
-//		singleEdge[3].put("startingNode", "Javier Chorro");
-//		singleEdge[3].put("endingNode", "Jose Maria Ferrero");
-//		singleEdge[4].put("startingNode", "Javier Chorro");
-//		singleEdge[4].put("endingNode", "Karen Cardona");
-//	
-//		for(int i = 0; i<5; i++)
-//			resultJson.put(singleEdge[i]);
 		return ok(show.render("[{\"endingNode\":\"Julio Gomis-Tena\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Marta Monserrat\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Javier Saiz\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Jose Maria Ferrero\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Karen Cardona\",\"startingNode\":\"Javier Chorro\"}]"));
 	}
 
@@ -163,6 +145,36 @@ public class Application extends Controller {
 		return ok(
 				show.render(myGraph(name, level, 0).toString())
 				);
+	}
+	
+	public static Result getCoAuthorInformation(String name) throws SAXException, JAXBException {
+		JSONArray result = new JSONArray();
+		String key = name;	
+		HashMap<String,DBLPUser> dblp;
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset();
+		
+		DBLPUser inputAuthor = dblp.get(key);
+		List<Coauthorship> c = inputAuthor.getCoAuthors();
+		
+		for(int i = 0; i< c.size() ; i++) {
+			JSONObject singleCoAuthor = new JSONObject();
+			
+			for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
+				if(entry.getValue() == c.get(i).getCoauthorid()) {
+					DBLPUser coauthor = dblp.get(entry.getKey());
+					singleCoAuthor.put("Name", coauthor.getName());
+					singleCoAuthor.put("Publication", c.get(i).getPublicationList().get(0).getTitle());
+					singleCoAuthor.put("ID", coauthor.getId());
+					result.put(singleCoAuthor);
+				}
+			
+			}
+		}
+		
+		return ok(
+				show.render(result.toString())
+				);		
 	}
 	
 }
