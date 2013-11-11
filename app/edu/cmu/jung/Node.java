@@ -132,6 +132,7 @@ import edu.cmu.DBLPProcessor.*;
 public class Node {
 	private DBLPUser user = new DBLPUser();
 	private int level = 1;
+	private boolean visited = false;
 	
 	public Node(DBLPUser user) {
 		super();
@@ -160,4 +161,13 @@ public class Node {
 		else
 			return false;
 	}
+
+	public boolean isVisited() {
+		return visited;
+	}
+
+	public void setVisited(boolean visited) {
+		this.visited = visited;
+	}
+	
 }

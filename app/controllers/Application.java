@@ -5,11 +5,8 @@ import javax.xml.bind.JAXBException;
 import edu.cmu.jung.Edge;
 import edu.cmu.jung.UserCoAuthorSubgraph;
 import edu.uci.ics.jung.algorithms.layout.Layout;
-import play.*;
 import play.data.*;
-import play.data.Form.*;
 import play.data.validation.Constraints.Required;
-import play.libs.Json;
 import play.mvc.*;
 import views.html.*;
 
@@ -18,18 +15,11 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Paint;
 import java.awt.Stroke;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map.Entry;
-import java.util.Queue;
-import java.util.Scanner;
-
 import javax.swing.JFrame;
-import javax.xml.bind.JAXBException;
-
 import org.apache.commons.collections15.Transformer;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -38,20 +28,16 @@ import org.xml.sax.SAXException;
 import edu.cmu.DBLPProcessor.Coauthorship;
 import edu.cmu.DBLPProcessor.DBLPParser;
 import edu.cmu.DBLPProcessor.DBLPUser;
+import edu.cmu.DBLPProcessor.Publication;
 import edu.cmu.dataset.DBLPDataSource;
 import edu.cmu.dataset.DatasetInterface;
 import edu.cmu.jung.Node;
 import edu.uci.ics.jung.algorithms.layout.CircleLayout;
-import edu.uci.ics.jung.algorithms.layout.Layout;
-import edu.uci.ics.jung.graph.Graph;
-import edu.uci.ics.jung.graph.SparseMultigraph;
-import edu.uci.ics.jung.graph.util.EdgeType;
 import edu.uci.ics.jung.visualization.VisualizationViewer;
-import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
 import edu.uci.ics.jung.visualization.renderers.Renderer.VertexLabel.Position;
 
 public class Application extends Controller {
-	
+
 	public static Result index() {
 		return ok(index.render(""));
 	}
@@ -118,7 +104,7 @@ public class Application extends Controller {
 		return result;
 
 	}
-	
+
 	public static Result generateDummyJson(String name, Integer level) throws SAXException {
 		return ok(show.render("[{\"endingNode\":\"Julio Gomis-Tena\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Marta Monserrat\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Javier Saiz\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Jose Maria Ferrero\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Karen Cardona\",\"startingNode\":\"Javier Chorro\"}]"));
 	}
@@ -140,41 +126,154 @@ public class Application extends Controller {
 				show.render(myGraph(name, level, 1).toString())
 				);
 	}
-	
+
 	public static Result getGraphWithoutRender(String name, Integer level) throws JAXBException, SAXException{
 		return ok(
 				show.render(myGraph(name, level, 0).toString())
 				);
 	}
-	
+
 	public static Result getCoAuthorInformation(String name) throws SAXException, JAXBException {
 		JSONArray result = new JSONArray();
 		String key = name;	
 		HashMap<String,DBLPUser> dblp;
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset();
-		
+
 		DBLPUser inputAuthor = dblp.get(key);
 		List<Coauthorship> c = inputAuthor.getCoAuthors();
-		
+
 		for(int i = 0; i< c.size() ; i++) {
 			JSONObject singleCoAuthor = new JSONObject();
-			
+
 			for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
 				if(entry.getValue() == c.get(i).getCoauthorid()) {
 					DBLPUser coauthor = dblp.get(entry.getKey());
 					singleCoAuthor.put("Name", coauthor.getName());
-					singleCoAuthor.put("Publication", c.get(i).getPublicationList().get(0).getTitle());
 					singleCoAuthor.put("ID", coauthor.getId());
+					
+					Iterator<Publication> iterator = c.get(i).getPublicationList().iterator();
+					String publicationList = new String();
+					while(iterator.hasNext()) {
+						publicationList += iterator.next().getTitle();
+					}
+					
+					singleCoAuthor.put("Publication", publicationList);	
 					result.put(singleCoAuthor);
 				}
-			
+
 			}
 		}
-		
+
 		return ok(
 				show.render(result.toString())
 				);		
 	}
-	
+
+	public static Result getReputation(String name, String topic) {
+		Double result = null;
+		return ok(
+				show.render(result.toString())
+				);	
+	}
+
+	public static Result getCoAuthorsByTopic(String name, String topics) throws SAXException, JAXBException {
+		JSONArray result = new JSONArray();
+		String key = name;	
+		String[] topicsArray = topics.split(",");
+		HashMap<String,DBLPUser> dblp;
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset();
+
+		DBLPUser inputAuthor = dblp.get(key);
+		List<Coauthorship> c = inputAuthor.getCoAuthors();
+
+		for(int i = 0; i< c.size() ; i++) {
+			JSONObject singleCoAuthor = new JSONObject();
+
+			for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
+				if(entry.getValue() == c.get(i).getCoauthorid()) {
+					DBLPUser coauthor = dblp.get(entry.getKey());
+					singleCoAuthor.put("Name", coauthor.getName());
+					singleCoAuthor.put("ID", coauthor.getId());
+					
+					Iterator<Publication> iterator = c.get(i).getPublicationList().iterator();
+					String publicationList = new String();
+					while(iterator.hasNext()) {
+						publicationList += iterator.next().getTitle();
+					}
+					
+					singleCoAuthor.put("Publication", publicationList);			
+
+					for(int j = 0 ; j<topicsArray.length ; j++) {
+						if(singleCoAuthor.get("Publication").toString().indexOf(topicsArray[j]) != -1) {
+							result.put(singleCoAuthor);
+							break;
+						}
+					}
+				}
+
+			}
+		}
+
+		return ok(
+				show.render(result.toString())
+				);	
+	}
+
+	public static Result getCoAuthorsByTopicAndTime(String name, String topics, Long year) throws SAXException, JAXBException {
+		JSONArray result = new JSONArray();
+		String key = name;	
+		String[] topicsArray = topics.split(",");
+		HashMap<String,DBLPUser> dblp;
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset();
+
+		DBLPUser inputAuthor = dblp.get(key);
+		List<Coauthorship> c = inputAuthor.getCoAuthors();
+
+		for(int i = 0; i< c.size() ; i++) {
+			JSONObject singleCoAuthor = new JSONObject();
+
+			for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
+				if(entry.getValue() == c.get(i).getCoauthorid()) {
+					DBLPUser coauthor = dblp.get(entry.getKey());
+					singleCoAuthor.put("Name", coauthor.getName());
+					singleCoAuthor.put("ID", coauthor.getId());
+					
+					Iterator<Publication> iterator = c.get(i).getPublicationList().iterator();
+					String publicationList = new String();
+					while(iterator.hasNext()) {
+						Publication next = iterator.next();
+						
+						if(Long.valueOf(next.getYear()).longValue() > year) {
+							publicationList += iterator.next().getTitle();
+							publicationList += ";";							
+						}
+					}
+					
+					singleCoAuthor.put("Publication", publicationList);			
+
+					for(int j = 0 ; j<topicsArray.length ; j++) {
+						if(singleCoAuthor.get("Publication").toString().indexOf(topicsArray[j]) != -1) {
+							result.put(singleCoAuthor);
+							break;
+						}
+					}
+				}
+
+			}
+		}
+
+		return ok(
+				show.render(result.toString())
+				);	
+	}
+
+	public static Result getSocialNetwork(String name) throws JAXBException, SAXException {
+		return ok(
+				show.render(myGraph(name, UserCoAuthorSubgraph.GENERATE_FULL_SUBGRAPH, 0).toString())
+				);	
+	}
+
 }

@@ -18,6 +18,7 @@ import javax.swing.JFrame;
 import javax.xml.bind.JAXBException;
 
 import org.apache.commons.collections15.Transformer;
+import org.hibernate.validator.constraints.Length;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.xml.sax.SAXException;
@@ -25,6 +26,7 @@ import org.xml.sax.SAXException;
 import edu.cmu.DBLPProcessor.Coauthorship;
 import edu.cmu.DBLPProcessor.DBLPParser;
 import edu.cmu.DBLPProcessor.DBLPUser;
+import edu.cmu.DBLPProcessor.Publication;
 import edu.cmu.dataset.DBLPDataSource;
 import edu.cmu.dataset.DatasetInterface;
 import edu.cmu.jung.Node;
@@ -44,7 +46,7 @@ import edu.uci.ics.jung.visualization.renderers.Renderer.VertexLabel.Position;
  */
 
 public class UserCoAuthorSubgraph {
-
+	public static int GENERATE_FULL_SUBGRAPH = 999;
 	static int edgeCount = 0;  
 	public Graph<Node, Edge> g;
 	//DirectedGraph<Node, Edge> g;
@@ -61,104 +63,81 @@ public class UserCoAuthorSubgraph {
 	public JSONArray constructGraph(String name, int noOfLevels) throws JAXBException {
 		//g = new SparseMultigraph<Node, Edge>();
 		g = new DirectedSparseMultigraph<Node, Edge>();
-		JSONArray result = createNodes(name, noOfLevels);
+		JSONArray result = createNodesAndEdges(name, noOfLevels);
 		//JSONArray result = createEdges();  
 		return result;
 	}
 
-	private JSONArray createNodes(String name, int noOfLevels) throws JAXBException {
+	private JSONArray createNodesAndEdges(String name, int noOfLevels) throws JAXBException {
 		String key = name;	
 		JSONArray resultJson = new JSONArray();
-		
-		Queue<Node> nodesQueue = new LinkedList<Node>();
 		DBLPUser inputAuthor = dblp.get(key);
 		System.out.println(inputAuthor.getId());
 		Node firstNode = new Node(inputAuthor);
-		firstNode.setLevel(0);
-		nodes.add(firstNode);
-		nodesQueue.add(firstNode);
-		
-		while(!nodesQueue.isEmpty() && noOfLevels > 0 ) {
-			Node currentNode = nodesQueue.remove();
-			DBLPUser currentAuthor = currentNode.getUser();
-			List<Coauthorship> c = currentAuthor.getCoAuthors();
 
-			for(int i =0;i<c.size();i++){
-				for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
-					if(entry.getValue() == c.get(i).getCoauthorid()){
-						DBLPUser coauthor = dblp.get(entry.getKey());
-						Node coauthorNode = new Node(coauthor);
-
-						if(!nodes.contains(coauthorNode)) {
-							nodes.add(coauthorNode);
-							nodesQueue.add(coauthorNode);							
-						}
-						
-						JSONObject singleEdge = new JSONObject();
-						
-						//create a new edge containing the relevant information
-						Edge edge = new Edge();
-						edge.setStartNode(currentNode);
-						edge.setEndNode(nodes.get(getNodeFromAuthor(coauthor)));
-						edge.setPublicationName(c.get(i).getPublicationList().get(0).getTitle());
-						
-						//and use it to fill the information for the return JSON
-						singleEdge.put("startingNode", currentAuthor.getName());
-						singleEdge.put("endingNode", coauthor.getName());
-						singleEdge.put("publicationTitle", edge.getPublicationName());
-						
-						g.addEdge(edge , currentNode, nodes.get(getNodeFromAuthor(coauthor)), EdgeType.DIRECTED);
-						resultJson.put(singleEdge);
-					}
-				}
-			}	
-			noOfLevels--;
-		}
-		
-		return resultJson;
-		/*List<Coauthorship> c = inputAuthor.getCoAuthors();
-			for(int i =0;i<c.size();i++){
-				for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
-					if(entry.getValue() == c.get(i).getCoauthorid()){
-						DBLPUser coauthor = dblp.get(entry.getKey());
-						Node coauthorNode = new Node(coauthor);
-						nodes.add(coauthorNode);
-					}
-				}
-			}*/		
+		return createNodesAndEdgesHelper(null, firstNode, null, 0, noOfLevels, resultJson);
 	}
 
-	private JSONArray createEdges(String name, int noOfLevels) throws JAXBException {
-		String key = name;	
+	private JSONArray createNodesAndEdgesHelper(Node previousNode, Node currentNode, List<Publication> publicationList, int currentLevel, int noOfLevels, JSONArray resultJson) throws JAXBException {
+		currentNode.setVisited(true);
+		currentNode.setLevel(currentLevel);
+		String edgeName = "";
 
-		int startingNodeNumber = 10;
-		String result = "";
-		JSONArray resultJson = new JSONArray();
-		
-		for(int j = 0; j<noOfLevels; j++){
-			//key = nodes.get(j).getUser().getName();;
-			DBLPUser author = dblp.get(key);
-			startingNodeNumber = getNodeFromAuthor(author);		
-			List<Coauthorship> c = author.getCoAuthors(); 
+		if((currentLevel > noOfLevels) && (noOfLevels != GENERATE_FULL_SUBGRAPH))
+			return resultJson;
 
-			for(int i =0;i<c.size();i++){
-				for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
-					if(entry.getValue() == c.get(i).getCoauthorid()){
-						int endingNodeNumber;
-						DBLPUser coauthor = dblp.get(entry.getKey());
-						endingNodeNumber = getNodeFromAuthor(coauthor);	
-						g.addEdge(new Edge(),nodes.get(startingNodeNumber), nodes.get(endingNodeNumber), EdgeType.DIRECTED);
-						//result += nodes.get(startingNodeNumber).getUser().getName() + "\t" + nodes.get(endingNodeNumber).getUser().getName() + "\n";
-						JSONObject singleEdge = new JSONObject();
-						singleEdge.put("startingNode", nodes.get(startingNodeNumber).getUser().getName());
-						singleEdge.put("endingNode", nodes.get(endingNodeNumber).getUser().getName());
-						resultJson.put(singleEdge);
+		nodes.add(currentNode);
+		DBLPUser currentAuthor = currentNode.getUser();
+
+		if(previousNode != null) {
+			JSONObject singleEdge = new JSONObject();
+
+			//create a new edge containing the relevant information
+			Edge edge = new Edge();
+			edge.setStartNode(previousNode);
+			edge.setEndNode(currentNode);
+
+			Iterator<Publication> iterator = publicationList.iterator();
+			
+			while(iterator.hasNext()) {
+				edgeName += iterator.next().getTitle() + ";";
+			}
+
+			edgeName = edgeName.substring(0, edgeName.length()-1);
+
+			edge.setPublicationName(edgeName);
+
+			//and use it to fill the information for the return JSON
+			singleEdge.put("startingNode", previousNode.getUser().getName());
+			singleEdge.put("endingNode", currentAuthor.getName());
+			singleEdge.put("publicationTitle", edge.getPublicationName());
+			g.addEdge(edge , previousNode, currentNode, EdgeType.DIRECTED);
+
+			//add JSON object to the result
+			resultJson.put(singleEdge);
+		}
+
+		List<Coauthorship> c = currentAuthor.getCoAuthors();
+
+		for(int i =0;i<c.size();i++){
+			for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
+				if(entry.getValue() == c.get(i).getCoauthorid()){
+					DBLPUser coauthor = dblp.get(entry.getKey());
+					
+					Edge dummyEdge = new Edge();
+					dummyEdge.setStartNode(currentNode);
+					dummyEdge.setEndNode(new Node(coauthor));
+					dummyEdge.setPublicationName(edgeName);
+					
+					if((getNodeFromAuthor(coauthor)==-1) /*|| ((getNodeFromAuthor(coauthor)!= -1) && (!g.containsEdge(dummyEdge)))*/) {
+						Node coauthorNode = new Node(coauthor);
+						//and use it to recursively call the function
+						createNodesAndEdgesHelper(currentNode, coauthorNode, c.get(i).getPublicationList(), currentLevel+1, noOfLevels, resultJson);
 					}
 				}
 			}
-		}	
-		
-		result = resultJson.toString();
+		}
+
 		return resultJson;
 	}
 
@@ -167,74 +146,81 @@ public class UserCoAuthorSubgraph {
 			if(nodes.get(i).isThisPassedNode(author))
 				return i;
 
-		return 0;
+		return -1;
 	}
 
 	/**
 	 * @param args the command line arguments
 	 * @throws JAXBException 
+	 * @throws SAXException 
 	 */
-	public static void main(String[] args) throws JAXBException {
-//		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph();
-//		String inputAuthor;
-//		int noOfLevels;
-//		String result;
-//		
-//		Scanner input = new Scanner(System.in);
-//
-//		System.out.println("\nEnter author's name- ");
-//		inputAuthor = input.nextLine();
-//
-//		System.out.println("Enter number of sub levels- ");
-//		noOfLevels = input.nextInt();
-//
-//		result = myApp.constructGraph(inputAuthor, noOfLevels);
-//		
-//		System.out.println(result);
-//		
-//		//myApp.constructGraph("Javier Chorro",1);		
-//		// This builds the graph
-//		Layout<Node, Edge> layout = new CircleLayout<Node, Edge>(myApp.g);
-//		layout.setSize(new Dimension(650,650));
-//		VisualizationViewer<Node, Edge> vv = new VisualizationViewer<Node, Edge>(layout);
-//		vv.setPreferredSize(new Dimension(700,700));       
-//
-//		// Setup up a new vertex to paint transformer...
-//		Transformer<Node,Paint> vertexPaint = new Transformer<Node,Paint>() {
-//			public Paint transform(Node e) {
-//				if(e.getLevel() == 0)
-//					return Color.GREEN;
-//				else
-//					return Color.RED;
-//			}
-//		};  
-//
-//		// Set up a new stroke Transformer for the edges
-//		float dash[] = {10.0f};
-//		final Stroke edgeStroke = new BasicStroke(1.0f, BasicStroke.CAP_BUTT,
-//				BasicStroke.JOIN_MITER, 10.0f, dash, 0.0f);
-//				Transformer<Edge, Stroke> edgeStrokeTransformer = new Transformer<Edge, Stroke>() {
-//					public Stroke transform(Edge e) {
-//						return edgeStroke;
-//					}
-//				};	
-//
-//		vv.setVertexToolTipTransformer(new Transformer<Node, String>() {
-//			public String transform(Node e) {
-//				return "Name: " + e.getUser().getName() ;
-//			}
-//		});
-//		
-//		vv.getRenderContext().setVertexFillPaintTransformer(vertexPaint);
-//		//vv.getRenderContext().setEdgeArrowStrokeTransformer(edgeStroke);
-//		vv.getRenderer().getVertexLabelRenderer().setPosition(Position.CNTR);        
-//
-//		JFrame frame = new JFrame("Co-authorship Graph View");
-//		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//		frame.getContentPane().add(vv);
-//		frame.pack();
-//		frame.setVisible(true);     
-//		
-//	}
+	public static void main(String[] args) throws JAXBException, SAXException {
+		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph();
+		String inputAuthor;
+		int noOfLevels;
+		JSONArray result;
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("\nEnter author's name- ");
+		inputAuthor = input.nextLine();
+
+		System.out.println("Enter number of sub levels- ");
+		noOfLevels = input.nextInt();
+
+		result = myApp.constructGraph(inputAuthor, noOfLevels);
+
+		System.out.println(result);
+
+		//myApp.constructGraph("Javier Chorro",1);		
+		// This builds the graph
+		Layout<Node, Edge> layout = new CircleLayout<Node, Edge>(myApp.g);
+		layout.setSize(new Dimension(650,650));
+		VisualizationViewer<Node, Edge> vv = new VisualizationViewer<Node, Edge>(layout);
+		vv.setPreferredSize(new Dimension(700,700));       
+
+		// Setup up a new vertex to paint transformer...
+		Transformer<Node,Paint> vertexPaint = new Transformer<Node,Paint>() {
+			public Paint transform(Node e) {
+				if(e.getLevel() == 0)
+					return Color.GREEN;
+				else
+					return Color.RED;
+			}
+		};  
+
+		// Set up a new stroke Transformer for the edges
+		float dash[] = {10.0f};
+		final Stroke edgeStroke = new BasicStroke(1.0f, BasicStroke.CAP_BUTT,
+				BasicStroke.JOIN_MITER, 10.0f, dash, 0.0f);
+		Transformer<Edge, Stroke> edgeStrokeTransformer = new Transformer<Edge, Stroke>() {
+			public Stroke transform(Edge e) {
+				return edgeStroke;
+			}
+		};	
+
+		vv.setVertexToolTipTransformer(new Transformer<Node, String>() {
+			public String transform(Node e) {
+				return "Name: " + e.getUser().getName() ;
+			}
+		});
+
+		vv.setEdgeToolTipTransformer(new Transformer<Edge, String>() {
+			public String transform(Edge e) {
+				return e.getPublicationName();
+			}
+		});
+
+		vv.getRenderContext().setVertexFillPaintTransformer(vertexPaint);
+		//vv.getRenderContext().setEdgeArrowStrokeTransformer(edgeStroke);
+		vv.getRenderer().getVertexLabelRenderer().setPosition(Position.CNTR);        
+
+		JFrame frame = new JFrame("Co-authorship Graph View");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().add(vv);
+		frame.pack();
+		frame.setVisible(true);     
+
 	}
 }
+
