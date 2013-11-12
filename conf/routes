@@ -19,16 +19,16 @@ GET     /getGraphWithRender/:name/:level  					controllers.Application.getGraphW
 GET		/getCoAuthorInformation/:name						controllers.Application.getCoAuthorInformation(name : String)
 
 #
-GET		/getReputation/:name/:topic							controllers.Application.getReputationForTopic(name : String, topic : String)
+#GET		/getReputation/:name/:topic							controllers.Application.getReputationForTopic(name : String, topic : String)
 
 #
 GET		/getSocialNetwork/:name								controllers.Application.getSocialNetwork(name : String)
 
 #
-GET		/getCoAuthorsByTopic(:name, :topics)				controllers.Application.getCoAuthorsByTopic(name : String, topics : String)
+GET		/getCoAuthorsByTopic/:name/:topics					controllers.Application.getCoAuthorsByTopic(name : String, topics : String)
 
 #
-GET		/getCoAuthorsByTopicAndTime(:name, :topics, :year)	controllers.Application.getCoAuthorsByTopicAndTime(name : String, topics : String, year : Long)
+GET		/getCoAuthorsByTopicAndTime/:name/:topics/:year		controllers.Application.getCoAuthorsByTopicAndTime(name : String, topics : String, year : Long)
 
 #
 POST  	/show												controllers.Application.formSubmit()

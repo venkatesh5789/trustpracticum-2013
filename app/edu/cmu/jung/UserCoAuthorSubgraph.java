@@ -97,13 +97,15 @@ public class UserCoAuthorSubgraph {
 			edge.setStartNode(previousNode);
 			edge.setEndNode(currentNode);
 
-			Iterator<Publication> iterator = publicationList.iterator();
+//			Iterator<Publication> iterator = publicationList.iterator();
+//			
+//			while(iterator.hasNext()) {
+//				edgeName += iterator.next().getTitle() + ";";
+//			}
+//
+//			edgeName = edgeName.substring(0, edgeName.length()-1);
 			
-			while(iterator.hasNext()) {
-				edgeName += iterator.next().getTitle() + ";";
-			}
-
-			edgeName = edgeName.substring(0, edgeName.length()-1);
+			edgeName = publicationList.get(0).getTitle();
 
 			edge.setPublicationName(edgeName);
 

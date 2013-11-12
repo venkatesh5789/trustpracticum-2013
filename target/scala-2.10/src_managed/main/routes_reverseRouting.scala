@@ -1,6 +1,6 @@
 // @SOURCE:/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/conf/routes
-// @HASH:af035c9b4b1116f2085bbaa8d39d9ab135184ad6
-// @DATE:Sat Nov 09 20:11:15 PST 2013
+// @HASH:1c6fed3dea07b6fe94adb238f23979686b7d2e49
+// @DATE:Mon Nov 11 14:10:42 PST 2013
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -13,7 +13,10 @@ import play.libs.F
 import Router.queryString
 
 
-// @LINE:22
+// @LINE:34
+// @LINE:31
+// @LINE:28
+// @LINE:25
 // @LINE:19
 // @LINE:16
 // @LINE:12
@@ -34,13 +37,22 @@ def at(file:String): Call = {
 }
                           
 
-// @LINE:22
+// @LINE:34
+// @LINE:31
+// @LINE:28
+// @LINE:25
 // @LINE:19
 // @LINE:16
 // @LINE:12
 // @LINE:6
 class ReverseApplication {
     
+
+// @LINE:25
+def getSocialNetwork(name:String): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "getSocialNetwork/" + implicitly[PathBindable[String]].unbind("name", dynamicString(name)))
+}
+                                                
 
 // @LINE:19
 def getCoAuthorInformation(name:String): Call = {
@@ -60,9 +72,21 @@ def getGraphWithRender(name:String, level:Integer): Call = {
 }
                                                 
 
-// @LINE:22
+// @LINE:31
+def getCoAuthorsByTopicAndTime(name:String, topics:String, year:Long): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "getCoAuthorsByTopicAndTime/" + implicitly[PathBindable[String]].unbind("name", dynamicString(name)) + "/" + implicitly[PathBindable[String]].unbind("topics", dynamicString(topics)) + "/" + implicitly[PathBindable[Long]].unbind("year", year))
+}
+                                                
+
+// @LINE:34
 def formSubmit(): Call = {
    Call("POST", _prefix + { _defaultPrefix } + "show")
+}
+                                                
+
+// @LINE:28
+def getCoAuthorsByTopic(name:String, topics:String): Call = {
+   Call("GET", _prefix + { _defaultPrefix } + "getCoAuthorsByTopic/" + implicitly[PathBindable[String]].unbind("name", dynamicString(name)) + "/" + implicitly[PathBindable[String]].unbind("topics", dynamicString(topics)))
 }
                                                 
 
@@ -78,7 +102,10 @@ def index(): Call = {
                   
 
 
-// @LINE:22
+// @LINE:34
+// @LINE:31
+// @LINE:28
+// @LINE:25
 // @LINE:19
 // @LINE:16
 // @LINE:12
@@ -104,13 +131,27 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:22
+// @LINE:34
+// @LINE:31
+// @LINE:28
+// @LINE:25
 // @LINE:19
 // @LINE:16
 // @LINE:12
 // @LINE:6
 class ReverseApplication {
     
+
+// @LINE:25
+def getSocialNetwork : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.getSocialNetwork",
+   """
+      function(name) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "getSocialNetwork/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("name", encodeURIComponent(name))})
+      }
+   """
+)
+                        
 
 // @LINE:19
 def getCoAuthorInformation : JavascriptReverseRoute = JavascriptReverseRoute(
@@ -145,12 +186,34 @@ def getGraphWithRender : JavascriptReverseRoute = JavascriptReverseRoute(
 )
                         
 
-// @LINE:22
+// @LINE:31
+def getCoAuthorsByTopicAndTime : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.getCoAuthorsByTopicAndTime",
+   """
+      function(name,topics,year) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "getCoAuthorsByTopicAndTime/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("name", encodeURIComponent(name)) + "/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("topics", encodeURIComponent(topics)) + "/" + (""" + implicitly[PathBindable[Long]].javascriptUnbind + """)("year", year)})
+      }
+   """
+)
+                        
+
+// @LINE:34
 def formSubmit : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Application.formSubmit",
    """
       function() {
       return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "show"})
+      }
+   """
+)
+                        
+
+// @LINE:28
+def getCoAuthorsByTopic : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.Application.getCoAuthorsByTopic",
+   """
+      function(name,topics) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "getCoAuthorsByTopic/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("name", encodeURIComponent(name)) + "/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("topics", encodeURIComponent(topics))})
       }
    """
 )
@@ -173,7 +236,10 @@ def index : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:22
+// @LINE:34
+// @LINE:31
+// @LINE:28
+// @LINE:25
 // @LINE:19
 // @LINE:16
 // @LINE:12
@@ -195,7 +261,10 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
-// @LINE:22
+// @LINE:34
+// @LINE:31
+// @LINE:28
+// @LINE:25
 // @LINE:19
 // @LINE:16
 // @LINE:12
@@ -203,27 +272,45 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 class ReverseApplication {
     
 
+// @LINE:25
+def getSocialNetwork(name:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.getSocialNetwork(name), HandlerDef(this, "controllers.Application", "getSocialNetwork", Seq(classOf[String]), "GET", """""", _prefix + """getSocialNetwork/$name<[^/]+>""")
+)
+                      
+
 // @LINE:19
 def getCoAuthorInformation(name:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.getCoAuthorInformation(name), HandlerDef(this, "controllers.Application", "getCoAuthorInformation", Seq(classOf[String]), "GET", """""", _prefix + """getCoAuthorInformation/$name<[^/]+>""")
+   controllers.Application.getCoAuthorInformation(name), HandlerDef(this, "controllers.Application", "getCoAuthorInformation", Seq(classOf[String]), "GET", """ Given an author's name, get all the co-authors""", _prefix + """getCoAuthorInformation/$name<[^/]+>""")
 )
                       
 
 // @LINE:12
 def getGraphWithoutRender(name:String, level:Integer): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.getGraphWithoutRender(name, level), HandlerDef(this, "controllers.Application", "getGraphWithoutRender", Seq(classOf[String], classOf[Integer]), "GET", """""", _prefix + """getGraphWithoutRender/$name<[^/]+>/$level<[^/]+>""")
+   controllers.Application.getGraphWithoutRender(name, level), HandlerDef(this, "controllers.Application", "getGraphWithoutRender", Seq(classOf[String], classOf[Integer]), "GET", """ Get a graph of the co-authors of an author given a level and a name""", _prefix + """getGraphWithoutRender/$name<[^/]+>/$level<[^/]+>""")
 )
                       
 
 // @LINE:16
 def getGraphWithRender(name:String, level:Integer): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.Application.getGraphWithRender(name, level), HandlerDef(this, "controllers.Application", "getGraphWithRender", Seq(classOf[String], classOf[Integer]), "GET", """""", _prefix + """getGraphWithRender/$name<[^/]+>/$level<[^/]+>""")
+   controllers.Application.getGraphWithRender(name, level), HandlerDef(this, "controllers.Application", "getGraphWithRender", Seq(classOf[String], classOf[Integer]), "GET", """ """, _prefix + """getGraphWithRender/$name<[^/]+>/$level<[^/]+>""")
 )
                       
 
-// @LINE:22
+// @LINE:31
+def getCoAuthorsByTopicAndTime(name:String, topics:String, year:Long): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.getCoAuthorsByTopicAndTime(name, topics, year), HandlerDef(this, "controllers.Application", "getCoAuthorsByTopicAndTime", Seq(classOf[String], classOf[String], classOf[Long]), "GET", """""", _prefix + """getCoAuthorsByTopicAndTime/$name<[^/]+>/$topics<[^/]+>/$year<[^/]+>""")
+)
+                      
+
+// @LINE:34
 def formSubmit(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Application.formSubmit(), HandlerDef(this, "controllers.Application", "formSubmit", Seq(), "POST", """""", _prefix + """show""")
+)
+                      
+
+// @LINE:28
+def getCoAuthorsByTopic(name:String, topics:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.Application.getCoAuthorsByTopic(name, topics), HandlerDef(this, "controllers.Application", "getCoAuthorsByTopic", Seq(classOf[String], classOf[String]), "GET", """""", _prefix + """getCoAuthorsByTopic/$name<[^/]+>/$topics<[^/]+>""")
 )
                       
 
