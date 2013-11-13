@@ -6,7 +6,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
+import javax.xml.bind.JAXBException;
+
+import org.xml.sax.SAXException;
+
+import controllers.Application;
+
 import edu.cmu.DBLPProcessor.*;
+import edu.cmu.dataset.DBLPDataSource;
+import edu.cmu.dataset.DatasetInterface;
+
+import org.apache.commons.lang3.StringUtils;
 
 public class DBLPTrustProcessor {
 	
@@ -22,23 +32,20 @@ public class DBLPTrustProcessor {
 	 */
 
 	public HashMap<String, DBLPTrustModel> calculateDeveloperTrustMatrix(
-			List<String> developerList, String context) {
+			List<String> developerList, String context) throws SAXException, JAXBException {
 
 		HashMap<String, DBLPTrustModel> developerNameMappedToTrustModelValue = new HashMap<String, DBLPTrustModel>();
 
-		ArrayList<DBLPUser> contextFilteredDBLPUserList = SOLRQueries
-				.DBLPSourceContextMiner(context);
-
-		// /////////////////////// Make nameTOObject Map for filtered DBLP Users
-		// ////////////////////////
+		ArrayList<DBLPUser> contextFilteredDBLPUserList = getAuthorsFromContext(context);
+				
+				//SOLRQueries
+				//.DBLPSourceContextMiner(context);
 
 		HashMap<String, DBLPUser> contextFilteredDBLPUserNameToObject = new HashMap<String, DBLPUser>();
 		for (DBLPUser contextFilteredDBLPUser : contextFilteredDBLPUserList) {
 			contextFilteredDBLPUserNameToObject.put(
 					contextFilteredDBLPUser.getName(), contextFilteredDBLPUser);
 		}
-
-		// //////////////////////////////////////////////////////////////////////////////////////////////
 
 		/*
 		 * Take each Software then get the set of developers on that
@@ -59,12 +66,19 @@ public class DBLPTrustProcessor {
 
 	}
 	
-	public ArrayList<DBLPTrustModel> expertTrustMatrix(List<String> expertNames) {
+	public ArrayList<DBLPTrustModel> expertTrustMatrix(List<String> expertNames) throws SAXException, JAXBException {
 
 		ArrayList<DBLPTrustModel> expertTrustModelList = new ArrayList<DBLPTrustModel>();
 
-		ArrayList<DBLPUser> expertDBLPObjects = SOLRQueries
-				.parseDBLPUserInfoFromName(expertNames);
+//		ArrayList<DBLPUser> expertDBLPObjects = SOLRQueries
+//				.parseDBLPUserInfoFromName(expertNames);
+		
+		ArrayList<DBLPUser> expertDBLPObjects = new ArrayList<DBLPUser>();
+		
+		for(String name: expertNames) {
+			expertDBLPObjects.add(getDBLPUserFromName(name));
+		}
+		
 		DBLPTrustModel dblpTrustModel = null;
 		for (DBLPUser expertUser : expertDBLPObjects) {
 			dblpTrustModel = calculateDBLPTrustFactor(expertUser);
@@ -75,12 +89,35 @@ public class DBLPTrustProcessor {
 
 	}
 	
-	
-	public ArrayList<DBLPTrustModel> trustModelForAuthorIds(ArrayList<Long> authorIdList) {
+	private DBLPUser getDBLPUserFromName(String name) throws SAXException {
+		DBLPUser result = new DBLPUser();
+
+		HashMap<String,DBLPUser> dblp;
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset();
+
+		for(String key : dblp.keySet()) {
+			if(key.equalsIgnoreCase(name)) {
+				result = dblp.get(key);
+				return result;
+			}
+		}
+		
+		return null;
+	}
+
+	public ArrayList<DBLPTrustModel> trustModelForAuthorIds(ArrayList<Long> authorIdList) throws SAXException, JAXBException {
 
 		ArrayList<DBLPTrustModel> expertTrustModelList = new ArrayList<DBLPTrustModel>();
 
-		ArrayList<DBLPUser> expertDBLPObjects = SOLRQueries.parseDBLPUserInfoFromId(authorIdList);
+		//ArrayList<DBLPUser> expertDBLPObjects = SOLRQueries.parseDBLPUserInfoFromId(authorIdList);
+		
+		ArrayList<DBLPUser> expertDBLPObjects = new ArrayList<DBLPUser>();
+		
+		for(Long id: authorIdList) {
+			expertDBLPObjects.add(getDBLPUserFromID(id));
+		}
+		
 		DBLPTrustModel dblpTrustModel = null;
 		for (DBLPUser expertUser : expertDBLPObjects) {
 			dblpTrustModel = calculateDBLPTrustFactor(expertUser);
@@ -92,7 +129,24 @@ public class DBLPTrustProcessor {
 	}
 	
 
-	public DBLPTrustModel calculateDBLPTrustFactor(DBLPUser dblpUser) {
+	private DBLPUser getDBLPUserFromID(Long id) throws SAXException {
+		DBLPUser result = new DBLPUser();
+
+		HashMap<String,DBLPUser> dblp;
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset();
+
+		for(String key : dblp.keySet()) {
+			if(dblp.get(key).getId() == id) {
+				result = dblp.get(key);
+				return result;
+			}
+		}
+		
+		return null;
+	}
+
+	public DBLPTrustModel calculateDBLPTrustFactor(DBLPUser dblpUser) throws SAXException, JAXBException {
 		DBLPTrustModel dblpTrustModel = new DBLPTrustModel();
 
 		// ///// Knowledge Factor ///////////
@@ -159,16 +213,17 @@ public class DBLPTrustProcessor {
 	// return kCoauthorship;
 	// }
 
-	private KCoauthorship calculateKCoauthorship(int authorId) {
+	private KCoauthorship calculateKCoauthorship(int authorId) throws SAXException, JAXBException {
 		double coauthorshipCount = 0;
 		
 		TimeScale timeScale = new TimeScale();
 		KCoauthorship kCoauthorship = new KCoauthorship();
 		double socialCoathorshipFactorForaCoauthor = 0;
 
-		List<CoauthorshipEdge> coauthorshipDetailsList = SOLRQueries
-				.parseCoauthorsFromAuthorId(authorId);
+//		List<CoauthorshipEdge> coauthorshipDetailsList = SOLRQueries
+//				.parseCoauthorsFromAuthorId(authorId);
 		
+		List<CoauthorshipEdge> coauthorshipDetailsList = getCoAuthorshipEdgeList(authorId);
 		
 		int currentYear = Calendar.getInstance().get(Calendar.YEAR);
 
@@ -202,7 +257,7 @@ public class DBLPTrustProcessor {
 			HashMap<Integer, Double> coauthorIdToSocialFactorFromCoauthor = kCoauthorship
 					.getCoauthorIdToSocialFactorFromCoauthor();
 			coauthorIdToSocialFactorFromCoauthor.put(
-					coauthorshipEdge.getCoauthorId(),
+					(int) coauthorshipEdge.getCoauthorId(),
 					socialCoathorshipFactorForaCoauthor);
 			kCoauthorship
 					.setCoauthorIdToSocialFactorFromCoauthor(coauthorIdToSocialFactorFromCoauthor);
@@ -218,6 +273,32 @@ public class DBLPTrustProcessor {
 		kCoauthorship.setTimeScaledCoauthorship(Math.ceil(coauthorshipCount));
 		
 		return kCoauthorship;
+	}
+
+	private List<CoauthorshipEdge> getCoAuthorshipEdgeList(int authorId) throws SAXException, JAXBException {
+		DBLPUser author = getDBLPUserFromID((long) authorId);
+		List<CoauthorshipEdge> result = new ArrayList<CoauthorshipEdge>();
+		List<Coauthorship> coauthors = author.getCoAuthors();
+		
+		for(Coauthorship c : coauthors) {
+			CoauthorshipEdge singleEdge = new CoauthorshipEdge();
+			singleEdge.setUserId(authorId);
+			singleEdge.setCoauthorId(c.getCoauthorid());
+			singleEdge.setMappingId(c.getCoauthorshipid());
+			
+			List<String> stringDates = c.getDate();
+			List<Integer> intDates = new ArrayList<Integer>(); 
+			
+			for(String date: stringDates) {
+				intDates.add(Integer.parseInt(date));
+			}
+			
+			singleEdge.setCoauthorshipDates(intDates);
+			
+			result.add(singleEdge);
+		}
+		
+		return result;
 	}
 
 	private KPaperPublished calculateKPaperPublished(DBLPUser dblpUser) {
@@ -475,8 +556,29 @@ public class DBLPTrustProcessor {
 		publishingConstants.setFinalKPaperPublished(Math.ceil(kPaperPublished));
 		return publishingConstants;
 	}
-
-	public static void main(String args[]) {
+	
+	public ArrayList<DBLPUser> getAuthorsFromContext(String context) throws SAXException {
+		ArrayList<DBLPUser> result = new ArrayList<DBLPUser>();
+		
+		HashMap<String,DBLPUser> dblp;
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset();
+		
+		for(String key : dblp.keySet()) {
+			DBLPUser user = dblp.get(key);
+			List<Publication> publications = user.getPublication();
+			
+			for(Publication p : publications) {
+				if(StringUtils.containsIgnoreCase(p.getTitle(), context)) {
+					result.add(user);
+					break;
+				}
+			}
+		}
+		return result;
+	}
+	
+	public static void main(String args[]) throws SAXException, JAXBException {
 		DBLPTrustProcessor dblpTrustProcessor = new DBLPTrustProcessor();
 		List<String> expertNames = new ArrayList<String>();
 		expertNames.add("Chun Li");

@@ -624,9 +624,9 @@ public class DBLPParser {
 			JAXBContext jaxbContext = JAXBContext.newInstance(DBLPElement.class);
 
 			SAXParserFactory spf = SAXParserFactory.newInstance();
-//			spf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, false);
+			//			spf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, false);
 			XMLReader xmlReader = spf.newSAXParser().getXMLReader();
-			
+
 			//System.out.println(Play.application().path().getAbsolutePath());
 			InputSource inputSource = new InputSource(new FileReader(filename));
 			SAXSource source = new SAXSource(xmlReader, inputSource);
@@ -829,231 +829,232 @@ public class DBLPParser {
 
 		return null;
 	}
-	
+
 	private void getCSVFile(String fileName) throws SAXException, FileNotFoundException, IOException {
 		XMLReader xr = XMLReaderFactory.createXMLReader();
-        HeaderHandler handler = new HeaderHandler();
-        xr.setContentHandler(handler);
-        xr.setErrorHandler(handler);
-        FileReader r = new FileReader(fileName);
-        xr.parse(new InputSource(r));
+		HeaderHandler handler = new HeaderHandler();
+		xr.setContentHandler(handler);
+		xr.setErrorHandler(handler);
+		FileReader r = new FileReader(fileName);
+		xr.parse(new InputSource(r));
 
-        LinkedHashMap<String, Integer> headers = handler.getHeaders();
-        int totalnumberofcolumns = 0;
-        for (int headercount : headers.values()) {
-            totalnumberofcolumns += headercount;
-        }
-        String[] columnheaders = new String[totalnumberofcolumns];
-        int i = 0;
-        for (Entry<String, Integer> entry : headers.entrySet()) {
-            for (int j = 0; j < entry.getValue(); j++) {
-                columnheaders[i] = entry.getKey();
-                i++;
-            }
-        }
-        StringBuilder sb = new StringBuilder();
-        for (String h : columnheaders) {
-            sb.append(h);
-            sb.append(',');
-        }
-        System.out.println(sb.substring(0, sb.length() - 1));
+		LinkedHashMap<String, Integer> headers = handler.getHeaders();
+		int totalnumberofcolumns = 0;
+		for (int headercount : headers.values()) {
+			totalnumberofcolumns += headercount;
+		}
+		String[] columnheaders = new String[totalnumberofcolumns];
+		int i = 0;
+		for (Entry<String, Integer> entry : headers.entrySet()) {
+			for (int j = 0; j < entry.getValue(); j++) {
+				columnheaders[i] = entry.getKey();
+				i++;
+			}
+		}
+		StringBuilder sb = new StringBuilder();
+		for (String h : columnheaders) {
+			sb.append(h);
+			sb.append(',');
+		}
+		System.out.println(sb.substring(0, sb.length() - 1));
 
-        // Second pass - collect and output data
+		// Second pass - collect and output data
 
-        xr = XMLReaderFactory.createXMLReader();
+		xr = XMLReaderFactory.createXMLReader();
 
-        DataHandler datahandler = new DataHandler();
-        datahandler.setHeaderArray(columnheaders);
+		DataHandler datahandler = new DataHandler();
+		datahandler.setHeaderArray(columnheaders);
 
-        xr.setContentHandler(datahandler);
-        xr.setErrorHandler(datahandler);
-        r = new FileReader(fileName);
-        xr.parse(new InputSource(r));
+		xr.setContentHandler(datahandler);
+		xr.setErrorHandler(datahandler);
+		r = new FileReader(fileName);
+		xr.parse(new InputSource(r));
 	}
-	
+
 	public static class HeaderHandler extends DefaultHandler {
 
-        private String content;
-        private String currentElement;
-        private boolean insideElement = false;
-        private Attributes attribs;
-        private LinkedHashMap<String, Integer> itemHeader;
-        private LinkedHashMap<String, Integer> accumulativeHeader = new LinkedHashMap<String, Integer>();
-        private String[] validHeaders = {"www", "phdthesis", "article", "book", "incollection", "inproceeding", "masterthesis"};
-        
+		private String content;
+		private String currentElement;
+		private boolean insideElement = false;
+		private Attributes attribs;
+		private LinkedHashMap<String, Integer> itemHeader;
+		private LinkedHashMap<String, Integer> accumulativeHeader = new LinkedHashMap<String, Integer>();
+		private String[] validHeaders = {"www", "phdthesis", "article", "book", "incollection", "inproceeding", "masterthesis"};
 
-        public HeaderHandler() {
-            super();
-        }
 
-        private LinkedHashMap<String, Integer> getHeaders() {
-            return accumulativeHeader;
-        }
+		public HeaderHandler() {
+			super();
+		}
 
-        private void addItemHeader(String headerName) {
-            if (itemHeader.containsKey(headerName)) {
-                itemHeader.put(headerName, itemHeader.get(headerName) + 1);
-            } else {
-                itemHeader.put(headerName, 1);
-            }
-        }
+		private LinkedHashMap<String, Integer> getHeaders() {
+			return accumulativeHeader;
+		}
 
-        @Override
-        public void startElement(String uri, String name,
-                String qName, Attributes atts) {
-            if (isValidHeaderName(qName)) {
-                itemHeader = new LinkedHashMap<String, Integer>();
-            }
-            currentElement = qName;
-            content = null;
-            insideElement = true;
-            attribs = atts;
-        }
+		private void addItemHeader(String headerName) {
+			if (itemHeader.containsKey(headerName)) {
+				itemHeader.put(headerName, itemHeader.get(headerName) + 1);
+			} else {
+				itemHeader.put(headerName, 1);
+			}
+		}
 
-        @Override
-        public void endElement(String uri, String name, String qName) {
-            if (!isValidHeaderName(qName) && !"dblp".equalsIgnoreCase(qName)) {
-                if (content != null && qName.equals(currentElement) && content.trim().length() > 0) {
-                    addItemHeader(qName);
-                }
-                if (attribs != null) {
-                    int attsLength = attribs.getLength();
-                    if (attsLength > 0) {
-                        for (int i = 0; i < attsLength; i++) {
-                            String attName = attribs.getLocalName(i);
-                            addItemHeader(attName);
-                        }
-                    }
-                }
-            }
-            if (isValidHeaderName(qName)) {
-                for (Entry<String, Integer> entry : itemHeader.entrySet()) {
-                    String headerName = entry.getKey();
-                    Integer count = entry.getValue();
-                    //System.out.println(entry.getKey() + ":" + entry.getValue());
-                    if (accumulativeHeader.containsKey(headerName)) {
-                        if (count > accumulativeHeader.get(headerName)) {
-                            accumulativeHeader.put(headerName, count);
-                        }
-                    } else {
-                        accumulativeHeader.put(headerName, count);
-                    }
-                }
-            }
-            insideElement = false;
-            currentElement = null;
-            attribs = null;
-        }
+		@Override
+		public void startElement(String uri, String name,
+				String qName, Attributes atts) {
+			if (isValidHeaderName(qName)) {
+				itemHeader = new LinkedHashMap<String, Integer>();
+			}
+			currentElement = qName;
+			content = null;
+			insideElement = true;
+			attribs = atts;
+		}
 
-        @Override
-        public void characters(char ch[], int start, int length) {
-            if (insideElement) {
-                content = new String(ch, start, length);
-            }
-        }
-        
-        public boolean isValidHeaderName(String header) {
-        	int numberOfValidHeaders = validHeaders.length;
-        	for(int i = 0; i< numberOfValidHeaders ; i++) {
-        		if(header.equalsIgnoreCase(validHeaders[i]))
-        			return true;
-        	}
-        	return false;
-        }
-    }
+		@Override
+		public void endElement(String uri, String name, String qName) {
+			if (!isValidHeaderName(qName) && !"dblp".equalsIgnoreCase(qName)) {
+				if (content != null && qName.equals(currentElement) && content.trim().length() > 0) {
+					addItemHeader(qName);
+				}
+				if (attribs != null) {
+					int attsLength = attribs.getLength();
+					if (attsLength > 0) {
+						for (int i = 0; i < attsLength; i++) {
+							String attName = attribs.getLocalName(i);
+							addItemHeader(attName);
+						}
+					}
+				}
+			}
+			if (isValidHeaderName(qName)) {
+				for (Entry<String, Integer> entry : itemHeader.entrySet()) {
+					String headerName = entry.getKey();
+					Integer count = entry.getValue();
+					//System.out.println(entry.getKey() + ":" + entry.getValue());
+					if (accumulativeHeader.containsKey(headerName)) {
+						if (count > accumulativeHeader.get(headerName)) {
+							accumulativeHeader.put(headerName, count);
+						}
+					} else {
+						accumulativeHeader.put(headerName, count);
+					}
+				}
+			}
+			insideElement = false;
+			currentElement = null;
+			attribs = null;
+		}
 
-    public static class DataHandler extends DefaultHandler {
+		@Override
+		public void characters(char ch[], int start, int length) {
+			if (insideElement) {
+				content = new String(ch, start, length);
+			}
+		}
 
-        private String content;
-        private String currentElement;
-        private boolean insideElement = false;
-        private Attributes attribs;
-        private LinkedHashMultimap dataMap;
-        private String[] headerArray;
-        
-        private String[] validHeaders = {"www", "phdthesis", "article", "book", "incollection", "inproceeding", "masterthesis"};
-        public DataHandler() {
-            super();
-        }
+		public boolean isValidHeaderName(String header) {
+			int numberOfValidHeaders = validHeaders.length;
+			for(int i = 0; i< numberOfValidHeaders ; i++) {
+				if(header.equalsIgnoreCase(validHeaders[i]))
+					return true;
+			}
+			return false;
+		}
+	}
 
-        @Override
-        public void startElement(String uri, String name,
-                String qName, Attributes atts) {
-            if (isValidHeaderName(qName)) {
-                dataMap = LinkedHashMultimap.create();
-            }
-            currentElement = qName;
-            content = null;
-            insideElement = true;
-            attribs = atts;
-        }
+	public static class DataHandler extends DefaultHandler {
 
-        @Override
-        public void endElement(String uri, String name, String qName) {
-            if (!isValidHeaderName(qName) && !"dblp".equalsIgnoreCase(qName)) {
-                if (content != null && qName.equals(currentElement) && content.trim().length() > 0) {
-                    dataMap.put(qName, content);
-                }
-                if (attribs != null) {
-                    int attsLength = attribs.getLength();
-                    if (attsLength > 0) {
-                        for (int i = 0; i < attsLength; i++) {
-                            String attName = attribs.getLocalName(i);
-                            dataMap.put(attName, attribs.getValue(i));
-                        }
-                    }
-                }
-            }
-            if (isValidHeaderName(qName)) {
-                String data[] = new String[headerArray.length];
-                int i = 0;
-                for (String h : headerArray) {
-                    if (dataMap.containsKey(h)) {
-                        Object[] values = dataMap.get(h).toArray();
-                        data[i] = (String) values[0];
-                        if (values.length > 1) {
-                            dataMap.removeAll(h);
-                            for (int j = 1; j < values.length; j++) {
-                                dataMap.put(h, values[j]);
-                            }
-                        } else {
-                            dataMap.removeAll(h);
-                        }
-                    } else {
-                        data[i] = "";
-                    }
-                    i++;
-                }
-                StringBuilder sb = new StringBuilder();
-                for (String d : data) {
-                    sb.append(d);
-                    sb.append(',');
-                }
-                System.out.println(sb.substring(0, sb.length() - 1));
-            }
-            insideElement = false;
-            currentElement = null;
-            attribs = null;
-        }
+		private String content;
+		private String currentElement;
+		private boolean insideElement = false;
+		private Attributes attribs;
+		private LinkedHashMultimap dataMap;
+		private String[] headerArray;
 
-        @Override
-        public void characters(char ch[], int start, int length) {
-            if (insideElement) {
-                content = new String(ch, start, length);
-            }
-        }
+		private String[] validHeaders = {"www", "phdthesis", "article", "book", "incollection", "inproceeding", "masterthesis"};
+		public DataHandler() {
+			super();
+		}
 
-        public void setHeaderArray(String[] headerArray) {
-            this.headerArray = headerArray;
-        }
-        
-        public boolean isValidHeaderName(String header) {
-        	int numberOfValidHeaders = validHeaders.length;
-        	for(int i = 0; i< numberOfValidHeaders ; i++) {
-        		if(header.equalsIgnoreCase(validHeaders[i]))
-        			return true;
-        	}
-        	return false;
-        }
-    }
+		@Override
+		public void startElement(String uri, String name,
+				String qName, Attributes atts) {
+			if (isValidHeaderName(qName)) {
+				dataMap = LinkedHashMultimap.create();
+			}
+			currentElement = qName;
+			content = null;
+			insideElement = true;
+			attribs = atts;
+		}
+
+		@Override
+		public void endElement(String uri, String name, String qName) {
+			if (!isValidHeaderName(qName) && !"dblp".equalsIgnoreCase(qName)) {
+				if (content != null && qName.equals(currentElement) && content.trim().length() > 0) {
+					dataMap.put(qName, content);
+				}
+				if (attribs != null) {
+					int attsLength = attribs.getLength();
+					if (attsLength > 0) {
+						for (int i = 0; i < attsLength; i++) {
+							String attName = attribs.getLocalName(i);
+							dataMap.put(attName, attribs.getValue(i));
+						}
+					}
+				}
+			}
+			if (isValidHeaderName(qName)) {
+				String data[] = new String[headerArray.length];
+				int i = 0;
+				for (String h : headerArray) {
+					if (dataMap.containsKey(h)) {
+						Object[] values = dataMap.get(h).toArray();
+						data[i] = (String) values[0];
+						if (values.length > 1) {
+							dataMap.removeAll(h);
+							for (int j = 1; j < values.length; j++) {
+								dataMap.put(h, values[j]);
+							}
+						} else {
+							dataMap.removeAll(h);
+						}
+					} else {
+						data[i] = "";
+					}
+					i++;
+				}
+				StringBuilder sb = new StringBuilder();
+				for (String d : data) {
+					sb.append(d);
+					sb.append(',');
+				}
+				System.out.println(sb.substring(0, sb.length() - 1));
+			}
+			insideElement = false;
+			currentElement = null;
+			attribs = null;
+		}
+
+		@Override
+		public void characters(char ch[], int start, int length) {
+			if (insideElement) {
+				content = new String(ch, start, length);
+			}
+		}
+
+		public void setHeaderArray(String[] headerArray) {
+			this.headerArray = headerArray;
+		}
+
+		public boolean isValidHeaderName(String header) {
+			int numberOfValidHeaders = validHeaders.length;
+			for(int i = 0; i< numberOfValidHeaders ; i++) {
+				if(header.equalsIgnoreCase(validHeaders[i]))
+					return true;
+			}
+			return false;
+		}
+		
+	}
 }

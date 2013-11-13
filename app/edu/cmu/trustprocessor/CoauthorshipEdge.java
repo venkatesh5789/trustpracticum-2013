@@ -3,27 +3,27 @@ import java.util.List;
 
 public class CoauthorshipEdge {
 	
-	private int mappingId;
-	private int userId;
-	private int coauthorId;
+	private long mappingId;
+	private long userId;
+	private long coauthorId;
 	private List<Integer> coauthorshipDates;
 	
-	public int getMappingId() {
+	public long getMappingId() {
 		return mappingId;
 	}
-	public void setMappingId(int mappingId) {
+	public void setMappingId(long mappingId) {
 		this.mappingId = mappingId;
 	}
-	public int getUserId() {
+	public long getUserId() {
 		return userId;
 	}
-	public void setUserId(int userId) {
+	public void setUserId(long userId) {
 		this.userId = userId;
 	}
-	public int getCoauthorId() {
+	public long getCoauthorId() {
 		return coauthorId;
 	}
-	public void setCoauthorId(int coauthorId) {
+	public void setCoauthorId(long coauthorId) {
 		this.coauthorId = coauthorId;
 	}
 	public List<Integer> getCoauthorshipDates() {
