@@ -12,12 +12,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import javax.xml.bind.JAXBException;
+
+import org.xml.sax.SAXException;
+
 import edu.cmu.DBLPProcessor.DBLPUser;
 import edu.cmu.jung.Edge;
 import edu.cmu.jung.Node;
 
 public class CoreTrustModelVisualization {
-	public CoreTrustModelVisualization() {
+	public CoreTrustModelVisualization() throws SAXException, JAXBException {
 		String path = "";
 		List<String> developerList;
 		developerList = new ArrayList<String>();
@@ -132,7 +136,7 @@ public class CoreTrustModelVisualization {
 		}
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SAXException, JAXBException {
 		CoreTrustModelVisualization coreTrustModelVisualization = new CoreTrustModelVisualization();
 	}
 }

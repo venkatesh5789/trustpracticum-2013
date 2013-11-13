@@ -6,6 +6,10 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import javax.xml.bind.JAXBException;
+
+import org.xml.sax.SAXException;
+
 public class TrustModelIntegration {
 	
 	private double knowledgeFactorWeight=0.75;
@@ -30,7 +34,7 @@ public class TrustModelIntegration {
 		this.socialFactorWeight = socialFactorWeight;
 	}
 
-	public static void main() {
+	public static void main() throws SAXException, JAXBException {
 		
 		ArrayList<String> userNames = new ArrayList<String>();
 		File file = new File("mappedcommondatasets.txt");

@@ -10,8 +10,6 @@ import javax.xml.bind.JAXBException;
 
 import org.xml.sax.SAXException;
 
-import controllers.Application;
-
 import edu.cmu.DBLPProcessor.*;
 import edu.cmu.dataset.DBLPDataSource;
 import edu.cmu.dataset.DatasetInterface;
@@ -289,9 +287,11 @@ public class DBLPTrustProcessor {
 			List<String> stringDates = c.getDate();
 			List<Integer> intDates = new ArrayList<Integer>(); 
 			
-			for(String date: stringDates) {
-				intDates.add(Integer.parseInt(date));
-			}
+			if(stringDates != null)
+				for(String date: stringDates) {
+					if(date != null)
+					intDates.add(Integer.parseInt(date));
+				}
 			
 			singleEdge.setCoauthorshipDates(intDates);
 			
@@ -581,7 +581,7 @@ public class DBLPTrustProcessor {
 	public static void main(String args[]) throws SAXException, JAXBException {
 		DBLPTrustProcessor dblpTrustProcessor = new DBLPTrustProcessor();
 		List<String> expertNames = new ArrayList<String>();
-		expertNames.add("Chun Li");
+		expertNames.add("Javier Chorro");
 		DBLPTrustModel dblpTrustModel = dblpTrustProcessor
 				.expertTrustMatrix(expertNames).get(0);
 		DBLPKnowledgeFactor dblpKnowledgeFactor = dblpTrustModel
