@@ -1,6 +1,6 @@
 // @SOURCE:/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/conf/routes
-// @HASH:1c6fed3dea07b6fe94adb238f23979686b7d2e49
-// @DATE:Mon Nov 11 14:10:42 PST 2013
+// @HASH:6da5def763434de5f92fe949612c3ad88a7c9661
+// @DATE:Wed Nov 13 23:37:37 PST 2013
 
 
 import play.core._
@@ -48,22 +48,26 @@ private[this] lazy val controllers_Application_getGraphWithRender3 = Route("GET"
 private[this] lazy val controllers_Application_getCoAuthorInformation4 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getCoAuthorInformation/"),DynamicPart("name", """[^/]+""",true))))
         
 
-// @LINE:25
-private[this] lazy val controllers_Application_getSocialNetwork5 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getSocialNetwork/"),DynamicPart("name", """[^/]+""",true))))
+// @LINE:22
+private[this] lazy val controllers_Application_getReputationForAuthor5 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getReputation/"),DynamicPart("name", """[^/]+""",true))))
         
 
 // @LINE:28
-private[this] lazy val controllers_Application_getCoAuthorsByTopic6 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getCoAuthorsByTopic/"),DynamicPart("name", """[^/]+""",true),StaticPart("/"),DynamicPart("topics", """[^/]+""",true))))
+private[this] lazy val controllers_Application_getSocialNetwork6 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getSocialNetwork/"),DynamicPart("name", """[^/]+""",true))))
         
 
 // @LINE:31
-private[this] lazy val controllers_Application_getCoAuthorsByTopicAndTime7 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getCoAuthorsByTopicAndTime/"),DynamicPart("name", """[^/]+""",true),StaticPart("/"),DynamicPart("topics", """[^/]+""",true),StaticPart("/"),DynamicPart("year", """[^/]+""",true))))
+private[this] lazy val controllers_Application_getCoAuthorsByTopic7 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getCoAuthorsByTopic/"),DynamicPart("name", """[^/]+""",true),StaticPart("/"),DynamicPart("topics", """[^/]+""",true))))
         
 
 // @LINE:34
-private[this] lazy val controllers_Application_formSubmit8 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("show"))))
+private[this] lazy val controllers_Application_getCoAuthorsByTopicAndTime8 = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("getCoAuthorsByTopicAndTime/"),DynamicPart("name", """[^/]+""",true),StaticPart("/"),DynamicPart("topics", """[^/]+""",true),StaticPart("/"),DynamicPart("year", """[^/]+""",true))))
         
-def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getGraphWithoutRender/$name<[^/]+>/$level<[^/]+>""","""controllers.Application.getGraphWithoutRender(name:String, level:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getGraphWithRender/$name<[^/]+>/$level<[^/]+>""","""controllers.Application.getGraphWithRender(name:String, level:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getCoAuthorInformation/$name<[^/]+>""","""controllers.Application.getCoAuthorInformation(name:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getSocialNetwork/$name<[^/]+>""","""controllers.Application.getSocialNetwork(name:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getCoAuthorsByTopic/$name<[^/]+>/$topics<[^/]+>""","""controllers.Application.getCoAuthorsByTopic(name:String, topics:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getCoAuthorsByTopicAndTime/$name<[^/]+>/$topics<[^/]+>/$year<[^/]+>""","""controllers.Application.getCoAuthorsByTopicAndTime(name:String, topics:String, year:Long)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """show""","""controllers.Application.formSubmit()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+
+// @LINE:37
+private[this] lazy val controllers_Application_formSubmit9 = Route("POST", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("show"))))
+        
+def documentation = List(("""GET""", prefix,"""controllers.Application.index()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getGraphWithoutRender/$name<[^/]+>/$level<[^/]+>""","""controllers.Application.getGraphWithoutRender(name:String, level:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getGraphWithRender/$name<[^/]+>/$level<[^/]+>""","""controllers.Application.getGraphWithRender(name:String, level:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getCoAuthorInformation/$name<[^/]+>""","""controllers.Application.getCoAuthorInformation(name:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getReputation/$name<[^/]+>""","""controllers.Application.getReputationForAuthor(name:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getSocialNetwork/$name<[^/]+>""","""controllers.Application.getSocialNetwork(name:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getCoAuthorsByTopic/$name<[^/]+>/$topics<[^/]+>""","""controllers.Application.getCoAuthorsByTopic(name:String, topics:String)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """getCoAuthorsByTopicAndTime/$name<[^/]+>/$topics<[^/]+>/$year<[^/]+>""","""controllers.Application.getCoAuthorsByTopicAndTime(name:String, topics:String, year:Long)"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """show""","""controllers.Application.formSubmit()""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]] 
 }}
@@ -111,32 +115,40 @@ case controllers_Application_getCoAuthorInformation4(params) => {
 }
         
 
-// @LINE:25
-case controllers_Application_getSocialNetwork5(params) => {
+// @LINE:22
+case controllers_Application_getReputationForAuthor5(params) => {
+   call(params.fromPath[String]("name", None)) { (name) =>
+        invokeHandler(controllers.Application.getReputationForAuthor(name), HandlerDef(this, "controllers.Application", "getReputationForAuthor", Seq(classOf[String]),"GET", """""", Routes.prefix + """getReputation/$name<[^/]+>"""))
+   }
+}
+        
+
+// @LINE:28
+case controllers_Application_getSocialNetwork6(params) => {
    call(params.fromPath[String]("name", None)) { (name) =>
         invokeHandler(controllers.Application.getSocialNetwork(name), HandlerDef(this, "controllers.Application", "getSocialNetwork", Seq(classOf[String]),"GET", """""", Routes.prefix + """getSocialNetwork/$name<[^/]+>"""))
    }
 }
         
 
-// @LINE:28
-case controllers_Application_getCoAuthorsByTopic6(params) => {
+// @LINE:31
+case controllers_Application_getCoAuthorsByTopic7(params) => {
    call(params.fromPath[String]("name", None), params.fromPath[String]("topics", None)) { (name, topics) =>
         invokeHandler(controllers.Application.getCoAuthorsByTopic(name, topics), HandlerDef(this, "controllers.Application", "getCoAuthorsByTopic", Seq(classOf[String], classOf[String]),"GET", """""", Routes.prefix + """getCoAuthorsByTopic/$name<[^/]+>/$topics<[^/]+>"""))
    }
 }
         
 
-// @LINE:31
-case controllers_Application_getCoAuthorsByTopicAndTime7(params) => {
+// @LINE:34
+case controllers_Application_getCoAuthorsByTopicAndTime8(params) => {
    call(params.fromPath[String]("name", None), params.fromPath[String]("topics", None), params.fromPath[Long]("year", None)) { (name, topics, year) =>
         invokeHandler(controllers.Application.getCoAuthorsByTopicAndTime(name, topics, year), HandlerDef(this, "controllers.Application", "getCoAuthorsByTopicAndTime", Seq(classOf[String], classOf[String], classOf[Long]),"GET", """""", Routes.prefix + """getCoAuthorsByTopicAndTime/$name<[^/]+>/$topics<[^/]+>/$year<[^/]+>"""))
    }
 }
         
 
-// @LINE:34
-case controllers_Application_formSubmit8(params) => {
+// @LINE:37
+case controllers_Application_formSubmit9(params) => {
    call { 
         invokeHandler(controllers.Application.formSubmit(), HandlerDef(this, "controllers.Application", "formSubmit", Nil,"POST", """""", Routes.prefix + """show"""))
    }

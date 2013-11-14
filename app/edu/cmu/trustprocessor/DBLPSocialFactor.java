@@ -10,7 +10,5 @@ public class DBLPSocialFactor {
 
 	public void setkCoauthorship(KCoauthorship kCoauthorship) {
 		this.kCoauthorship = kCoauthorship;
-	}
-
-	
+	}	
 }

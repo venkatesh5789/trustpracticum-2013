@@ -19,7 +19,7 @@ import edu.cmu.dataset.DatasetInterface;
 import org.apache.commons.lang3.StringUtils;
 
 public class DBLPTrustProcessor {
-	
+
 	TrustModelWeights trustModelWeights;
 	public DBLPTrustProcessor(){
 		trustModelWeights = new TrustModelWeights();
@@ -37,9 +37,9 @@ public class DBLPTrustProcessor {
 		HashMap<String, DBLPTrustModel> developerNameMappedToTrustModelValue = new HashMap<String, DBLPTrustModel>();
 
 		ArrayList<DBLPUser> contextFilteredDBLPUserList = getAuthorsFromContext(context);
-				
-				//SOLRQueries
-				//.DBLPSourceContextMiner(context);
+
+		//SOLRQueries
+		//.DBLPSourceContextMiner(context);
 
 		HashMap<String, DBLPUser> contextFilteredDBLPUserNameToObject = new HashMap<String, DBLPUser>();
 		for (DBLPUser contextFilteredDBLPUser : contextFilteredDBLPUserList) {
@@ -65,20 +65,20 @@ public class DBLPTrustProcessor {
 		return developerNameMappedToTrustModelValue;
 
 	}
-	
+
 	public ArrayList<DBLPTrustModel> expertTrustMatrix(List<String> expertNames) throws SAXException, JAXBException {
 
 		ArrayList<DBLPTrustModel> expertTrustModelList = new ArrayList<DBLPTrustModel>();
 
-//		ArrayList<DBLPUser> expertDBLPObjects = SOLRQueries
-//				.parseDBLPUserInfoFromName(expertNames);
-		
+		//		ArrayList<DBLPUser> expertDBLPObjects = SOLRQueries
+		//				.parseDBLPUserInfoFromName(expertNames);
+
 		ArrayList<DBLPUser> expertDBLPObjects = new ArrayList<DBLPUser>();
-		
+
 		for(String name: expertNames) {
 			expertDBLPObjects.add(getDBLPUserFromName(name));
 		}
-		
+
 		DBLPTrustModel dblpTrustModel = null;
 		for (DBLPUser expertUser : expertDBLPObjects) {
 			dblpTrustModel = calculateDBLPTrustFactor(expertUser);
@@ -88,7 +88,7 @@ public class DBLPTrustProcessor {
 		return expertTrustModelList;
 
 	}
-	
+
 	private DBLPUser getDBLPUserFromName(String name) throws SAXException {
 		DBLPUser result = new DBLPUser();
 
@@ -102,7 +102,7 @@ public class DBLPTrustProcessor {
 				return result;
 			}
 		}
-		
+
 		return null;
 	}
 
@@ -111,13 +111,13 @@ public class DBLPTrustProcessor {
 		ArrayList<DBLPTrustModel> expertTrustModelList = new ArrayList<DBLPTrustModel>();
 
 		//ArrayList<DBLPUser> expertDBLPObjects = SOLRQueries.parseDBLPUserInfoFromId(authorIdList);
-		
+
 		ArrayList<DBLPUser> expertDBLPObjects = new ArrayList<DBLPUser>();
-		
+
 		for(Long id: authorIdList) {
 			expertDBLPObjects.add(getDBLPUserFromID(id));
 		}
-		
+
 		DBLPTrustModel dblpTrustModel = null;
 		for (DBLPUser expertUser : expertDBLPObjects) {
 			dblpTrustModel = calculateDBLPTrustFactor(expertUser);
@@ -127,7 +127,7 @@ public class DBLPTrustProcessor {
 		return expertTrustModelList;
 
 	}
-	
+
 
 	private DBLPUser getDBLPUserFromID(Long id) throws SAXException {
 		DBLPUser result = new DBLPUser();
@@ -142,7 +142,7 @@ public class DBLPTrustProcessor {
 				return result;
 			}
 		}
-		
+
 		return null;
 	}
 
@@ -160,7 +160,7 @@ public class DBLPTrustProcessor {
 		DBLPSocialFactor dblpSocialFactor = new DBLPSocialFactor();
 		KCoauthorship kCoauthorship = calculateKCoauthorship(dblpUser.getId());
 
-		
+
 		dblpSocialFactor.setkCoauthorship(kCoauthorship);
 		dblpTrustModel.setDblpSocialFactor(dblpSocialFactor);
 		// //////////////////////////////////
@@ -168,7 +168,7 @@ public class DBLPTrustProcessor {
 		dblpTrustModel.setTrustValue(dblpSocialFactor.getkCoauthorship()
 				.getTimeScaledCoauthorship()
 				+ dblpKnowledgeFactor.getkPaperPublished()
-						.getFinalKPaperPublished());
+				.getFinalKPaperPublished());
 
 		return dblpTrustModel;
 	}
@@ -215,20 +215,20 @@ public class DBLPTrustProcessor {
 
 	private KCoauthorship calculateKCoauthorship(int authorId) throws SAXException, JAXBException {
 		double coauthorshipCount = 0;
-		
+
 		TimeScale timeScale = new TimeScale();
 		KCoauthorship kCoauthorship = new KCoauthorship();
 		double socialCoathorshipFactorForaCoauthor = 0;
 
-//		List<CoauthorshipEdge> coauthorshipDetailsList = SOLRQueries
-//				.parseCoauthorsFromAuthorId(authorId);
-		
+		//		List<CoauthorshipEdge> coauthorshipDetailsList = SOLRQueries
+		//				.parseCoauthorsFromAuthorId(authorId);
+
 		List<CoauthorshipEdge> coauthorshipDetailsList = getCoAuthorshipEdgeList(authorId);
-		
+
 		int currentYear = Calendar.getInstance().get(Calendar.YEAR);
 
 		double maxCoauth = 0;
-		
+
 		/////
 		for (CoauthorshipEdge coauthorshipEdge : coauthorshipDetailsList) {
 			List<Integer> coauthorshipDatesList = coauthorshipEdge
@@ -260,7 +260,7 @@ public class DBLPTrustProcessor {
 					(int) coauthorshipEdge.getCoauthorId(),
 					socialCoathorshipFactorForaCoauthor);
 			kCoauthorship
-					.setCoauthorIdToSocialFactorFromCoauthor(coauthorIdToSocialFactorFromCoauthor);
+			.setCoauthorIdToSocialFactorFromCoauthor(coauthorIdToSocialFactorFromCoauthor);
 		}
 		HashMap<Integer, Double> coauthorIdToSocialFactorFromCoauthor = kCoauthorship
 				.getCoauthorIdToSocialFactorFromCoauthor();
@@ -271,7 +271,7 @@ public class DBLPTrustProcessor {
 					+ coauthorIdToSocialFactorFromCoauthor.get(coauthorid);
 		}
 		kCoauthorship.setTimeScaledCoauthorship(Math.ceil(coauthorshipCount));
-		
+
 		return kCoauthorship;
 	}
 
@@ -280,47 +280,47 @@ public class DBLPTrustProcessor {
 		List<CoauthorshipEdge> result = new ArrayList<CoauthorshipEdge>();
 		List<Coauthorship> coauthors = author.getCoAuthors();
 		ListIterator<Coauthorship> iterator = coauthors.listIterator();
-		
+
 		while(iterator.hasNext()) {
 			Coauthorship c = iterator.next();
 			CoauthorshipEdge singleEdge = new CoauthorshipEdge();
 			singleEdge.setUserId(authorId);
 			singleEdge.setCoauthorId(c.getCoauthorid());
 			singleEdge.setMappingId(c.getCoauthorshipid());
-			
+
 			List<String> stringDates = c.getDate();
 			List<Integer> intDates = new ArrayList<Integer>(); 
-			
+
 			if(stringDates != null)
 				for(String date: stringDates) {
 					if(date != null)
-					intDates.add(Integer.parseInt(date));
+						intDates.add(Integer.parseInt(date));
 				}
-			
+
 			singleEdge.setCoauthorshipDates(intDates);
-			
+
 			result.add(singleEdge);
 		}
-//		for(Coauthorship c : coauthors) {
-//			CoauthorshipEdge singleEdge = new CoauthorshipEdge();
-//			singleEdge.setUserId(authorId);
-//			singleEdge.setCoauthorId(c.getCoauthorid());
-//			singleEdge.setMappingId(c.getCoauthorshipid());
-//			
-//			List<String> stringDates = c.getDate();
-//			List<Integer> intDates = new ArrayList<Integer>(); 
-//			
-//			if(stringDates != null)
-//				for(String date: stringDates) {
-//					if(date != null)
-//					intDates.add(Integer.parseInt(date));
-//				}
-//			
-//			singleEdge.setCoauthorshipDates(intDates);
-//			
-//			result.add(singleEdge);
-//		}
-//		
+		//		for(Coauthorship c : coauthors) {
+		//			CoauthorshipEdge singleEdge = new CoauthorshipEdge();
+		//			singleEdge.setUserId(authorId);
+		//			singleEdge.setCoauthorId(c.getCoauthorid());
+		//			singleEdge.setMappingId(c.getCoauthorshipid());
+		//			
+		//			List<String> stringDates = c.getDate();
+		//			List<Integer> intDates = new ArrayList<Integer>(); 
+		//			
+		//			if(stringDates != null)
+		//				for(String date: stringDates) {
+		//					if(date != null)
+		//					intDates.add(Integer.parseInt(date));
+		//				}
+		//			
+		//			singleEdge.setCoauthorshipDates(intDates);
+		//			
+		//			result.add(singleEdge);
+		//		}
+		//		
 		return result;
 	}
 
@@ -335,25 +335,25 @@ public class DBLPTrustProcessor {
 		KCitePower kCitePower = new KCitePower();
 
 		for (Publication publication : publicationList) {
-			
+
 			publicationYear = publication.getYear() == null? year :Integer.parseInt(publication.getYear());
 			int numberOfCitations = publication.getCitationcount();
 			if (publication.getType().equalsIgnoreCase("article")) {
 
 				if (publicationYear >= year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfArticleRecentNOX((publishingConstants
-									.getNumOfArticleRecentNOX() + 1));
+					.setNumOfArticleRecentNOX((publishingConstants
+							.getNumOfArticleRecentNOX() + 1));
 				} else if (publicationYear >= year
 						- timeScale.getIntermediateYears()
 						&& publicationYear < year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfArticleIntermediateNXY(publishingConstants
-									.getNumOfArticleIntermediateNXY() + 1);
+					.setNumOfArticleIntermediateNXY(publishingConstants
+							.getNumOfArticleIntermediateNXY() + 1);
 				} else {
 					publishingConstants
-							.setNumOfArticleOldNYZ(publishingConstants
-									.getNumOfArticleOldNYZ() + 1);
+					.setNumOfArticleOldNYZ(publishingConstants
+							.getNumOfArticleOldNYZ() + 1);
 				}
 				kCitePower.setNumberOfCitationsA(kCitePower
 						.getNumberOfCitationsA() + numberOfCitations);
@@ -362,14 +362,14 @@ public class DBLPTrustProcessor {
 
 				if (publicationYear >= year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfBooksRecentNOX((publishingConstants
-									.getNumOfBooksRecentNOX() + 1));
+					.setNumOfBooksRecentNOX((publishingConstants
+							.getNumOfBooksRecentNOX() + 1));
 				} else if (publicationYear >= year
 						- timeScale.getIntermediateYears()
 						&& publicationYear < year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfBooksIntermediateNXY(publishingConstants
-									.getNumOfBooksIntermediateNXY() + 1);
+					.setNumOfBooksIntermediateNXY(publishingConstants
+							.getNumOfBooksIntermediateNXY() + 1);
 				} else {
 					publishingConstants.setNumOfBooksOldNYZ(publishingConstants
 							.getNumOfBooksOldNYZ() + 1);
@@ -382,18 +382,18 @@ public class DBLPTrustProcessor {
 
 				if (publicationYear >= year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfIncollectionRecentNOX(publishingConstants
-									.getNumOfIncollectionRecentNOX() + 1);
+					.setNumOfIncollectionRecentNOX(publishingConstants
+							.getNumOfIncollectionRecentNOX() + 1);
 				} else if (publicationYear >= year
 						- timeScale.getIntermediateYears()
 						&& publicationYear < year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfIncollectionIntermediateNXY(publishingConstants
-									.getNumOfIncollectionIntermediateNXY() + 1);
+					.setNumOfIncollectionIntermediateNXY(publishingConstants
+							.getNumOfIncollectionIntermediateNXY() + 1);
 				} else {
 					publishingConstants
-							.setNumOfIncollectionOldNYZ(publishingConstants
-									.getNumOfIncollectionOldNYZ() + 1);
+					.setNumOfIncollectionOldNYZ(publishingConstants
+							.getNumOfIncollectionOldNYZ() + 1);
 				}
 				kCitePower.setNumberOfCitationsIC(kCitePower
 						.getNumberOfCitationsIC() + numberOfCitations);
@@ -402,18 +402,18 @@ public class DBLPTrustProcessor {
 
 				if (publicationYear >= year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfInProceedingRecentNOX(publishingConstants
-									.getNumOfInProceedingRecentNOX() + 1);
+					.setNumOfInProceedingRecentNOX(publishingConstants
+							.getNumOfInProceedingRecentNOX() + 1);
 				} else if (publicationYear >= year
 						- timeScale.getIntermediateYears()
 						&& publicationYear < year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfInProceedingIntermediateNXY(publishingConstants
-									.getNumOfInProceedingIntermediateNXY() + 1);
+					.setNumOfInProceedingIntermediateNXY(publishingConstants
+							.getNumOfInProceedingIntermediateNXY() + 1);
 				} else {
 					publishingConstants
-							.setNumOfInProceedingOldNYZ(publishingConstants
-									.getNumOfInProceedingOldNYZ());
+					.setNumOfInProceedingOldNYZ(publishingConstants
+							.getNumOfInProceedingOldNYZ());
 				}
 				kCitePower.setNumberOfCitationsIP(kCitePower
 						.getNumberOfCitationsIP() + numberOfCitations);
@@ -423,18 +423,18 @@ public class DBLPTrustProcessor {
 
 				if (publicationYear >= year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfMasterThesisRecentNOX(publishingConstants
-									.getNumOfMasterThesisRecentNOX());
+					.setNumOfMasterThesisRecentNOX(publishingConstants
+							.getNumOfMasterThesisRecentNOX());
 				} else if (publicationYear >= year
 						- timeScale.getIntermediateYears()
 						&& publicationYear < year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfMasterThesisIntermediateNXY(publishingConstants
-									.getNumOfMasterThesisIntermediateNXY() + 1);
+					.setNumOfMasterThesisIntermediateNXY(publishingConstants
+							.getNumOfMasterThesisIntermediateNXY() + 1);
 				} else {
 					publishingConstants
-							.setNumOfMasterThesisOldNYZ(publishingConstants
-									.getNumOfMasterThesisOldNYZ() + 1);
+					.setNumOfMasterThesisOldNYZ(publishingConstants
+							.getNumOfMasterThesisOldNYZ() + 1);
 				}
 				kCitePower.setNumberOfCitationsM(kCitePower
 						.getNumberOfCitationsM() + numberOfCitations);
@@ -443,18 +443,18 @@ public class DBLPTrustProcessor {
 
 				if (publicationYear >= year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfPhdThesisRecentNOX(publishingConstants
-									.getNumOfPhdThesisRecentNOX() + 1);
+					.setNumOfPhdThesisRecentNOX(publishingConstants
+							.getNumOfPhdThesisRecentNOX() + 1);
 				} else if (publicationYear >= year
 						- timeScale.getIntermediateYears()
 						&& publicationYear < year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfPhdThesisIntermediateNXY(publishingConstants
-									.getNumOfPhdThesisIntermediateNXY() + 1);
+					.setNumOfPhdThesisIntermediateNXY(publishingConstants
+							.getNumOfPhdThesisIntermediateNXY() + 1);
 				} else {
 					publishingConstants
-							.setNumOfPhdThesisOldNYZ(publishingConstants
-									.getNumOfPhdThesisOldNYZ() + 1);
+					.setNumOfPhdThesisOldNYZ(publishingConstants
+							.getNumOfPhdThesisOldNYZ() + 1);
 				}
 				kCitePower.setNumberOfCitationsP(kCitePower
 						.getNumberOfCitationsP() + numberOfCitations);
@@ -463,18 +463,18 @@ public class DBLPTrustProcessor {
 
 				if (publicationYear >= year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfProceedingRecentNOX(publishingConstants
-									.getNumOfProceedingRecentNOX() + 1);
+					.setNumOfProceedingRecentNOX(publishingConstants
+							.getNumOfProceedingRecentNOX() + 1);
 				} else if (publicationYear >= year
 						- timeScale.getIntermediateYears()
 						&& publicationYear < year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfProceedingIntermediateNXY(publishingConstants
-									.getNumOfProceedingIntermediateNXY() + 1);
+					.setNumOfProceedingIntermediateNXY(publishingConstants
+							.getNumOfProceedingIntermediateNXY() + 1);
 				} else {
 					publishingConstants
-							.setNumOfProceedingOldNYZ(publishingConstants
-									.getNumOfProceedingOldNYZ() + 1);
+					.setNumOfProceedingOldNYZ(publishingConstants
+							.getNumOfProceedingOldNYZ() + 1);
 				}
 				kCitePower.setNumberOfCitationsPH(kCitePower
 						.getNumberOfCitationsPH() + numberOfCitations);
@@ -483,14 +483,14 @@ public class DBLPTrustProcessor {
 
 				if (publicationYear >= year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfWWWRecentNOX(publishingConstants
-									.getNumOfWWWRecentNOX() + 1);
+					.setNumOfWWWRecentNOX(publishingConstants
+							.getNumOfWWWRecentNOX() + 1);
 				} else if (publicationYear >= year
 						- timeScale.getIntermediateYears()
 						&& publicationYear < year - timeScale.getRecentYears()) {
 					publishingConstants
-							.setNumOfWWWIntermediateNXY(publishingConstants
-									.getNumOfWWWIntermediateNXY() + 1);
+					.setNumOfWWWIntermediateNXY(publishingConstants
+							.getNumOfWWWIntermediateNXY() + 1);
 				} else {
 					publishingConstants.setNumOfWWWOldNYZ(publishingConstants
 							.getNumOfWWWOldNYZ() + 1);
@@ -499,7 +499,7 @@ public class DBLPTrustProcessor {
 						.getNumberOfCitationsW() + numberOfCitations);
 			}
 		}
-		
+
 		kPaperPublished = publishingConstants.getAlphaArticle()
 				* (timeScale.gettRecent()
 						* publishingConstants.getNumOfArticleRecentNOX()
@@ -507,90 +507,90 @@ public class DBLPTrustProcessor {
 						* publishingConstants.getNumOfArticleIntermediateNXY() + timeScale
 						.gettOld()
 						* publishingConstants.getNumOfArticleOldNYZ())
-				+ publishingConstants.getAlphaBook()
-				* (timeScale.gettRecent()
-						* publishingConstants.getNumOfBooksRecentNOX()
-						+ timeScale.gettIntermediate()
-						* publishingConstants.getNumOfBooksIntermediateNXY() + timeScale
-						.gettOld() * publishingConstants.getNumOfBooksOldNYZ())
-				+ publishingConstants.getAlphaInCollection()
-				* (timeScale.gettRecent()
-						* publishingConstants.getNumOfIncollectionRecentNOX()
-						+ timeScale.gettIntermediate()
-						* publishingConstants
-								.getNumOfIncollectionIntermediateNXY() + timeScale
-						.gettOld()
-						* publishingConstants.getNumOfIncollectionOldNYZ())
-				+ publishingConstants.getAlphaInProceeding()
-				* (timeScale.gettRecent()
-						* publishingConstants.getNumOfInProceedingRecentNOX()
-						+ timeScale.gettIntermediate()
-						* publishingConstants
-								.getNumOfInProceedingIntermediateNXY() + timeScale
-						.gettOld()
-						* publishingConstants.getNumOfInProceedingOldNYZ())
-				+ publishingConstants.getAlphaMasterThesis()
-				* (timeScale.gettRecent()
-						* publishingConstants.getNumOfMasterThesisRecentNOX()
-						+ timeScale.gettIntermediate()
-						* publishingConstants
-								.getNumOfMasterThesisIntermediateNXY() + timeScale
-						.gettOld()
-						* publishingConstants.getNumOfMasterThesisOldNYZ())
-				+ publishingConstants.getAlphaPhdThesis()
-				* (timeScale.gettRecent()
-						* publishingConstants.getNumOfPhdThesisRecentNOX()
-						+ timeScale.gettIntermediate()
-						* publishingConstants
-								.getNumOfPhdThesisIntermediateNXY() + timeScale
-						.gettOld()
-						* publishingConstants.getNumOfPhdThesisOldNYZ())
-				+ publishingConstants.getAlphaProceeding()
-				* (timeScale.gettRecent()
-						* publishingConstants.getNumOfProceedingRecentNOX()
-						+ timeScale.gettIntermediate()
-						* publishingConstants
-								.getNumOfProceedingIntermediateNXY() + timeScale
-						.gettOld()
-						* publishingConstants.getNumOfProceedingOldNYZ())
-				+ publishingConstants.getAlphaWWW()
-				* (timeScale.gettRecent()
-						* publishingConstants.getNumOfWWWRecentNOX()
-						+ timeScale.gettIntermediate()
-						* publishingConstants.getNumOfWWWIntermediateNXY() + timeScale
-						.gettOld() * publishingConstants.getNumOfWWWOldNYZ())
-				+ publishingConstants.getAlphaArticle()
-				* kCitePower.getNumberOfCitationsA()
-				+ publishingConstants.getAlphaBook()
-				* kCitePower.getNumberOfCitationsB()
-				+ publishingConstants.getAlphaInCollection()
-				* kCitePower.getNumberOfCitationsIC()
-				+ publishingConstants.getAlphaInProceeding()
-				* kCitePower.getNumberOfCitationsIP()
-				+ publishingConstants.getAlphaMasterThesis()
-				* kCitePower.getNumberOfCitationsM()
-				+ publishingConstants.getAlphaPhdThesis()
-				* kCitePower.getNumberOfCitationsPH()
-				+ publishingConstants.getAlphaProceeding()
-				* kCitePower.getNumberOfCitationsP()
-				+ publishingConstants.getAlphaWWW()
-				* kCitePower.getNumberOfCitationsW();
+						+ publishingConstants.getAlphaBook()
+						* (timeScale.gettRecent()
+								* publishingConstants.getNumOfBooksRecentNOX()
+								+ timeScale.gettIntermediate()
+								* publishingConstants.getNumOfBooksIntermediateNXY() + timeScale
+								.gettOld() * publishingConstants.getNumOfBooksOldNYZ())
+								+ publishingConstants.getAlphaInCollection()
+								* (timeScale.gettRecent()
+										* publishingConstants.getNumOfIncollectionRecentNOX()
+										+ timeScale.gettIntermediate()
+										* publishingConstants
+										.getNumOfIncollectionIntermediateNXY() + timeScale
+										.gettOld()
+										* publishingConstants.getNumOfIncollectionOldNYZ())
+										+ publishingConstants.getAlphaInProceeding()
+										* (timeScale.gettRecent()
+												* publishingConstants.getNumOfInProceedingRecentNOX()
+												+ timeScale.gettIntermediate()
+												* publishingConstants
+												.getNumOfInProceedingIntermediateNXY() + timeScale
+												.gettOld()
+												* publishingConstants.getNumOfInProceedingOldNYZ())
+												+ publishingConstants.getAlphaMasterThesis()
+												* (timeScale.gettRecent()
+														* publishingConstants.getNumOfMasterThesisRecentNOX()
+														+ timeScale.gettIntermediate()
+														* publishingConstants
+														.getNumOfMasterThesisIntermediateNXY() + timeScale
+														.gettOld()
+														* publishingConstants.getNumOfMasterThesisOldNYZ())
+														+ publishingConstants.getAlphaPhdThesis()
+														* (timeScale.gettRecent()
+																* publishingConstants.getNumOfPhdThesisRecentNOX()
+																+ timeScale.gettIntermediate()
+																* publishingConstants
+																.getNumOfPhdThesisIntermediateNXY() + timeScale
+																.gettOld()
+																* publishingConstants.getNumOfPhdThesisOldNYZ())
+																+ publishingConstants.getAlphaProceeding()
+																* (timeScale.gettRecent()
+																		* publishingConstants.getNumOfProceedingRecentNOX()
+																		+ timeScale.gettIntermediate()
+																		* publishingConstants
+																		.getNumOfProceedingIntermediateNXY() + timeScale
+																		.gettOld()
+																		* publishingConstants.getNumOfProceedingOldNYZ())
+																		+ publishingConstants.getAlphaWWW()
+																		* (timeScale.gettRecent()
+																				* publishingConstants.getNumOfWWWRecentNOX()
+																				+ timeScale.gettIntermediate()
+																				* publishingConstants.getNumOfWWWIntermediateNXY() + timeScale
+																				.gettOld() * publishingConstants.getNumOfWWWOldNYZ())
+																				+ publishingConstants.getAlphaArticle()
+																				* kCitePower.getNumberOfCitationsA()
+																				+ publishingConstants.getAlphaBook()
+																				* kCitePower.getNumberOfCitationsB()
+																				+ publishingConstants.getAlphaInCollection()
+																				* kCitePower.getNumberOfCitationsIC()
+																				+ publishingConstants.getAlphaInProceeding()
+																				* kCitePower.getNumberOfCitationsIP()
+																				+ publishingConstants.getAlphaMasterThesis()
+																				* kCitePower.getNumberOfCitationsM()
+																				+ publishingConstants.getAlphaPhdThesis()
+																				* kCitePower.getNumberOfCitationsPH()
+																				+ publishingConstants.getAlphaProceeding()
+																				* kCitePower.getNumberOfCitationsP()
+																				+ publishingConstants.getAlphaWWW()
+																				* kCitePower.getNumberOfCitationsW();
 
 		publishingConstants.setFinalKPaperPublished(Math.ceil(kPaperPublished));
 		return publishingConstants;
 	}
-	
+
 	public ArrayList<DBLPUser> getAuthorsFromContext(String context) throws SAXException {
 		ArrayList<DBLPUser> result = new ArrayList<DBLPUser>();
-		
+
 		HashMap<String,DBLPUser> dblp;
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset();
-		
+
 		for(String key : dblp.keySet()) {
 			DBLPUser user = dblp.get(key);
 			List<Publication> publications = user.getPublication();
-			
+
 			for(Publication p : publications) {
 				if(StringUtils.containsIgnoreCase(p.getTitle(), context)) {
 					result.add(user);
@@ -600,7 +600,56 @@ public class DBLPTrustProcessor {
 		}
 		return result;
 	}
-	
+
+	public Double getTrustValueFromName(String name) throws SAXException, JAXBException {
+		DBLPTrustProcessor dblpTrustProcessor = new DBLPTrustProcessor();
+		List<String> expertNames = new ArrayList<String>();
+		expertNames.add(name);
+		DBLPTrustModel dblpTrustModel = dblpTrustProcessor
+				.expertTrustMatrix(expertNames).get(0);
+		DBLPKnowledgeFactor dblpKnowledgeFactor = dblpTrustModel
+				.getDblpKnowledgeFactor();
+		DBLPSocialFactor dblpSocialFactor = dblpTrustModel.getDblpSocialFactor();
+
+		KPaperPublished kPaperPublished = dblpKnowledgeFactor
+				.getkPaperPublished();
+		KCoauthorship kCoauthorship = dblpSocialFactor.getkCoauthorship();
+		return dblpTrustModel.getTrustValue();
+	}
+
+	public HashMap<String, Double> getIndividualTrustComponentsByName(String name) throws SAXException, JAXBException {
+		HashMap<String, Double> result = new HashMap<String, Double>();
+
+		DBLPTrustProcessor dblpTrustProcessor = new DBLPTrustProcessor();
+		List<String> expertNames = new ArrayList<String>();
+		expertNames.add(name);
+		DBLPTrustModel dblpTrustModel = dblpTrustProcessor
+				.expertTrustMatrix(expertNames).get(0);
+		DBLPKnowledgeFactor dblpKnowledgeFactor = dblpTrustModel
+				.getDblpKnowledgeFactor();
+		DBLPSocialFactor dblpSocialFactor = dblpTrustModel.getDblpSocialFactor();
+
+		KPaperPublished kPaperPublished = dblpKnowledgeFactor
+				.getkPaperPublished();
+		KCoauthorship kCoauthorship = dblpSocialFactor.getkCoauthorship();
+		// KCitePower kCitePower = kPaperPublished.getkCitePower();
+		/**System.out.println("Trust Value for Charles: "
+				+ dblpTrustModel.getTrustValue());
+		System.out.println("Value of KPaperPublished: "
+				+ kPaperPublished.getFinalKPaperPublished());
+		System.out.println("Value of coauthorships: "
+				+ kCoauthorship.getTimeScaledCoauthorship());
+		System.out.println("Set of coauthorship edges: "
+				+ kCoauthorship.getCoauthorIdToSocialFactorFromCoauthor()
+						.values());*/
+
+		result.put("KPaperPublished", kPaperPublished.getFinalKPaperPublished());
+		result.put("KCoAuthorship", kCoauthorship.getTimeScaledCoauthorship());
+		result.put("TotalTrust", dblpTrustModel.getTrustValue());
+
+		return result;
+	}
+
 	public static void main(String args[]) throws SAXException, JAXBException {
 		DBLPTrustProcessor dblpTrustProcessor = new DBLPTrustProcessor();
 		List<String> expertNames = new ArrayList<String>();
@@ -610,7 +659,7 @@ public class DBLPTrustProcessor {
 		DBLPKnowledgeFactor dblpKnowledgeFactor = dblpTrustModel
 				.getDblpKnowledgeFactor();
 		DBLPSocialFactor dblpSocialFactor = dblpTrustModel.getDblpSocialFactor();
-		
+
 		KPaperPublished kPaperPublished = dblpKnowledgeFactor
 				.getkPaperPublished();
 		KCoauthorship kCoauthorship = dblpSocialFactor.getkCoauthorship();
@@ -630,7 +679,7 @@ public class DBLPTrustProcessor {
 				+ kCoauthorship.getTimeScaledCoauthorship());
 		System.out.println("Set of coauthorship edges: "
 				+ kCoauthorship.getCoauthorIdToSocialFactorFromCoauthor()
-						.values());
+				.values());
 
 	}
 }

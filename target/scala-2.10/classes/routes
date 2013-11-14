@@ -19,7 +19,10 @@ GET     /getGraphWithRender/:name/:level  					controllers.Application.getGraphW
 GET		/getCoAuthorInformation/:name						controllers.Application.getCoAuthorInformation(name : String)
 
 #
-#GET		/getReputation/:name/:topic							controllers.Application.getReputationForTopic(name : String, topic : String)
+GET		/getReputation/:name								controllers.Application.getReputationForAuthor(name : String)
+
+#
+#GET	/getReputationForTopic/:name/:topic					controllers.Application.getReputationForAuthorByTopic(name : String, topic : String)
 
 #
 GET		/getSocialNetwork/:name								controllers.Application.getSocialNetwork(name : String)

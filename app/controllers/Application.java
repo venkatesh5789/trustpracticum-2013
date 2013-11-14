@@ -32,6 +32,7 @@ import edu.cmu.DBLPProcessor.Publication;
 import edu.cmu.dataset.DBLPDataSource;
 import edu.cmu.dataset.DatasetInterface;
 import edu.cmu.jung.Node;
+import edu.cmu.trustprocessor.DBLPTrustProcessor;
 import edu.uci.ics.jung.algorithms.layout.CircleLayout;
 import edu.uci.ics.jung.visualization.VisualizationViewer;
 import edu.uci.ics.jung.visualization.renderers.Renderer.VertexLabel.Position;
@@ -273,6 +274,14 @@ public class Application extends Controller {
 	public static Result getSocialNetwork(String name) throws JAXBException, SAXException {
 		return ok(
 				show.render(myGraph(name, UserCoAuthorSubgraph.GENERATE_FULL_SUBGRAPH, 0).toString())
+				);	
+	}
+	
+	public static Result getReputationForAuthor(String name) throws SAXException, JAXBException {
+		DBLPTrustProcessor trustprocessor = new DBLPTrustProcessor();
+		Double trust = trustprocessor.getTrustValueFromName(name);
+		return ok(
+				trust.toString()
 				);	
 	}
 
