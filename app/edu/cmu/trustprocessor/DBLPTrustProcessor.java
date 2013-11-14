@@ -3,7 +3,9 @@ package edu.cmu.trustprocessor;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Set;
 
 import javax.xml.bind.JAXBException;
@@ -277,8 +279,10 @@ public class DBLPTrustProcessor {
 		DBLPUser author = getDBLPUserFromID((long) authorId);
 		List<CoauthorshipEdge> result = new ArrayList<CoauthorshipEdge>();
 		List<Coauthorship> coauthors = author.getCoAuthors();
+		ListIterator<Coauthorship> iterator = coauthors.listIterator();
 		
-		for(Coauthorship c : coauthors) {
+		while(iterator.hasNext()) {
+			Coauthorship c = iterator.next();
 			CoauthorshipEdge singleEdge = new CoauthorshipEdge();
 			singleEdge.setUserId(authorId);
 			singleEdge.setCoauthorId(c.getCoauthorid());
@@ -297,7 +301,26 @@ public class DBLPTrustProcessor {
 			
 			result.add(singleEdge);
 		}
-		
+//		for(Coauthorship c : coauthors) {
+//			CoauthorshipEdge singleEdge = new CoauthorshipEdge();
+//			singleEdge.setUserId(authorId);
+//			singleEdge.setCoauthorId(c.getCoauthorid());
+//			singleEdge.setMappingId(c.getCoauthorshipid());
+//			
+//			List<String> stringDates = c.getDate();
+//			List<Integer> intDates = new ArrayList<Integer>(); 
+//			
+//			if(stringDates != null)
+//				for(String date: stringDates) {
+//					if(date != null)
+//					intDates.add(Integer.parseInt(date));
+//				}
+//			
+//			singleEdge.setCoauthorshipDates(intDates);
+//			
+//			result.add(singleEdge);
+//		}
+//		
 		return result;
 	}
 
@@ -581,7 +604,7 @@ public class DBLPTrustProcessor {
 	public static void main(String args[]) throws SAXException, JAXBException {
 		DBLPTrustProcessor dblpTrustProcessor = new DBLPTrustProcessor();
 		List<String> expertNames = new ArrayList<String>();
-		expertNames.add("Javier Chorro");
+		expertNames.add("Werner John");
 		DBLPTrustModel dblpTrustModel = dblpTrustProcessor
 				.expertTrustMatrix(expertNames).get(0);
 		DBLPKnowledgeFactor dblpKnowledgeFactor = dblpTrustModel

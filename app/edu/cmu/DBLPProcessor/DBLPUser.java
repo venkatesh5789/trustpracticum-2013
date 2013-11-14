@@ -102,6 +102,10 @@ public class DBLPUser {
 			long coauthorshipid = coauthorshipObject.getCoauthorshipid();
 			//String filename = "DBLP_XML/coauthorship"+coauthorshipid+".xml";
 			//writeXMLCoauthorship(coauthorshipObject, filename);
+			for(Publication p:publication) {
+				coauthorshipObject.setDate(p.getYear());
+			}
+			
 			coauthorshipObject.setPublicationList(publication);
 			this.coauthorship.add(coauthorshipid);
 			this.coAuthors.add(coauthorshipObject);

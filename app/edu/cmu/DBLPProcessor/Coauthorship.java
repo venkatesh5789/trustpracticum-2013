@@ -16,7 +16,7 @@ public class Coauthorship {
 	private int userid;
 	private int coauthorid;
 	private int count;
-	private List<String> date;
+	private List<String> date = new ArrayList<String>();
 	private List<Publication> publicationList = new ArrayList<Publication>();
 	
 	public Coauthorship() {

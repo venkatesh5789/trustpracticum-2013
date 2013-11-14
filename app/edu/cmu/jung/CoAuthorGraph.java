@@ -44,6 +44,7 @@ public class CoAuthorGraph {
 	List<Node> nodes = new ArrayList<Node>();
 	HashMap<String,DBLPUser> dblp;
 
+	@SuppressWarnings("unchecked")
 	public CoAuthorGraph() throws SAXException {   
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset();		
