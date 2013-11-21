@@ -27,7 +27,7 @@ public class DBLPUser {
 	private List<Publication> publication;
 	private List<Long> coauthorship;
 	private List<Coauthorship> coAuthors = new ArrayList<Coauthorship>();
-	
+	private List<String> interestFields = new ArrayList<String>();
 	
 	public DBLPUser() {
 		super();
@@ -144,4 +144,13 @@ public class DBLPUser {
 		File file = new File(filename);
 		m.marshal(coauthorship, file);
 	}
+	
+	public List<String> getInterestFields() {
+		return interestFields;
+	}
+
+	public void setInterestFields(List<String> interestFields) {
+		this.interestFields = interestFields;
+	}
+
 }
