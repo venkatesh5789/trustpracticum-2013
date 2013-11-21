@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import javax.xml.bind.JAXBException;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
@@ -34,7 +35,7 @@ public class TrustModelIntegration {
 		this.socialFactorWeight = socialFactorWeight;
 	}
 
-	public static void main() throws SAXException, JAXBException {
+	public static void main() throws SAXException, JAXBException, ParserConfigurationException {
 		
 		ArrayList<String> userNames = new ArrayList<String>();
 		File file = new File("mappedcommondatasets.txt");

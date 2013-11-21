@@ -16,6 +16,7 @@ import java.util.Scanner;
 
 import javax.swing.JFrame;
 import javax.xml.bind.JAXBException;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.commons.collections15.Transformer;
 import org.hibernate.validator.constraints.Length;
@@ -53,7 +54,7 @@ public class UserCoAuthorSubgraph {
 	List<Node> nodes = new ArrayList<Node>();
 	HashMap<String,DBLPUser> dblp;
 
-	public UserCoAuthorSubgraph() throws SAXException {   
+	public UserCoAuthorSubgraph() throws SAXException, ParserConfigurationException {   
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset();		
 	}
@@ -155,8 +156,9 @@ public class UserCoAuthorSubgraph {
 	 * @param args the command line arguments
 	 * @throws JAXBException 
 	 * @throws SAXException 
+	 * @throws ParserConfigurationException 
 	 */
-	public static void main(String[] args) throws JAXBException, SAXException {
+	public static void main(String[] args) throws JAXBException, SAXException, ParserConfigurationException {
 		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph();
 		String inputAuthor;
 		int noOfLevels;

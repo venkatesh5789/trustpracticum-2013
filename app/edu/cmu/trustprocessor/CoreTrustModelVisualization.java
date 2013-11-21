@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import javax.xml.bind.JAXBException;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
@@ -21,7 +22,7 @@ import edu.cmu.jung.Edge;
 import edu.cmu.jung.Node;
 
 public class CoreTrustModelVisualization {
-	public CoreTrustModelVisualization() throws SAXException, JAXBException {
+	public CoreTrustModelVisualization() throws SAXException, JAXBException, ParserConfigurationException {
 		String path = "";
 		List<String> developerList;
 		developerList = new ArrayList<String>();
@@ -136,7 +137,7 @@ public class CoreTrustModelVisualization {
 		}
 	}
 
-	public static void main(String[] args) throws SAXException, JAXBException {
+	public static void main(String[] args) throws SAXException, JAXBException, ParserConfigurationException {
 		CoreTrustModelVisualization coreTrustModelVisualization = new CoreTrustModelVisualization();
 	}
 }

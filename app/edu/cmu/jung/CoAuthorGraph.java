@@ -12,6 +12,7 @@ import java.util.List;
 
 import javax.swing.JFrame;
 import javax.xml.bind.JAXBException;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.apache.commons.collections15.Transformer;
 import org.xml.sax.SAXException;
@@ -28,7 +29,6 @@ import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.SparseMultigraph;
 import edu.uci.ics.jung.graph.util.EdgeType;
 import edu.uci.ics.jung.visualization.VisualizationViewer;
-import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
 import edu.uci.ics.jung.visualization.renderers.Renderer.VertexLabel.Position;
 
 /**
@@ -45,7 +45,7 @@ public class CoAuthorGraph {
 	HashMap<String,DBLPUser> dblp;
 
 	@SuppressWarnings("unchecked")
-	public CoAuthorGraph() throws SAXException {   
+	public CoAuthorGraph() throws SAXException, ParserConfigurationException {   
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset();		
 	}
@@ -98,8 +98,9 @@ public class CoAuthorGraph {
 	 * @param args the command line arguments
 	 * @throws JAXBException 
 	 * @throws SAXException 
+	 * @throws ParserConfigurationException 
 	 */
-	public static void main(String[] args) throws JAXBException, SAXException {
+	public static void main(String[] args) throws JAXBException, SAXException, ParserConfigurationException {
 		CoAuthorGraph myApp = new CoAuthorGraph();
 		myApp.constructGraph();
 		//System.out.println(myApp.g.toString());

@@ -9,6 +9,7 @@ import java.util.ListIterator;
 import java.util.Set;
 
 import javax.xml.bind.JAXBException;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
@@ -32,7 +33,7 @@ public class DBLPTrustProcessor {
 	 */
 
 	public HashMap<String, DBLPTrustModel> calculateDeveloperTrustMatrix(
-			List<String> developerList, String context) throws SAXException, JAXBException {
+			List<String> developerList, String context) throws SAXException, JAXBException, ParserConfigurationException {
 
 		HashMap<String, DBLPTrustModel> developerNameMappedToTrustModelValue = new HashMap<String, DBLPTrustModel>();
 
@@ -66,7 +67,7 @@ public class DBLPTrustProcessor {
 
 	}
 
-	public ArrayList<DBLPTrustModel> expertTrustMatrix(List<String> expertNames) throws SAXException, JAXBException {
+	public ArrayList<DBLPTrustModel> expertTrustMatrix(List<String> expertNames) throws SAXException, JAXBException, ParserConfigurationException {
 
 		ArrayList<DBLPTrustModel> expertTrustModelList = new ArrayList<DBLPTrustModel>();
 
@@ -89,7 +90,7 @@ public class DBLPTrustProcessor {
 
 	}
 
-	private DBLPUser getDBLPUserFromName(String name) throws SAXException {
+	private DBLPUser getDBLPUserFromName(String name) throws SAXException, ParserConfigurationException {
 		DBLPUser result = new DBLPUser();
 
 		HashMap<String,DBLPUser> dblp;
@@ -106,7 +107,7 @@ public class DBLPTrustProcessor {
 		return null;
 	}
 
-	public ArrayList<DBLPTrustModel> trustModelForAuthorIds(ArrayList<Long> authorIdList) throws SAXException, JAXBException {
+	public ArrayList<DBLPTrustModel> trustModelForAuthorIds(ArrayList<Long> authorIdList) throws SAXException, JAXBException, ParserConfigurationException {
 
 		ArrayList<DBLPTrustModel> expertTrustModelList = new ArrayList<DBLPTrustModel>();
 
@@ -129,7 +130,7 @@ public class DBLPTrustProcessor {
 	}
 
 
-	private DBLPUser getDBLPUserFromID(Long id) throws SAXException {
+	private DBLPUser getDBLPUserFromID(Long id) throws SAXException, ParserConfigurationException {
 		DBLPUser result = new DBLPUser();
 
 		HashMap<String,DBLPUser> dblp;
@@ -146,7 +147,7 @@ public class DBLPTrustProcessor {
 		return null;
 	}
 
-	public DBLPTrustModel calculateDBLPTrustFactor(DBLPUser dblpUser) throws SAXException, JAXBException {
+	public DBLPTrustModel calculateDBLPTrustFactor(DBLPUser dblpUser) throws SAXException, JAXBException, ParserConfigurationException {
 		DBLPTrustModel dblpTrustModel = new DBLPTrustModel();
 
 		// ///// Knowledge Factor ///////////
@@ -213,7 +214,7 @@ public class DBLPTrustProcessor {
 	// return kCoauthorship;
 	// }
 
-	private KCoauthorship calculateKCoauthorship(int authorId) throws SAXException, JAXBException {
+	private KCoauthorship calculateKCoauthorship(int authorId) throws SAXException, JAXBException, ParserConfigurationException {
 		double coauthorshipCount = 0;
 
 		TimeScale timeScale = new TimeScale();
@@ -275,7 +276,7 @@ public class DBLPTrustProcessor {
 		return kCoauthorship;
 	}
 
-	private List<CoauthorshipEdge> getCoAuthorshipEdgeList(int authorId) throws SAXException, JAXBException {
+	private List<CoauthorshipEdge> getCoAuthorshipEdgeList(int authorId) throws SAXException, JAXBException, ParserConfigurationException {
 		DBLPUser author = getDBLPUserFromID((long) authorId);
 		List<CoauthorshipEdge> result = new ArrayList<CoauthorshipEdge>();
 		List<Coauthorship> coauthors = author.getCoAuthors();
@@ -580,7 +581,7 @@ public class DBLPTrustProcessor {
 		return publishingConstants;
 	}
 
-	public ArrayList<DBLPUser> getAuthorsFromContext(String context) throws SAXException {
+	public ArrayList<DBLPUser> getAuthorsFromContext(String context) throws SAXException, ParserConfigurationException {
 		ArrayList<DBLPUser> result = new ArrayList<DBLPUser>();
 
 		HashMap<String,DBLPUser> dblp;
@@ -601,7 +602,7 @@ public class DBLPTrustProcessor {
 		return result;
 	}
 
-	public Double getTrustValueFromName(String name) throws SAXException, JAXBException {
+	public Double getTrustValueFromName(String name) throws SAXException, JAXBException, ParserConfigurationException {
 		DBLPTrustProcessor dblpTrustProcessor = new DBLPTrustProcessor();
 		List<String> expertNames = new ArrayList<String>();
 		expertNames.add(name);
@@ -617,7 +618,7 @@ public class DBLPTrustProcessor {
 		return dblpTrustModel.getTrustValue();
 	}
 
-	public HashMap<String, Double> getIndividualTrustComponentsByName(String name) throws SAXException, JAXBException {
+	public HashMap<String, Double> getIndividualTrustComponentsByName(String name) throws SAXException, JAXBException, ParserConfigurationException {
 		HashMap<String, Double> result = new HashMap<String, Double>();
 
 		DBLPTrustProcessor dblpTrustProcessor = new DBLPTrustProcessor();
@@ -650,7 +651,7 @@ public class DBLPTrustProcessor {
 		return result;
 	}
 
-	public static void main(String args[]) throws SAXException, JAXBException {
+	public static void main(String args[]) throws SAXException, JAXBException, ParserConfigurationException {
 		DBLPTrustProcessor dblpTrustProcessor = new DBLPTrustProcessor();
 		List<String> expertNames = new ArrayList<String>();
 		expertNames.add("Werner John");

@@ -8,18 +8,16 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.Map;
 import java.util.Set;
 
-import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.sax.SAXSource;
 
@@ -28,21 +26,24 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
 
 import com.google.common.collect.LinkedHashMultimap;
+
+import edu.cmu.DBLPProcessor.Article;
+import edu.cmu.DBLPProcessor.Book;
+import edu.cmu.DBLPProcessor.DBLPUser;
+import edu.cmu.DBLPProcessor.Incollection;
+import edu.cmu.DBLPProcessor.Inproceedings;
+import edu.cmu.DBLPProcessor.Mastersthesis;
+import edu.cmu.DBLPProcessor.Phdthesis;
+import edu.cmu.DBLPProcessor.Proceedings;
+import edu.cmu.DBLPProcessor.Publication;
+import edu.cmu.DBLPProcessor.Www;
+
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 import org.xml.sax.Attributes;
-import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
-import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
-import org.xml.sax.helpers.XMLReaderFactory;
-import play.Play;
-
-
-import scala.reflect.io.VirtualFile;
 
 /**
  * @author NASA-Trust-Team
@@ -65,20 +66,15 @@ public class DBLPParser {
 	public static Map<String,Integer> mapUserNameId = new HashMap<String,Integer>();
 	public static Map<String,String> mapKeyTitle = new HashMap<String,String>();
 
-	public static Map<String,DBLPUser> parseDBLP() throws JAXBException, IOException, SAXException {
-		//This is main code for DBLP parser
+	public static Map<String,DBLPUser> parseDBLP() throws JAXBException, IOException, SAXException, ParserConfigurationException {
 		DBLPParser dblpParser = new DBLPParser();
 		//dblpParser.parseDBLPXML(Play.application().path().getPath() + "/../../.." + "/public/dblp_example.xml");
 		dblpParser.parseDBLPXML("dblp_example.xml");
-		//		dblpParser.parseDBLPXML("xaa.xml");
-		//		dblpParser.parseDBLP("xab.xml");
-		//		dblpParser.parseDBLP("xac.xml");
-		//		dblpParser.parseDBLP("xad.xml");
-		//		dblpParser.parseDBLP("xae.xml");
 		//dblpParser.getCSVFile(Play.application().path().getPath() + "/../../.." + "/public/dblp_example.xml");
 		dblpParser.getCSVFile("dblp_example.xml");
 		printParseDBLPXML();
 		parseAuthor(); //without citations
+		getPriorPublicationsXML("dblp_example.xml", 2009, "modified_dblp.xml");
 		System.out.println("Author : "+dblpUserList.size());
 		Set<String> hs = dblpUserList.keySet();
 		Iterator it = hs.iterator();
@@ -99,19 +95,8 @@ public class DBLPParser {
 		m.marshal(publication, file);		
 	}
 
-	public static void xmlWriter(DBLPElement dblp, String filename, String type) 
-			throws JAXBException, IOException
-			{
+	public static void xmlWriter(DBLPElement dblp, String filename, String type) throws JAXBException, IOException {
 		JAXBContext context = JAXBContext.newInstance(Publication.class);
-		//		JAXBContext context = null;
-		//		if(type.equalsIgnoreCase("article"))context = JAXBContext.newInstance(ConvertedArticle.class);
-		//		else if(type.equalsIgnoreCase("book"))context = JAXBContext.newInstance(ConvertedBook.class);
-		//		else if(type.equalsIgnoreCase("incollection"))context = JAXBContext.newInstance(ConvertedIncollection.class);
-		//		else if(type.equalsIgnoreCase("inproceedings"))context = JAXBContext.newInstance(ConvertedInproceedings.class);
-		//		else if(type.equalsIgnoreCase("mastersthesis"))context = JAXBContext.newInstance(ConvertedMastersthesis.class);
-		//		else if(type.equalsIgnoreCase("phdthesis"))context = JAXBContext.newInstance(ConvertedPhdthesis.class);
-		//		else if(type.equalsIgnoreCase("proceedings"))context = JAXBContext.newInstance(ConvertedProceedings.class);
-		//		else if(type.equalsIgnoreCase("www"))context = JAXBContext.newInstance(ConvertedWww.class);
 		Marshaller m = context.createMarshaller();
 		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 		File file = null;
@@ -870,104 +855,141 @@ public class DBLPParser {
 		r = new FileReader(fileName);
 		xr.parse(new InputSource(r));
 	}
-	
-	public static void getPriorPublicationsXML(int year) throws JAXBException, IOException {
-		String fileName = "relevent_publications.xml" ;
-		DBLPParser dblpParser = new DBLPParser();
+
+	public static void getPriorPublicationsXML(String inputFileName, int inputYear, String outputFileName) throws JAXBException, IOException, SAXException, ParserConfigurationException {
 		//dblpParser.parseDBLPXML(Play.application().path().getPath() + "/../../.." + "/public/dblp_example.xml");
-		dblpParser.parseDBLPXML("dblp_example.xml");
-		printParseDBLPXML();
-		parseAndWriteReleventXML(fileName, year);
-	}
-	
-	private static void parseAndWriteReleventXML(String fileName, int inputYear) throws JAXBException, IOException {
-		for(int i=0; i<articleList.size(); i++)
+		JAXBContext jaxbContext = JAXBContext.newInstance(DBLPElement.class);
+
+		SAXParserFactory spf = SAXParserFactory.newInstance();
+		//			spf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, false);
+		XMLReader xmlReader;
+		xmlReader = spf.newSAXParser().getXMLReader();
+		InputSource inputSource = new InputSource(new FileReader(inputFileName));
+		SAXSource source = new SAXSource(xmlReader, inputSource);
+
+		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+		DBLPElement dblp = (DBLPElement) jaxbUnmarshaller.unmarshal(source);
+
+		DBLPElement modified_dblp = new DBLPElement();
+
+		Marshaller m = jaxbContext.createMarshaller();
+		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+		File file = null;
+		file = new File(outputFileName);
+
+		List<Article> parse_articleList = (List<Article>)dblp.getArticleList();
+		List<Article> relevant_articleList = new ArrayList<Article>();
+		if(parse_articleList!=null)
 		{
-			publicationcount++;
-			Article article = articleList.get(i);
-			article.setId(publicationcount);
-			
-			if(Integer.valueOf(article.getYear()) <= inputYear) {
-				xmlWriter((DBLPElement) article, fileName, "article");
+			for(int i=0; i<articleList.size(); i++)
+			{
+				Article article = articleList.get(i);	
+				if((article.getYear() != null) && (Integer.parseInt(article.getYear()) <= inputYear)) {
+					relevant_articleList.add(article);
+				}
+			}			
+			modified_dblp.setArticleList(relevant_articleList);
+		}
+
+		List<Book> parse_bookList = (List<Book>)dblp.getBookList();
+		List<Book> relevant_bookList = new ArrayList<Book>();
+		if(parse_bookList!=null)
+		{
+			for(int i=0; i<bookList.size(); i++)
+			{
+				Book book = bookList.get(i);
+				if((book.getYear() != null) && (Integer.parseInt(book.getYear()) <= inputYear)) {
+					relevant_bookList.add(book);
+				}
 			}
+			modified_dblp.setBookList(relevant_bookList);
 		}
 
-		for(int i=0; i<bookList.size(); i++)
+		List<Incollection> parse_incollectionList = (List<Incollection>)dblp.getIncollectionList();
+		List<Incollection> relevant_incollectionList = new ArrayList<Incollection>();
+		if(parse_incollectionList!=null)
 		{
-			publicationcount++;
-			Book book = bookList.get(i);
-			book.setId(publicationcount);
-			
-			if(Integer.valueOf(book.getYear()) <= inputYear) {
-				xmlWriter((DBLPElement) book, fileName, "book");
-			}	
-		}
-
-		for(int i=0; i<incollectionList.size(); i++)
-		{
-			publicationcount++;
-			Incollection incollection = incollectionList.get(i);
-			incollection.setId(publicationcount);
-			
-			if(Integer.valueOf(incollection.getYear()) <= inputYear) {
-				xmlWriter((DBLPElement) incollection, fileName, "incollection");
+			for(int i=0; i<incollectionList.size(); i++)
+			{
+				Incollection incollection = incollectionList.get(i);
+				if((incollection.getYear() != null) && (Integer.parseInt(incollection.getYear()) <= inputYear)) {
+					relevant_incollectionList.add(incollection);
+				}
 			}
+			modified_dblp.setIncollectionList(relevant_incollectionList);
 		}
 
-		for(int i=0; i<inproceedingsList.size(); i++)
+		List<Inproceedings> parse_inproceedingsList = (List<Inproceedings>)dblp.getInproceedingsList();
+		List<Inproceedings> relevant_inproceedingsList = new ArrayList<Inproceedings>();
+		if(parse_inproceedingsList!=null)
 		{
-			publicationcount++;
-			Inproceedings inproceedings = inproceedingsList.get(i);
-			inproceedings.setId(publicationcount);
-			
-			if(Integer.valueOf(inproceedings.getYear()) <= inputYear) {
-				xmlWriter((DBLPElement) inproceedings, fileName, "inproceedings");
+			for(int i=0; i<inproceedingsList.size(); i++)
+			{
+				Inproceedings inproceedings = inproceedingsList.get(i);
+				if((inproceedings.getYear() != null) && (Integer.parseInt(inproceedings.getYear()) <= inputYear)) {
+					relevant_inproceedingsList.add(inproceedings);
+				}
 			}
+			modified_dblp.setInproceedingsList(relevant_inproceedingsList);
 		}
 
-		for(int i=0; i<mastersthesisList.size(); i++)
+		List<Mastersthesis> parse_mastersthesisList = (List<Mastersthesis>)dblp.getMastersthesisList();
+		List<Mastersthesis> relevant_mastersthesisList = new ArrayList<Mastersthesis>();
+		if(parse_mastersthesisList!=null)
 		{
-			publicationcount++;
-			Mastersthesis mastersthesis = mastersthesisList.get(i);
-			mastersthesis.setId(publicationcount);
-
-			if(Integer.valueOf(mastersthesis.getYear()) <= inputYear) {
-				xmlWriter((DBLPElement) mastersthesis, fileName, "mastersthesis");
+			for(int i=0; i<mastersthesisList.size(); i++)
+			{
+				Mastersthesis mastersthesis = mastersthesisList.get(i);
+				if((mastersthesis.getYear() != null) && (Integer.parseInt(mastersthesis.getYear()) <= inputYear)) {
+					relevant_mastersthesisList.add(mastersthesis);
+				}
 			}
+			modified_dblp.setMastersthesisList(relevant_mastersthesisList);
 		}
 
-		for(int i=0; i<phdthesisList.size(); i++)
+		List<Phdthesis> parse_phdthesisList = (List<Phdthesis>)dblp.getPhdthesisList();
+		List<Phdthesis> relevant_phdthesisList = new ArrayList<Phdthesis>();
+		if(parse_phdthesisList!=null)
 		{
-			publicationcount++;
-			Phdthesis phdthesis = phdthesisList.get(i);
-			phdthesis.setId(publicationcount);
-			
-			if(Integer.valueOf(phdthesis.getYear()) <= inputYear) {
-				xmlWriter((DBLPElement) phdthesis, fileName, "phdthesis");
+			for(int i=0; i<phdthesisList.size(); i++)
+			{
+				Phdthesis phdthesis = phdthesisList.get(i);
+				if((phdthesis.getYear() != null) && (Integer.parseInt(phdthesis.getYear()) <= inputYear)) {
+					relevant_phdthesisList.add(phdthesis);
+				}
 			}
+			modified_dblp.setPhdthesisList(relevant_phdthesisList);
 		}
 
-		for(int i=0; i<proceedingsList.size(); i++)
+		List<Proceedings> parse_proceedingsList = (List<Proceedings>)dblp.getProceedingsList();
+		List<Proceedings> relevant_proceedingsList = new ArrayList<Proceedings>();
+		if(parse_proceedingsList!=null)
 		{
-			publicationcount++;
-			Proceedings proceedings = proceedingsList.get(i);
-			proceedings.setId(publicationcount);
-			
-			if(Integer.valueOf(proceedings.getYear()) <= inputYear) {
-				xmlWriter((DBLPElement) proceedings, fileName, "proceedings");
+			for(int i=0; i<proceedingsList.size(); i++)
+			{
+				Proceedings proceedings = proceedingsList.get(i);
+				if((proceedings.getYear() != null) && (Integer.parseInt(proceedings.getYear()) <= inputYear)) {
+					relevant_proceedingsList.add(proceedings);
+				}
 			}
+			modified_dblp.setProceedingsList(relevant_proceedingsList);
 		}
 
-		for(int i=0; i<wwwList.size(); i++)
+		List<Www> parse_wwwList = (List<Www>)dblp.getWwwList();
+		List<Www> relevant_wwwList = new ArrayList<Www>();
+		if(parse_wwwList!=null)
 		{
-			publicationcount++;
-			Www www = wwwList.get(i);
-			www.setId(publicationcount);
-			
-			if(Integer.valueOf(www.getYear()) <= inputYear) {
-				xmlWriter((DBLPElement) www, fileName, "www");
+			for(int i=0; i<wwwList.size(); i++)
+			{
+				Www www = wwwList.get(i);
+				if((www.getYear() != null) && (Integer.parseInt(www.getYear()) <= inputYear)) {
+					relevant_wwwList.add(www);
+				}
 			}
+			modified_dblp.setWwwList(relevant_wwwList);
 		}
+
+		m.marshal(modified_dblp, file);	
 	}
 
 	public static class HeaderHandler extends DefaultHandler {
@@ -1154,6 +1176,6 @@ public class DBLPParser {
 			}
 			return false;
 		}
-		
+
 	}
 }

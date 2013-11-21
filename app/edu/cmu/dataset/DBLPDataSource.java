@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 
 import javax.xml.bind.JAXBException;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
@@ -11,7 +12,7 @@ import edu.cmu.DBLPProcessor.*;;
 
 public class DBLPDataSource implements DatasetInterface{
 
-	public HashMap<String,DBLPUser> getDataset() throws SAXException
+	public HashMap<String,DBLPUser> getDataset() throws SAXException, ParserConfigurationException
 	{
 		HashMap<String, DBLPUser> dblp = new HashMap<String,DBLPUser>();
 		try {

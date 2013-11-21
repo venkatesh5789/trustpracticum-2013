@@ -1,6 +1,7 @@
 package controllers;
 
 import javax.xml.bind.JAXBException;
+import javax.xml.parsers.ParserConfigurationException;
 
 import edu.cmu.jung.Edge;
 import edu.cmu.jung.UserCoAuthorSubgraph;
@@ -49,7 +50,7 @@ public class Application extends Controller {
 		public Integer renderGraph;
 	}
 
-	public static JSONArray myGraph(String name, Integer level, Integer renderGraph) throws JAXBException, SAXException {
+	public static JSONArray myGraph(String name, Integer level, Integer renderGraph) throws JAXBException, SAXException, ParserConfigurationException {
 		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph();
 		JSONArray result;
 
@@ -110,7 +111,7 @@ public class Application extends Controller {
 		return ok(show.render("[{\"endingNode\":\"Julio Gomis-Tena\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Marta Monserrat\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Javier Saiz\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Jose Maria Ferrero\",\"startingNode\":\"Javier Chorro\"},{\"endingNode\":\"Karen Cardona\",\"startingNode\":\"Javier Chorro\"}]"));
 	}
 
-	public static Result formSubmit() throws JAXBException, SAXException{
+	public static Result formSubmit() throws JAXBException, SAXException, ParserConfigurationException{
 		Form<Show> form = Form.form(Show.class).bindFromRequest();
 		if(form.hasErrors()) {
 			return badRequest(index.render("Errors in form"));
@@ -122,19 +123,19 @@ public class Application extends Controller {
 		}
 	}
 
-	public static Result getGraphWithRender(String name, Integer level) throws JAXBException, SAXException{
+	public static Result getGraphWithRender(String name, Integer level) throws JAXBException, SAXException, ParserConfigurationException{
 		return ok(
 				show.render(myGraph(name, level, 1).toString())
 				);
 	}
 
-	public static Result getGraphWithoutRender(String name, Integer level) throws JAXBException, SAXException{
+	public static Result getGraphWithoutRender(String name, Integer level) throws JAXBException, SAXException, ParserConfigurationException{
 		return ok(
 				show.render(myGraph(name, level, 0).toString())
 				);
 	}
 
-	public static Result getCoAuthorInformation(String name) throws SAXException, JAXBException {
+	public static Result getCoAuthorInformation(String name) throws SAXException, JAXBException, ParserConfigurationException {
 		JSONArray result = new JSONArray();
 		String key = name;	
 		HashMap<String,DBLPUser> dblp;
@@ -180,7 +181,7 @@ public class Application extends Controller {
 				);	
 	}
 
-	public static Result getCoAuthorsByTopic(String name, String topics) throws SAXException, JAXBException {
+	public static Result getCoAuthorsByTopic(String name, String topics) throws SAXException, JAXBException, ParserConfigurationException {
 		JSONArray result = new JSONArray();
 		String key = name;	
 		String[] topicsArray = topics.split(",");
@@ -224,7 +225,7 @@ public class Application extends Controller {
 				);	
 	}
 
-	public static Result getCoAuthorsByTopicAndTime(String name, String topics, Long year) throws SAXException, JAXBException {
+	public static Result getCoAuthorsByTopicAndTime(String name, String topics, Long year) throws SAXException, JAXBException, ParserConfigurationException {
 		JSONArray result = new JSONArray();
 		String key = name;	
 		String[] topicsArray = topics.split(",");
@@ -273,13 +274,13 @@ public class Application extends Controller {
 				);	
 	}
 
-	public static Result getSocialNetwork(String name) throws JAXBException, SAXException {
+	public static Result getSocialNetwork(String name) throws JAXBException, SAXException, ParserConfigurationException {
 		return ok(
 				show.render(myGraph(name, UserCoAuthorSubgraph.GENERATE_FULL_SUBGRAPH, 0).toString())
 				);	
 	}
 	
-	public static Result getReputationForAuthor(String name) throws SAXException, JAXBException {
+	public static Result getReputationForAuthor(String name) throws SAXException, JAXBException, ParserConfigurationException {
 		DBLPTrustProcessor trustprocessor = new DBLPTrustProcessor();
 		Double trust = trustprocessor.getTrustValueFromName(name);
 		return ok(

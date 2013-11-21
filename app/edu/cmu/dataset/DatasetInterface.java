@@ -2,6 +2,8 @@ package edu.cmu.dataset;
 
 import java.util.HashMap;
 
+import javax.xml.parsers.ParserConfigurationException;
+
 import org.xml.sax.SAXException;
 
 /**
@@ -9,6 +11,6 @@ import org.xml.sax.SAXException;
  * 
  */
 public interface DatasetInterface {
-	public HashMap getDataset() throws SAXException;
+	public HashMap getDataset() throws SAXException, ParserConfigurationException;
 
 }

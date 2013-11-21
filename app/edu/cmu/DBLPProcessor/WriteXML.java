@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import javax.xml.bind.JAXBException;
+import javax.xml.parsers.ParserConfigurationException;
 
 import org.xml.sax.SAXException;
 
@@ -19,7 +20,7 @@ public class WriteXML {
 //	 * @author NASA-Trust-Team
 //	 * @throws JAXBException 
 //	 */
-	public static void main(String[] args) throws IOException, JAXBException, SAXException {
+	public static void main(String[] args) throws IOException, JAXBException, SAXException, ParserConfigurationException {
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		HashMap<String,DBLPUser> dblp = dblpDataset.getDataset();
 		Iterator<String> it = dblp.keySet().iterator();
