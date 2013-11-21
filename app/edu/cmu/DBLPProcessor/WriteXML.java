@@ -22,7 +22,7 @@ public class WriteXML {
 //	 */
 	public static void main(String[] args) throws IOException, JAXBException, SAXException, ParserConfigurationException {
 		DatasetInterface dblpDataset = new DBLPDataSource();
-		HashMap<String,DBLPUser> dblp = dblpDataset.getDataset();
+		HashMap<String,DBLPUser> dblp = dblpDataset.getDataset("dblp_example.xml");
 		Iterator<String> it = dblp.keySet().iterator();
 		while (it.hasNext())
 		{

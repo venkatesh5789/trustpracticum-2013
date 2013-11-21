@@ -12,11 +12,11 @@ import edu.cmu.DBLPProcessor.*;;
 
 public class DBLPDataSource implements DatasetInterface{
 
-	public HashMap<String,DBLPUser> getDataset() throws SAXException, ParserConfigurationException
+	public HashMap<String,DBLPUser> getDataset(String fileName) throws SAXException, ParserConfigurationException
 	{
 		HashMap<String, DBLPUser> dblp = new HashMap<String,DBLPUser>();
 		try {
-			dblp = (HashMap<String, DBLPUser>) DBLPParser.parseDBLP();
+			dblp = (HashMap<String, DBLPUser>) DBLPParser.parseDBLP(fileName);
 		} catch (JAXBException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

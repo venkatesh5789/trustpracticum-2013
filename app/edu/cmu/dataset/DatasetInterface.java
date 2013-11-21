@@ -11,6 +11,6 @@ import org.xml.sax.SAXException;
  * 
  */
 public interface DatasetInterface {
-	public HashMap getDataset() throws SAXException, ParserConfigurationException;
+	public HashMap getDataset(String fileName) throws SAXException, ParserConfigurationException;
 
 }

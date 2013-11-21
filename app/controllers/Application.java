@@ -140,7 +140,7 @@ public class Application extends Controller {
 		String key = name;	
 		HashMap<String,DBLPUser> dblp;
 		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset();
+		dblp = dblpDataset.getDataset("dblp_example.xml");
 
 		DBLPUser inputAuthor = dblp.get(key);
 		List<Coauthorship> c = inputAuthor.getCoAuthors();
@@ -187,7 +187,7 @@ public class Application extends Controller {
 		String[] topicsArray = topics.split(",");
 		HashMap<String,DBLPUser> dblp;
 		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset();
+		dblp = dblpDataset.getDataset("dblp_example.xml");
 
 		DBLPUser inputAuthor = dblp.get(key);
 		List<Coauthorship> c = inputAuthor.getCoAuthors();
@@ -231,7 +231,7 @@ public class Application extends Controller {
 		String[] topicsArray = topics.split(",");
 		HashMap<String,DBLPUser> dblp;
 		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset();
+		dblp = dblpDataset.getDataset("dblp_example.xml");
 
 		DBLPUser inputAuthor = dblp.get(key);
 		List<Coauthorship> c = inputAuthor.getCoAuthors();

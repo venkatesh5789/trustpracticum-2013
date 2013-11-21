@@ -56,7 +56,7 @@ public class UserCoAuthorSubgraph {
 
 	public UserCoAuthorSubgraph() throws SAXException, ParserConfigurationException {   
 		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset();		
+		dblp = dblpDataset.getDataset("dblp_example.xml");		
 	}
 
 	/** Constructs an example directed graph with our vertex and edge classes 

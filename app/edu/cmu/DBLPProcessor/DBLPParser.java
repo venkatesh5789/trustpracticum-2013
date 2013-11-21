@@ -37,6 +37,7 @@ import edu.cmu.DBLPProcessor.Phdthesis;
 import edu.cmu.DBLPProcessor.Proceedings;
 import edu.cmu.DBLPProcessor.Publication;
 import edu.cmu.DBLPProcessor.Www;
+import edu.cmu.trustprocessor.DBLPTrustProcessor;
 
 import java.io.FileNotFoundException;
 import java.util.LinkedHashMap;
@@ -66,12 +67,11 @@ public class DBLPParser {
 	public static Map<String,Integer> mapUserNameId = new HashMap<String,Integer>();
 	public static Map<String,String> mapKeyTitle = new HashMap<String,String>();
 
-	public static Map<String,DBLPUser> parseDBLP() throws JAXBException, IOException, SAXException, ParserConfigurationException {
+	public static Map<String,DBLPUser> parseDBLP(String fileName) throws JAXBException, IOException, SAXException, ParserConfigurationException {
 		DBLPParser dblpParser = new DBLPParser();
 		//dblpParser.parseDBLPXML(Play.application().path().getPath() + "/../../.." + "/public/dblp_example.xml");
-		dblpParser.parseDBLPXML("dblp_example.xml");
+		dblpParser.parseDBLPXML(fileName);
 		//dblpParser.getCSVFile(Play.application().path().getPath() + "/../../.." + "/public/dblp_example.xml");
-		dblpParser.getCSVFile("dblp_example.xml");
 		printParseDBLPXML();
 		parseAuthor(); //without citations
 		getPriorPublicationsXML("dblp_example.xml", 2009, "modified_dblp.xml");

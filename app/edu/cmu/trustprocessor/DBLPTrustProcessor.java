@@ -95,7 +95,7 @@ public class DBLPTrustProcessor {
 
 		HashMap<String,DBLPUser> dblp;
 		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset();
+		dblp = dblpDataset.getDataset("dblp_example.xml");
 
 		for(String key : dblp.keySet()) {
 			if(key.equalsIgnoreCase(name)) {
@@ -135,7 +135,7 @@ public class DBLPTrustProcessor {
 
 		HashMap<String,DBLPUser> dblp;
 		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset();
+		dblp = dblpDataset.getDataset("dblp_example.xml");
 
 		for(String key : dblp.keySet()) {
 			if(dblp.get(key).getId() == id) {
@@ -586,7 +586,7 @@ public class DBLPTrustProcessor {
 
 		HashMap<String,DBLPUser> dblp;
 		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset();
+		dblp = dblpDataset.getDataset("dblp_example.xml");
 
 		for(String key : dblp.keySet()) {
 			DBLPUser user = dblp.get(key);
