@@ -1,18 +1,30 @@
-2013-11-13 23:37:05,408 - [INFO] - from play in pool-4-thread-4 
+2013-11-14 12:56:10,028 - [INFO] - from play in pool-4-thread-5 
 Listening for HTTP on /0:0:0:0:0:0:0:0%0:9000
 
-2013-11-13 23:37:54,975 - [INFO] - from play in play-internal-execution-context-1 
+2013-11-14 12:56:57,891 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 
-2013-11-13 23:38:08,397 - [ERROR] - from play in play-internal-execution-context-1 
-Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+2013-11-14 13:00:24,000 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
 
-2013-11-13 23:38:08,424 - [ERROR] - from application in play-internal-execution-context-1 
+2013-11-14 13:04:10,178 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2013-11-14 13:05:56,086 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2013-11-14 13:09:40,611 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2013-11-14 13:11:13,649 - [ERROR] - from play in play-internal-execution-context-1 
+Cannot invoke the action, eventually got an error: java.util.NoSuchElementException
+
+2013-11-14 13:11:13,671 - [ERROR] - from application in play-internal-execution-context-1 
 
 
-! @6g9dincd6 - Internal server error, for (GET) [/getReputation/Javier%20Chorro] ->
+! @6g9hlh40o - Internal server error, for (GET) [/getCoAuthorsByTopicAndTime/Javier%20Saiz/Modeling/1911] ->
 
-play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+play.api.Application$$anon$1: Execution exception[[NoSuchElementException: null]]
 	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10.jar:2.2.0]
 	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10.jar:2.2.0]
 	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:261) [play_2.10.jar:2.2.0]
@@ -37,15 +49,11 @@ play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
 	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library.jar:na]
 	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library.jar:na]
-Caused by: java.lang.NullPointerException: null
-	at java.util.Properties$LineReader.readLine(Properties.java:418) ~[na:1.6.0_65]
-	at java.util.Properties.load0(Properties.java:337) ~[na:1.6.0_65]
-	at java.util.Properties.load(Properties.java:325) ~[na:1.6.0_65]
-	at edu.cmu.trustprocessor.TrustModelWeights.<init>(TrustModelWeights.java:36) ~[na:na]
-	at edu.cmu.trustprocessor.DBLPTrustProcessor.<init>(DBLPTrustProcessor.java:25) ~[na:na]
-	at controllers.Application.getReputationForAuthor(Application.java:281) ~[na:na]
-	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.apply(routes_routing.scala:121) ~[na:na]
-	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.apply(routes_routing.scala:121) ~[na:na]
+Caused by: java.util.NoSuchElementException: null
+	at java.util.AbstractList$Itr.next(AbstractList.java:350) ~[na:1.6.0_65]
+	at controllers.Application.getCoAuthorsByTopicAndTime(Application.java:253) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$9$$anonfun$apply$9.apply(routes_routing.scala:145) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$9$$anonfun$apply$9.apply(routes_routing.scala:145) ~[na:na]
 	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10.jar:2.2.0]
 	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10.jar:2.2.0]
 	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10.jar:2.2.0]
@@ -61,6 +69,6 @@ Caused by: java.lang.NullPointerException: null
 	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10.jar:2.2.0]
 	... 4 common frames omitted
 
-2013-11-13 23:39:58,285 - [INFO] - from play in play-internal-execution-context-1 
+2013-11-14 13:12:30,990 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 

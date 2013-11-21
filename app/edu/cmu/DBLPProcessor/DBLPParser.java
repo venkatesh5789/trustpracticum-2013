@@ -870,6 +870,105 @@ public class DBLPParser {
 		r = new FileReader(fileName);
 		xr.parse(new InputSource(r));
 	}
+	
+	public static void getPriorPublicationsXML(int year) throws JAXBException, IOException {
+		String fileName = "relevent_publications.xml" ;
+		DBLPParser dblpParser = new DBLPParser();
+		//dblpParser.parseDBLPXML(Play.application().path().getPath() + "/../../.." + "/public/dblp_example.xml");
+		dblpParser.parseDBLPXML("dblp_example.xml");
+		printParseDBLPXML();
+		parseAndWriteReleventXML(fileName, year);
+	}
+	
+	private static void parseAndWriteReleventXML(String fileName, int inputYear) throws JAXBException, IOException {
+		for(int i=0; i<articleList.size(); i++)
+		{
+			publicationcount++;
+			Article article = articleList.get(i);
+			article.setId(publicationcount);
+			
+			if(Integer.valueOf(article.getYear()) <= inputYear) {
+				xmlWriter((DBLPElement) article, fileName, "article");
+			}
+		}
+
+		for(int i=0; i<bookList.size(); i++)
+		{
+			publicationcount++;
+			Book book = bookList.get(i);
+			book.setId(publicationcount);
+			
+			if(Integer.valueOf(book.getYear()) <= inputYear) {
+				xmlWriter((DBLPElement) book, fileName, "book");
+			}	
+		}
+
+		for(int i=0; i<incollectionList.size(); i++)
+		{
+			publicationcount++;
+			Incollection incollection = incollectionList.get(i);
+			incollection.setId(publicationcount);
+			
+			if(Integer.valueOf(incollection.getYear()) <= inputYear) {
+				xmlWriter((DBLPElement) incollection, fileName, "incollection");
+			}
+		}
+
+		for(int i=0; i<inproceedingsList.size(); i++)
+		{
+			publicationcount++;
+			Inproceedings inproceedings = inproceedingsList.get(i);
+			inproceedings.setId(publicationcount);
+			
+			if(Integer.valueOf(inproceedings.getYear()) <= inputYear) {
+				xmlWriter((DBLPElement) inproceedings, fileName, "inproceedings");
+			}
+		}
+
+		for(int i=0; i<mastersthesisList.size(); i++)
+		{
+			publicationcount++;
+			Mastersthesis mastersthesis = mastersthesisList.get(i);
+			mastersthesis.setId(publicationcount);
+
+			if(Integer.valueOf(mastersthesis.getYear()) <= inputYear) {
+				xmlWriter((DBLPElement) mastersthesis, fileName, "mastersthesis");
+			}
+		}
+
+		for(int i=0; i<phdthesisList.size(); i++)
+		{
+			publicationcount++;
+			Phdthesis phdthesis = phdthesisList.get(i);
+			phdthesis.setId(publicationcount);
+			
+			if(Integer.valueOf(phdthesis.getYear()) <= inputYear) {
+				xmlWriter((DBLPElement) phdthesis, fileName, "phdthesis");
+			}
+		}
+
+		for(int i=0; i<proceedingsList.size(); i++)
+		{
+			publicationcount++;
+			Proceedings proceedings = proceedingsList.get(i);
+			proceedings.setId(publicationcount);
+			
+			if(Integer.valueOf(proceedings.getYear()) <= inputYear) {
+				xmlWriter((DBLPElement) proceedings, fileName, "proceedings");
+			}
+		}
+
+		for(int i=0; i<wwwList.size(); i++)
+		{
+			publicationcount++;
+			Www www = wwwList.get(i);
+			www.setId(publicationcount);
+			
+			if(Integer.valueOf(www.getYear()) <= inputYear) {
+				xmlWriter((DBLPElement) www, fileName, "www");
+			}
+		}
+	}
 
 	public static class HeaderHandler extends DefaultHandler {
 

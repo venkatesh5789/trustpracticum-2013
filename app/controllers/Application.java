@@ -156,7 +156,9 @@ public class Application extends Controller {
 					Iterator<Publication> iterator = c.get(i).getPublicationList().iterator();
 					String publicationList = new String();
 					while(iterator.hasNext()) {
-						publicationList += iterator.next().getTitle();
+						Publication p = iterator.next();
+						//if(p.getAuthor().contains(coauthor.getId()) && p.getAuthor().contains(inputAuthor.getId()))
+							publicationList += p.getTitle();
 					}
 					
 					singleCoAuthor.put("Publication", publicationList);	
@@ -198,12 +200,12 @@ public class Application extends Controller {
 					singleCoAuthor.put("Name", coauthor.getName());
 					singleCoAuthor.put("ID", coauthor.getId());
 					
-					Iterator<Publication> iterator = c.get(i).getPublicationList().iterator();
-					String publicationList = new String();
-					while(iterator.hasNext()) {
-						publicationList += iterator.next().getTitle();
-					}
-					
+//					Iterator<Publication> iterator = c.get(i).getPublicationList().iterator();
+//					String publicationList = new String();
+//					while(iterator.hasNext()) {
+//						publicationList += iterator.next().getTitle();
+//					}
+					String publicationList= c.get(i).getPublicationList().get(0).getTitle();
 					singleCoAuthor.put("Publication", publicationList);			
 
 					for(int j = 0 ; j<topicsArray.length ; j++) {
@@ -248,7 +250,7 @@ public class Application extends Controller {
 						Publication next = iterator.next();
 						
 						if(Long.valueOf(next.getYear()).longValue() > year) {
-							publicationList += iterator.next().getTitle();
+							publicationList += next.getTitle();
 							publicationList += ";";							
 						}
 					}
