@@ -58,6 +58,11 @@ public class UserCoAuthorSubgraph {
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset("dblp_example.xml");		
 	}
+	
+	public UserCoAuthorSubgraph(String fileName) throws SAXException, ParserConfigurationException {
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset(fileName);
+	}
 
 	/** Constructs an example directed graph with our vertex and edge classes 
 	 * @throws JAXBException */
@@ -159,19 +164,25 @@ public class UserCoAuthorSubgraph {
 	 * @throws ParserConfigurationException 
 	 */
 	public static void main(String[] args) throws JAXBException, SAXException, ParserConfigurationException {
-		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph();
-		String inputAuthor;
+		String inputAuthor, fileName;
 		int noOfLevels;
 		JSONArray result;
 
 		Scanner input = new Scanner(System.in);
-
+		
 		System.out.println("\nEnter author's name- ");
 		inputAuthor = input.nextLine();
 
+		System.out.println("Enter name of file- ");
+		fileName = input.nextLine();
+		
 		System.out.println("Enter number of sub levels- ");
 		noOfLevels = input.nextInt();
-
+		
+		
+		
+		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph(fileName);
+		
 		result = myApp.constructGraph(inputAuthor, noOfLevels);
 
 		System.out.println(result);

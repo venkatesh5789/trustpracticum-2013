@@ -74,7 +74,7 @@ public class DBLPParser {
 		//dblpParser.getCSVFile(Play.application().path().getPath() + "/../../.." + "/public/dblp_example.xml");
 		printParseDBLPXML();
 		parseAuthor(); //without citations
-		getPriorPublicationsXML("dblp_example.xml", 2009, "modified_dblp.xml");
+		//getPriorPublicationsXML("dblp_example.xml", 2009, "modified_dblp.xml");
 		System.out.println("Author : "+dblpUserList.size());
 		Set<String> hs = dblpUserList.keySet();
 		Iterator it = hs.iterator();
