@@ -26,8 +26,7 @@ public class DBLPUser {
 	private String name;
 	private List<Publication> publication;
 	private List<Long> coauthorship;
-	private List<Coauthorship> coAuthors = new ArrayList<Coauthorship>();
-	
+	private List<Coauthorship> coAuthors = new ArrayList<Coauthorship>(); 
 	
 	public DBLPUser() {
 		super();

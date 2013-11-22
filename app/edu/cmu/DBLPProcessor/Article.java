@@ -46,6 +46,7 @@ public class Article extends DBLPElement
 	private String key;
 	private String reviewid;
 	private String rating;
+	private List<String> field;
 	
 	public Article() {
 		super();
@@ -302,4 +303,12 @@ public class Article extends DBLPElement
 		this.rating = rating;
 	}
 	
+	@XmlAttribute(name="field")
+	public List<String> getField() {
+		return field;
+	}
+
+	public void setField(List<String> field) {
+		this.field = field;
+	}	
 }

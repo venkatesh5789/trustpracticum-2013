@@ -6,6 +6,7 @@ package edu.cmu.DBLPProcessor;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -28,6 +29,9 @@ public class Publication
 	private String year;
 	private String address;
 	private String journal;
+	private List<String> field;
+
+
 	public int getCitationcount() {
 		return citationcount;
 	}
@@ -778,5 +782,14 @@ public class Publication
 	public void setRating(String rating)
 	{
 		this.rating = rating;
+	}
+	
+	@XmlAttribute(name="field")
+	public List<String> getField() {
+		return field;
+	}
+
+	public void setField(List<String> field) {
+		this.field = field;
 	}
 }
