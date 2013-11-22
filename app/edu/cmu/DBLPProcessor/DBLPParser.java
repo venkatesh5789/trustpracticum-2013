@@ -814,7 +814,22 @@ public class DBLPParser {
 
 		return null;
 	}
+	
+	public static DBLPUser getDBLPUserFromName(String name) {
+		Iterator<String> it = dblpUserList.keySet().iterator();
+		while (it.hasNext())
+		{
+			String key = it.next();
+			DBLPUser author = dblpUserList.get(key);
 
+			if(author.getName() == name)
+				return author;
+			//System.out.println(author);
+		}
+
+		return null;
+	}
+	
 	private void getCSVFile(String fileName) throws SAXException, FileNotFoundException, IOException {
 		XMLReader xr = XMLReaderFactory.createXMLReader();
 		HeaderHandler handler = new HeaderHandler();

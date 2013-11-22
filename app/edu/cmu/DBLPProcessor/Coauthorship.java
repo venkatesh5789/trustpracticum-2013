@@ -16,6 +16,8 @@ public class Coauthorship {
 	private int userid;
 	private int coauthorid;
 	private int count;
+	private String authorName;
+	private String coauthorName;
 	private List<String> date = new ArrayList<String>();
 	private List<Publication> publicationList = new ArrayList<Publication>();
 	
@@ -78,5 +80,20 @@ public class Coauthorship {
 	public void addPublicationToList(Publication publication) {
 		this.publicationList.add(publication);
 	}
-	
+
+	public String getAuthorName() {
+		return authorName;
+	}
+
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
+	}
+
+	public String getCoauthorName() {
+		return coauthorName;
+	}
+
+	public void setCoauthorName(String coauthorName) {
+		this.coauthorName = coauthorName;
+	}
 }

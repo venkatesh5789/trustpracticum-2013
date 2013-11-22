@@ -21,7 +21,9 @@ public class Publication
 	private String type;
 	private int citationcount;
 	private List<Integer> author = new ArrayList<Integer>();
+	private List<String> authornames = new ArrayList<String>();
 	private List<Integer> editor = new ArrayList<Integer>();
+	private List<String> editornames = new ArrayList<String>();
 	private String title;
 	private String booktitle;
 	private String pages;
@@ -65,12 +67,14 @@ public class Publication
 		this.citationcount = article.getCited();
 		if(article.getAuthor()!=null)
 		{
+			this.authornames = article.getAuthor();
 			List<String> getAuthor = article.getAuthor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
 		}
 		if(article.getEditor()!=null) 
 		{
+			this.editornames = article.getEditor();
 			List<String> getAuthor = article.getEditor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
@@ -124,12 +128,14 @@ public class Publication
 		this.citationcount = book.getCited();
 		if(book.getAuthor()!=null)
 		{
+			this.authornames = book.getAuthor();
 			List<String> getAuthor = book.getAuthor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
 		}
 		if(book.getEditor()!=null) 
 		{
+			this.editornames = book.getEditor();
 			List<String> getAuthor = book.getEditor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
@@ -181,12 +187,14 @@ public class Publication
 		this.citationcount = incollection.getCited();
 		if(incollection.getAuthor()!=null)
 		{
+			this.authornames = incollection.getAuthor();
 			List<String> getAuthor = incollection.getAuthor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
 		}
 		if(incollection.getEditor()!=null) 
 		{
+			this.editornames = incollection.getEditor();
 			List<String> getAuthor = incollection.getEditor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
@@ -238,12 +246,14 @@ public class Publication
 		this.citationcount = inproceedings.getCited();
 		if(inproceedings.getAuthor()!=null)
 		{
+			this.authornames = inproceedings.getEditor();
 			List<String> getAuthor = inproceedings.getAuthor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
 		}
 		if(inproceedings.getEditor()!=null) 
 		{
+			this.editornames = inproceedings.getEditor();
 			List<String> getAuthor = inproceedings.getEditor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
@@ -295,12 +305,14 @@ public class Publication
 		this.citationcount = mastersthesis.getCited();
 		if(mastersthesis.getAuthor()!=null)
 		{
+			this.authornames = mastersthesis.getAuthor();
 			List<String> getAuthor = mastersthesis.getAuthor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
 		}
 		if(mastersthesis.getEditor()!=null) 
 		{
+			this.authornames = mastersthesis.getEditor();
 			List<String> getAuthor = mastersthesis.getEditor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
@@ -352,12 +364,14 @@ public class Publication
 		this.citationcount = phdthesis.getCited();
 		if(phdthesis.getAuthor()!=null)
 		{
+			this.authornames = phdthesis.getAuthor();
 			List<String> getAuthor = phdthesis.getAuthor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
 		}
 		if(phdthesis.getEditor()!=null) 
 		{
+			this.editornames = phdthesis.getEditor();
 			List<String> getAuthor = phdthesis.getEditor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
@@ -409,12 +423,14 @@ public class Publication
 		this.citationcount = proceedings.getCited();
 		if(proceedings.getAuthor()!=null)
 		{
+			this.authornames = proceedings.getAuthor();
 			List<String> getAuthor = proceedings.getAuthor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
 		}
 		if(proceedings.getEditor()!=null) 
 		{
+			this.editornames = proceedings.getEditor();
 			List<String> getAuthor = proceedings.getEditor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
@@ -466,12 +482,14 @@ public class Publication
 		this.citationcount = www.getCited();
 		if(www.getAuthor()!=null)
 		{
+			this.authornames = www.getAuthor();
 			List<String> getAuthor = www.getAuthor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
 		}
 		if(www.getEditor()!=null) 
 		{
+			this.editornames = www.getEditor();
 			List<String> getAuthor = www.getEditor();
 			for(int i=0; i<getAuthor.size(); i++)
 				this.author.add(DBLPParser.mapUserNameId.get(getAuthor.get(i)));
@@ -779,4 +797,22 @@ public class Publication
 	{
 		this.rating = rating;
 	}
+
+	public List<String> getAuthornames() {
+		return authornames;
+	}
+
+	public void setAuthornames(List<String> authornames) {
+		this.authornames = authornames;
+	}
+
+	public List<String> getEditornames() {
+		return editornames;
+	}
+
+	public void setEditornames(List<String> editornames) {
+		this.editornames = editornames;
+	}
+	
+	
 }

@@ -20,10 +20,19 @@ import edu.cmu.dataset.DatasetInterface;
 import org.apache.commons.lang3.StringUtils;
 
 public class DBLPTrustProcessor {
-
+	HashMap<String,DBLPUser> dblp;
 	TrustModelWeights trustModelWeights;
-	public DBLPTrustProcessor(){
+
+	public DBLPTrustProcessor() throws SAXException, ParserConfigurationException{
 		trustModelWeights = new TrustModelWeights();
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset("dblp_example.xml");
+	}
+
+	public DBLPTrustProcessor(String fileName) throws SAXException, ParserConfigurationException {
+		trustModelWeights = new TrustModelWeights();
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset(fileName);
 	}
 
 	/*
@@ -93,10 +102,6 @@ public class DBLPTrustProcessor {
 	private DBLPUser getDBLPUserFromName(String name) throws SAXException, ParserConfigurationException {
 		DBLPUser result = new DBLPUser();
 
-		HashMap<String,DBLPUser> dblp;
-		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset("dblp_example.xml");
-
 		for(String key : dblp.keySet()) {
 			if(key.equalsIgnoreCase(name)) {
 				result = dblp.get(key);
@@ -132,10 +137,6 @@ public class DBLPTrustProcessor {
 
 	private DBLPUser getDBLPUserFromID(Long id) throws SAXException, ParserConfigurationException {
 		DBLPUser result = new DBLPUser();
-
-		HashMap<String,DBLPUser> dblp;
-		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset("dblp_example.xml");
 
 		for(String key : dblp.keySet()) {
 			if(dblp.get(key).getId() == id) {
@@ -583,10 +584,6 @@ public class DBLPTrustProcessor {
 
 	public ArrayList<DBLPUser> getAuthorsFromContext(String context) throws SAXException, ParserConfigurationException {
 		ArrayList<DBLPUser> result = new ArrayList<DBLPUser>();
-
-		HashMap<String,DBLPUser> dblp;
-		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset("dblp_example.xml");
 
 		for(String key : dblp.keySet()) {
 			DBLPUser user = dblp.get(key);

@@ -104,11 +104,9 @@ public class UserCoAuthorSubgraph {
 			edge.setEndNode(currentNode);
 
 //			Iterator<Publication> iterator = publicationList.iterator();
-//			
 //			while(iterator.hasNext()) {
 //				edgeName += iterator.next().getTitle() + ";";
 //			}
-//
 //			edgeName = edgeName.substring(0, edgeName.length()-1);
 			
 			edgeName = publicationList.get(0).getTitle();
@@ -125,27 +123,42 @@ public class UserCoAuthorSubgraph {
 			resultJson.put(singleEdge);
 		}
 
-		List<Coauthorship> c = currentAuthor.getCoAuthors();
+		List<Coauthorship> listOfCoauthors = currentAuthor.getCoAuthors();
 
-		for(int i =0;i<c.size();i++){
-			for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
-				if(entry.getValue() == c.get(i).getCoauthorid()){
-					DBLPUser coauthor = dblp.get(entry.getKey());
-					
-					Edge dummyEdge = new Edge();
-					dummyEdge.setStartNode(currentNode);
-					dummyEdge.setEndNode(new Node(coauthor));
-					dummyEdge.setPublicationName(edgeName);
-					
-					if((getNodeFromAuthor(coauthor)==-1) /*|| ((getNodeFromAuthor(coauthor)!= -1) && (!g.containsEdge(dummyEdge)))*/) {
-						Node coauthorNode = new Node(coauthor);
-						//and use it to recursively call the function
-						createNodesAndEdgesHelper(currentNode, coauthorNode, c.get(i).getPublicationList(), currentLevel+1, noOfLevels, resultJson);
-					}
-				}
+//		for(int i =0;i<c.size();i++){
+//			for(Entry<String, Integer> entry : DBLPParser.mapUserNameId.entrySet()){
+//				if(entry.getValue() == c.get(i).getCoauthorid()){
+//					DBLPUser coauthor = dblp.get(entry.getKey());
+//					
+//					Edge dummyEdge = new Edge();
+//					dummyEdge.setStartNode(currentNode);
+//					dummyEdge.setEndNode(new Node(coauthor));
+//					dummyEdge.setPublicationName(edgeName);
+//					
+//					if((getNodeFromAuthor(coauthor)==-1) /*|| ((getNodeFromAuthor(coauthor)!= -1) && (!g.containsEdge(dummyEdge)))*/) {
+//						Node coauthorNode = new Node(coauthor);
+//						//and use it to recursively call the function
+//						createNodesAndEdgesHelper(currentNode, coauthorNode, c.get(i).getPublicationList(), currentLevel+1, noOfLevels, resultJson);
+//					}
+//				}
+//			}
+//		}
+		
+		for(Coauthorship c: listOfCoauthors) {
+			DBLPUser coauthor = DBLPParser.getDBLPUserFromName(c.getCoauthorName());
+			
+			Edge dummyEdge = new Edge();
+			dummyEdge.setStartNode(currentNode);
+			dummyEdge.setEndNode(new Node(coauthor));
+			dummyEdge.setPublicationName(edgeName);
+			
+			if((getNodeFromAuthor(coauthor)==-1) /*|| ((getNodeFromAuthor(coauthor)!= -1) && (!g.containsEdge(dummyEdge)))*/) {
+				Node coauthorNode = new Node(coauthor);
+				//and use it to recursively call the function
+				createNodesAndEdgesHelper(currentNode, coauthorNode, c.getPublicationList(), currentLevel+1, noOfLevels, resultJson);
 			}
-		}
-
+		}	
+		
 		return resultJson;
 	}
 
