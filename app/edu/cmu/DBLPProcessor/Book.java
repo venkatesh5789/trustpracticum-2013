@@ -45,6 +45,7 @@ public class Book extends DBLPElement
 	private String key;
 	private String reviewid;
 	private String rating;
+	private List<String> field;
 	
 	public Book() {
 		super();
@@ -299,5 +300,14 @@ public class Book extends DBLPElement
 	public void setRating(String rating)
 	{
 		this.rating = rating;
+	}
+	
+	@XmlElement(name="field")
+	public List<String> getField() {
+		return field;
+	}
+
+	public void setField(List<String> field) {
+		this.field = field;
 	}
 }

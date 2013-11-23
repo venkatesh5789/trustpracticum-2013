@@ -169,6 +169,7 @@ public class DBLPUser {
 	}
 
 
+	@SuppressWarnings("unused")
 	private Map<Integer, Integer> listCoauthorID() {
 
 		Map<Integer,Integer> coauthors = new HashMap<Integer,Integer>();
