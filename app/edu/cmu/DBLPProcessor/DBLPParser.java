@@ -37,6 +37,7 @@ import edu.cmu.DBLPProcessor.Phdthesis;
 import edu.cmu.DBLPProcessor.Proceedings;
 import edu.cmu.DBLPProcessor.Publication;
 import edu.cmu.DBLPProcessor.Www;
+import edu.cmu.jung.CoAuthorGraph;
 import edu.cmu.trustprocessor.DBLPTrustProcessor;
 
 import java.io.FileNotFoundException;
@@ -148,7 +149,7 @@ public class DBLPParser {
 			Publication publication = new Publication(www);
 			m.marshal(publication, file);
 		}
-			}
+	}
 
 	public static void parseAuthor() throws JAXBException, IOException
 	{
@@ -813,7 +814,7 @@ public class DBLPParser {
 
 		return null;
 	}
-	
+
 	public static DBLPUser getDBLPUserFromName(String name) {
 		Iterator<String> it = dblpUserList.keySet().iterator();
 		while (it.hasNext())
@@ -828,7 +829,7 @@ public class DBLPParser {
 
 		return null;
 	}
-	
+
 	private void getCSVFile(String fileName) throws SAXException, FileNotFoundException, IOException {
 		XMLReader xr = XMLReaderFactory.createXMLReader();
 		HeaderHandler handler = new HeaderHandler();
@@ -1004,6 +1005,243 @@ public class DBLPParser {
 		}
 
 		m.marshal(modified_dblp, file);	
+	}
+
+	public static void getFileForNaiveBayesClassification(String inputFileName, String outputFileName) {
+		JAXBContext jaxbContext = JAXBContext.newInstance(DBLPElement.class);
+
+		SAXParserFactory spf = SAXParserFactory.newInstance();
+		XMLReader xmlReader = spf.newSAXParser().getXMLReader();
+
+		//System.out.println(Play.application().path().getAbsolutePath());
+		InputSource inputSource = new InputSource(new FileReader(inputFileName));
+		SAXSource source = new SAXSource(xmlReader, inputSource);
+
+		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+		DBLPElement dblp = (DBLPElement) jaxbUnmarshaller.unmarshal(source);
+
+		List<Article> parse_articleList = (List<Article>)dblp.getArticleList();
+		if(parse_articleList!=null)
+		{
+			System.out.println("article : "+parse_articleList.size());
+			articleList.addAll(parse_articleList);
+			for(int i=0; i<articleList.size(); i++)
+			{
+				List<String> authors = articleList.get(i).getAuthor();
+
+				//Iterating through each pair of authors, as long as there are multiple authors of the publication
+				if(authors.size() > 1) {
+					for(String firstAuthor : authors) {
+						for(String secondAuthor : authors) {
+							if(! firstAuthor.equals(secondAuthor)) {
+								Integer year = Integer.parseInt(articleList.get(i).getYear());
+								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
+								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
+								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
+								//TODO: get jaccard similarity and file writing stuff to outputFileName
+							}
+						}
+					}
+				}
+			}
+		}
+
+		List<Book> parse_bookList = (List<Book>)dblp.getBookList();
+		if(parse_bookList!=null)
+		{
+			System.out.println("book : "+parse_bookList.size());
+			bookList.addAll(parse_bookList);
+			for(int i=0; i<bookList.size(); i++)
+			{
+				List<String> authors = bookList.get(i).getAuthor();
+
+				//Iterating through each pair of authors, as long as there are multiple authors of the publication
+				if(authors.size() > 1) {
+					for(String firstAuthor : authors) {
+						for(String secondAuthor : authors) {
+							if(! firstAuthor.equals(secondAuthor)) {
+								Integer year = Integer.parseInt(bookList.get(i).getYear());
+								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
+								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
+								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
+								
+								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
+								//TODO: get jaccard similarity and file writing stuff to outputFileName
+							}
+						}
+					}
+				}
+			}
+		}
+
+		List<Incollection> parse_incollectionList = (List<Incollection>)dblp.getIncollectionList();
+		if(parse_incollectionList!=null)
+		{
+			System.out.println("incollection : "+parse_incollectionList.size());
+			incollectionList.addAll(parse_incollectionList);
+			for(int i=0; i<incollectionList.size(); i++)
+			{
+				List<String> authors = incollectionList.get(i).getAuthor();
+
+				//Iterating through each pair of authors, as long as there are multiple authors of the publication
+				if(authors.size() > 1) {
+					for(String firstAuthor : authors) {
+						for(String secondAuthor : authors) {
+							if(! firstAuthor.equals(secondAuthor)) {
+								Integer year = Integer.parseInt(incollectionList.get(i).getYear());
+								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
+								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
+								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
+								
+								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
+								//TODO: get jaccard similarity and file writing stuff to outputFileName
+							}
+						}
+					}
+				}			
+			}
+		}
+
+		List<Inproceedings> parse_inproceedingsList = (List<Inproceedings>)dblp.getInproceedingsList();
+		if(parse_inproceedingsList!=null)
+		{
+			System.out.println("inproceeding : "+parse_inproceedingsList.size());
+			inproceedingsList.addAll(parse_inproceedingsList);
+			for(int i=0; i<inproceedingsList.size(); i++)
+			{
+				List<String> authors = inproceedingsList.get(i).getAuthor();
+
+				//Iterating through each pair of authors, as long as there are multiple authors of the publication
+				if(authors.size() > 1) {
+					for(String firstAuthor : authors) {
+						for(String secondAuthor : authors) {
+							if(! firstAuthor.equals(secondAuthor)) {
+								Integer year = Integer.parseInt(inproceedingsList.get(i).getYear());
+								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
+								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
+								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
+								
+								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
+								//TODO: get jaccard similarity and file writing stuff to outputFileName
+							}
+						}
+					}
+				}			
+			}
+		}
+
+		List<Mastersthesis> parse_mastersthesisList = (List<Mastersthesis>)dblp.getMastersthesisList();
+		if(parse_mastersthesisList!=null)
+		{
+			System.out.println("masterthesis : "+parse_mastersthesisList.size());
+			mastersthesisList.addAll(parse_mastersthesisList);
+			for(int i=0; i<mastersthesisList.size(); i++)
+			{
+				List<String> authors = mastersthesisList.get(i).getAuthor();
+
+				//Iterating through each pair of authors, as long as there are multiple authors of the publication
+				if(authors.size() > 1) {
+					for(String firstAuthor : authors) {
+						for(String secondAuthor : authors) {
+							if(! firstAuthor.equals(secondAuthor)) {
+								Integer year = Integer.parseInt(mastersthesisList.get(i).getYear());
+								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
+								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
+								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
+								
+								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
+								//TODO: get jaccard similarity and file writing stuff to outputFileName
+							}
+						}
+					}
+				}			
+			}
+		}
+
+		List<Phdthesis> parse_phdthesisList = (List<Phdthesis>)dblp.getPhdthesisList();
+		if(parse_phdthesisList!=null)
+		{
+			System.out.println("phdthesis : "+parse_phdthesisList.size());
+			phdthesisList.addAll(parse_phdthesisList);
+			for(int i=0; i<phdthesisList.size(); i++)
+			{
+				List<String> authors = phdthesisList.get(i).getAuthor();
+
+				//Iterating through each pair of authors, as long as there are multiple authors of the publication
+				if(authors.size() > 1) {
+					for(String firstAuthor : authors) {
+						for(String secondAuthor : authors) {
+							if(! firstAuthor.equals(secondAuthor)) {
+								Integer year = Integer.parseInt(phdthesisList.get(i).getYear());
+								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
+								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
+								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
+								
+								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
+								//TODO: get jaccard similarity and file writing stuff to outputFileName
+							}
+						}
+					}
+				}			
+			}
+		}
+
+		List<Proceedings> parse_proceedingsList = (List<Proceedings>)dblp.getProceedingsList();
+		if(parse_proceedingsList!=null)
+		{
+			System.out.println("proceedings : "+parse_proceedingsList.size());
+			proceedingsList.addAll(parse_proceedingsList);
+			for(int i=0; i<proceedingsList.size(); i++)
+			{
+				List<String> authors = proceedingsList.get(i).getAuthor();
+
+				//Iterating through each pair of authors, as long as there are multiple authors of the publication
+				if(authors.size() > 1) {
+					for(String firstAuthor : authors) {
+						for(String secondAuthor : authors) {
+							if(! firstAuthor.equals(secondAuthor)) {
+								Integer year = Integer.parseInt(proceedingsList.get(i).getYear());
+								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
+								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
+								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
+								
+								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
+								//TODO: get jaccard similarity and file writing stuff to outputFileName
+							}
+						}
+					}
+				}			
+			}
+		}
+
+		List<Www> parse_wwwList = (List<Www>)dblp.getWwwList();
+		if(parse_wwwList!=null)
+		{
+			System.out.println("www : "+parse_wwwList.size());
+			wwwList.addAll(parse_wwwList);
+			for(int i=0; i<wwwList.size(); i++)
+			{
+				List<String> authors = wwwList.get(i).getAuthor();
+
+				//Iterating through each pair of authors, as long as there are multiple authors of the publication
+				if(authors.size() > 1) {
+					for(String firstAuthor : authors) {
+						for(String secondAuthor : authors) {
+							if(! firstAuthor.equals(secondAuthor)) {
+								Integer year = Integer.parseInt(wwwList.get(i).getYear());
+								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
+								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
+								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
+								
+								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
+								//TODO: get jaccard similarity and file writing stuff to outputFileName
+							}
+						}
+					}
+				}			
+			}
+		}
+
 	}
 
 	public static class HeaderHandler extends DefaultHandler {

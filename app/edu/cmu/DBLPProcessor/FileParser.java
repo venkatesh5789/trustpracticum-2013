@@ -19,13 +19,28 @@ import edu.cmu.dataset.DatasetInterface;
 
 @SuppressWarnings("unchecked")
 public class FileParser {
+	private String inputFileName;
+	private String outputFileName;
+	private HashMap<String,DBLPUser> dblp;
+	
+	public FileParser() throws SAXException, ParserConfigurationException {
+		super();
+		this.inputFileName = "Modified_dblp_example.xml";
+		this.outputFileName = "Makedata.txt";
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset(this.inputFileName);
+	}
+
+	public FileParser(String inputFileName, String outputFileName) throws SAXException, ParserConfigurationException {
+		super();
+		this.inputFileName = inputFileName;
+		this.outputFileName = outputFileName;
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset(this.inputFileName);
+	}
 
 	public void parseFile() throws SAXException, ParserConfigurationException, JAXBException, IOException{
-		HashMap<String,DBLPUser> dblp;
-		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset("Modified_dblp_example.xml");
-
-		File file = new File("/Users/ShuaiWang/Desktop/Makedata.txt");		
+		File file = new File(this.outputFileName);		
 		FileWriter fw = new FileWriter(file.getAbsoluteFile());
 		BufferedWriter bw = new BufferedWriter(fw);
 
