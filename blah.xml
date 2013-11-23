@@ -13,38 +13,6 @@
         <year>1974</year>
     </article>
     <article>
-        <author>Yevgeny Perelman</author>
-        <author>Ran Ginosar</author>
-        <cited>0</cited>
-        <ee>http://dx.doi.org/10.1109/TBME.2006.883732</ee>
-        <id>56</id>
-        <journal>IEEE Trans. Biomed. Engineering</journal>
-        <number>1</number>
-        <pages>130-137</pages>
-        <title>An Integrated System for Multichannel Neuronal Recording With Spike/LFP Separation, Integrated A/D Conversion and Threshold Detection.</title>
-        <url>db/journals/tbe/tbe54.html#PerelmanG07</url>
-        <volume>54</volume>
-        <year>2007</year>
-    </article>
-    <article>
-        <author>Otto Muzik</author>
-        <author>Siamak Pourabdollah</author>
-        <author>Csaba Juhász</author>
-        <author>Diane C. Chugani</author>
-        <author>James Janisse</author>
-        <author>Sorin Draghici</author>
-        <cited>0</cited>
-        <ee>http://dx.doi.org/10.1109/TBME.2005.854233</ee>
-        <id>59</id>
-        <journal>IEEE Trans. Biomed. Engineering</journal>
-        <number>9</number>
-        <pages>1574-1581</pages>
-        <title>Application of an objective method for localizing bilateral cortical FDG PET abnormalities to guide the resection of epileptic foci.</title>
-        <url>db/journals/tbe/tbe52.html#MuzikPJCJD05</url>
-        <volume>52</volume>
-        <year>2005</year>
-    </article>
-    <article>
         <author>E. F. Codd</author>
         <author>C. J. Date</author>
         <cite>persons/Lions1996</cite>
@@ -56,191 +24,51 @@
         <volume>RJ1400</volume>
         <year>1974</year>
     </article>
-    <article>
-        <author>Yevgeny Perelman</author>
-        <author>Ran Ginosar</author>
+    <book>
+        <author>John Lions</author>
         <cited>0</cited>
-        <ee>http://dx.doi.org/10.1109/TBME.2006.883732</ee>
-        <id>64</id>
-        <journal>IEEE Trans. Biomed. Engineering</journal>
-        <number>1</number>
-        <pages>130-137</pages>
-        <title>An Integrated System for Multichannel Neuronal Recording With Spike/LFP Separation, Integrated A/D Conversion and Threshold Detection.</title>
-        <url>db/journals/tbe/tbe54.html#PerelmanG07</url>
-        <volume>54</volume>
-        <year>2007</year>
-    </article>
-    <article>
-        <author>Otto Muzik</author>
-        <author>Siamak Pourabdollah</author>
-        <author>Csaba Juhász</author>
-        <author>Diane C. Chugani</author>
-        <author>James Janisse</author>
-        <author>Sorin Draghici</author>
+        <id>63</id>
+        <isbn>1-57398-013-7</isbn>
+        <publisher>Peer-to-Peer Communications</publisher>
+        <title>Lions' Commentary on UNIX 6th Edition, with Source Code</title>
+        <url>http://www.lemis.com/grog/Documentation/Lions/index.html</url>
+        <year>1996</year>
+    </book>
+    <book>
+        <author>John Lions</author>
         <cited>0</cited>
-        <ee>http://dx.doi.org/10.1109/TBME.2005.854233</ee>
+        <id>65</id>
+        <isbn>1-57398-013-7</isbn>
+        <publisher>Peer-to-Peer Communications</publisher>
+        <title>Lions' Commentary on UNIX 6th Edition, with Source Code</title>
+        <url>http://www.lemis.com/grog/Documentation/Lions/index.html</url>
+        <year>1996</year>
+    </book>
+    <incollection>
+        <author>Stefano Ceri</author>
+        <author>Letizia Tanca</author>
+        <booktitle>LOGIDATA+: Deductive Databases with Complex Objects</booktitle>
+        <cited>0</cited>
+        <crossref>books/sp/Atzeni93</crossref>
+        <ee>http://dx.doi.org/10.1007/BFb0021886</ee>
         <id>67</id>
-        <journal>IEEE Trans. Biomed. Engineering</journal>
-        <number>9</number>
-        <pages>1574-1581</pages>
-        <title>Application of an objective method for localizing bilateral cortical FDG PET abnormalities to guide the resection of epileptic foci.</title>
-        <url>db/journals/tbe/tbe52.html#MuzikPJCJD05</url>
-        <volume>52</volume>
-        <year>2005</year>
-    </article>
-    <book>
-        <author>John Lions</author>
+        <pages>7-19</pages>
+        <title>Bridging Objects with Logical Rules: Towards Object Oriented Deductive Databases.</title>
+        <url>db/journals/lncs/lncs701.html#CeriT93</url>
+        <year>1993</year>
+    </incollection>
+    <incollection>
+        <author>Stefano Ceri</author>
+        <author>Letizia Tanca</author>
+        <booktitle>LOGIDATA+: Deductive Databases with Complex Objects</booktitle>
         <cited>0</cited>
-        <id>68</id>
-        <isbn>1-57398-013-7</isbn>
-        <publisher>Peer-to-Peer Communications</publisher>
-        <title>Lions' Commentary on UNIX 6th Edition, with Source Code</title>
-        <url>http://www.lemis.com/grog/Documentation/Lions/index.html</url>
-        <year>1996</year>
-    </book>
-    <book>
-        <cited>0</cited>
-        <editor>Abraham Kandel</editor>
-        <editor>Horst Bunke</editor>
-        <editor>Mark Last</editor>
-        <id>69</id>
-        <isbn>978-3-540-68019-2</isbn>
-        <publisher>Springer</publisher>
-        <series>Studies in Computational Intelligence</series>
-        <title>Applied Graph Theory in Computer Vision and Pattern Recognition</title>
-        <url>db/series/sci/sci52.html</url>
-        <volume>52</volume>
-        <year>2007</year>
-    </book>
-    <book>
-        <author>John Lions</author>
-        <cited>0</cited>
-        <id>70</id>
-        <isbn>1-57398-013-7</isbn>
-        <publisher>Peer-to-Peer Communications</publisher>
-        <title>Lions' Commentary on UNIX 6th Edition, with Source Code</title>
-        <url>http://www.lemis.com/grog/Documentation/Lions/index.html</url>
-        <year>1996</year>
-    </book>
-    <book>
-        <cited>0</cited>
-        <editor>Abraham Kandel</editor>
-        <editor>Horst Bunke</editor>
-        <editor>Mark Last</editor>
+        <crossref>books/sp/Atzeni93</crossref>
+        <ee>http://dx.doi.org/10.1007/BFb0021886</ee>
         <id>71</id>
-        <isbn>978-3-540-68019-2</isbn>
-        <publisher>Springer</publisher>
-        <series>Studies in Computational Intelligence</series>
-        <title>Applied Graph Theory in Computer Vision and Pattern Recognition</title>
-        <url>db/series/sci/sci52.html</url>
-        <volume>52</volume>
-        <year>2007</year>
-    </book>
-    <incollection>
-        <author>Stefano Ceri</author>
-        <author>Letizia Tanca</author>
-        <booktitle>LOGIDATA+: Deductive Databases with Complex Objects</booktitle>
-        <cited>0</cited>
-        <crossref>books/sp/Atzeni93</crossref>
-        <ee>http://dx.doi.org/10.1007/BFb0021886</ee>
-        <id>72</id>
         <pages>7-19</pages>
         <title>Bridging Objects with Logical Rules: Towards Object Oriented Deductive Databases.</title>
         <url>db/journals/lncs/lncs701.html#CeriT93</url>
         <year>1993</year>
-    </incollection>
-    <incollection>
-        <author>Pedro Rodrigues</author>
-        <author>Manuel Ferreira</author>
-        <author>João Monteiro</author>
-        <booktitle>Speech, Audio, Image and Biomedical Signal Processing using Neural Networks</booktitle>
-        <cited>0</cited>
-        <crossref>series/sci/2008-83</crossref>
-        <ee>http://dx.doi.org/10.1007/978-3-540-75398-8_17</ee>
-        <id>73</id>
-        <pages>373-396</pages>
-        <title>Segmentation and Classification of Leukocytes. Using Neural Networks: A Generalization Direction.</title>
-        <url>db/series/sci/sci83.html#RodriguesFM08</url>
-        <year>2008</year>
-    </incollection>
-    <incollection>
-        <author>Akiyoshi Wakatani</author>
-        <booktitle>Computer and Information Science</booktitle>
-        <cited>0</cited>
-        <crossref>series/sci/2008-131</crossref>
-        <ee>http://dx.doi.org/10.1007/978-3-540-79187-4_4</ee>
-        <id>74</id>
-        <pages>41-50</pages>
-        <title>Multi-step Parallel PNN Algorithm for Distributed-Memory Systems.</title>
-        <url>db/series/sci/sci131.html#Wakatani08</url>
-        <year>2008</year>
-    </incollection>
-    <incollection>
-        <author>Aradhya V. N. Manjunath</author>
-        <author>G. Hemantha Kumar</author>
-        <author>S. Noushath</author>
-        <booktitle>Speech, Audio, Image and Biomedical Signal Processing using Neural Networks</booktitle>
-        <cited>0</cited>
-        <crossref>series/sci/2008-83</crossref>
-        <ee>http://dx.doi.org/10.1007/978-3-540-75398-8_12</ee>
-        <id>75</id>
-        <pages>269-282</pages>
-        <title>Fisher Linear Discriminant Analysis and Connectionist Model for Efficient Image Recognition.</title>
-        <url>db/series/sci/sci83.html#ManjunathKN08</url>
-        <year>2008</year>
-    </incollection>
-    <incollection>
-        <author>Stefano Ceri</author>
-        <author>Letizia Tanca</author>
-        <booktitle>LOGIDATA+: Deductive Databases with Complex Objects</booktitle>
-        <cited>0</cited>
-        <crossref>books/sp/Atzeni93</crossref>
-        <ee>http://dx.doi.org/10.1007/BFb0021886</ee>
-        <id>76</id>
-        <pages>7-19</pages>
-        <title>Bridging Objects with Logical Rules: Towards Object Oriented Deductive Databases.</title>
-        <url>db/journals/lncs/lncs701.html#CeriT93</url>
-        <year>1993</year>
-    </incollection>
-    <incollection>
-        <author>Pedro Rodrigues</author>
-        <author>Manuel Ferreira</author>
-        <author>João Monteiro</author>
-        <booktitle>Speech, Audio, Image and Biomedical Signal Processing using Neural Networks</booktitle>
-        <cited>0</cited>
-        <crossref>series/sci/2008-83</crossref>
-        <ee>http://dx.doi.org/10.1007/978-3-540-75398-8_17</ee>
-        <id>77</id>
-        <pages>373-396</pages>
-        <title>Segmentation and Classification of Leukocytes. Using Neural Networks: A Generalization Direction.</title>
-        <url>db/series/sci/sci83.html#RodriguesFM08</url>
-        <year>2008</year>
-    </incollection>
-    <incollection>
-        <author>Akiyoshi Wakatani</author>
-        <booktitle>Computer and Information Science</booktitle>
-        <cited>0</cited>
-        <crossref>series/sci/2008-131</crossref>
-        <ee>http://dx.doi.org/10.1007/978-3-540-79187-4_4</ee>
-        <id>78</id>
-        <pages>41-50</pages>
-        <title>Multi-step Parallel PNN Algorithm for Distributed-Memory Systems.</title>
-        <url>db/series/sci/sci131.html#Wakatani08</url>
-        <year>2008</year>
-    </incollection>
-    <incollection>
-        <author>Aradhya V. N. Manjunath</author>
-        <author>G. Hemantha Kumar</author>
-        <author>S. Noushath</author>
-        <booktitle>Speech, Audio, Image and Biomedical Signal Processing using Neural Networks</booktitle>
-        <cited>0</cited>
-        <crossref>series/sci/2008-83</crossref>
-        <ee>http://dx.doi.org/10.1007/978-3-540-75398-8_12</ee>
-        <id>79</id>
-        <pages>269-282</pages>
-        <title>Fisher Linear Discriminant Analysis and Connectionist Model for Efficient Image Recognition.</title>
-        <url>db/series/sci/sci83.html#ManjunathKN08</url>
-        <year>2008</year>
     </incollection>
     <inproceedings>
         <author>Werner John</author>
@@ -248,45 +76,21 @@
         <author>Joachim Müller</author>
         <booktitle>Proc. 11th Int. Symposium on Electromagnetic Compatibility (EMC'94)</booktitle>
         <cited>0</cited>
-        <id>80</id>
+        <id>75</id>
         <pages>40-43</pages>
         <title>ROSAR - Rule Oriented System for Analysis of Reflections on Printed Circuit Boards</title>
         <year>1994</year>
-    </inproceedings>
-    <inproceedings>
-        <author>Jan Van den Bussche</author>
-        <booktitle>Abstract State Machines</booktitle>
-        <cited>0</cited>
-        <crossref>conf/asm/2004</crossref>
-        <ee>http://dx.doi.org/10.1007/978-3-540-24773-9_5</ee>
-        <id>82</id>
-        <pages>61</pages>
-        <title>Finite Cursor Machines in Database Query Processing.</title>
-        <url>db/conf/asm/asm2004.html#Bussche04</url>
-        <year>2004</year>
     </inproceedings>
     <inproceedings>
         <author>Andreas Heberle</author>
         <author>Welf Löwe</author>
         <booktitle>Workshop on Abstract State Machines</booktitle>
         <cited>0</cited>
-        <id>83</id>
+        <id>78</id>
         <pages>68-90</pages>
         <title>On ASM-Based Specification of Programming Language Semantics and Reusable Correct Compilations.</title>
         <url>db/conf/asm/asm98.html#HerberleL98</url>
         <year>1998</year>
-    </inproceedings>
-    <inproceedings>
-        <author>Antonia Bertolino</author>
-        <booktitle>Abstract State Machines</booktitle>
-        <cited>0</cited>
-        <crossref>conf/asm/2003</crossref>
-        <ee>http://dx.doi.org/10.1007/3-540-36498-6_1</ee>
-        <id>84</id>
-        <pages>1-21</pages>
-        <title>Software Testing Research and Practice.</title>
-        <url>db/conf/asm/asm2003.html#Bertolino03</url>
-        <year>2003</year>
     </inproceedings>
     <inproceedings>
         <author>Yuri Gurevich</author>
@@ -296,36 +100,11 @@
         <cited>0</cited>
         <crossref>conf/asm/2000</crossref>
         <ee>http://dx.doi.org/10.1007/3-540-44518-8_10</ee>
-        <id>85</id>
+        <id>80</id>
         <pages>151-176</pages>
         <title>Investigating Java Concurrency Using Abstract State Machines.</title>
         <url>db/conf/asm/asm2000.html#GurevichSW00</url>
         <year>2000</year>
-    </inproceedings>
-    <inproceedings>
-        <author>Egon Börger</author>
-        <booktitle>Abstract State Machines</booktitle>
-        <cited>0</cited>
-        <crossref>conf/asm/2005</crossref>
-        <ee>http://www.univ-paris12.fr/lacl/dima/asm05/TeachAsm.ps</ee>
-        <id>86</id>
-        <pages>49-56</pages>
-        <title>The ASM Method: a Cornerstone in Computer Science Education.</title>
-        <url>db/conf/asm/asm2005.html#Borger05</url>
-        <year>2005</year>
-    </inproceedings>
-    <inproceedings>
-        <author>Horatiu Jula</author>
-        <author>Nicu G. Fruja</author>
-        <booktitle>Abstract State Machines</booktitle>
-        <cited>0</cited>
-        <crossref>conf/asm/2005</crossref>
-        <ee>http://www.univ-paris12.fr/lacl/dima/asm05/jula-fruja.ps</ee>
-        <id>88</id>
-        <pages>275-288</pages>
-        <title>An Executable Specification of C++.</title>
-        <url>db/conf/asm/asm2005.html#JulaF05</url>
-        <year>2005</year>
     </inproceedings>
     <inproceedings>
         <author>Werner John</author>
@@ -333,131 +112,66 @@
         <author>Joachim Müller</author>
         <booktitle>Proc. 11th Int. Symposium on Electromagnetic Compatibility (EMC'94)</booktitle>
         <cited>0</cited>
-        <id>92</id>
+        <id>87</id>
         <pages>40-43</pages>
         <title>ROSAR - Rule Oriented System for Analysis of Reflections on Printed Circuit Boards</title>
         <year>1994</year>
     </inproceedings>
     <inproceedings>
-        <author>Jan Van den Bussche</author>
-        <booktitle>Abstract State Machines</booktitle>
-        <cited>0</cited>
-        <crossref>conf/asm/2004</crossref>
-        <ee>http://dx.doi.org/10.1007/978-3-540-24773-9_5</ee>
-        <id>94</id>
-        <pages>61</pages>
-        <title>Finite Cursor Machines in Database Query Processing.</title>
-        <url>db/conf/asm/asm2004.html#Bussche04</url>
-        <year>2004</year>
-    </inproceedings>
-    <inproceedings>
         <author>Andreas Heberle</author>
         <author>Welf Löwe</author>
         <booktitle>Workshop on Abstract State Machines</booktitle>
+        <cited>0</cited>
+        <id>89</id>
+        <pages>68-90</pages>
+        <title>On ASM-Based Specification of Programming Language Semantics and Reusable Correct Compilations.</title>
+        <url>db/conf/asm/asm98.html#HerberleL98</url>
+        <year>1998</year>
+    </inproceedings>
+    <inproceedings>
+        <author>Yuri Gurevich</author>
+        <author>Wolfram Schulte</author>
+        <author>Charles Wallace</author>
+        <booktitle>Abstract State Machines</booktitle>
+        <cited>0</cited>
+        <crossref>conf/asm/2000</crossref>
+        <ee>http://dx.doi.org/10.1007/3-540-44518-8_10</ee>
+        <id>91</id>
+        <pages>151-176</pages>
+        <title>Investigating Java Concurrency Using Abstract State Machines.</title>
+        <url>db/conf/asm/asm2000.html#GurevichSW00</url>
+        <year>2000</year>
+    </inproceedings>
+    <mastersthesis>
+        <author>Tatu Ylönen</author>
+        <cited>0</cited>
+        <id>94</id>
+        <school>Helsinki University of Technology, Department of Computer Science</school>
+        <title>Shadow Paging Is Feasible.</title>
+        <year>1994</year>
+    </mastersthesis>
+    <mastersthesis>
+        <author>Tatu Ylönen</author>
         <cited>0</cited>
         <id>95</id>
-        <pages>68-90</pages>
-        <title>On ASM-Based Specification of Programming Language Semantics and Reusable Correct Compilations.</title>
-        <url>db/conf/asm/asm98.html#HerberleL98</url>
-        <year>1998</year>
-    </inproceedings>
-    <inproceedings>
-        <author>Antonia Bertolino</author>
-        <booktitle>Abstract State Machines</booktitle>
+        <school>Helsinki University of Technology, Department of Computer Science</school>
+        <title>Shadow Paging Is Feasible.</title>
+        <year>1994</year>
+    </mastersthesis>
+    <phdthesis>
+        <author>Michael J. Carey</author>
         <cited>0</cited>
-        <crossref>conf/asm/2003</crossref>
-        <ee>http://dx.doi.org/10.1007/3-540-36498-6_1</ee>
         <id>96</id>
-        <pages>1-21</pages>
-        <title>Software Testing Research and Practice.</title>
-        <url>db/conf/asm/asm2003.html#Bertolino03</url>
-        <year>2003</year>
-    </inproceedings>
-    <inproceedings>
-        <author>Yuri Gurevich</author>
-        <author>Wolfram Schulte</author>
-        <author>Charles Wallace</author>
-        <booktitle>Abstract State Machines</booktitle>
+        <school>College of Engineering, University of California, Berkeley</school>
+        <title>Modeling and Evaluation of Database Concurrency Control Algorithms</title>
+        <year>1983</year>
+    </phdthesis>
+    <phdthesis>
+        <author>Michael J. Carey</author>
         <cited>0</cited>
-        <crossref>conf/asm/2000</crossref>
-        <ee>http://dx.doi.org/10.1007/3-540-44518-8_10</ee>
         <id>97</id>
-        <pages>151-176</pages>
-        <title>Investigating Java Concurrency Using Abstract State Machines.</title>
-        <url>db/conf/asm/asm2000.html#GurevichSW00</url>
-        <year>2000</year>
-    </inproceedings>
-    <inproceedings>
-        <author>Egon Börger</author>
-        <booktitle>Abstract State Machines</booktitle>
-        <cited>0</cited>
-        <crossref>conf/asm/2005</crossref>
-        <ee>http://www.univ-paris12.fr/lacl/dima/asm05/TeachAsm.ps</ee>
-        <id>98</id>
-        <pages>49-56</pages>
-        <title>The ASM Method: a Cornerstone in Computer Science Education.</title>
-        <url>db/conf/asm/asm2005.html#Borger05</url>
-        <year>2005</year>
-    </inproceedings>
-    <inproceedings>
-        <author>Horatiu Jula</author>
-        <author>Nicu G. Fruja</author>
-        <booktitle>Abstract State Machines</booktitle>
-        <cited>0</cited>
-        <crossref>conf/asm/2005</crossref>
-        <ee>http://www.univ-paris12.fr/lacl/dima/asm05/jula-fruja.ps</ee>
-        <id>100</id>
-        <pages>275-288</pages>
-        <title>An Executable Specification of C++.</title>
-        <url>db/conf/asm/asm2005.html#JulaF05</url>
-        <year>2005</year>
-    </inproceedings>
-    <mastersthesis>
-        <author>Tatu Ylönen</author>
-        <cited>0</cited>
-        <id>104</id>
-        <school>Helsinki University of Technology, Department of Computer Science</school>
-        <title>Shadow Paging Is Feasible.</title>
-        <year>1994</year>
-    </mastersthesis>
-    <mastersthesis>
-        <author>Tatu Ylönen</author>
-        <cited>0</cited>
-        <id>105</id>
-        <school>Helsinki University of Technology, Department of Computer Science</school>
-        <title>Shadow Paging Is Feasible.</title>
-        <year>1994</year>
-    </mastersthesis>
-    <phdthesis>
-        <author>Michael J. Carey</author>
-        <cited>0</cited>
-        <id>106</id>
         <school>College of Engineering, University of California, Berkeley</school>
         <title>Modeling and Evaluation of Database Concurrency Control Algorithms</title>
         <year>1983</year>
     </phdthesis>
-    <phdthesis>
-        <author>Michael J. Carey</author>
-        <cited>0</cited>
-        <id>107</id>
-        <school>College of Engineering, University of California, Berkeley</school>
-        <title>Modeling and Evaluation of Database Concurrency Control Algorithms</title>
-        <year>1983</year>
-    </phdthesis>
-    <www>
-        <author>Michael Ley</author>
-        <cited>0</cited>
-        <id>108</id>
-        <title>ACM SIGMOD Contribution Award 2003 Acceptance Speech</title>
-        <url>http://www.informatik.uni-trier.de/~ley/db/about/contributionaward03.html</url>
-        <year>2003</year>
-    </www>
-    <www>
-        <author>Michael Ley</author>
-        <cited>0</cited>
-        <id>131</id>
-        <title>ACM SIGMOD Contribution Award 2003 Acceptance Speech</title>
-        <url>http://www.informatik.uni-trier.de/~ley/db/about/contributionaward03.html</url>
-        <year>2003</year>
-    </www>
 </dblp>

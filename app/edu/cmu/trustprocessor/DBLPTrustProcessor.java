@@ -1,5 +1,6 @@
 package edu.cmu.trustprocessor;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -647,7 +648,13 @@ public class DBLPTrustProcessor {
 
 		return result;
 	}
-
+	
+	public static Double getTrustOfAuthorBeforeYear (String name, int inputyear) throws JAXBException, IOException, SAXException, ParserConfigurationException {
+		DBLPParser.getPriorPublicationsXML("dblp_example.xml", inputyear, "modified_dblp.xml");
+		DBLPTrustProcessor trustProcessor = new DBLPTrustProcessor("modified_dblp.xml");
+		return trustProcessor.getTrustValueFromName(name);
+	}
+	
 	public static void main(String args[]) throws SAXException, JAXBException, ParserConfigurationException {
 		DBLPTrustProcessor dblpTrustProcessor = new DBLPTrustProcessor();
 		List<String> expertNames = new ArrayList<String>();

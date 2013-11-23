@@ -16,6 +16,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Paint;
 import java.awt.Stroke;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -280,7 +281,7 @@ public class Application extends Controller {
 				);	
 	}
 	
-	public static Result getReputationForAuthor(String name) throws SAXException, JAXBException, ParserConfigurationException {
+	public static Result getReputationForAuthor(String name) throws SAXException, JAXBException, ParserConfigurationException, IOException {
 		DBLPTrustProcessor trustprocessor = new DBLPTrustProcessor();
 		Double trust = trustprocessor.getTrustValueFromName(name);
 		return ok(
