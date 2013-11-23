@@ -29,16 +29,6 @@ public class Publication
 	private String year;
 	private String address;
 	private String journal;
-	private List<String> field;
-
-
-	public int getCitationcount() {
-		return citationcount;
-	}
-
-	public void setCitationcount(int citationcount) {
-		this.citationcount = citationcount;
-	}
 	private String volume;
 	private String number;
 	private String month;
@@ -57,11 +47,20 @@ public class Publication
 	private String key;
 	private String reviewid;
 	private String rating;
+	private List<String> field = new ArrayList<String>();
 	
 	public Publication() {
 		super();
 	}
 	
+	public int getCitationcount() {
+		return citationcount;
+	}
+
+	public void setCitationcount(int citationcount) {
+		this.citationcount = citationcount;
+	}
+		
 	public Publication(Article article) {
 		super();
 		this.id = article.getId();
@@ -91,6 +90,7 @@ public class Publication
 		if(article.getUrl()!=null) this.url = article.getUrl();
 		if(article.getEe()!=null) this.ee = article.getEe();
 		if(article.getCdrom()!=null) this.cdrom = article.getCdrom();
+		
 		if(article.getCite()!=null)
 		{
 			List<String> citelist = article.getCite();
@@ -119,6 +119,14 @@ public class Publication
 		if(article.getKey()!=null)this.key = article.getKey();
 		if(article.getReviewid()!=null) this.reviewid = article.getReviewid();
 		if(article.getRating()!=null) this.rating = article.getRating();
+		
+		if(article.getField()!=null)
+		{
+			List<String> fieldlist = article.getField();
+			for(int i=0; i<fieldlist.size(); i++){
+				this.field.add(fieldlist.get(i));
+			}
+		}
 	}
 
 	public Publication(Book book) {
@@ -176,6 +184,13 @@ public class Publication
 		if(book.getKey()!=null)this.key = book.getKey();
 		if(book.getReviewid()!=null) this.reviewid = book.getReviewid();
 		if(book.getRating()!=null) this.rating = book.getRating();
+		if(book.getField()!=null)
+		{
+			List<String> fieldlist = book.getField();
+			for(int i=0; i<fieldlist.size(); i++){
+				this.field.add(fieldlist.get(i));
+			}
+		}
 	}
 	
 	public Publication(Incollection incollection) {
@@ -233,6 +248,7 @@ public class Publication
 		if(incollection.getKey()!=null)this.key = incollection.getKey();
 		if(incollection.getReviewid()!=null) this.reviewid = incollection.getReviewid();
 		if(incollection.getRating()!=null) this.rating = incollection.getRating();
+		if(incollection.getField()!=null) this.field = incollection.getField();
 	}
 	
 	public Publication(Inproceedings inproceedings) {
@@ -290,6 +306,7 @@ public class Publication
 		if(inproceedings.getKey()!=null)this.key = inproceedings.getKey();
 		if(inproceedings.getReviewid()!=null) this.reviewid = inproceedings.getReviewid();
 		if(inproceedings.getRating()!=null) this.rating = inproceedings.getRating();
+		if(inproceedings.getField()!=null) this.field = inproceedings.getField();
 	}
 
 	public Publication(Mastersthesis mastersthesis) {
@@ -347,6 +364,7 @@ public class Publication
 		if(mastersthesis.getKey()!=null)this.key = mastersthesis.getKey();
 		if(mastersthesis.getReviewid()!=null) this.reviewid = mastersthesis.getReviewid();
 		if(mastersthesis.getRating()!=null) this.rating = mastersthesis.getRating();
+		if(mastersthesis.getField()!=null) this.field = mastersthesis.getField();
 	}
 
 	public Publication(Phdthesis phdthesis) {
@@ -404,6 +422,7 @@ public class Publication
 		if(phdthesis.getKey()!=null)this.key = phdthesis.getKey();
 		if(phdthesis.getReviewid()!=null) this.reviewid = phdthesis.getReviewid();
 		if(phdthesis.getRating()!=null) this.rating = phdthesis.getRating();
+		if(phdthesis.getField()!=null) this.field = phdthesis.getField();
 	}
 
 	public Publication(Proceedings proceedings) {
@@ -461,6 +480,7 @@ public class Publication
 		if(proceedings.getKey()!=null)this.key = proceedings.getKey();
 		if(proceedings.getReviewid()!=null) this.reviewid = proceedings.getReviewid();
 		if(proceedings.getRating()!=null) this.rating = proceedings.getRating();
+		if(proceedings.getField()!=null) this.field = proceedings.getField();
 	}
 
 	public Publication(Www www) {
@@ -518,6 +538,7 @@ public class Publication
 		if(www.getKey()!=null)this.key = www.getKey();
 		if(www.getReviewid()!=null) this.reviewid = www.getReviewid();
 		if(www.getRating()!=null) this.rating = www.getRating();
+		if(www.getField()!=null) this.field = www.getField();
 	}
 
 	@XmlElement(name="id")
@@ -784,7 +805,8 @@ public class Publication
 		this.rating = rating;
 	}
 	
-	@XmlAttribute(name="field")
+	@XmlElementWrapper(name = "fields")
+	@XmlElement(name="field")
 	public List<String> getField() {
 		return field;
 	}

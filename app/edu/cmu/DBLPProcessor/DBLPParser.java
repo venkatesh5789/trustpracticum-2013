@@ -1101,7 +1101,7 @@ public class DBLPParser {
 		public void startElement(String uri, String name,
 				String qName, Attributes atts) {
 			if (isValidHeaderName(qName)) {
-				dataMap = LinkedHashMultimap.create();
+				//dataMap = LinkedHashMultimap.create();
 			}
 			currentElement = qName;
 			content = null;

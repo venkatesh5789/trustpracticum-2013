@@ -302,7 +302,7 @@ public class Book extends DBLPElement
 		this.rating = rating;
 	}
 	
-	@XmlAttribute(name="field")
+	@XmlElement(name="field")
 	public List<String> getField() {
 		return field;
 	}
