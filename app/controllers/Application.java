@@ -3,6 +3,7 @@ package controllers;
 import javax.xml.bind.JAXBException;
 import javax.xml.parsers.ParserConfigurationException;
 
+import edu.cmu.jung.CoAuthorGraph;
 import edu.cmu.jung.Edge;
 import edu.cmu.jung.UserCoAuthorSubgraph;
 import edu.uci.ics.jung.algorithms.layout.Layout;

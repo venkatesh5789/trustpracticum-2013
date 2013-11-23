@@ -5,6 +5,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Paint;
 import java.awt.Stroke;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -25,6 +26,7 @@ import edu.cmu.dataset.DatasetInterface;
 import edu.cmu.jung.Node;
 import edu.uci.ics.jung.algorithms.layout.CircleLayout;
 import edu.uci.ics.jung.algorithms.layout.Layout;
+import edu.uci.ics.jung.algorithms.shortestpath.DijkstraShortestPath;
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.SparseMultigraph;
 import edu.uci.ics.jung.graph.util.EdgeType;
@@ -49,7 +51,13 @@ public class CoAuthorGraph {
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset("dblp_example.xml");		
 	}
-
+	
+	@SuppressWarnings("unchecked")
+	public CoAuthorGraph(String fileName) throws SAXException, ParserConfigurationException {   
+		DatasetInterface dblpDataset = new DBLPDataSource();
+		dblp = dblpDataset.getDataset(fileName);		
+	}
+	
 	/** Constructs an example directed graph with our vertex and edge classes 
 	 * @throws JAXBException */
 	public void constructGraph() throws JAXBException {
@@ -93,7 +101,50 @@ public class CoAuthorGraph {
 
 		return 0;
 	}
+	
+	
+	public Graph<Node, Edge> getGraph() {
+		return g;
+	}
 
+	public void setGraph(Graph<Node, Edge> g) {
+		this.g = g;
+	}
+	
+	
+	public List<Node> getNodes() {
+		return nodes;
+	}
+
+	public void setNodes(List<Node> nodes) {
+		this.nodes = nodes;
+	}
+
+	public static Double getTimeDependantPathDistanceBetweenNodes(String author1Name, String author2Name, int year) throws JAXBException, IOException, SAXException, ParserConfigurationException {
+		DBLPParser.getPriorPublicationsXML("dblp_example.xml", year, "modified_dblp.xml");
+		CoAuthorGraph graph = new CoAuthorGraph("modified_dblp.xml");
+		graph.constructGraph();
+		
+		List<Node> listOfNodes = graph.getNodes();
+		DijkstraShortestPath<Node,Edge> alg = new DijkstraShortestPath(graph.getGraph());
+		
+		Node firstNode = null;
+		Node secondNode = null;
+		
+		for(Node node: listOfNodes) {
+			String nodeAuthorName = node.getUser().getName();
+			if(nodeAuthorName.equalsIgnoreCase(author1Name))
+				firstNode = node;
+			if(nodeAuthorName.equalsIgnoreCase(author2Name))
+				secondNode = node;
+		}
+		
+		if((firstNode==null) || (secondNode==null))
+			return 0.0;
+		else
+			return (Double) alg.getDistance(firstNode, secondNode);
+	}
+	
 	/**
 	 * @param args the command line arguments
 	 * @throws JAXBException 
@@ -101,7 +152,7 @@ public class CoAuthorGraph {
 	 * @throws ParserConfigurationException 
 	 */
 	public static void main(String[] args) throws JAXBException, SAXException, ParserConfigurationException {
-		CoAuthorGraph myApp = new CoAuthorGraph();
+		CoAuthorGraph myApp = new CoAuthorGraph("modified_dblp.xml");
 		myApp.constructGraph();
 		//System.out.println(myApp.g.toString());
 		

@@ -31,6 +31,7 @@ import edu.cmu.DBLPProcessor.Publication;
 import edu.cmu.dataset.DBLPDataSource;
 import edu.cmu.dataset.DatasetInterface;
 import edu.cmu.jung.Node;
+import edu.uci.ics.jung.algorithms.filters.KNeighborhoodFilter;
 import edu.uci.ics.jung.algorithms.layout.CircleLayout;
 import edu.uci.ics.jung.algorithms.layout.Layout;
 import edu.uci.ics.jung.graph.DirectedSparseMultigraph;
@@ -82,8 +83,39 @@ public class UserCoAuthorSubgraph {
 		Node firstNode = new Node(inputAuthor);
 
 		return createNodesAndEdgesHelper(null, firstNode, null, 0, noOfLevels, resultJson);
+		
+		//createNodes();
+		//createEdges();
+		// TODO: KNeighborhoodFilter<Node, Edge> coAuthorSubgraph = new KNeighborhoodFilter<Node, Edge>(inputAuthor, noOfLevels, 0);
+	}
+	
+	private void createNodes() throws JAXBException {
+		Iterator<String> it = dblp.keySet().iterator();
+		while (it.hasNext())
+		{
+			String key = it.next();
+			DBLPUser author = dblp.get(key);
+			Node currentNode = new Node(author);
+			nodes.add(currentNode);
+		}
 	}
 
+	private void createEdges() throws JAXBException {
+		Iterator<String> it = dblp.keySet().iterator();
+		while (it.hasNext())
+		{
+			String key = it.next();
+			DBLPUser author = dblp.get(key);
+			int startingNodeNumber, endingNodeNumber;
+			startingNodeNumber = getNodeFromAuthor(author);
+			for(Coauthorship c: author.getCoAuthors()) {
+				DBLPUser coauthor = DBLPParser.getDBLPUserFromID(c.getCoauthorid());
+				endingNodeNumber = getNodeFromAuthor(coauthor);				
+				g.addEdge(new Edge(),nodes.get(startingNodeNumber), nodes.get(endingNodeNumber), EdgeType.UNDIRECTED);
+			}	
+		}
+	}
+	
 	private JSONArray createNodesAndEdgesHelper(Node previousNode, Node currentNode, List<Publication> publicationList, int currentLevel, int noOfLevels, JSONArray resultJson) throws JAXBException {
 		currentNode.setVisited(true);
 		currentNode.setLevel(currentLevel);
