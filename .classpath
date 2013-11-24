@@ -24,7 +24,11 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry exported="true" kind="lib" path="lib/ngdbc.jar"/>
 	<classpathentry exported="true" kind="lib" path="Properties"/>
-	<classpathentry kind="lib" path="/Users/ShuaiWang/Desktop/play-2.2.1/framework"/>
-	<classpathentry kind="lib" path="/Users/ShuaiWang/Desktop/google-collections-0.8.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1-tests.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/google-collections-0.8.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-validator-4.0.2.GA.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

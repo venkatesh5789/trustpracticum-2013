@@ -310,4 +310,13 @@ public class Www extends DBLPElement
 	public void setField(List<String> field) {
 		this.field = field;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Www) {
+			if(this.getTitle().equals(((Www) o).getTitle()))
+				return true;
+		}
+		return false;
+	}
 }

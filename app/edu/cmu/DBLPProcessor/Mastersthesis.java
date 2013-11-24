@@ -310,4 +310,13 @@ public class Mastersthesis extends DBLPElement
 	public void setField(List<String> field) {
 		this.field = field;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Mastersthesis) {
+			if(this.getTitle().equals(((Mastersthesis) o).getTitle()))
+				return true;
+		}
+		return false;
+	}
 }

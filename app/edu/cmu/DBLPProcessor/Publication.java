@@ -848,4 +848,13 @@ public class Publication
 	public void setField(List<String> field) {
 		this.field = field;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Publication) {
+			if(this.getTitle().equals(((Publication) o).getTitle()))
+				return true;
+		}
+		return false;
+	}
 }

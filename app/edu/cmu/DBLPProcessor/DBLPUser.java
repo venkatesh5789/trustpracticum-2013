@@ -57,7 +57,8 @@ public class DBLPUser {
 	}
 
 	public void setPublication (Publication publication) {
-		this.publication.add(publication);
+		if(! this.publication.contains(publication))
+			this.publication.add(publication);
 	}
 
 	public int countPublication(){

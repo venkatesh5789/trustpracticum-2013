@@ -310,4 +310,13 @@ public class Proceedings extends DBLPElement
 	public void setField(List<String> field) {
 		this.field = field;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Proceedings) {
+			if(this.getTitle().equals(((Proceedings) o).getTitle()))
+				return true;
+		}
+		return false;
+	}
 }

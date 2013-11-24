@@ -309,4 +309,13 @@ public class Phdthesis extends DBLPElement
 	public void setField(List<String> field) {
 		this.field = field;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Phdthesis) {
+			if(this.getTitle().equals(((Phdthesis) o).getTitle()))
+				return true;
+		}
+		return false;
+	}
 }

@@ -6,6 +6,7 @@ package edu.cmu.DBLPProcessor;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -37,6 +38,8 @@ import edu.cmu.DBLPProcessor.Phdthesis;
 import edu.cmu.DBLPProcessor.Proceedings;
 import edu.cmu.DBLPProcessor.Publication;
 import edu.cmu.DBLPProcessor.Www;
+import edu.cmu.dataset.DBLPDataSource;
+import edu.cmu.dataset.DatasetInterface;
 import edu.cmu.jung.CoAuthorGraph;
 import edu.cmu.trustprocessor.DBLPTrustProcessor;
 
@@ -78,8 +81,8 @@ public class DBLPParser {
 		System.out.println("Author : "+dblpUserList.size());
 		Set<String> hs = dblpUserList.keySet();
 		Iterator it = hs.iterator();
-		while (it.hasNext())
-			System.out.println(it.next() );
+		//		while (it.hasNext())
+		//			System.out.println(it.next() );
 
 		return dblpUserList;
 	}
@@ -180,11 +183,13 @@ public class DBLPParser {
 						dblpuser = new DBLPUser();
 						dblpuser.setName(authorName.get(j));
 						mapUserNameId.put(dblpuser.getName(), dblpuser.getId());
+						dblpUserList.put(authorName.get(j),dblpuser);
 					}
 					publication = new Publication(article);
+
 					dblpuser.setPublication(publication);
-					dblpUserList.put(authorName.get(j),dblpuser);
-					publicationList.add(publication);
+					if(! publicationList.contains(publication))
+						publicationList.add(publication);
 				}
 			}
 			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
@@ -214,12 +219,14 @@ public class DBLPParser {
 					{
 						dblpuser = new DBLPUser();
 						dblpuser.setName(authorName.get(j));
+						dblpUserList.put(authorName.get(j),dblpuser);
 						mapUserNameId.put(dblpuser.getName(), dblpuser.getId());
 					}
 					publication = new Publication(book);
 					dblpuser.setPublication(publication);
-					dblpUserList.put(authorName.get(j),dblpuser);
-					publicationList.add(publication);
+
+					if(! publicationList.contains(publication))
+						publicationList.add(publication);
 				}
 			}
 			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
@@ -249,12 +256,14 @@ public class DBLPParser {
 					{
 						dblpuser = new DBLPUser();
 						dblpuser.setName(authorName.get(j));
+						dblpUserList.put(authorName.get(j),dblpuser);
 						mapUserNameId.put(dblpuser.getName(), dblpuser.getId());
 					}
 					publication = new Publication(incollection);
 					dblpuser.setPublication(publication);
-					dblpUserList.put(authorName.get(j),dblpuser);
-					publicationList.add(publication);
+
+					if(! publicationList.contains(publication))
+						publicationList.add(publication);
 				}
 			}
 			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
@@ -284,14 +293,16 @@ public class DBLPParser {
 					{
 						dblpuser = new DBLPUser();
 						dblpuser.setName(authorName.get(j));
+						dblpUserList.put(authorName.get(j),dblpuser);
 						mapUserNameId.put(dblpuser.getName(), dblpuser.getId());
 					}
 					//this is where the problem is coming, the publication is not traversing through the inproceedings properly
 					//at this time, mapUserNameId has fewer elements, so it is unable to add properly
 					publication = new Publication(inproceedings);
 					dblpuser.setPublication(publication);
-					dblpUserList.put(authorName.get(j),dblpuser);
-					publicationList.add(publication);
+
+					if(! publicationList.contains(publication))
+						publicationList.add(publication);
 				}
 			}
 			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
@@ -321,12 +332,14 @@ public class DBLPParser {
 					{
 						dblpuser = new DBLPUser();
 						dblpuser.setName(authorName.get(j));
+						dblpUserList.put(authorName.get(j),dblpuser);
 						mapUserNameId.put(dblpuser.getName(), dblpuser.getId());
 					}
 					publication = new Publication(mastersthesis);
 					dblpuser.setPublication(publication);
-					dblpUserList.put(authorName.get(j),dblpuser);
-					publicationList.add(publication);
+
+					if(! publicationList.contains(publication))
+						publicationList.add(publication);
 				}
 			}
 			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
@@ -356,12 +369,14 @@ public class DBLPParser {
 					{
 						dblpuser = new DBLPUser();
 						dblpuser.setName(authorName.get(j));
+						dblpUserList.put(authorName.get(j),dblpuser);
 						mapUserNameId.put(dblpuser.getName(), dblpuser.getId());
 					}
 					publication = new Publication(phdthesis);
 					dblpuser.setPublication(publication);
-					dblpUserList.put(authorName.get(j),dblpuser);
-					publicationList.add(publication);
+
+					if(! publicationList.contains(publication))
+						publicationList.add(publication);
 				}
 			}
 			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
@@ -391,12 +406,14 @@ public class DBLPParser {
 					{
 						dblpuser = new DBLPUser();
 						dblpuser.setName(authorName.get(j));
+						dblpUserList.put(authorName.get(j),dblpuser);
 						mapUserNameId.put(dblpuser.getName(), dblpuser.getId());
 					}
 					publication = new Publication(proceedings);
 					dblpuser.setPublication(publication);
-					dblpUserList.put(authorName.get(j),dblpuser);
-					publicationList.add(publication);
+
+					if(! publicationList.contains(publication))
+						publicationList.add(publication);
 				}
 			}
 			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
@@ -426,19 +443,19 @@ public class DBLPParser {
 					{
 						dblpuser = new DBLPUser();
 						dblpuser.setName(authorName.get(j));
+						dblpUserList.put(authorName.get(j),dblpuser);
 						mapUserNameId.put(dblpuser.getName(), dblpuser.getId());
 					}
 					publication = new Publication(www);
 					dblpuser.setPublication(publication);
-					dblpUserList.put(authorName.get(j),dblpuser);
-					publicationList.add(publication);
+
+					if(! publicationList.contains(publication))
+						publicationList.add(publication);
 				}
 			}
 			//String filename = "DBLP_XML/publication"+publication.getId()+".xml";
 			//xmlWriter(publication,filename);
 		}
-
-
 	}
 
 	/**
@@ -623,7 +640,10 @@ public class DBLPParser {
 			if(parse_articleList!=null)
 			{
 				System.out.println("article : "+parse_articleList.size());
-				articleList.addAll(parse_articleList);
+				for(Article article: parse_articleList)
+					if(! articleList.contains(article))
+						articleList.add(article);
+
 				for(int i=0; i<articleList.size(); i++)
 				{
 					Article article = articleList.get(i);
@@ -645,7 +665,10 @@ public class DBLPParser {
 			if(parse_bookList!=null)
 			{
 				System.out.println("book : "+parse_bookList.size());
-				bookList.addAll(parse_bookList);
+				for(Book book: parse_bookList)
+					if(! bookList.contains(book))
+						bookList.add(book);
+
 				for(int i=0; i<bookList.size(); i++)
 				{
 					Book book = bookList.get(i);
@@ -667,7 +690,10 @@ public class DBLPParser {
 			if(parse_incollectionList!=null)
 			{
 				System.out.println("incollection : "+parse_incollectionList.size());
-				incollectionList.addAll(parse_incollectionList);
+				for(Incollection incollection: parse_incollectionList)
+					if(! incollectionList.contains(incollection))
+						incollectionList.add(incollection);
+
 				for(int i=0; i<incollectionList.size(); i++)
 				{
 					Incollection incollection = incollectionList.get(i);
@@ -689,7 +715,10 @@ public class DBLPParser {
 			if(parse_inproceedingsList!=null)
 			{
 				System.out.println("inproceeding : "+parse_inproceedingsList.size());
-				inproceedingsList.addAll(parse_inproceedingsList);
+				for(Inproceedings inproceeding: parse_inproceedingsList)
+					if(! inproceedingsList.contains(inproceeding))		
+						inproceedingsList.add(inproceeding);
+
 				for(int i=0; i<inproceedingsList.size(); i++)
 				{
 					Inproceedings inproceedings = inproceedingsList.get(i);
@@ -711,7 +740,10 @@ public class DBLPParser {
 			if(parse_mastersthesisList!=null)
 			{
 				System.out.println("masterthesis : "+parse_mastersthesisList.size());
-				mastersthesisList.addAll(parse_mastersthesisList);
+				for(Mastersthesis mastersthesis: parse_mastersthesisList)
+					if(! mastersthesisList.contains(mastersthesis))
+						mastersthesisList.add(mastersthesis);
+
 				for(int i=0; i<mastersthesisList.size(); i++)
 				{
 					Mastersthesis mastersthesis = mastersthesisList.get(i);
@@ -733,7 +765,10 @@ public class DBLPParser {
 			if(parse_phdthesisList!=null)
 			{
 				System.out.println("phdthesis : "+parse_phdthesisList.size());
-				phdthesisList.addAll(parse_phdthesisList);
+				for(Phdthesis phdthesis: parse_phdthesisList)
+					if(! phdthesisList.contains(phdthesis))
+						phdthesisList.add(phdthesis);
+
 				for(int i=0; i<phdthesisList.size(); i++)
 				{
 					Phdthesis phdthesis = phdthesisList.get(i);
@@ -755,7 +790,10 @@ public class DBLPParser {
 			if(parse_proceedingsList!=null)
 			{
 				System.out.println("proceedings : "+parse_proceedingsList.size());
-				proceedingsList.addAll(parse_proceedingsList);
+				for(Proceedings proceedings: parse_proceedingsList)
+					if(! proceedingsList.contains(proceedings))
+						proceedingsList.add(proceedings);
+
 				for(int i=0; i<proceedingsList.size(); i++)
 				{
 					Proceedings proceedings = proceedingsList.get(i);
@@ -777,7 +815,10 @@ public class DBLPParser {
 			if(parse_wwwList!=null)
 			{
 				System.out.println("www : "+parse_wwwList.size());
-				wwwList.addAll(parse_wwwList);
+				for(Www www: parse_wwwList)
+					if(! wwwList.contains(www))
+						wwwList.add(www);
+
 				for(int i=0; i<wwwList.size(); i++)
 				{
 					Www www = wwwList.get(i);
@@ -873,6 +914,7 @@ public class DBLPParser {
 
 	public static void getPriorPublicationsXML(String inputFileName, int inputYear, String outputFileName) throws JAXBException, IOException, SAXException, ParserConfigurationException {
 		//dblpParser.parseDBLPXML(Play.application().path().getPath() + "/../../.." + "/public/dblp_example.xml");
+		System.out.println("============ "+inputFileName+" ============");
 		JAXBContext jaxbContext = JAXBContext.newInstance(DBLPElement.class);
 
 		SAXParserFactory spf = SAXParserFactory.newInstance();
@@ -891,6 +933,10 @@ public class DBLPParser {
 		m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 		File file = null;
 		file = new File(outputFileName);
+
+		PrintWriter writer = new PrintWriter(file);
+		writer.print("");
+		writer.close();
 
 		List<Article> parse_articleList = (List<Article>)dblp.getArticleList();
 		List<Article> relevant_articleList = new ArrayList<Article>();
@@ -1007,9 +1053,10 @@ public class DBLPParser {
 		m.marshal(modified_dblp, file);	
 	}
 
-	public static void getFileForNaiveBayesClassification(String inputFileName, String outputFileName) {
-		JAXBContext jaxbContext = JAXBContext.newInstance(DBLPElement.class);
+	public static void getFileForNaiveBayesClassification(String inputFileName, String outputFileName) throws JAXBException, IOException, SAXException, ParserConfigurationException{
+		List<String> authors;
 
+		JAXBContext jaxbContext = JAXBContext.newInstance(DBLPElement.class);
 		SAXParserFactory spf = SAXParserFactory.newInstance();
 		XMLReader xmlReader = spf.newSAXParser().getXMLReader();
 
@@ -1021,28 +1068,16 @@ public class DBLPParser {
 		DBLPElement dblp = (DBLPElement) jaxbUnmarshaller.unmarshal(source);
 
 		List<Article> parse_articleList = (List<Article>)dblp.getArticleList();
+
 		if(parse_articleList!=null)
 		{
 			System.out.println("article : "+parse_articleList.size());
 			articleList.addAll(parse_articleList);
 			for(int i=0; i<articleList.size(); i++)
 			{
-				List<String> authors = articleList.get(i).getAuthor();
-
-				//Iterating through each pair of authors, as long as there are multiple authors of the publication
-				if(authors.size() > 1) {
-					for(String firstAuthor : authors) {
-						for(String secondAuthor : authors) {
-							if(! firstAuthor.equals(secondAuthor)) {
-								Integer year = Integer.parseInt(articleList.get(i).getYear());
-								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
-								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
-								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
-								//TODO: get jaccard similarity and file writing stuff to outputFileName
-							}
-						}
-					}
-				}
+				authors = articleList.get(i).getAuthor();
+				Integer year = Integer.parseInt(articleList.get(i).getYear());
+				writeRelevantValuesIntoNaiveBayesFile(authors, year, inputFileName);
 			}
 		}
 
@@ -1053,24 +1088,9 @@ public class DBLPParser {
 			bookList.addAll(parse_bookList);
 			for(int i=0; i<bookList.size(); i++)
 			{
-				List<String> authors = bookList.get(i).getAuthor();
-
-				//Iterating through each pair of authors, as long as there are multiple authors of the publication
-				if(authors.size() > 1) {
-					for(String firstAuthor : authors) {
-						for(String secondAuthor : authors) {
-							if(! firstAuthor.equals(secondAuthor)) {
-								Integer year = Integer.parseInt(bookList.get(i).getYear());
-								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
-								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
-								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
-								
-								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
-								//TODO: get jaccard similarity and file writing stuff to outputFileName
-							}
-						}
-					}
-				}
+				authors = bookList.get(i).getAuthor();
+				Integer year = Integer.parseInt(bookList.get(i).getYear());
+				writeRelevantValuesIntoNaiveBayesFile(authors, year, inputFileName);
 			}
 		}
 
@@ -1081,24 +1101,9 @@ public class DBLPParser {
 			incollectionList.addAll(parse_incollectionList);
 			for(int i=0; i<incollectionList.size(); i++)
 			{
-				List<String> authors = incollectionList.get(i).getAuthor();
-
-				//Iterating through each pair of authors, as long as there are multiple authors of the publication
-				if(authors.size() > 1) {
-					for(String firstAuthor : authors) {
-						for(String secondAuthor : authors) {
-							if(! firstAuthor.equals(secondAuthor)) {
-								Integer year = Integer.parseInt(incollectionList.get(i).getYear());
-								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
-								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
-								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
-								
-								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
-								//TODO: get jaccard similarity and file writing stuff to outputFileName
-							}
-						}
-					}
-				}			
+				authors = incollectionList.get(i).getAuthor();
+				Integer year = Integer.parseInt(incollectionList.get(i).getYear());
+				writeRelevantValuesIntoNaiveBayesFile(authors, year, inputFileName);				
 			}
 		}
 
@@ -1109,24 +1114,9 @@ public class DBLPParser {
 			inproceedingsList.addAll(parse_inproceedingsList);
 			for(int i=0; i<inproceedingsList.size(); i++)
 			{
-				List<String> authors = inproceedingsList.get(i).getAuthor();
-
-				//Iterating through each pair of authors, as long as there are multiple authors of the publication
-				if(authors.size() > 1) {
-					for(String firstAuthor : authors) {
-						for(String secondAuthor : authors) {
-							if(! firstAuthor.equals(secondAuthor)) {
-								Integer year = Integer.parseInt(inproceedingsList.get(i).getYear());
-								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
-								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
-								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
-								
-								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
-								//TODO: get jaccard similarity and file writing stuff to outputFileName
-							}
-						}
-					}
-				}			
+				authors = inproceedingsList.get(i).getAuthor();
+				Integer year = Integer.parseInt(inproceedingsList.get(i).getYear());
+				writeRelevantValuesIntoNaiveBayesFile(authors, year, inputFileName);
 			}
 		}
 
@@ -1137,24 +1127,9 @@ public class DBLPParser {
 			mastersthesisList.addAll(parse_mastersthesisList);
 			for(int i=0; i<mastersthesisList.size(); i++)
 			{
-				List<String> authors = mastersthesisList.get(i).getAuthor();
-
-				//Iterating through each pair of authors, as long as there are multiple authors of the publication
-				if(authors.size() > 1) {
-					for(String firstAuthor : authors) {
-						for(String secondAuthor : authors) {
-							if(! firstAuthor.equals(secondAuthor)) {
-								Integer year = Integer.parseInt(mastersthesisList.get(i).getYear());
-								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
-								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
-								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
-								
-								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
-								//TODO: get jaccard similarity and file writing stuff to outputFileName
-							}
-						}
-					}
-				}			
+				authors = mastersthesisList.get(i).getAuthor();
+				Integer year = Integer.parseInt(mastersthesisList.get(i).getYear());
+				writeRelevantValuesIntoNaiveBayesFile(authors, year, inputFileName);						
 			}
 		}
 
@@ -1165,24 +1140,9 @@ public class DBLPParser {
 			phdthesisList.addAll(parse_phdthesisList);
 			for(int i=0; i<phdthesisList.size(); i++)
 			{
-				List<String> authors = phdthesisList.get(i).getAuthor();
-
-				//Iterating through each pair of authors, as long as there are multiple authors of the publication
-				if(authors.size() > 1) {
-					for(String firstAuthor : authors) {
-						for(String secondAuthor : authors) {
-							if(! firstAuthor.equals(secondAuthor)) {
-								Integer year = Integer.parseInt(phdthesisList.get(i).getYear());
-								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
-								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
-								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
-								
-								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
-								//TODO: get jaccard similarity and file writing stuff to outputFileName
-							}
-						}
-					}
-				}			
+				authors = phdthesisList.get(i).getAuthor();
+				Integer year = Integer.parseInt(phdthesisList.get(i).getYear());
+				writeRelevantValuesIntoNaiveBayesFile(authors, year, inputFileName);				
 			}
 		}
 
@@ -1193,24 +1153,9 @@ public class DBLPParser {
 			proceedingsList.addAll(parse_proceedingsList);
 			for(int i=0; i<proceedingsList.size(); i++)
 			{
-				List<String> authors = proceedingsList.get(i).getAuthor();
-
-				//Iterating through each pair of authors, as long as there are multiple authors of the publication
-				if(authors.size() > 1) {
-					for(String firstAuthor : authors) {
-						for(String secondAuthor : authors) {
-							if(! firstAuthor.equals(secondAuthor)) {
-								Integer year = Integer.parseInt(proceedingsList.get(i).getYear());
-								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
-								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
-								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
-								
-								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
-								//TODO: get jaccard similarity and file writing stuff to outputFileName
-							}
-						}
-					}
-				}			
+				authors = proceedingsList.get(i).getAuthor();
+				Integer year = Integer.parseInt(proceedingsList.get(i).getYear());
+				writeRelevantValuesIntoNaiveBayesFile(authors, year, inputFileName);
 			}
 		}
 
@@ -1221,27 +1166,44 @@ public class DBLPParser {
 			wwwList.addAll(parse_wwwList);
 			for(int i=0; i<wwwList.size(); i++)
 			{
-				List<String> authors = wwwList.get(i).getAuthor();
-
-				//Iterating through each pair of authors, as long as there are multiple authors of the publication
-				if(authors.size() > 1) {
-					for(String firstAuthor : authors) {
-						for(String secondAuthor : authors) {
-							if(! firstAuthor.equals(secondAuthor)) {
-								Integer year = Integer.parseInt(wwwList.get(i).getYear());
-								Double timebasedFirstAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(firstAuthor, year);
-								Double timebasedSecondAuthorTrust = DBLPTrustProcessor.getTrustOfAuthorBeforeYear(secondAuthor, year);
-								Double coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year);
-								
-								FileParser fp = new FileParser(inputFileName, "jaccardfile.txt");
-								//TODO: get jaccard similarity and file writing stuff to outputFileName
-							}
-						}
-					}
-				}			
+				authors = wwwList.get(i).getAuthor();
+				Integer year = Integer.parseInt(wwwList.get(i).getYear());
+				writeRelevantValuesIntoNaiveBayesFile(authors, year, inputFileName);
 			}
 		}
+		printParseDBLPXML();
+	}
 
+	private static void writeRelevantValuesIntoNaiveBayesFile(List<String> authors, Integer year, String inputFileName) throws JAXBException, IOException, SAXException, ParserConfigurationException {
+		String firstAuthor, secondAuthor;
+		Double timebasedFirstAuthorTrust, timebasedSecondAuthorTrust,coauthorDistance;
+		FileParser fp;
+		DBLPParser.getPriorPublicationsXML(inputFileName, year, "modified_dblp.xml");
+		DBLPTrustProcessor trustProcessor = new DBLPTrustProcessor("modified_dblp.xml");
+		CoAuthorGraph graph = new CoAuthorGraph("modified_dblp.xml");
+		graph.constructGraph();
+		
+		HashMap<String, DBLPUser> dblp = graph.getDblp();
+		int x,y;
+
+		if(authors!= null) {
+			int size = authors.size();
+			//Iterating through each pair of authors, as long as there are multiple authors of the publication
+			if(size > 1) {					
+				for(x = 0; x<size-1; x++) {
+					for(y = x+1; y<size ; y++) {
+						firstAuthor = authors.get(x);
+						secondAuthor = authors.get(y);
+
+						timebasedFirstAuthorTrust = trustProcessor.getTrustValueFromName(firstAuthor);
+						timebasedSecondAuthorTrust = trustProcessor.getTrustValueFromName(secondAuthor);									
+						coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year, graph);	
+						fp = new FileParser("jaccard.txt", dblp);
+						//TODO: get jaccard similarity and file writing stuff to outputFileName
+					}	
+				}					
+			}
+		}	
 	}
 
 	public static class HeaderHandler extends DefaultHandler {

@@ -310,4 +310,13 @@ public class Book extends DBLPElement
 	public void setField(List<String> field) {
 		this.field = field;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Book) {
+			if(this.getTitle().equals(((Book) o).getTitle()))
+				return true;
+		}
+		return false;
+	}
 }

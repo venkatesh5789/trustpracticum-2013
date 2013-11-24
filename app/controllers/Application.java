@@ -284,6 +284,7 @@ public class Application extends Controller {
 	
 	public static Result getReputationForAuthor(String name) throws SAXException, JAXBException, ParserConfigurationException, IOException {
 		DBLPTrustProcessor trustprocessor = new DBLPTrustProcessor();
+		DBLPParser.getFileForNaiveBayesClassification("Modified_dblp_example.xml", "blah");
 		Double trust = trustprocessor.getTrustValueFromName(name);
 		return ok(
 				trust.toString()

@@ -96,4 +96,14 @@ public class Coauthorship {
 	public void setCoauthorName(String coauthorName) {
 		this.coauthorName = coauthorName;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Coauthorship) {
+			if((this.userid == ((Coauthorship) o).getUserid()) && (this.coauthorid == ((Coauthorship) o).getCoauthorid())) {
+				return true;
+			}
+		}
+		return false;
+	}
 }

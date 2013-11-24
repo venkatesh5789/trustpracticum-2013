@@ -310,4 +310,13 @@ public class Incollection extends DBLPElement
 	public void setField(List<String> field) {
 		this.field = field;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Incollection) {
+			if(this.getTitle().equals(((Incollection) o).getTitle()))
+				return true;
+		}
+		return false;
+	}
 }

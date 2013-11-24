@@ -311,4 +311,13 @@ public class Article extends DBLPElement
 	public void setField(List<String> field) {
 		this.field = field;
 	}	
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Article) {
+			if(this.getTitle().equals(((Article) o).getTitle()))
+				return true;
+		}
+		return false;
+	}
 }

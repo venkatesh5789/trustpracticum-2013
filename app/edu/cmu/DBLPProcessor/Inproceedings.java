@@ -307,4 +307,13 @@ public class Inproceedings extends DBLPElement
 	public void setField(List<String> field) {
 		this.field = field;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(o instanceof Inproceedings) {
+			if(this.getTitle().equals(((Inproceedings) o).getTitle()))
+				return true;
+		}
+		return false;
+	}
 }

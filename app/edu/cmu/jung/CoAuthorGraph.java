@@ -120,11 +120,11 @@ public class CoAuthorGraph {
 		this.nodes = nodes;
 	}
 
-	public static Double getTimeDependantPathDistanceBetweenNodes(String author1Name, String author2Name, int year) throws JAXBException, IOException, SAXException, ParserConfigurationException {
-		DBLPParser.getPriorPublicationsXML("dblp_example.xml", year, "modified_dblp.xml");
-		CoAuthorGraph graph = new CoAuthorGraph("modified_dblp.xml");
-		graph.constructGraph();
-		
+	public static Double getTimeDependantPathDistanceBetweenNodes(String author1Name, String author2Name, int year, CoAuthorGraph graph) throws JAXBException, IOException, SAXException, ParserConfigurationException {
+		//DBLPParser.getPriorPublicationsXML("dblp_example.xml", year, "modified_dblp.xml");
+//		CoAuthorGraph graph = new CoAuthorGraph("modified_dblp.xml");
+//		graph.constructGraph();
+//		
 		List<Node> listOfNodes = graph.getNodes();
 		DijkstraShortestPath<Node,Edge> alg = new DijkstraShortestPath(graph.getGraph());
 		
@@ -145,6 +145,15 @@ public class CoAuthorGraph {
 			return (Double) alg.getDistance(firstNode, secondNode);
 	}
 	
+	
+	public HashMap<String, DBLPUser> getDblp() {
+		return dblp;
+	}
+
+	public void setDblp(HashMap<String, DBLPUser> dblp) {
+		this.dblp = dblp;
+	}
+
 	/**
 	 * @param args the command line arguments
 	 * @throws JAXBException 

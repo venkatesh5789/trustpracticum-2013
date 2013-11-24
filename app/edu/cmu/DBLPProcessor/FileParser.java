@@ -19,11 +19,11 @@ import edu.cmu.dataset.DatasetInterface;
 
 @SuppressWarnings("unchecked")
 public class FileParser {
-	private String inputFileName;
 	private String outputFileName;
 	private HashMap<String,DBLPUser> dblp;
+	private String inputFileName;
 	
-	public FileParser() throws SAXException, ParserConfigurationException {
+	public FileParser() throws SAXException, ParserConfigurationException, JAXBException, IOException {
 		super();
 		this.inputFileName = "Modified_dblp_example.xml";
 		this.outputFileName = "Makedata.txt";
@@ -31,12 +31,10 @@ public class FileParser {
 		dblp = dblpDataset.getDataset(this.inputFileName);
 	}
 
-	public FileParser(String inputFileName, String outputFileName) throws SAXException, ParserConfigurationException {
+	public FileParser(String outputFileName, HashMap<String,DBLPUser> dblp) throws SAXException, ParserConfigurationException {
 		super();
-		this.inputFileName = inputFileName;
 		this.outputFileName = outputFileName;
-		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset(this.inputFileName);
+		this.dblp = dblp;
 	}
 
 	public void parseFile() throws SAXException, ParserConfigurationException, JAXBException, IOException{

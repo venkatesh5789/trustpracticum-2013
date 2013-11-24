@@ -101,7 +101,7 @@ public class DBLPTrustProcessor {
 	}
 
 	private DBLPUser getDBLPUserFromName(String name) throws SAXException, ParserConfigurationException {
-		DBLPUser result = new DBLPUser();
+		DBLPUser result;
 
 		for(String key : dblp.keySet()) {
 			if(key.equalsIgnoreCase(name)) {
@@ -137,7 +137,7 @@ public class DBLPTrustProcessor {
 
 
 	private DBLPUser getDBLPUserFromID(Long id) throws SAXException, ParserConfigurationException {
-		DBLPUser result = new DBLPUser();
+		DBLPUser result;
 
 		for(String key : dblp.keySet()) {
 			if(dblp.get(key).getId() == id) {
@@ -650,7 +650,7 @@ public class DBLPTrustProcessor {
 	}
 	
 	public static Double getTrustOfAuthorBeforeYear (String name, int inputyear) throws JAXBException, IOException, SAXException, ParserConfigurationException {
-		DBLPParser.getPriorPublicationsXML("dblp_example.xml", inputyear, "modified_dblp.xml");
+		//DBLPParser.getPriorPublicationsXML("Modified_dblp_example.xml", inputyear, "modified_dblp.xml");
 		DBLPTrustProcessor trustProcessor = new DBLPTrustProcessor("modified_dblp.xml");
 		return trustProcessor.getTrustValueFromName(name);
 	}

@@ -9,7 +9,7 @@ import edu.cmu.trustprocessor.*;
 import edu.cmu.DBLPProcessor.*;
 
 public class Node {
-	private DBLPUser user = new DBLPUser();
+	private DBLPUser user;
 	private int level = 1;
 	private boolean visited = false;
 	
