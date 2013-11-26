@@ -25,8 +25,8 @@ public class FileParser {
 	
 	public FileParser() throws SAXException, ParserConfigurationException, JAXBException, IOException {
 		super();
-		this.inputFileName = "Modified_dblp_example.xml";
-		this.outputFileName = "Makedata.txt";
+		this.inputFileName = "xbd_subset.xml";
+		this.outputFileName = "/Users/ShuaiWang/Desktop/Makedata.txt";
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset(this.inputFileName);
 	}
@@ -46,17 +46,17 @@ public class FileParser {
 		while(i.hasNext()){
 			String key = i.next().getKey();
 			System.out.println(key);
-			bw.write(key + ",");
+			bw.write(key + "|");
 			List<Publication> pubs = dblp.get(key).getPublication();
 			for(Publication pname: pubs){
 				for(int j= 0; j< pname.getField().size();j++){
-					bw.write(pname.getField().get(j) + ",");
+					bw.write(pname.getField().get(j) + "|");
 				}
 				if(pname.getBooktitle()!=null){	
-					bw.write(pname.getBooktitle() + ",");
+					bw.write(pname.getBooktitle() + "|");
 				}
 				if(pname.getJournal()!=null){	
-					bw.write(pname.getJournal() + ",");
+					bw.write(pname.getJournal() + "|");
 				}
 				if(pname.getTitle()!=null){	
 					bw.write(pname.getTitle());

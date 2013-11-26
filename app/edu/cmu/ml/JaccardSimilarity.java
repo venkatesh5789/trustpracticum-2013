@@ -13,7 +13,8 @@ import java.util.*;
  */
 
 public class JaccardSimilarity {	
-	private BufferedReader reader;	
+	private static BufferedReader reader;
+	
 	public static double jaccardSimilarity(String similar1, String similar2){
 		HashSet<String> h1 = new HashSet<String>();
 		HashSet<String> h2 = new HashSet<String>();
@@ -35,7 +36,7 @@ public class JaccardSimilarity {
 		//h1 now contains the intersection of h1 and h2		
 		h2.removeAll(h1);
 		//h2 now contains unique elements
-		System.out.println("Same elements "+ h1);
+		//System.out.println("Same elements "+ h1);
 		
 		//Union 
 		int union = sizeh1 + h2.size();
@@ -44,61 +45,28 @@ public class JaccardSimilarity {
 		return res;
 	}
 	
-	public LinkedList<String> datapreprocess() throws IOException{
+	public static Hashtable<String,String> datapreprocess() throws IOException{
 		reader = new BufferedReader(new FileReader("/Users/ShuaiWang/Desktop/Makedata.txt"));
 		String line = null;
-		LinkedList<String> parts = new LinkedList<String>();
+		Hashtable<String, String> ht = new Hashtable<String, String>();
 		while ((line = reader.readLine()) != null) { 
-			 System.out.println(line);
-			 parts.add(line);
+			 //System.out.println(line);
+			 String[] k1 = line.split("\\|");
+			 String k11 = "";
+			 for(int i =1;i<k1.length-1;i++){
+				 k11 += k1[i] + ",";
+			 }
+			 k11 += k1[k1.length-1];
+			 ht.put(k1[0],k11);
 		}
-		//System.out.println(parts.getFirst());
-		return parts;
+		//System.out.println(ht.size());
+		return ht;
 	}
 
 	
-	public static void main(String args[]) throws IOException{
-		
+	public static void main(String args[]) throws IOException{		
 		JaccardSimilarity ja = new JaccardSimilarity();
-		LinkedList<String> p = ja.datapreprocess();
-		
-		double totalValue =0;
-		for (int i=0; i<p.size();i++){
-			for(int j=i+1;j<p.size();j++){
-				totalValue += jaccardSimilarity(p.get(i),p.get(j));
-			}
-		}
-		System.out.println("Value" + " " + totalValue);
-		
-		PrintWriter writer = new PrintWriter("/Users/ShuaiWang/Desktop/Output.txt", "UTF-8");
-		for (int i=0; i<p.size();i++){
-			for(int j=i+1;j<p.size();j++){		
-				String[] k1 = p.get(i).split(",");
-				String[] k2 = p.get(j).split(",");
-				String k11 = null;
-				String k22 = null;
-				for(int k =1;k<k1.length;k++){
-					k11 += k1[k] + ",";
-				}
-				for(int l =1;l<k2.length;l++){
-					k22 += k2[l] + ",";
-				}
-				writer.println(k1[0]+ "," + k2[0]+ "," +jaccardSimilarity(k11,k22));
-			}
-		}
-
-		writer.close();		
-//		String rad[];
-//		
-//		System.out.println("Please enter the author pairs");
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		rad = br.readLine().split(",");
-//		System.out.println(rad[0]);
-//		System.out.println(rad[1]);
-//		
-//		double help = jaccardSimilarity(rad[0],rad[1]);
-//		System.out.println(help);
-//		double percentage = (double) Math.ceil((help) * 100); 
-//		System.out.println("Link probability:" + percentage + "%");
+		Hashtable<String,String> p = ja.datapreprocess();
+		System.out.println(JaccardSimilarity.jaccardSimilarity(p.get("James Janisse"),p.get("Julio Gomis-Tena")));
 	}
 }
