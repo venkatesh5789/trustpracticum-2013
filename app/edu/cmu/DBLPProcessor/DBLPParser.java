@@ -1267,7 +1267,7 @@ public class DBLPParser {
 						}else{
 							csvalue = "L";
 						}						
-						out.write( cvalue+ "	" + jsvalue + "  " + tsvalue + "  " + csvalue+ coauthorDistance + "\n");
+						out.write(firstAuthor +secondAuthor +js +"\n");
 					}	
 				}
 			}	

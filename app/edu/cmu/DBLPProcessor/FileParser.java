@@ -25,7 +25,7 @@ public class FileParser {
 	
 	public FileParser() throws SAXException, ParserConfigurationException, JAXBException, IOException {
 		super();
-		this.inputFileName = "xbd_subset.xml";
+		this.inputFileName = "/Users/ShuaiWang/Desktop/cloud.txt";
 		this.outputFileName = "/Users/ShuaiWang/Desktop/Makedata.txt";
 		DatasetInterface dblpDataset = new DBLPDataSource();
 		dblp = dblpDataset.getDataset(this.inputFileName);

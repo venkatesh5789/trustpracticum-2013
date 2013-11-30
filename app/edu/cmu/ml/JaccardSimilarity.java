@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.*;
+import java.util.Map.Entry;
 
 /*
  * Jaccard Similarity is a similarity function which is calculated by 
@@ -20,12 +21,12 @@ public class JaccardSimilarity {
 		HashSet<String> h2 = new HashSet<String>();
 		
 		double res = 0;		
-		String[] S1 = similar1.split(",");
+		String[] S1 = similar1.split(";");
 		for(int i =0;i<S1.length;i++ ){
 			h1.add(S1[i]);		
 		}
 		
-		String[] S2 = similar2.split(",");
+		String[] S2 = similar2.split(";");
 		for(int i =0;i<S2.length;i++ ){
 			h2.add(S2[i]);		
 		}
@@ -46,18 +47,23 @@ public class JaccardSimilarity {
 	}
 	
 	public static Hashtable<String,String> datapreprocess() throws IOException{
-		reader = new BufferedReader(new FileReader("/Users/ShuaiWang/Desktop/Makedata.txt"));
+		reader = new BufferedReader(new FileReader("/Users/ShuaiWang/Desktop/Cloud.txt"));
 		String line = null;
 		Hashtable<String, String> ht = new Hashtable<String, String>();
 		while ((line = reader.readLine()) != null) { 
 			 //System.out.println(line);
 			 String[] k1 = line.split("\\|");
-			 String k11 = "";
-			 for(int i =1;i<k1.length-1;i++){
-				 k11 += k1[i] + ",";
+			 String[] primary = k1[0].split("_");
+			 String k11 = ""; 
+			 k11 += k1[1] + ";" + k1[10] + ";" +k1[23];
+			 if (!(ht.containsKey(primary[0]))){
+				 ht.put(primary[0],k11);
+			 }else{
+				 String a = new StringBuilder().append(ht.get(primary[0])).append(";").append(k11).toString();	
+				 ht.put(primary[0],a);
+				 System.out.println(a + "\n");
 			 }
-			 k11 += k1[k1.length-1];
-			 ht.put(k1[0],k11);
+			 
 		}
 		//System.out.println(ht.size());
 		return ht;
@@ -65,8 +71,17 @@ public class JaccardSimilarity {
 
 	
 	public static void main(String args[]) throws IOException{		
-		JaccardSimilarity ja = new JaccardSimilarity();
-		Hashtable<String,String> p = ja.datapreprocess();
-		System.out.println(JaccardSimilarity.jaccardSimilarity(p.get("James Janisse"),p.get("Julio Gomis-Tena")));
+//		JaccardSimilarity ja = new JaccardSimilarity();
+//		Hashtable<String,String> p = ja.datapreprocess();
+//		PrintWriter writer = new PrintWriter("the-file-name.txt", "UTF-8");
+//		String com = p.get("Gordon S. Blair");
+//		for (Entry<String, String> entry : p.entrySet()) {
+//			String key = entry.getKey();
+//		    String value = entry.getValue();
+//		    //System.out.println(key + value + "\n");
+//		    Double x  = ja.jaccardSimilarity(com, value);
+//		    System.out.println(x);
+//		}
+//		System.out.println("Done!");
 	}
 }
