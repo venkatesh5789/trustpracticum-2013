@@ -59,7 +59,7 @@ public class TextFileCoAuthorshipCreator {
 	}
 
 	public static void main(String[] args) throws IOException {
-		TextFileCoAuthorshipCreator p = new TextFileCoAuthorshipCreator("cloud.txt","cloud_coauthors.txt");
+		TextFileCoAuthorshipCreator p = new TextFileCoAuthorshipCreator("ds.txt","ds_coauthors.txt");
 		System.out.println("sf");
 	}
 }
