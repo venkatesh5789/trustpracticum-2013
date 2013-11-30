@@ -49,7 +49,7 @@ public class CoAuthorGraph {
 	@SuppressWarnings("unchecked")
 	public CoAuthorGraph() throws SAXException, ParserConfigurationException {   
 		DatasetInterface dblpDataset = new DBLPDataSource();
-		dblp = dblpDataset.getDataset("dblp_example.xml");		
+		dblp = dblpDataset.getDataset("dblp.xml");		
 	}
 	
 	@SuppressWarnings("unchecked")
@@ -161,7 +161,8 @@ public class CoAuthorGraph {
 	 * @throws ParserConfigurationException 
 	 */
 	public static void main(String[] args) throws JAXBException, SAXException, ParserConfigurationException {
-		CoAuthorGraph myApp = new CoAuthorGraph("modified_dblp.xml");
+		//CoAuthorGraph myApp = new CoAuthorGraph("modified_dblp.xml");
+		CoAuthorGraph myApp = new CoAuthorGraph("xmlfiles/split_dblp_35.xml");
 		myApp.constructGraph();
 		//System.out.println(myApp.g.toString());
 		

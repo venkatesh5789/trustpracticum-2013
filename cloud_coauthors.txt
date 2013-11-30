@@ -1,0 +1,1529 @@
+Author Name|Coauthor Name|Year|Title|Type
+Gordon S. Blair|Fabio Kon|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Gordon S. Blair|Walfredo Cirne|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Gordon S. Blair|Dejan S. Milojicic|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Gordon S. Blair|Raghu Ramakrishnan|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Gordon S. Blair|Dan Reed|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Gordon S. Blair|Dilma M. Silva|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Fabio Kon|Gordon S. Blair|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Fabio Kon|Walfredo Cirne|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Fabio Kon|Dejan S. Milojicic|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Fabio Kon|Raghu Ramakrishnan|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Fabio Kon|Dan Reed|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Fabio Kon|Dilma M. Silva|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Walfredo Cirne|Gordon S. Blair|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Walfredo Cirne|Fabio Kon|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Walfredo Cirne|Dejan S. Milojicic|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Walfredo Cirne|Raghu Ramakrishnan|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Walfredo Cirne|Dan Reed|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Walfredo Cirne|Dilma M. Silva|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dejan S. Milojicic|Gordon S. Blair|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dejan S. Milojicic|Fabio Kon|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dejan S. Milojicic|Walfredo Cirne|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dejan S. Milojicic|Raghu Ramakrishnan|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dejan S. Milojicic|Dan Reed|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dejan S. Milojicic|Dilma M. Silva|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Raghu Ramakrishnan|Gordon S. Blair|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Raghu Ramakrishnan|Fabio Kon|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Raghu Ramakrishnan|Walfredo Cirne|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Raghu Ramakrishnan|Dejan S. Milojicic|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Raghu Ramakrishnan|Dan Reed|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Raghu Ramakrishnan|Dilma M. Silva|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dan Reed|Gordon S. Blair|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dan Reed|Fabio Kon|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dan Reed|Walfredo Cirne|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dan Reed|Dejan S. Milojicic|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dan Reed|Raghu Ramakrishnan|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dan Reed|Dilma M. Silva|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dilma M. Silva|Gordon S. Blair|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dilma M. Silva|Fabio Kon|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dilma M. Silva|Walfredo Cirne|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dilma M. Silva|Dejan S. Milojicic|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dilma M. Silva|Raghu Ramakrishnan|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dilma M. Silva|Dan Reed|2011|Perspectives on cloud computing: interviews with five leading scientists from the cloud community.|article
+Dilma Da Silva|Dongyan Xu|2011|Guest editorial - second part of special issue on cloud computing.|article
+Dilma Da Silva|Dan Reed|2011|Guest editorial - second part of special issue on cloud computing.|article
+Dongyan Xu|Dilma Da Silva|2011|Guest editorial - second part of special issue on cloud computing.|article
+Dongyan Xu|Dan Reed|2011|Guest editorial - second part of special issue on cloud computing.|article
+Dan Reed|Dilma Da Silva|2011|Guest editorial - second part of special issue on cloud computing.|article
+Dan Reed|Dongyan Xu|2011|Guest editorial - second part of special issue on cloud computing.|article
+Gordon S. Blair|Fabio Kon|2011|Future directions in the Internet - cloud computing and beyond - Letter from the Editors-in-Chief.|article
+Fabio Kon|Gordon S. Blair|2011|Future directions in the Internet - cloud computing and beyond - Letter from the Editors-in-Chief.|article
+Dilma Da Silva|Dongyan Xu|2011|Guest editorial - special issue on cloud computing.|article
+Dilma Da Silva|Dan Reed|2011|Guest editorial - special issue on cloud computing.|article
+Dongyan Xu|Dilma Da Silva|2011|Guest editorial - special issue on cloud computing.|article
+Dongyan Xu|Dan Reed|2011|Guest editorial - special issue on cloud computing.|article
+Dan Reed|Dilma Da Silva|2011|Guest editorial - special issue on cloud computing.|article
+Dan Reed|Dongyan Xu|2011|Guest editorial - special issue on cloud computing.|article
+Nabil Sultan|Sylvia van de Bunt-Kokhuis|2012|Organisational culture and cloud computing: coping with a disruptive innovation.|article
+Sylvia van de Bunt-Kokhuis|Nabil Sultan|2012|Organisational culture and cloud computing: coping with a disruptive innovation.|article
+Mrinmoy Barua|Xiaohui Liang|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Mrinmoy Barua|Rongxing Lu|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Mrinmoy Barua|Xuemin Shen|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Xiaohui Liang|Mrinmoy Barua|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Xiaohui Liang|Rongxing Lu|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Xiaohui Liang|Xuemin Shen|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Rongxing Lu|Mrinmoy Barua|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Rongxing Lu|Xiaohui Liang|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Rongxing Lu|Xuemin Shen|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Xuemin Shen|Mrinmoy Barua|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Xuemin Shen|Xiaohui Liang|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Xuemin Shen|Rongxing Lu|2011|ESPAC: Enabling Security and Patient-centric Access Control for eHealth in cloud computing.|article
+Subhas Chandra Misra|Arka Mondal|2011|Identification of a company's suitability for the adoption of cloud computing and modelling its corresponding Return on Investment.|article
+Arka Mondal|Subhas Chandra Misra|2011|Identification of a company's suitability for the adoption of cloud computing and modelling its corresponding Return on Investment.|article
+Binh Minh Nguyen|Viet D. Tran|2011|Abstraction layer for cloud computing.|article
+Binh Minh Nguyen|Ladislav Hluchý|2011|Abstraction layer for cloud computing.|article
+Viet D. Tran|Binh Minh Nguyen|2011|Abstraction layer for cloud computing.|article
+Viet D. Tran|Ladislav Hluchý|2011|Abstraction layer for cloud computing.|article
+Ladislav Hluchý|Binh Minh Nguyen|2011|Abstraction layer for cloud computing.|article
+Ladislav Hluchý|Viet D. Tran|2011|Abstraction layer for cloud computing.|article
+Elton Manias|Françoise Baude|2012|A component-based middleware for hybrid grid/cloud computing platforms.|article
+Françoise Baude|Elton Manias|2012|A component-based middleware for hybrid grid/cloud computing platforms.|article
+Rajiv Ranjan|Rajkumar Buyya|2012|Special section on autonomic cloud computing: technologies, services, and applications.|article
+Rajiv Ranjan|Manish Parashar|2012|Special section on autonomic cloud computing: technologies, services, and applications.|article
+Rajkumar Buyya|Rajiv Ranjan|2012|Special section on autonomic cloud computing: technologies, services, and applications.|article
+Rajkumar Buyya|Manish Parashar|2012|Special section on autonomic cloud computing: technologies, services, and applications.|article
+Manish Parashar|Rajiv Ranjan|2012|Special section on autonomic cloud computing: technologies, services, and applications.|article
+Manish Parashar|Rajkumar Buyya|2012|Special section on autonomic cloud computing: technologies, services, and applications.|article
+Andreas Polze|Peter Tröger|2012|Trends and challenges in operating systems - from parallel computing to cloud computing.|article
+Peter Tröger|Andreas Polze|2012|Trends and challenges in operating systems - from parallel computing to cloud computing.|article
+Ge Cheng|Hai Jin|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Ge Cheng|Deqing Zou|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Ge Cheng|Xinwen Zhang|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Hai Jin|Ge Cheng|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Hai Jin|Deqing Zou|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Hai Jin|Xinwen Zhang|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Deqing Zou|Ge Cheng|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Deqing Zou|Hai Jin|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Deqing Zou|Xinwen Zhang|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Xinwen Zhang|Ge Cheng|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Xinwen Zhang|Hai Jin|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Xinwen Zhang|Deqing Zou|2010|Building dynamic and transparent integrity measurement and protection for virtualized platform in cloud computing.|article
+Ruwei Huang|Xiaolin Gui|2011|Study of privacy-preserving framework for cloud storage.|article
+Ruwei Huang|Si Yu|2011|Study of privacy-preserving framework for cloud storage.|article
+Ruwei Huang|Wei Zhuang|2011|Study of privacy-preserving framework for cloud storage.|article
+Xiaolin Gui|Ruwei Huang|2011|Study of privacy-preserving framework for cloud storage.|article
+Xiaolin Gui|Si Yu|2011|Study of privacy-preserving framework for cloud storage.|article
+Xiaolin Gui|Wei Zhuang|2011|Study of privacy-preserving framework for cloud storage.|article
+Si Yu|Ruwei Huang|2011|Study of privacy-preserving framework for cloud storage.|article
+Si Yu|Xiaolin Gui|2011|Study of privacy-preserving framework for cloud storage.|article
+Si Yu|Wei Zhuang|2011|Study of privacy-preserving framework for cloud storage.|article
+Wei Zhuang|Ruwei Huang|2011|Study of privacy-preserving framework for cloud storage.|article
+Wei Zhuang|Xiaolin Gui|2011|Study of privacy-preserving framework for cloud storage.|article
+Wei Zhuang|Si Yu|2011|Study of privacy-preserving framework for cloud storage.|article
+Kashif Kifayat|Madjid Merabti|2010|Future security challenges in cloud computing.|article
+Kashif Kifayat|Qi Shi|2010|Future security challenges in cloud computing.|article
+Madjid Merabti|Kashif Kifayat|2010|Future security challenges in cloud computing.|article
+Madjid Merabti|Qi Shi|2010|Future security challenges in cloud computing.|article
+Qi Shi|Kashif Kifayat|2010|Future security challenges in cloud computing.|article
+Qi Shi|Madjid Merabti|2010|Future security challenges in cloud computing.|article
+Samuel V. Angiuoli|Malcolm Matalka|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Samuel V. Angiuoli|Aaron Gussman|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Samuel V. Angiuoli|Kevin Galens|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Samuel V. Angiuoli|Mahesh Vangala|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Samuel V. Angiuoli|David R. Riley|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Samuel V. Angiuoli|Cesar Arze|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Samuel V. Angiuoli|James R. White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Samuel V. Angiuoli|Owen White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Samuel V. Angiuoli|W. Florian Fricke|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Malcolm Matalka|Samuel V. Angiuoli|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Malcolm Matalka|Aaron Gussman|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Malcolm Matalka|Kevin Galens|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Malcolm Matalka|Mahesh Vangala|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Malcolm Matalka|David R. Riley|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Malcolm Matalka|Cesar Arze|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Malcolm Matalka|James R. White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Malcolm Matalka|Owen White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Malcolm Matalka|W. Florian Fricke|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Aaron Gussman|Samuel V. Angiuoli|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Aaron Gussman|Malcolm Matalka|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Aaron Gussman|Kevin Galens|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Aaron Gussman|Mahesh Vangala|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Aaron Gussman|David R. Riley|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Aaron Gussman|Cesar Arze|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Aaron Gussman|James R. White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Aaron Gussman|Owen White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Aaron Gussman|W. Florian Fricke|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Kevin Galens|Samuel V. Angiuoli|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Kevin Galens|Malcolm Matalka|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Kevin Galens|Aaron Gussman|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Kevin Galens|Mahesh Vangala|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Kevin Galens|David R. Riley|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Kevin Galens|Cesar Arze|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Kevin Galens|James R. White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Kevin Galens|Owen White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Kevin Galens|W. Florian Fricke|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Mahesh Vangala|Samuel V. Angiuoli|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Mahesh Vangala|Malcolm Matalka|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Mahesh Vangala|Aaron Gussman|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Mahesh Vangala|Kevin Galens|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Mahesh Vangala|David R. Riley|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Mahesh Vangala|Cesar Arze|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Mahesh Vangala|James R. White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Mahesh Vangala|Owen White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Mahesh Vangala|W. Florian Fricke|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+David R. Riley|Samuel V. Angiuoli|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+David R. Riley|Malcolm Matalka|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+David R. Riley|Aaron Gussman|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+David R. Riley|Kevin Galens|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+David R. Riley|Mahesh Vangala|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+David R. Riley|Cesar Arze|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+David R. Riley|James R. White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+David R. Riley|Owen White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+David R. Riley|W. Florian Fricke|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Cesar Arze|Samuel V. Angiuoli|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Cesar Arze|Malcolm Matalka|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Cesar Arze|Aaron Gussman|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Cesar Arze|Kevin Galens|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Cesar Arze|Mahesh Vangala|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Cesar Arze|David R. Riley|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Cesar Arze|James R. White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Cesar Arze|Owen White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Cesar Arze|W. Florian Fricke|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+James R. White|Samuel V. Angiuoli|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+James R. White|Malcolm Matalka|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+James R. White|Aaron Gussman|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+James R. White|Kevin Galens|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+James R. White|Mahesh Vangala|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+James R. White|David R. Riley|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+James R. White|Cesar Arze|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+James R. White|Owen White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+James R. White|W. Florian Fricke|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Owen White|Samuel V. Angiuoli|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Owen White|Malcolm Matalka|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Owen White|Aaron Gussman|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Owen White|Kevin Galens|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Owen White|Mahesh Vangala|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Owen White|David R. Riley|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Owen White|Cesar Arze|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Owen White|James R. White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Owen White|W. Florian Fricke|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+W. Florian Fricke|Samuel V. Angiuoli|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+W. Florian Fricke|Malcolm Matalka|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+W. Florian Fricke|Aaron Gussman|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+W. Florian Fricke|Kevin Galens|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+W. Florian Fricke|Mahesh Vangala|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+W. Florian Fricke|David R. Riley|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+W. Florian Fricke|Cesar Arze|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+W. Florian Fricke|James R. White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+W. Florian Fricke|Owen White|2011|CloVR: A virtual machine for automated and portable sequence analysis from the desktop using cloud computing.|article
+Johannes Wagener|Ola Spjuth|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Johannes Wagener|Egon L. Willighagen|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Johannes Wagener|Jarl E. S. Wikberg|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Ola Spjuth|Johannes Wagener|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Ola Spjuth|Egon L. Willighagen|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Ola Spjuth|Jarl E. S. Wikberg|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Egon L. Willighagen|Johannes Wagener|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Egon L. Willighagen|Ola Spjuth|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Egon L. Willighagen|Jarl E. S. Wikberg|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Jarl E. S. Wikberg|Johannes Wagener|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Jarl E. S. Wikberg|Ola Spjuth|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Jarl E. S. Wikberg|Egon L. Willighagen|2009|XMPP for cloud computing in bioinformatics supporting discovery and invocation of asynchronous web services.|article
+Dawei Sun|Guiran Chang|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Dawei Sun|Qiang Guo|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Dawei Sun|Xingwei Wang|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Guiran Chang|Dawei Sun|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Guiran Chang|Qiang Guo|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Guiran Chang|Xingwei Wang|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Qiang Guo|Dawei Sun|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Qiang Guo|Guiran Chang|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Qiang Guo|Xingwei Wang|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Xingwei Wang|Dawei Sun|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Xingwei Wang|Guiran Chang|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Xingwei Wang|Qiang Guo|2011|Modelling, evaluating and designing virtual machine scheduling by a clustering mechanism in cloud computing environments.|article
+Salvatore Loreto|Sean Moore|2011|Design and implementation series VIII: cloud computing and IMS-switched wireless sensor networks.|article
+Sean Moore|Salvatore Loreto|2011|Design and implementation series VIII: cloud computing and IMS-switched wireless sensor networks.|article
+Claudius M. Bürger|Stefan Kollet|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Claudius M. Bürger|Jens Schumacher|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Claudius M. Bürger|Detlef Bösel|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Stefan Kollet|Claudius M. Bürger|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Stefan Kollet|Jens Schumacher|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Stefan Kollet|Detlef Bösel|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Jens Schumacher|Claudius M. Bürger|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Jens Schumacher|Stefan Kollet|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Jens Schumacher|Detlef Bösel|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Detlef Bösel|Claudius M. Bürger|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Detlef Bösel|Stefan Kollet|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Detlef Bösel|Jens Schumacher|2012|Introduction of a web service for cloud computing with the integrated hydrologic simulation platform ParFlow.|article
+Ki-Woong Park|Kyu Ho Park|2011|ACCENT: Cognitive cryptography plugged compression for SSL/TLS-based cloud computing services.|article
+Kyu Ho Park|Ki-Woong Park|2011|ACCENT: Cognitive cryptography plugged compression for SSL/TLS-based cloud computing services.|article
+Marios D. Dikaiakos|Asterios Katsifodimos|2012|Minersoft: Software retrieval in grid and cloud computing infrastructures.|article
+Marios D. Dikaiakos|George Pallis|2012|Minersoft: Software retrieval in grid and cloud computing infrastructures.|article
+Asterios Katsifodimos|Marios D. Dikaiakos|2012|Minersoft: Software retrieval in grid and cloud computing infrastructures.|article
+Asterios Katsifodimos|George Pallis|2012|Minersoft: Software retrieval in grid and cloud computing infrastructures.|article
+George Pallis|Marios D. Dikaiakos|2012|Minersoft: Software retrieval in grid and cloud computing infrastructures.|article
+George Pallis|Asterios Katsifodimos|2012|Minersoft: Software retrieval in grid and cloud computing infrastructures.|article
+Dawei Sun|Guiran Chang|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Dawei Sun|Dong Chen|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Dawei Sun|Xingwei Wang|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Guiran Chang|Dawei Sun|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Guiran Chang|Dong Chen|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Guiran Chang|Xingwei Wang|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Dong Chen|Dawei Sun|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Dong Chen|Guiran Chang|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Dong Chen|Xingwei Wang|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Xingwei Wang|Dawei Sun|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Xingwei Wang|Guiran Chang|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Xingwei Wang|Dong Chen|2012|Modelling, evaluating, designing and maximising resource allocation revenue by an auction mechanism in cloud computing environments.|article
+Keqiu Li|Laurence Tianruo Yang|2011|Advanced topics in cloud computing.|article
+Keqiu Li|Xuemin Lin|2011|Advanced topics in cloud computing.|article
+Laurence Tianruo Yang|Keqiu Li|2011|Advanced topics in cloud computing.|article
+Laurence Tianruo Yang|Xuemin Lin|2011|Advanced topics in cloud computing.|article
+Xuemin Lin|Keqiu Li|2011|Advanced topics in cloud computing.|article
+Xuemin Lin|Laurence Tianruo Yang|2011|Advanced topics in cloud computing.|article
+Ashley Chonka|Yang Xiang|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+Ashley Chonka|Wanlei Zhou|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+Ashley Chonka|Alessio Bonti|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+Yang Xiang|Ashley Chonka|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+Yang Xiang|Wanlei Zhou|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+Yang Xiang|Alessio Bonti|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+Wanlei Zhou|Ashley Chonka|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+Wanlei Zhou|Yang Xiang|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+Wanlei Zhou|Alessio Bonti|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+Alessio Bonti|Ashley Chonka|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+Alessio Bonti|Yang Xiang|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+Alessio Bonti|Wanlei Zhou|2011|Cloud security defence to protect cloud computing against HTTP-DoS and XML-DoS attacks.|article
+S. Subashini|V. Kavitha|2011|A survey on security issues in service delivery models of cloud computing.|article
+V. Kavitha|S. Subashini|2011|A survey on security issues in service delivery models of cloud computing.|article
+Qin Liu|Guojun Wang|2012|Secure and privacy preserving keyword searching for cloud storage services.|article
+Qin Liu|Jie Wu|2012|Secure and privacy preserving keyword searching for cloud storage services.|article
+Guojun Wang|Qin Liu|2012|Secure and privacy preserving keyword searching for cloud storage services.|article
+Guojun Wang|Jie Wu|2012|Secure and privacy preserving keyword searching for cloud storage services.|article
+Jie Wu|Qin Liu|2012|Secure and privacy preserving keyword searching for cloud storage services.|article
+Jie Wu|Guojun Wang|2012|Secure and privacy preserving keyword searching for cloud storage services.|article
+Flavio Lombardi|Roberto Di Pietro|2011|Secure virtualization for cloud computing.|article
+Roberto Di Pietro|Flavio Lombardi|2011|Secure virtualization for cloud computing.|article
+Jason J. Jung|Yue-Shan Chang|2012|Advances in intelligent grid and cloud computing.|article
+Jason J. Jung|Ying Liu|2012|Advances in intelligent grid and cloud computing.|article
+Jason J. Jung|Chao-Chin Wu|2012|Advances in intelligent grid and cloud computing.|article
+Yue-Shan Chang|Jason J. Jung|2012|Advances in intelligent grid and cloud computing.|article
+Yue-Shan Chang|Ying Liu|2012|Advances in intelligent grid and cloud computing.|article
+Yue-Shan Chang|Chao-Chin Wu|2012|Advances in intelligent grid and cloud computing.|article
+Ying Liu|Jason J. Jung|2012|Advances in intelligent grid and cloud computing.|article
+Ying Liu|Yue-Shan Chang|2012|Advances in intelligent grid and cloud computing.|article
+Ying Liu|Chao-Chin Wu|2012|Advances in intelligent grid and cloud computing.|article
+Chao-Chin Wu|Jason J. Jung|2012|Advances in intelligent grid and cloud computing.|article
+Chao-Chin Wu|Yue-Shan Chang|2012|Advances in intelligent grid and cloud computing.|article
+Chao-Chin Wu|Ying Liu|2012|Advances in intelligent grid and cloud computing.|article
+Benedikt Martens|Frank Teuteberg|2012|Decision-making in cloud computing environments: A cost and risk based approach.|article
+Frank Teuteberg|Benedikt Martens|2012|Decision-making in cloud computing environments: A cost and risk based approach.|article
+Wei Wang 0033|Guosun Zeng|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Wei Wang 0033|Junqi Zhang|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Wei Wang 0033|Daizhong Tang|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Guosun Zeng|Wei Wang 0033|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Guosun Zeng|Junqi Zhang|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Guosun Zeng|Daizhong Tang|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Junqi Zhang|Wei Wang 0033|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Junqi Zhang|Guosun Zeng|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Junqi Zhang|Daizhong Tang|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Daizhong Tang|Wei Wang 0033|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Daizhong Tang|Guosun Zeng|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Daizhong Tang|Junqi Zhang|2012|Dynamic trust evaluation and scheduling framework for cloud computing.|article
+Simon Bradshaw|Christopher Millard|2011|Contracts for clouds: comparison and analysis of the Terms and Conditions of cloud computing services.|article
+Simon Bradshaw|Ian Walden|2011|Contracts for clouds: comparison and analysis of the Terms and Conditions of cloud computing services.|article
+Christopher Millard|Simon Bradshaw|2011|Contracts for clouds: comparison and analysis of the Terms and Conditions of cloud computing services.|article
+Christopher Millard|Ian Walden|2011|Contracts for clouds: comparison and analysis of the Terms and Conditions of cloud computing services.|article
+Ian Walden|Simon Bradshaw|2011|Contracts for clouds: comparison and analysis of the Terms and Conditions of cloud computing services.|article
+Ian Walden|Christopher Millard|2011|Contracts for clouds: comparison and analysis of the Terms and Conditions of cloud computing services.|article
+Mark Taylor|John Haggerty|2011|Forensic investigation of cloud computing systems.|article
+Mark Taylor|David Gresty|2011|Forensic investigation of cloud computing systems.|article
+Mark Taylor|David J. Lamb|2011|Forensic investigation of cloud computing systems.|article
+John Haggerty|Mark Taylor|2011|Forensic investigation of cloud computing systems.|article
+John Haggerty|David Gresty|2011|Forensic investigation of cloud computing systems.|article
+John Haggerty|David J. Lamb|2011|Forensic investigation of cloud computing systems.|article
+David Gresty|Mark Taylor|2011|Forensic investigation of cloud computing systems.|article
+David Gresty|John Haggerty|2011|Forensic investigation of cloud computing systems.|article
+David Gresty|David J. Lamb|2011|Forensic investigation of cloud computing systems.|article
+David J. Lamb|Mark Taylor|2011|Forensic investigation of cloud computing systems.|article
+David J. Lamb|John Haggerty|2011|Forensic investigation of cloud computing systems.|article
+David J. Lamb|David Gresty|2011|Forensic investigation of cloud computing systems.|article
+Joel J. P. C. Rodrigues|Liang Zhou|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Joel J. P. C. Rodrigues|Lucas D. P. Mendes|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Joel J. P. C. Rodrigues|Kai Lin|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Joel J. P. C. Rodrigues|Jaime Lloret|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Liang Zhou|Joel J. P. C. Rodrigues|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Liang Zhou|Lucas D. P. Mendes|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Liang Zhou|Kai Lin|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Liang Zhou|Jaime Lloret|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Lucas D. P. Mendes|Joel J. P. C. Rodrigues|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Lucas D. P. Mendes|Liang Zhou|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Lucas D. P. Mendes|Kai Lin|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Lucas D. P. Mendes|Jaime Lloret|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Kai Lin|Joel J. P. C. Rodrigues|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Kai Lin|Liang Zhou|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Kai Lin|Lucas D. P. Mendes|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Kai Lin|Jaime Lloret|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Jaime Lloret|Joel J. P. C. Rodrigues|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Jaime Lloret|Liang Zhou|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Jaime Lloret|Lucas D. P. Mendes|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Jaime Lloret|Kai Lin|2012|Distributed media-aware flow scheduling in cloud computing environment.|article
+Sung-Yen Chang|Chin-Feng Lai|2012|Dynamic adjustable multimedia streaming service architecture over cloud computing.|article
+Sung-Yen Chang|Yueh-Min Huang|2012|Dynamic adjustable multimedia streaming service architecture over cloud computing.|article
+Chin-Feng Lai|Sung-Yen Chang|2012|Dynamic adjustable multimedia streaming service architecture over cloud computing.|article
+Chin-Feng Lai|Yueh-Min Huang|2012|Dynamic adjustable multimedia streaming service architecture over cloud computing.|article
+Yueh-Min Huang|Sung-Yen Chang|2012|Dynamic adjustable multimedia streaming service architecture over cloud computing.|article
+Yueh-Min Huang|Chin-Feng Lai|2012|Dynamic adjustable multimedia streaming service architecture over cloud computing.|article
+Manel Bourguiba|Kamel Haddadou|2012|Packet aggregation based network I/O virtualization for cloud computing.|article
+Manel Bourguiba|Guy Pujolle|2012|Packet aggregation based network I/O virtualization for cloud computing.|article
+Kamel Haddadou|Manel Bourguiba|2012|Packet aggregation based network I/O virtualization for cloud computing.|article
+Kamel Haddadou|Guy Pujolle|2012|Packet aggregation based network I/O virtualization for cloud computing.|article
+Guy Pujolle|Manel Bourguiba|2012|Packet aggregation based network I/O virtualization for cloud computing.|article
+Guy Pujolle|Kamel Haddadou|2012|Packet aggregation based network I/O virtualization for cloud computing.|article
+Yi-Kuei Lin|Ping-Chen Chang|2011|Maintenance reliability estimation for a cloud computing network with nodes failure.|article
+Ping-Chen Chang|Yi-Kuei Lin|2011|Maintenance reliability estimation for a cloud computing network with nodes failure.|article
+Michael Oberg|Matthew Woitaszek|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Michael Oberg|Theron Voran|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Michael Oberg|Henry M. Tufo|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Matthew Woitaszek|Michael Oberg|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Matthew Woitaszek|Theron Voran|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Matthew Woitaszek|Henry M. Tufo|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Theron Voran|Michael Oberg|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Theron Voran|Matthew Woitaszek|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Theron Voran|Henry M. Tufo|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Henry M. Tufo|Michael Oberg|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Henry M. Tufo|Matthew Woitaszek|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Henry M. Tufo|Theron Voran|2011|A system architecture supporting high-performance and cloud computing in an academic consortium environment.|article
+Kevin Jorissen|Fernando D. Vila|2012|A high performance scientific cloud computing environment for materials simulations.|article
+Kevin Jorissen|John J. Rehr|2012|A high performance scientific cloud computing environment for materials simulations.|article
+Fernando D. Vila|Kevin Jorissen|2012|A high performance scientific cloud computing environment for materials simulations.|article
+Fernando D. Vila|John J. Rehr|2012|A high performance scientific cloud computing environment for materials simulations.|article
+John J. Rehr|Kevin Jorissen|2012|A high performance scientific cloud computing environment for materials simulations.|article
+John J. Rehr|Fernando D. Vila|2012|A high performance scientific cloud computing environment for materials simulations.|article
+Laurent Jourdren|Maria Bernard|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Laurent Jourdren|Marie-Agnès Dillies|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Laurent Jourdren|Stéphane Le Crom|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Maria Bernard|Laurent Jourdren|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Maria Bernard|Marie-Agnès Dillies|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Maria Bernard|Stéphane Le Crom|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Marie-Agnès Dillies|Laurent Jourdren|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Marie-Agnès Dillies|Maria Bernard|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Marie-Agnès Dillies|Stéphane Le Crom|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Stéphane Le Crom|Laurent Jourdren|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Stéphane Le Crom|Maria Bernard|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Stéphane Le Crom|Marie-Agnès Dillies|2012|Eoulsan: a cloud computing-based framework facilitating high throughput sequencing analyses.|article
+Hamid Bolouri|Rajiv Dulepet|2011|Menu-driven cloud computing and resource sharing for R and Bioconductor.|article
+Hamid Bolouri|Michael Angerman|2011|Menu-driven cloud computing and resource sharing for R and Bioconductor.|article
+Rajiv Dulepet|Hamid Bolouri|2011|Menu-driven cloud computing and resource sharing for R and Bioconductor.|article
+Rajiv Dulepet|Michael Angerman|2011|Menu-driven cloud computing and resource sharing for R and Bioconductor.|article
+Michael Angerman|Hamid Bolouri|2011|Menu-driven cloud computing and resource sharing for R and Bioconductor.|article
+Michael Angerman|Rajiv Dulepet|2011|Menu-driven cloud computing and resource sharing for R and Bioconductor.|article
+Kawuu W. Lin|Der-Jiunn Deng|2010|A novel parallel algorithm for frequent pattern mining with privacy preserved in cloud computing environments.|article
+Der-Jiunn Deng|Kawuu W. Lin|2010|A novel parallel algorithm for frequent pattern mining with privacy preserved in cloud computing environments.|article
+Peishun Wang|Yi Mu|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Peishun Wang|Willy Susilo|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Peishun Wang|Jun Yan|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Yi Mu|Peishun Wang|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Yi Mu|Willy Susilo|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Yi Mu|Jun Yan|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Willy Susilo|Peishun Wang|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Willy Susilo|Yi Mu|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Willy Susilo|Jun Yan|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Jun Yan|Peishun Wang|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Jun Yan|Yi Mu|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Jun Yan|Willy Susilo|2012|Privacy preserving protocol for service aggregation in cloud computing.|article
+Rodrigo N. Calheiros|Rajiv Ranjan|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Rodrigo N. Calheiros|Anton Beloglazov|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Rodrigo N. Calheiros|César A. F. De Rose|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Rodrigo N. Calheiros|Rajkumar Buyya|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Rajiv Ranjan|Rodrigo N. Calheiros|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Rajiv Ranjan|Anton Beloglazov|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Rajiv Ranjan|César A. F. De Rose|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Rajiv Ranjan|Rajkumar Buyya|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Anton Beloglazov|Rodrigo N. Calheiros|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Anton Beloglazov|Rajiv Ranjan|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Anton Beloglazov|César A. F. De Rose|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Anton Beloglazov|Rajkumar Buyya|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+César A. F. De Rose|Rodrigo N. Calheiros|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+César A. F. De Rose|Rajiv Ranjan|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+César A. F. De Rose|Anton Beloglazov|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+César A. F. De Rose|Rajkumar Buyya|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Rajkumar Buyya|Rodrigo N. Calheiros|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Rajkumar Buyya|Rajiv Ranjan|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Rajkumar Buyya|Anton Beloglazov|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Rajkumar Buyya|César A. F. De Rose|2011|CloudSim: a toolkit for modeling and simulation of cloud computing environments and evaluation of resource provisioning algorithms.|article
+Md. Tanzim Khorshed|A. B. M. Shawkat Ali|2012|A survey on gaps, threat remediation challenges and some thoughts for proactive attack detection in cloud computing.|article
+Md. Tanzim Khorshed|Saleh A. Wasimi|2012|A survey on gaps, threat remediation challenges and some thoughts for proactive attack detection in cloud computing.|article
+A. B. M. Shawkat Ali|Md. Tanzim Khorshed|2012|A survey on gaps, threat remediation challenges and some thoughts for proactive attack detection in cloud computing.|article
+A. B. M. Shawkat Ali|Saleh A. Wasimi|2012|A survey on gaps, threat remediation challenges and some thoughts for proactive attack detection in cloud computing.|article
+Saleh A. Wasimi|Md. Tanzim Khorshed|2012|A survey on gaps, threat remediation challenges and some thoughts for proactive attack detection in cloud computing.|article
+Saleh A. Wasimi|A. B. M. Shawkat Ali|2012|A survey on gaps, threat remediation challenges and some thoughts for proactive attack detection in cloud computing.|article
+Dimitrios Zissis|Dimitrios Lekkas|2012|Addressing cloud computing security issues.|article
+Dimitrios Lekkas|Dimitrios Zissis|2012|Addressing cloud computing security issues.|article
+Ivona Brandic|Rajkumar Buyya|2012|Special section: Recent advances in utility and cloud computing.|article
+Rajkumar Buyya|Ivona Brandic|2012|Special section: Recent advances in utility and cloud computing.|article
+Niroshinie Fernando|Seng Wai Loke|2013|Mobile cloud computing: A survey.|article
+Niroshinie Fernando|Wenny Rahayu|2013|Mobile cloud computing: A survey.|article
+Seng Wai Loke|Niroshinie Fernando|2013|Mobile cloud computing: A survey.|article
+Seng Wai Loke|Wenny Rahayu|2013|Mobile cloud computing: A survey.|article
+Wenny Rahayu|Niroshinie Fernando|2013|Mobile cloud computing: A survey.|article
+Wenny Rahayu|Seng Wai Loke|2013|Mobile cloud computing: A survey.|article
+Brian Dougherty|Jules White|2012|Model-driven auto-scaling of green cloud computing infrastructure.|article
+Brian Dougherty|Douglas C. Schmidt|2012|Model-driven auto-scaling of green cloud computing infrastructure.|article
+Jules White|Brian Dougherty|2012|Model-driven auto-scaling of green cloud computing infrastructure.|article
+Jules White|Douglas C. Schmidt|2012|Model-driven auto-scaling of green cloud computing infrastructure.|article
+Douglas C. Schmidt|Brian Dougherty|2012|Model-driven auto-scaling of green cloud computing infrastructure.|article
+Douglas C. Schmidt|Jules White|2012|Model-driven auto-scaling of green cloud computing infrastructure.|article
+Jianxin Li|Bo Li 0005|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Jianxin Li|Tianyu Wo|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Jianxin Li|Chunming Hu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Jianxin Li|Jinpeng Huai|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Jianxin Li|Lu Liu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Jianxin Li|K. P. Lam|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Bo Li 0005|Jianxin Li|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Bo Li 0005|Tianyu Wo|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Bo Li 0005|Chunming Hu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Bo Li 0005|Jinpeng Huai|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Bo Li 0005|Lu Liu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Bo Li 0005|K. P. Lam|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Tianyu Wo|Jianxin Li|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Tianyu Wo|Bo Li 0005|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Tianyu Wo|Chunming Hu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Tianyu Wo|Jinpeng Huai|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Tianyu Wo|Lu Liu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Tianyu Wo|K. P. Lam|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Chunming Hu|Jianxin Li|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Chunming Hu|Bo Li 0005|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Chunming Hu|Tianyu Wo|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Chunming Hu|Jinpeng Huai|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Chunming Hu|Lu Liu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Chunming Hu|K. P. Lam|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Jinpeng Huai|Jianxin Li|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Jinpeng Huai|Bo Li 0005|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Jinpeng Huai|Tianyu Wo|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Jinpeng Huai|Chunming Hu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Jinpeng Huai|Lu Liu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Jinpeng Huai|K. P. Lam|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Lu Liu|Jianxin Li|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Lu Liu|Bo Li 0005|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Lu Liu|Tianyu Wo|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Lu Liu|Chunming Hu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Lu Liu|Jinpeng Huai|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Lu Liu|K. P. Lam|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+K. P. Lam|Jianxin Li|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+K. P. Lam|Bo Li 0005|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+K. P. Lam|Tianyu Wo|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+K. P. Lam|Chunming Hu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+K. P. Lam|Jinpeng Huai|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+K. P. Lam|Lu Liu|2012|CyberGuarder: A virtualization security assurance architecture for green cloud computing.|article
+Rajkumar Buyya|Rajiv Ranjan|2010|Special section: Federated resource management in grid and cloud computing systems.|article
+Rajiv Ranjan|Rajkumar Buyya|2010|Special section: Federated resource management in grid and cloud computing systems.|article
+Andrzej Goscinski|Michael Brock|2010|Toward dynamic and attribute based publication, discovery and selection for cloud computing.|article
+Michael Brock|Andrzej Goscinski|2010|Toward dynamic and attribute based publication, discovery and selection for cloud computing.|article
+Shun-Te Liu|Yi-Ming Chen|2011|Retrospective detection of malware attacks by cloud computing.|article
+Yi-Ming Chen|Shun-Te Liu|2011|Retrospective detection of malware attacks by cloud computing.|article
+Kan Yang|Xiaohua Jia|2012|Data storage auditing service in cloud computing: challenges, methods and opportunities.|article
+Xiaohua Jia|Kan Yang|2012|Data storage auditing service in cloud computing: challenges, methods and opportunities.|article
+Hong Linh Truong|Schahram Dustdar|2010|Composable cost estimation and monitoring for computational applications in cloud computing environments.|article
+Schahram Dustdar|Hong Linh Truong|2010|Composable cost estimation and monitoring for computational applications in cloud computing environments.|article
+Raúl Alonso-Calvo|José Crespo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Raúl Alonso-Calvo|Miguel García-Remesal|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Raúl Alonso-Calvo|Alberto Anguita|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Raúl Alonso-Calvo|Victor Maojo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+José Crespo|Raúl Alonso-Calvo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+José Crespo|Miguel García-Remesal|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+José Crespo|Alberto Anguita|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+José Crespo|Victor Maojo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Miguel García-Remesal|Raúl Alonso-Calvo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Miguel García-Remesal|José Crespo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Miguel García-Remesal|Alberto Anguita|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Miguel García-Remesal|Victor Maojo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Alberto Anguita|Raúl Alonso-Calvo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Alberto Anguita|José Crespo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Alberto Anguita|Miguel García-Remesal|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Alberto Anguita|Victor Maojo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Victor Maojo|Raúl Alonso-Calvo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Victor Maojo|José Crespo|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Victor Maojo|Miguel García-Remesal|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Victor Maojo|Alberto Anguita|2010|On distributing load in cloud computing: A real application for very-large image datasets.|article
+Xiangtao Yan|Yifa Li|2012|A new remote data integrity checking scheme for cloud storage.|article
+Yifa Li|Xiangtao Yan|2012|A new remote data integrity checking scheme for cloud storage.|article
+Young Choon Lee|Albert Y. Zomaya|2012|Energy efficient utilization of resources in cloud computing systems.|article
+Albert Y. Zomaya|Young Choon Lee|2012|Energy efficient utilization of resources in cloud computing systems.|article
+Lien Deboosere|Bert Vankeirsbilck|2012|Efficient resource management for virtual desktop cloud computing.|article
+Lien Deboosere|Pieter Simoens|2012|Efficient resource management for virtual desktop cloud computing.|article
+Lien Deboosere|Filip De Turck|2012|Efficient resource management for virtual desktop cloud computing.|article
+Lien Deboosere|Bart Dhoedt|2012|Efficient resource management for virtual desktop cloud computing.|article
+Lien Deboosere|Piet Demeester|2012|Efficient resource management for virtual desktop cloud computing.|article
+Bert Vankeirsbilck|Lien Deboosere|2012|Efficient resource management for virtual desktop cloud computing.|article
+Bert Vankeirsbilck|Pieter Simoens|2012|Efficient resource management for virtual desktop cloud computing.|article
+Bert Vankeirsbilck|Filip De Turck|2012|Efficient resource management for virtual desktop cloud computing.|article
+Bert Vankeirsbilck|Bart Dhoedt|2012|Efficient resource management for virtual desktop cloud computing.|article
+Bert Vankeirsbilck|Piet Demeester|2012|Efficient resource management for virtual desktop cloud computing.|article
+Pieter Simoens|Lien Deboosere|2012|Efficient resource management for virtual desktop cloud computing.|article
+Pieter Simoens|Bert Vankeirsbilck|2012|Efficient resource management for virtual desktop cloud computing.|article
+Pieter Simoens|Filip De Turck|2012|Efficient resource management for virtual desktop cloud computing.|article
+Pieter Simoens|Bart Dhoedt|2012|Efficient resource management for virtual desktop cloud computing.|article
+Pieter Simoens|Piet Demeester|2012|Efficient resource management for virtual desktop cloud computing.|article
+Filip De Turck|Lien Deboosere|2012|Efficient resource management for virtual desktop cloud computing.|article
+Filip De Turck|Bert Vankeirsbilck|2012|Efficient resource management for virtual desktop cloud computing.|article
+Filip De Turck|Pieter Simoens|2012|Efficient resource management for virtual desktop cloud computing.|article
+Filip De Turck|Bart Dhoedt|2012|Efficient resource management for virtual desktop cloud computing.|article
+Filip De Turck|Piet Demeester|2012|Efficient resource management for virtual desktop cloud computing.|article
+Bart Dhoedt|Lien Deboosere|2012|Efficient resource management for virtual desktop cloud computing.|article
+Bart Dhoedt|Bert Vankeirsbilck|2012|Efficient resource management for virtual desktop cloud computing.|article
+Bart Dhoedt|Pieter Simoens|2012|Efficient resource management for virtual desktop cloud computing.|article
+Bart Dhoedt|Filip De Turck|2012|Efficient resource management for virtual desktop cloud computing.|article
+Bart Dhoedt|Piet Demeester|2012|Efficient resource management for virtual desktop cloud computing.|article
+Piet Demeester|Lien Deboosere|2012|Efficient resource management for virtual desktop cloud computing.|article
+Piet Demeester|Bert Vankeirsbilck|2012|Efficient resource management for virtual desktop cloud computing.|article
+Piet Demeester|Pieter Simoens|2012|Efficient resource management for virtual desktop cloud computing.|article
+Piet Demeester|Filip De Turck|2012|Efficient resource management for virtual desktop cloud computing.|article
+Piet Demeester|Bart Dhoedt|2012|Efficient resource management for virtual desktop cloud computing.|article
+Ioannis A. Moschakis|Helen D. Karatza|2012|Evaluation of gang scheduling performance and cost in a cloud computing system.|article
+Helen D. Karatza|Ioannis A. Moschakis|2012|Evaluation of gang scheduling performance and cost in a cloud computing system.|article
+Seonggeun Ryu|Kyunghye Lee|2012|Optimized fast handover scheme in Mobile IPv6 networks to support mobile users for cloud computing.|article
+Seonggeun Ryu|Youngsong Mun|2012|Optimized fast handover scheme in Mobile IPv6 networks to support mobile users for cloud computing.|article
+Kyunghye Lee|Seonggeun Ryu|2012|Optimized fast handover scheme in Mobile IPv6 networks to support mobile users for cloud computing.|article
+Kyunghye Lee|Youngsong Mun|2012|Optimized fast handover scheme in Mobile IPv6 networks to support mobile users for cloud computing.|article
+Youngsong Mun|Seonggeun Ryu|2012|Optimized fast handover scheme in Mobile IPv6 networks to support mobile users for cloud computing.|article
+Youngsong Mun|Kyunghye Lee|2012|Optimized fast handover scheme in Mobile IPv6 networks to support mobile users for cloud computing.|article
+Guiyi Wei|Athanasios V. Vasilakos|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Guiyi Wei|Yao Zheng|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Guiyi Wei|Naixue Xiong|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Athanasios V. Vasilakos|Guiyi Wei|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Athanasios V. Vasilakos|Yao Zheng|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Athanasios V. Vasilakos|Naixue Xiong|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Yao Zheng|Guiyi Wei|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Yao Zheng|Athanasios V. Vasilakos|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Yao Zheng|Naixue Xiong|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Naixue Xiong|Guiyi Wei|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Naixue Xiong|Athanasios V. Vasilakos|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Naixue Xiong|Yao Zheng|2010|A game-theoretic method of fair resource allocation for cloud computing services.|article
+Chunlin Li|Layuan Li|2012|Optimal resource provisioning for cloud computing environment.|article
+Layuan Li|Chunlin Li|2012|Optimal resource provisioning for cloud computing environment.|article
+Miranda Mowbray|Siani Pearson|2012|Enhancing privacy in cloud computing via policy-based obfuscation.|article
+Miranda Mowbray|Yun Shen|2012|Enhancing privacy in cloud computing via policy-based obfuscation.|article
+Siani Pearson|Miranda Mowbray|2012|Enhancing privacy in cloud computing via policy-based obfuscation.|article
+Siani Pearson|Yun Shen|2012|Enhancing privacy in cloud computing via policy-based obfuscation.|article
+Yun Shen|Miranda Mowbray|2012|Enhancing privacy in cloud computing via policy-based obfuscation.|article
+Yun Shen|Siani Pearson|2012|Enhancing privacy in cloud computing via policy-based obfuscation.|article
+Mohand-Said Mezmaz|Nouredine Melab|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Mohand-Said Mezmaz|Yacine Kessaci|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Mohand-Said Mezmaz|Young Choon Lee|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Mohand-Said Mezmaz|El-Ghazali Talbi|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Mohand-Said Mezmaz|Albert Y. Zomaya|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Mohand-Said Mezmaz|Daniel Tuyttens|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Nouredine Melab|Mohand-Said Mezmaz|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Nouredine Melab|Yacine Kessaci|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Nouredine Melab|Young Choon Lee|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Nouredine Melab|El-Ghazali Talbi|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Nouredine Melab|Albert Y. Zomaya|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Nouredine Melab|Daniel Tuyttens|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Yacine Kessaci|Mohand-Said Mezmaz|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Yacine Kessaci|Nouredine Melab|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Yacine Kessaci|Young Choon Lee|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Yacine Kessaci|El-Ghazali Talbi|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Yacine Kessaci|Albert Y. Zomaya|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Yacine Kessaci|Daniel Tuyttens|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Young Choon Lee|Mohand-Said Mezmaz|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Young Choon Lee|Nouredine Melab|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Young Choon Lee|Yacine Kessaci|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Young Choon Lee|El-Ghazali Talbi|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Young Choon Lee|Albert Y. Zomaya|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Young Choon Lee|Daniel Tuyttens|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+El-Ghazali Talbi|Mohand-Said Mezmaz|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+El-Ghazali Talbi|Nouredine Melab|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+El-Ghazali Talbi|Yacine Kessaci|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+El-Ghazali Talbi|Young Choon Lee|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+El-Ghazali Talbi|Albert Y. Zomaya|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+El-Ghazali Talbi|Daniel Tuyttens|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Albert Y. Zomaya|Mohand-Said Mezmaz|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Albert Y. Zomaya|Nouredine Melab|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Albert Y. Zomaya|Yacine Kessaci|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Albert Y. Zomaya|Young Choon Lee|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Albert Y. Zomaya|El-Ghazali Talbi|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Albert Y. Zomaya|Daniel Tuyttens|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Daniel Tuyttens|Mohand-Said Mezmaz|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Daniel Tuyttens|Nouredine Melab|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Daniel Tuyttens|Yacine Kessaci|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Daniel Tuyttens|Young Choon Lee|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Daniel Tuyttens|El-Ghazali Talbi|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Daniel Tuyttens|Albert Y. Zomaya|2011|A parallel bi-objective hybrid metaheuristic for energy-aware scheduling for cloud computing systems.|article
+Qing Li|Cheng Wang|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Qing Li|Jing Wu|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Qing Li|Jun Li|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Qing Li|Ze-Yuan Wang|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Cheng Wang|Qing Li|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Cheng Wang|Jing Wu|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Cheng Wang|Jun Li|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Cheng Wang|Ze-Yuan Wang|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Jing Wu|Qing Li|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Jing Wu|Cheng Wang|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Jing Wu|Jun Li|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Jing Wu|Ze-Yuan Wang|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Jun Li|Qing Li|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Jun Li|Cheng Wang|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Jun Li|Jing Wu|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Jun Li|Ze-Yuan Wang|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Ze-Yuan Wang|Qing Li|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Ze-Yuan Wang|Cheng Wang|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Ze-Yuan Wang|Jing Wu|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Ze-Yuan Wang|Jun Li|2011|Towards the business-information technology alignment in cloud computing environment: anapproach based on collaboration points and agents.|article
+Regina Miseviciene|Germanas Budnikas|2011|Application of cloud computing at KTU: MS live@edu case.|article
+Regina Miseviciene|Danute Ambraziene|2011|Application of cloud computing at KTU: MS live@edu case.|article
+Germanas Budnikas|Regina Miseviciene|2011|Application of cloud computing at KTU: MS live@edu case.|article
+Germanas Budnikas|Danute Ambraziene|2011|Application of cloud computing at KTU: MS live@edu case.|article
+Danute Ambraziene|Regina Miseviciene|2011|Application of cloud computing at KTU: MS live@edu case.|article
+Danute Ambraziene|Germanas Budnikas|2011|Application of cloud computing at KTU: MS live@edu case.|article
+Konstantin Petruch|Vladimir Stantchev|2011|A survey on IT-governance aspects of cloud computing.|article
+Konstantin Petruch|Gerrit Tamm|2011|A survey on IT-governance aspects of cloud computing.|article
+Vladimir Stantchev|Konstantin Petruch|2011|A survey on IT-governance aspects of cloud computing.|article
+Vladimir Stantchev|Gerrit Tamm|2011|A survey on IT-governance aspects of cloud computing.|article
+Gerrit Tamm|Konstantin Petruch|2011|A survey on IT-governance aspects of cloud computing.|article
+Gerrit Tamm|Vladimir Stantchev|2011|A survey on IT-governance aspects of cloud computing.|article
+Pei Fan|Ji Wang|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Pei Fan|Zhenbang Chen|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Pei Fan|Zibin Zheng|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Pei Fan|Michael R. Lyu|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Ji Wang|Pei Fan|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Ji Wang|Zhenbang Chen|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Ji Wang|Zibin Zheng|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Ji Wang|Michael R. Lyu|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Zhenbang Chen|Pei Fan|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Zhenbang Chen|Ji Wang|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Zhenbang Chen|Zibin Zheng|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Zhenbang Chen|Michael R. Lyu|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Zibin Zheng|Pei Fan|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Zibin Zheng|Ji Wang|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Zibin Zheng|Zhenbang Chen|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Zibin Zheng|Michael R. Lyu|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Michael R. Lyu|Pei Fan|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Michael R. Lyu|Ji Wang|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Michael R. Lyu|Zhenbang Chen|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Michael R. Lyu|Zibin Zheng|2012|A spectral clustering-based optimal deployment method for scientific application in cloud computing.|article
+Xin Bai|Michael B. Smith|2011|Affordance of ubiquitous learning through cloud computing.|article
+Xin Bai|Rathika Rajaravivarma|2011|Affordance of ubiquitous learning through cloud computing.|article
+Michael B. Smith|Xin Bai|2011|Affordance of ubiquitous learning through cloud computing.|article
+Michael B. Smith|Rathika Rajaravivarma|2011|Affordance of ubiquitous learning through cloud computing.|article
+Rathika Rajaravivarma|Xin Bai|2011|Affordance of ubiquitous learning through cloud computing.|article
+Rathika Rajaravivarma|Michael B. Smith|2011|Affordance of ubiquitous learning through cloud computing.|article
+Marcos Dias de Assunção|Alexandre di Costanzo|2010|A cost-benefit analysis of using cloud computing to extend the capacity of clusters.|article
+Marcos Dias de Assunção|Rajkumar Buyya|2010|A cost-benefit analysis of using cloud computing to extend the capacity of clusters.|article
+Alexandre di Costanzo|Marcos Dias de Assunção|2010|A cost-benefit analysis of using cloud computing to extend the capacity of clusters.|article
+Alexandre di Costanzo|Rajkumar Buyya|2010|A cost-benefit analysis of using cloud computing to extend the capacity of clusters.|article
+Rajkumar Buyya|Marcos Dias de Assunção|2010|A cost-benefit analysis of using cloud computing to extend the capacity of clusters.|article
+Rajkumar Buyya|Alexandre di Costanzo|2010|A cost-benefit analysis of using cloud computing to extend the capacity of clusters.|article
+Weimin Zheng|Pengzhi Xu|2010|Design a cloud storage platform for pervasive computing environments.|article
+Weimin Zheng|Xiaomeng Huang|2010|Design a cloud storage platform for pervasive computing environments.|article
+Weimin Zheng|Nuo Wu|2010|Design a cloud storage platform for pervasive computing environments.|article
+Pengzhi Xu|Weimin Zheng|2010|Design a cloud storage platform for pervasive computing environments.|article
+Pengzhi Xu|Xiaomeng Huang|2010|Design a cloud storage platform for pervasive computing environments.|article
+Pengzhi Xu|Nuo Wu|2010|Design a cloud storage platform for pervasive computing environments.|article
+Xiaomeng Huang|Weimin Zheng|2010|Design a cloud storage platform for pervasive computing environments.|article
+Xiaomeng Huang|Pengzhi Xu|2010|Design a cloud storage platform for pervasive computing environments.|article
+Xiaomeng Huang|Nuo Wu|2010|Design a cloud storage platform for pervasive computing environments.|article
+Nuo Wu|Weimin Zheng|2010|Design a cloud storage platform for pervasive computing environments.|article
+Nuo Wu|Pengzhi Xu|2010|Design a cloud storage platform for pervasive computing environments.|article
+Nuo Wu|Xiaomeng Huang|2010|Design a cloud storage platform for pervasive computing environments.|article
+Chunjie Luo|Jianfeng Zhan|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Chunjie Luo|Zhen Jia|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Chunjie Luo|Lei Wang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Chunjie Luo|Gang Lu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Chunjie Luo|Lixin Zhang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Chunjie Luo|Cheng-Zhong Xu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Chunjie Luo|Ninghui Sun|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Jianfeng Zhan|Chunjie Luo|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Jianfeng Zhan|Zhen Jia|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Jianfeng Zhan|Lei Wang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Jianfeng Zhan|Gang Lu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Jianfeng Zhan|Lixin Zhang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Jianfeng Zhan|Cheng-Zhong Xu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Jianfeng Zhan|Ninghui Sun|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Zhen Jia|Chunjie Luo|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Zhen Jia|Jianfeng Zhan|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Zhen Jia|Lei Wang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Zhen Jia|Gang Lu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Zhen Jia|Lixin Zhang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Zhen Jia|Cheng-Zhong Xu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Zhen Jia|Ninghui Sun|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lei Wang|Chunjie Luo|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lei Wang|Jianfeng Zhan|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lei Wang|Zhen Jia|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lei Wang|Gang Lu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lei Wang|Lixin Zhang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lei Wang|Cheng-Zhong Xu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lei Wang|Ninghui Sun|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Gang Lu|Chunjie Luo|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Gang Lu|Jianfeng Zhan|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Gang Lu|Zhen Jia|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Gang Lu|Lei Wang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Gang Lu|Lixin Zhang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Gang Lu|Cheng-Zhong Xu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Gang Lu|Ninghui Sun|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lixin Zhang|Chunjie Luo|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lixin Zhang|Jianfeng Zhan|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lixin Zhang|Zhen Jia|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lixin Zhang|Lei Wang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lixin Zhang|Gang Lu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lixin Zhang|Cheng-Zhong Xu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Lixin Zhang|Ninghui Sun|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Cheng-Zhong Xu|Chunjie Luo|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Cheng-Zhong Xu|Jianfeng Zhan|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Cheng-Zhong Xu|Zhen Jia|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Cheng-Zhong Xu|Lei Wang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Cheng-Zhong Xu|Gang Lu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Cheng-Zhong Xu|Lixin Zhang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Cheng-Zhong Xu|Ninghui Sun|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Ninghui Sun|Chunjie Luo|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Ninghui Sun|Jianfeng Zhan|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Ninghui Sun|Zhen Jia|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Ninghui Sun|Lei Wang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Ninghui Sun|Gang Lu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Ninghui Sun|Lixin Zhang|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Ninghui Sun|Cheng-Zhong Xu|2012|CloudRank-D: benchmarking and ranking cloud computing systems for data processing applications.|article
+Michael Armbrust|Armando Fox|2010|A view of cloud computing.|article
+Michael Armbrust|Rean Griffith|2010|A view of cloud computing.|article
+Michael Armbrust|Anthony D. Joseph|2010|A view of cloud computing.|article
+Michael Armbrust|Randy H. Katz|2010|A view of cloud computing.|article
+Michael Armbrust|Andy Konwinski|2010|A view of cloud computing.|article
+Michael Armbrust|Gunho Lee|2010|A view of cloud computing.|article
+Michael Armbrust|David A. Patterson|2010|A view of cloud computing.|article
+Michael Armbrust|Ariel Rabkin|2010|A view of cloud computing.|article
+Michael Armbrust|Ion Stoica|2010|A view of cloud computing.|article
+Michael Armbrust|Matei Zaharia|2010|A view of cloud computing.|article
+Armando Fox|Michael Armbrust|2010|A view of cloud computing.|article
+Armando Fox|Rean Griffith|2010|A view of cloud computing.|article
+Armando Fox|Anthony D. Joseph|2010|A view of cloud computing.|article
+Armando Fox|Randy H. Katz|2010|A view of cloud computing.|article
+Armando Fox|Andy Konwinski|2010|A view of cloud computing.|article
+Armando Fox|Gunho Lee|2010|A view of cloud computing.|article
+Armando Fox|David A. Patterson|2010|A view of cloud computing.|article
+Armando Fox|Ariel Rabkin|2010|A view of cloud computing.|article
+Armando Fox|Ion Stoica|2010|A view of cloud computing.|article
+Armando Fox|Matei Zaharia|2010|A view of cloud computing.|article
+Rean Griffith|Michael Armbrust|2010|A view of cloud computing.|article
+Rean Griffith|Armando Fox|2010|A view of cloud computing.|article
+Rean Griffith|Anthony D. Joseph|2010|A view of cloud computing.|article
+Rean Griffith|Randy H. Katz|2010|A view of cloud computing.|article
+Rean Griffith|Andy Konwinski|2010|A view of cloud computing.|article
+Rean Griffith|Gunho Lee|2010|A view of cloud computing.|article
+Rean Griffith|David A. Patterson|2010|A view of cloud computing.|article
+Rean Griffith|Ariel Rabkin|2010|A view of cloud computing.|article
+Rean Griffith|Ion Stoica|2010|A view of cloud computing.|article
+Rean Griffith|Matei Zaharia|2010|A view of cloud computing.|article
+Anthony D. Joseph|Michael Armbrust|2010|A view of cloud computing.|article
+Anthony D. Joseph|Armando Fox|2010|A view of cloud computing.|article
+Anthony D. Joseph|Rean Griffith|2010|A view of cloud computing.|article
+Anthony D. Joseph|Randy H. Katz|2010|A view of cloud computing.|article
+Anthony D. Joseph|Andy Konwinski|2010|A view of cloud computing.|article
+Anthony D. Joseph|Gunho Lee|2010|A view of cloud computing.|article
+Anthony D. Joseph|David A. Patterson|2010|A view of cloud computing.|article
+Anthony D. Joseph|Ariel Rabkin|2010|A view of cloud computing.|article
+Anthony D. Joseph|Ion Stoica|2010|A view of cloud computing.|article
+Anthony D. Joseph|Matei Zaharia|2010|A view of cloud computing.|article
+Randy H. Katz|Michael Armbrust|2010|A view of cloud computing.|article
+Randy H. Katz|Armando Fox|2010|A view of cloud computing.|article
+Randy H. Katz|Rean Griffith|2010|A view of cloud computing.|article
+Randy H. Katz|Anthony D. Joseph|2010|A view of cloud computing.|article
+Randy H. Katz|Andy Konwinski|2010|A view of cloud computing.|article
+Randy H. Katz|Gunho Lee|2010|A view of cloud computing.|article
+Randy H. Katz|David A. Patterson|2010|A view of cloud computing.|article
+Randy H. Katz|Ariel Rabkin|2010|A view of cloud computing.|article
+Randy H. Katz|Ion Stoica|2010|A view of cloud computing.|article
+Randy H. Katz|Matei Zaharia|2010|A view of cloud computing.|article
+Andy Konwinski|Michael Armbrust|2010|A view of cloud computing.|article
+Andy Konwinski|Armando Fox|2010|A view of cloud computing.|article
+Andy Konwinski|Rean Griffith|2010|A view of cloud computing.|article
+Andy Konwinski|Anthony D. Joseph|2010|A view of cloud computing.|article
+Andy Konwinski|Randy H. Katz|2010|A view of cloud computing.|article
+Andy Konwinski|Gunho Lee|2010|A view of cloud computing.|article
+Andy Konwinski|David A. Patterson|2010|A view of cloud computing.|article
+Andy Konwinski|Ariel Rabkin|2010|A view of cloud computing.|article
+Andy Konwinski|Ion Stoica|2010|A view of cloud computing.|article
+Andy Konwinski|Matei Zaharia|2010|A view of cloud computing.|article
+Gunho Lee|Michael Armbrust|2010|A view of cloud computing.|article
+Gunho Lee|Armando Fox|2010|A view of cloud computing.|article
+Gunho Lee|Rean Griffith|2010|A view of cloud computing.|article
+Gunho Lee|Anthony D. Joseph|2010|A view of cloud computing.|article
+Gunho Lee|Randy H. Katz|2010|A view of cloud computing.|article
+Gunho Lee|Andy Konwinski|2010|A view of cloud computing.|article
+Gunho Lee|David A. Patterson|2010|A view of cloud computing.|article
+Gunho Lee|Ariel Rabkin|2010|A view of cloud computing.|article
+Gunho Lee|Ion Stoica|2010|A view of cloud computing.|article
+Gunho Lee|Matei Zaharia|2010|A view of cloud computing.|article
+David A. Patterson|Michael Armbrust|2010|A view of cloud computing.|article
+David A. Patterson|Armando Fox|2010|A view of cloud computing.|article
+David A. Patterson|Rean Griffith|2010|A view of cloud computing.|article
+David A. Patterson|Anthony D. Joseph|2010|A view of cloud computing.|article
+David A. Patterson|Randy H. Katz|2010|A view of cloud computing.|article
+David A. Patterson|Andy Konwinski|2010|A view of cloud computing.|article
+David A. Patterson|Gunho Lee|2010|A view of cloud computing.|article
+David A. Patterson|Ariel Rabkin|2010|A view of cloud computing.|article
+David A. Patterson|Ion Stoica|2010|A view of cloud computing.|article
+David A. Patterson|Matei Zaharia|2010|A view of cloud computing.|article
+Ariel Rabkin|Michael Armbrust|2010|A view of cloud computing.|article
+Ariel Rabkin|Armando Fox|2010|A view of cloud computing.|article
+Ariel Rabkin|Rean Griffith|2010|A view of cloud computing.|article
+Ariel Rabkin|Anthony D. Joseph|2010|A view of cloud computing.|article
+Ariel Rabkin|Randy H. Katz|2010|A view of cloud computing.|article
+Ariel Rabkin|Andy Konwinski|2010|A view of cloud computing.|article
+Ariel Rabkin|Gunho Lee|2010|A view of cloud computing.|article
+Ariel Rabkin|David A. Patterson|2010|A view of cloud computing.|article
+Ariel Rabkin|Ion Stoica|2010|A view of cloud computing.|article
+Ariel Rabkin|Matei Zaharia|2010|A view of cloud computing.|article
+Ion Stoica|Michael Armbrust|2010|A view of cloud computing.|article
+Ion Stoica|Armando Fox|2010|A view of cloud computing.|article
+Ion Stoica|Rean Griffith|2010|A view of cloud computing.|article
+Ion Stoica|Anthony D. Joseph|2010|A view of cloud computing.|article
+Ion Stoica|Randy H. Katz|2010|A view of cloud computing.|article
+Ion Stoica|Andy Konwinski|2010|A view of cloud computing.|article
+Ion Stoica|Gunho Lee|2010|A view of cloud computing.|article
+Ion Stoica|David A. Patterson|2010|A view of cloud computing.|article
+Ion Stoica|Ariel Rabkin|2010|A view of cloud computing.|article
+Ion Stoica|Matei Zaharia|2010|A view of cloud computing.|article
+Matei Zaharia|Michael Armbrust|2010|A view of cloud computing.|article
+Matei Zaharia|Armando Fox|2010|A view of cloud computing.|article
+Matei Zaharia|Rean Griffith|2010|A view of cloud computing.|article
+Matei Zaharia|Anthony D. Joseph|2010|A view of cloud computing.|article
+Matei Zaharia|Randy H. Katz|2010|A view of cloud computing.|article
+Matei Zaharia|Andy Konwinski|2010|A view of cloud computing.|article
+Matei Zaharia|Gunho Lee|2010|A view of cloud computing.|article
+Matei Zaharia|David A. Patterson|2010|A view of cloud computing.|article
+Matei Zaharia|Ariel Rabkin|2010|A view of cloud computing.|article
+Matei Zaharia|Ion Stoica|2010|A view of cloud computing.|article
+Gary Garrison|Sang Hyun Kim|2012|Success factors for deploying cloud computing.|article
+Gary Garrison|Robin L. Wakefield|2012|Success factors for deploying cloud computing.|article
+Sang Hyun Kim|Gary Garrison|2012|Success factors for deploying cloud computing.|article
+Sang Hyun Kim|Robin L. Wakefield|2012|Success factors for deploying cloud computing.|article
+Robin L. Wakefield|Gary Garrison|2012|Success factors for deploying cloud computing.|article
+Robin L. Wakefield|Sang Hyun Kim|2012|Success factors for deploying cloud computing.|article
+Yi-Kuei Lin|Ping-Chen Chang|2012|Evaluation of system reliability for a cloud computing system with imperfect nodes.|article
+Ping-Chen Chang|Yi-Kuei Lin|2012|Evaluation of system reliability for a cloud computing system with imperfect nodes.|article
+Yacov Y. Haimes|Clyde Chittister|2012|Risk to cyberinfrastructure systems served by cloud computing technology as systems of systems.|article
+Clyde Chittister|Yacov Y. Haimes|2012|Risk to cyberinfrastructure systems served by cloud computing technology as systems of systems.|article
+Lluis Pamies-Juarez|Pedro García López|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Lluis Pamies-Juarez|Marc Sánchez Artigas|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Lluis Pamies-Juarez|Blas Herrera|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Pedro García López|Lluis Pamies-Juarez|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Pedro García López|Marc Sánchez Artigas|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Pedro García López|Blas Herrera|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Marc Sánchez Artigas|Lluis Pamies-Juarez|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Marc Sánchez Artigas|Pedro García López|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Marc Sánchez Artigas|Blas Herrera|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Blas Herrera|Lluis Pamies-Juarez|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Blas Herrera|Pedro García López|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Blas Herrera|Marc Sánchez Artigas|2011|Towards the design of optimal data redundancy schemes for heterogeneous cloud storage infrastructures.|article
+Madoka Yuriyama|Takayuki Kushida|2011|Integrated cloud computing environment with IT resources and sensor devices.|article
+Takayuki Kushida|Madoka Yuriyama|2011|Integrated cloud computing environment with IT resources and sensor devices.|article
+Chaowei Yang|Michael F. Goodchild|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Chaowei Yang|Qunying Huang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Chaowei Yang|Doug Nebert|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Chaowei Yang|Robert Raskin|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Chaowei Yang|Yan Xu|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Chaowei Yang|Myra Bambacus|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Chaowei Yang|Daniel Fay|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Michael F. Goodchild|Chaowei Yang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Michael F. Goodchild|Qunying Huang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Michael F. Goodchild|Doug Nebert|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Michael F. Goodchild|Robert Raskin|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Michael F. Goodchild|Yan Xu|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Michael F. Goodchild|Myra Bambacus|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Michael F. Goodchild|Daniel Fay|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Qunying Huang|Chaowei Yang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Qunying Huang|Michael F. Goodchild|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Qunying Huang|Doug Nebert|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Qunying Huang|Robert Raskin|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Qunying Huang|Yan Xu|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Qunying Huang|Myra Bambacus|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Qunying Huang|Daniel Fay|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Doug Nebert|Chaowei Yang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Doug Nebert|Michael F. Goodchild|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Doug Nebert|Qunying Huang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Doug Nebert|Robert Raskin|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Doug Nebert|Yan Xu|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Doug Nebert|Myra Bambacus|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Doug Nebert|Daniel Fay|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Robert Raskin|Chaowei Yang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Robert Raskin|Michael F. Goodchild|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Robert Raskin|Qunying Huang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Robert Raskin|Doug Nebert|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Robert Raskin|Yan Xu|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Robert Raskin|Myra Bambacus|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Robert Raskin|Daniel Fay|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Yan Xu|Chaowei Yang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Yan Xu|Michael F. Goodchild|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Yan Xu|Qunying Huang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Yan Xu|Doug Nebert|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Yan Xu|Robert Raskin|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Yan Xu|Myra Bambacus|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Yan Xu|Daniel Fay|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Myra Bambacus|Chaowei Yang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Myra Bambacus|Michael F. Goodchild|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Myra Bambacus|Qunying Huang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Myra Bambacus|Doug Nebert|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Myra Bambacus|Robert Raskin|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Myra Bambacus|Yan Xu|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Myra Bambacus|Daniel Fay|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Daniel Fay|Chaowei Yang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Daniel Fay|Michael F. Goodchild|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Daniel Fay|Qunying Huang|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Daniel Fay|Doug Nebert|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Daniel Fay|Robert Raskin|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Daniel Fay|Yan Xu|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+Daniel Fay|Myra Bambacus|2011|Spatial cloud computing: how can the geospatial sciences use and help shape cloud computing?|article
+P. Syam Kumar|R. Subramanian|2012|RSA-based dynamic public audit service for integrity verification of data storage in cloud computing using Sobol sequence.|article
+R. Subramanian|P. Syam Kumar|2012|RSA-based dynamic public audit service for integrity verification of data storage in cloud computing using Sobol sequence.|article
+Hassan Takabi|James B. D. Joshi|2012|Semantic-based policy management for cloud computing environments.|article
+James B. D. Joshi|Hassan Takabi|2012|Semantic-based policy management for cloud computing environments.|article
+Andrzej M. Goscinski|Michael Brock|2011|Toward higher level abstractions for cloud computing.|article
+Michael Brock|Andrzej M. Goscinski|2011|Toward higher level abstractions for cloud computing.|article
+Sudhir N. Dhage|B. B. Meshram|2012|Intrusion detection system in cloud computing environment.|article
+B. B. Meshram|Sudhir N. Dhage|2012|Intrusion detection system in cloud computing environment.|article
+Omer Khalid|Ivo Maljevic|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Omer Khalid|Richard Anthony|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Omer Khalid|Miltos Petridis|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Omer Khalid|Kevin Parrott|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Omer Khalid|Markus Schulz|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Ivo Maljevic|Omer Khalid|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Ivo Maljevic|Richard Anthony|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Ivo Maljevic|Miltos Petridis|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Ivo Maljevic|Kevin Parrott|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Ivo Maljevic|Markus Schulz|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Richard Anthony|Omer Khalid|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Richard Anthony|Ivo Maljevic|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Richard Anthony|Miltos Petridis|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Richard Anthony|Kevin Parrott|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Richard Anthony|Markus Schulz|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Miltos Petridis|Omer Khalid|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Miltos Petridis|Ivo Maljevic|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Miltos Petridis|Richard Anthony|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Miltos Petridis|Kevin Parrott|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Miltos Petridis|Markus Schulz|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Kevin Parrott|Omer Khalid|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Kevin Parrott|Ivo Maljevic|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Kevin Parrott|Richard Anthony|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Kevin Parrott|Miltos Petridis|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Kevin Parrott|Markus Schulz|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Markus Schulz|Omer Khalid|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Markus Schulz|Ivo Maljevic|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Markus Schulz|Richard Anthony|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Markus Schulz|Miltos Petridis|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Markus Schulz|Kevin Parrott|2010|Deadline aware virtual machine scheduler for scientific grids and cloud computing|article
+Monika Sharma|Ashwani Mehra|2010|Scope of cloud computing for SMEs in India|article
+Monika Sharma|Haresh Jola|2010|Scope of cloud computing for SMEs in India|article
+Monika Sharma|Anand Kumar|2010|Scope of cloud computing for SMEs in India|article
+Monika Sharma|Madhvendra Misra|2010|Scope of cloud computing for SMEs in India|article
+Monika Sharma|Vijayshri Tiwari|2010|Scope of cloud computing for SMEs in India|article
+Ashwani Mehra|Monika Sharma|2010|Scope of cloud computing for SMEs in India|article
+Ashwani Mehra|Haresh Jola|2010|Scope of cloud computing for SMEs in India|article
+Ashwani Mehra|Anand Kumar|2010|Scope of cloud computing for SMEs in India|article
+Ashwani Mehra|Madhvendra Misra|2010|Scope of cloud computing for SMEs in India|article
+Ashwani Mehra|Vijayshri Tiwari|2010|Scope of cloud computing for SMEs in India|article
+Haresh Jola|Monika Sharma|2010|Scope of cloud computing for SMEs in India|article
+Haresh Jola|Ashwani Mehra|2010|Scope of cloud computing for SMEs in India|article
+Haresh Jola|Anand Kumar|2010|Scope of cloud computing for SMEs in India|article
+Haresh Jola|Madhvendra Misra|2010|Scope of cloud computing for SMEs in India|article
+Haresh Jola|Vijayshri Tiwari|2010|Scope of cloud computing for SMEs in India|article
+Anand Kumar|Monika Sharma|2010|Scope of cloud computing for SMEs in India|article
+Anand Kumar|Ashwani Mehra|2010|Scope of cloud computing for SMEs in India|article
+Anand Kumar|Haresh Jola|2010|Scope of cloud computing for SMEs in India|article
+Anand Kumar|Madhvendra Misra|2010|Scope of cloud computing for SMEs in India|article
+Anand Kumar|Vijayshri Tiwari|2010|Scope of cloud computing for SMEs in India|article
+Madhvendra Misra|Monika Sharma|2010|Scope of cloud computing for SMEs in India|article
+Madhvendra Misra|Ashwani Mehra|2010|Scope of cloud computing for SMEs in India|article
+Madhvendra Misra|Haresh Jola|2010|Scope of cloud computing for SMEs in India|article
+Madhvendra Misra|Anand Kumar|2010|Scope of cloud computing for SMEs in India|article
+Madhvendra Misra|Vijayshri Tiwari|2010|Scope of cloud computing for SMEs in India|article
+Vijayshri Tiwari|Monika Sharma|2010|Scope of cloud computing for SMEs in India|article
+Vijayshri Tiwari|Ashwani Mehra|2010|Scope of cloud computing for SMEs in India|article
+Vijayshri Tiwari|Haresh Jola|2010|Scope of cloud computing for SMEs in India|article
+Vijayshri Tiwari|Anand Kumar|2010|Scope of cloud computing for SMEs in India|article
+Vijayshri Tiwari|Madhvendra Misra|2010|Scope of cloud computing for SMEs in India|article
+Souvik Ghosh|Soumyadip Ghosh|2010|A strong law for the rate of growth of long latency periods in cloud computing service|article
+Soumyadip Ghosh|Souvik Ghosh|2010|A strong law for the rate of growth of long latency periods in cloud computing service|article
+Kevin Jorissen|Fernando D. Vila|2011|A high performance scientific cloud computing environment for materials simulations|article
+Kevin Jorissen|John J. Rehr|2011|A high performance scientific cloud computing environment for materials simulations|article
+Fernando D. Vila|Kevin Jorissen|2011|A high performance scientific cloud computing environment for materials simulations|article
+Fernando D. Vila|John J. Rehr|2011|A high performance scientific cloud computing environment for materials simulations|article
+John J. Rehr|Kevin Jorissen|2011|A high performance scientific cloud computing environment for materials simulations|article
+John J. Rehr|Fernando D. Vila|2011|A high performance scientific cloud computing environment for materials simulations|article
+Nadir K. Salih|Tianyi Zang|2012|Survey and comparison for Open and closed sources in cloud computing|article
+Tianyi Zang|Nadir K. Salih|2012|Survey and comparison for Open and closed sources in cloud computing|article
+Roy W. Keyes|Christian Romano|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+Roy W. Keyes|Dorian Arnold|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+Roy W. Keyes|Shuang Luan|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+Christian Romano|Roy W. Keyes|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+Christian Romano|Dorian Arnold|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+Christian Romano|Shuang Luan|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+Dorian Arnold|Roy W. Keyes|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+Dorian Arnold|Christian Romano|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+Dorian Arnold|Shuang Luan|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+Shuang Luan|Roy W. Keyes|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+Shuang Luan|Christian Romano|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+Shuang Luan|Dorian Arnold|2010|Radiation therapy calculations using an on-demand virtual cluster via cloud computing|article
+S. Qamar|Niranjan Lal|2010|Internet ware cloud computing: Challenges|article
+S. Qamar|Mrityunjay Singh|2010|Internet ware cloud computing: Challenges|article
+Niranjan Lal|S. Qamar|2010|Internet ware cloud computing: Challenges|article
+Niranjan Lal|Mrityunjay Singh|2010|Internet ware cloud computing: Challenges|article
+Mrityunjay Singh|S. Qamar|2010|Internet ware cloud computing: Challenges|article
+Mrityunjay Singh|Niranjan Lal|2010|Internet ware cloud computing: Challenges|article
+Loretta Mastroeni|Maurizio Naldi|2012|Pricing of insurance policies against cloud storage price rises|article
+Maurizio Naldi|Loretta Mastroeni|2012|Pricing of insurance policies against cloud storage price rises|article
+Loretta Mastroeni|Maurizio Naldi|2012|Analysis of cloud storage prices|article
+Maurizio Naldi|Loretta Mastroeni|2012|Analysis of cloud storage prices|article
+Chengchen Hu|Mu Yang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Chengchen Hu|Kai Zheng|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Chengchen Hu|Kai Chen 0005|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Chengchen Hu|Xin Zhang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Chengchen Hu|Bin Liu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Chengchen Hu|Xiaohong Guan|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Mu Yang|Chengchen Hu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Mu Yang|Kai Zheng|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Mu Yang|Kai Chen 0005|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Mu Yang|Xin Zhang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Mu Yang|Bin Liu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Mu Yang|Xiaohong Guan|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Zheng|Chengchen Hu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Zheng|Mu Yang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Zheng|Kai Chen 0005|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Zheng|Xin Zhang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Zheng|Bin Liu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Zheng|Xiaohong Guan|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Chen 0005|Chengchen Hu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Chen 0005|Mu Yang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Chen 0005|Kai Zheng|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Chen 0005|Xin Zhang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Chen 0005|Bin Liu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Kai Chen 0005|Xiaohong Guan|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xin Zhang|Chengchen Hu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xin Zhang|Mu Yang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xin Zhang|Kai Zheng|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xin Zhang|Kai Chen 0005|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xin Zhang|Bin Liu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xin Zhang|Xiaohong Guan|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Bin Liu|Chengchen Hu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Bin Liu|Mu Yang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Bin Liu|Kai Zheng|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Bin Liu|Kai Chen 0005|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Bin Liu|Xin Zhang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Bin Liu|Xiaohong Guan|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xiaohong Guan|Chengchen Hu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xiaohong Guan|Mu Yang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xiaohong Guan|Kai Zheng|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xiaohong Guan|Kai Chen 0005|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xiaohong Guan|Xin Zhang|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+Xiaohong Guan|Bin Liu|2011|Automatically configuring the network layer of data centers for cloud computing.|article
+M. Naghshineh|Radha Ratnaparkhi|2009|IBM Research Division cloud computing initiative.|article
+M. Naghshineh|Donna N. Dillenberger|2009|IBM Research Division cloud computing initiative.|article
+M. Naghshineh|James R. Doran|2009|IBM Research Division cloud computing initiative.|article
+M. Naghshineh|C. Dorai|2009|IBM Research Division cloud computing initiative.|article
+M. Naghshineh|Lilith Anderson|2009|IBM Research Division cloud computing initiative.|article
+M. Naghshineh|Giovanni Pacifici|2009|IBM Research Division cloud computing initiative.|article
+M. Naghshineh|Jane L. Snowdon|2009|IBM Research Division cloud computing initiative.|article
+M. Naghshineh|Alain Azagury|2009|IBM Research Division cloud computing initiative.|article
+M. Naghshineh|Mark VanderWiele|2009|IBM Research Division cloud computing initiative.|article
+M. Naghshineh|Yaron Wolfsthal|2009|IBM Research Division cloud computing initiative.|article
+Radha Ratnaparkhi|M. Naghshineh|2009|IBM Research Division cloud computing initiative.|article
+Radha Ratnaparkhi|Donna N. Dillenberger|2009|IBM Research Division cloud computing initiative.|article
+Radha Ratnaparkhi|James R. Doran|2009|IBM Research Division cloud computing initiative.|article
+Radha Ratnaparkhi|C. Dorai|2009|IBM Research Division cloud computing initiative.|article
+Radha Ratnaparkhi|Lilith Anderson|2009|IBM Research Division cloud computing initiative.|article
+Radha Ratnaparkhi|Giovanni Pacifici|2009|IBM Research Division cloud computing initiative.|article
+Radha Ratnaparkhi|Jane L. Snowdon|2009|IBM Research Division cloud computing initiative.|article
+Radha Ratnaparkhi|Alain Azagury|2009|IBM Research Division cloud computing initiative.|article
+Radha Ratnaparkhi|Mark VanderWiele|2009|IBM Research Division cloud computing initiative.|article
+Radha Ratnaparkhi|Yaron Wolfsthal|2009|IBM Research Division cloud computing initiative.|article
+Donna N. Dillenberger|M. Naghshineh|2009|IBM Research Division cloud computing initiative.|article
+Donna N. Dillenberger|Radha Ratnaparkhi|2009|IBM Research Division cloud computing initiative.|article
+Donna N. Dillenberger|James R. Doran|2009|IBM Research Division cloud computing initiative.|article
+Donna N. Dillenberger|C. Dorai|2009|IBM Research Division cloud computing initiative.|article
+Donna N. Dillenberger|Lilith Anderson|2009|IBM Research Division cloud computing initiative.|article
+Donna N. Dillenberger|Giovanni Pacifici|2009|IBM Research Division cloud computing initiative.|article
+Donna N. Dillenberger|Jane L. Snowdon|2009|IBM Research Division cloud computing initiative.|article
+Donna N. Dillenberger|Alain Azagury|2009|IBM Research Division cloud computing initiative.|article
+Donna N. Dillenberger|Mark VanderWiele|2009|IBM Research Division cloud computing initiative.|article
+Donna N. Dillenberger|Yaron Wolfsthal|2009|IBM Research Division cloud computing initiative.|article
+James R. Doran|M. Naghshineh|2009|IBM Research Division cloud computing initiative.|article
+James R. Doran|Radha Ratnaparkhi|2009|IBM Research Division cloud computing initiative.|article
+James R. Doran|Donna N. Dillenberger|2009|IBM Research Division cloud computing initiative.|article
+James R. Doran|C. Dorai|2009|IBM Research Division cloud computing initiative.|article
+James R. Doran|Lilith Anderson|2009|IBM Research Division cloud computing initiative.|article
+James R. Doran|Giovanni Pacifici|2009|IBM Research Division cloud computing initiative.|article
+James R. Doran|Jane L. Snowdon|2009|IBM Research Division cloud computing initiative.|article
+James R. Doran|Alain Azagury|2009|IBM Research Division cloud computing initiative.|article
+James R. Doran|Mark VanderWiele|2009|IBM Research Division cloud computing initiative.|article
+James R. Doran|Yaron Wolfsthal|2009|IBM Research Division cloud computing initiative.|article
+C. Dorai|M. Naghshineh|2009|IBM Research Division cloud computing initiative.|article
+C. Dorai|Radha Ratnaparkhi|2009|IBM Research Division cloud computing initiative.|article
+C. Dorai|Donna N. Dillenberger|2009|IBM Research Division cloud computing initiative.|article
+C. Dorai|James R. Doran|2009|IBM Research Division cloud computing initiative.|article
+C. Dorai|Lilith Anderson|2009|IBM Research Division cloud computing initiative.|article
+C. Dorai|Giovanni Pacifici|2009|IBM Research Division cloud computing initiative.|article
+C. Dorai|Jane L. Snowdon|2009|IBM Research Division cloud computing initiative.|article
+C. Dorai|Alain Azagury|2009|IBM Research Division cloud computing initiative.|article
+C. Dorai|Mark VanderWiele|2009|IBM Research Division cloud computing initiative.|article
+C. Dorai|Yaron Wolfsthal|2009|IBM Research Division cloud computing initiative.|article
+Lilith Anderson|M. Naghshineh|2009|IBM Research Division cloud computing initiative.|article
+Lilith Anderson|Radha Ratnaparkhi|2009|IBM Research Division cloud computing initiative.|article
+Lilith Anderson|Donna N. Dillenberger|2009|IBM Research Division cloud computing initiative.|article
+Lilith Anderson|James R. Doran|2009|IBM Research Division cloud computing initiative.|article
+Lilith Anderson|C. Dorai|2009|IBM Research Division cloud computing initiative.|article
+Lilith Anderson|Giovanni Pacifici|2009|IBM Research Division cloud computing initiative.|article
+Lilith Anderson|Jane L. Snowdon|2009|IBM Research Division cloud computing initiative.|article
+Lilith Anderson|Alain Azagury|2009|IBM Research Division cloud computing initiative.|article
+Lilith Anderson|Mark VanderWiele|2009|IBM Research Division cloud computing initiative.|article
+Lilith Anderson|Yaron Wolfsthal|2009|IBM Research Division cloud computing initiative.|article
+Giovanni Pacifici|M. Naghshineh|2009|IBM Research Division cloud computing initiative.|article
+Giovanni Pacifici|Radha Ratnaparkhi|2009|IBM Research Division cloud computing initiative.|article
+Giovanni Pacifici|Donna N. Dillenberger|2009|IBM Research Division cloud computing initiative.|article
+Giovanni Pacifici|James R. Doran|2009|IBM Research Division cloud computing initiative.|article
+Giovanni Pacifici|C. Dorai|2009|IBM Research Division cloud computing initiative.|article
+Giovanni Pacifici|Lilith Anderson|2009|IBM Research Division cloud computing initiative.|article
+Giovanni Pacifici|Jane L. Snowdon|2009|IBM Research Division cloud computing initiative.|article
+Giovanni Pacifici|Alain Azagury|2009|IBM Research Division cloud computing initiative.|article
+Giovanni Pacifici|Mark VanderWiele|2009|IBM Research Division cloud computing initiative.|article
+Giovanni Pacifici|Yaron Wolfsthal|2009|IBM Research Division cloud computing initiative.|article
+Jane L. Snowdon|M. Naghshineh|2009|IBM Research Division cloud computing initiative.|article
+Jane L. Snowdon|Radha Ratnaparkhi|2009|IBM Research Division cloud computing initiative.|article
+Jane L. Snowdon|Donna N. Dillenberger|2009|IBM Research Division cloud computing initiative.|article
+Jane L. Snowdon|James R. Doran|2009|IBM Research Division cloud computing initiative.|article
+Jane L. Snowdon|C. Dorai|2009|IBM Research Division cloud computing initiative.|article
+Jane L. Snowdon|Lilith Anderson|2009|IBM Research Division cloud computing initiative.|article
+Jane L. Snowdon|Giovanni Pacifici|2009|IBM Research Division cloud computing initiative.|article
+Jane L. Snowdon|Alain Azagury|2009|IBM Research Division cloud computing initiative.|article
+Jane L. Snowdon|Mark VanderWiele|2009|IBM Research Division cloud computing initiative.|article
+Jane L. Snowdon|Yaron Wolfsthal|2009|IBM Research Division cloud computing initiative.|article
+Alain Azagury|M. Naghshineh|2009|IBM Research Division cloud computing initiative.|article
+Alain Azagury|Radha Ratnaparkhi|2009|IBM Research Division cloud computing initiative.|article
+Alain Azagury|Donna N. Dillenberger|2009|IBM Research Division cloud computing initiative.|article
+Alain Azagury|James R. Doran|2009|IBM Research Division cloud computing initiative.|article
+Alain Azagury|C. Dorai|2009|IBM Research Division cloud computing initiative.|article
+Alain Azagury|Lilith Anderson|2009|IBM Research Division cloud computing initiative.|article
+Alain Azagury|Giovanni Pacifici|2009|IBM Research Division cloud computing initiative.|article
+Alain Azagury|Jane L. Snowdon|2009|IBM Research Division cloud computing initiative.|article
+Alain Azagury|Mark VanderWiele|2009|IBM Research Division cloud computing initiative.|article
+Alain Azagury|Yaron Wolfsthal|2009|IBM Research Division cloud computing initiative.|article
+Mark VanderWiele|M. Naghshineh|2009|IBM Research Division cloud computing initiative.|article
+Mark VanderWiele|Radha Ratnaparkhi|2009|IBM Research Division cloud computing initiative.|article
+Mark VanderWiele|Donna N. Dillenberger|2009|IBM Research Division cloud computing initiative.|article
+Mark VanderWiele|James R. Doran|2009|IBM Research Division cloud computing initiative.|article
+Mark VanderWiele|C. Dorai|2009|IBM Research Division cloud computing initiative.|article
+Mark VanderWiele|Lilith Anderson|2009|IBM Research Division cloud computing initiative.|article
+Mark VanderWiele|Giovanni Pacifici|2009|IBM Research Division cloud computing initiative.|article
+Mark VanderWiele|Jane L. Snowdon|2009|IBM Research Division cloud computing initiative.|article
+Mark VanderWiele|Alain Azagury|2009|IBM Research Division cloud computing initiative.|article
+Mark VanderWiele|Yaron Wolfsthal|2009|IBM Research Division cloud computing initiative.|article
+Yaron Wolfsthal|M. Naghshineh|2009|IBM Research Division cloud computing initiative.|article
+Yaron Wolfsthal|Radha Ratnaparkhi|2009|IBM Research Division cloud computing initiative.|article
+Yaron Wolfsthal|Donna N. Dillenberger|2009|IBM Research Division cloud computing initiative.|article
+Yaron Wolfsthal|James R. Doran|2009|IBM Research Division cloud computing initiative.|article
+Yaron Wolfsthal|C. Dorai|2009|IBM Research Division cloud computing initiative.|article
+Yaron Wolfsthal|Lilith Anderson|2009|IBM Research Division cloud computing initiative.|article
+Yaron Wolfsthal|Giovanni Pacifici|2009|IBM Research Division cloud computing initiative.|article
+Yaron Wolfsthal|Jane L. Snowdon|2009|IBM Research Division cloud computing initiative.|article
+Yaron Wolfsthal|Alain Azagury|2009|IBM Research Division cloud computing initiative.|article
+Yaron Wolfsthal|Mark VanderWiele|2009|IBM Research Division cloud computing initiative.|article
+Gerd Breiter|Michael Behrendt|2009|Life cycle and characteristics of services in the world of cloud computing.|article
+Michael Behrendt|Gerd Breiter|2009|Life cycle and characteristics of services in the world of cloud computing.|article
+Joefon Jann|Niteesh Dubey|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+Joefon Jann|R. Sarma Burugula|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+Joefon Jann|Pratap Pattnaik|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+Niteesh Dubey|Joefon Jann|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+Niteesh Dubey|R. Sarma Burugula|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+Niteesh Dubey|Pratap Pattnaik|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+R. Sarma Burugula|Joefon Jann|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+R. Sarma Burugula|Niteesh Dubey|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+R. Sarma Burugula|Pratap Pattnaik|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+Pratap Pattnaik|Joefon Jann|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+Pratap Pattnaik|Niteesh Dubey|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+Pratap Pattnaik|R. Sarma Burugula|2010|AHAFS subsystem for enhancing operating system health in the cloud computing era.|article
+Benny Rochwerger|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Benny Rochwerger|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Benny Rochwerger|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Benny Rochwerger|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Benny Rochwerger|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Benny Rochwerger|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Benny Rochwerger|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Benny Rochwerger|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Benny Rochwerger|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Benny Rochwerger|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Benny Rochwerger|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Benny Rochwerger|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+David Breitgand|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Eliezer Levy|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Alex Galis|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Kenneth Nagin|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Ignacio Martín Llorente|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Rubén S. Montero|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Yaron Wolfsthal|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Erik Elmroth|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Juan A. Cáceres|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Muli Ben-Yehuda|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Wolfgang Emmerich|Fermín Galán|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|Benny Rochwerger|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|David Breitgand|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|Eliezer Levy|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|Alex Galis|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|Kenneth Nagin|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|Ignacio Martín Llorente|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|Rubén S. Montero|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|Yaron Wolfsthal|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|Erik Elmroth|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|Juan A. Cáceres|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|Muli Ben-Yehuda|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Fermín Galán|Wolfgang Emmerich|2009|The Reservoir model and architecture for open federated cloud computing.|article
+Lanyue Lu|Dean Hildebrand|2011|Zone-based data striping for cloud storage.|article
+Lanyue Lu|Renu Tewari|2011|Zone-based data striping for cloud storage.|article
+Dean Hildebrand|Lanyue Lu|2011|Zone-based data striping for cloud storage.|article
+Dean Hildebrand|Renu Tewari|2011|Zone-based data striping for cloud storage.|article
+Renu Tewari|Lanyue Lu|2011|Zone-based data striping for cloud storage.|article
+Renu Tewari|Dean Hildebrand|2011|Zone-based data striping for cloud storage.|article
+Kirk A. Beaty|Vijay K. Naik|2011|Economics of cloud computing for enterprise IT.|article
+Kirk A. Beaty|Chang-Shing Perng|2011|Economics of cloud computing for enterprise IT.|article
+Vijay K. Naik|Kirk A. Beaty|2011|Economics of cloud computing for enterprise IT.|article
+Vijay K. Naik|Chang-Shing Perng|2011|Economics of cloud computing for enterprise IT.|article
+Chang-Shing Perng|Kirk A. Beaty|2011|Economics of cloud computing for enterprise IT.|article
+Chang-Shing Perng|Vijay K. Naik|2011|Economics of cloud computing for enterprise IT.|article
+Alex Guazzelli|Kostantinos Stathatos|2009|Efficient deployment of predictive analytics through open standards and cloud computing.|article
+Alex Guazzelli|Michael Zeller|2009|Efficient deployment of predictive analytics through open standards and cloud computing.|article
+Kostantinos Stathatos|Alex Guazzelli|2009|Efficient deployment of predictive analytics through open standards and cloud computing.|article
+Kostantinos Stathatos|Michael Zeller|2009|Efficient deployment of predictive analytics through open standards and cloud computing.|article
+Michael Zeller|Alex Guazzelli|2009|Efficient deployment of predictive analytics through open standards and cloud computing.|article
+Michael Zeller|Kostantinos Stathatos|2009|Efficient deployment of predictive analytics through open standards and cloud computing.|article
+Mohammed Abdullatif Alzain|Ben Soh|2012|A new model to ensure security in cloud computing services.|article
+Mohammed Abdullatif Alzain|Eric Pardede|2012|A new model to ensure security in cloud computing services.|article
+Ben Soh|Mohammed Abdullatif Alzain|2012|A new model to ensure security in cloud computing services.|article
+Ben Soh|Eric Pardede|2012|A new model to ensure security in cloud computing services.|article
+Eric Pardede|Mohammed Abdullatif Alzain|2012|A new model to ensure security in cloud computing services.|article
+Eric Pardede|Ben Soh|2012|A new model to ensure security in cloud computing services.|article
+Fabio Baroncelli|Barbara Martini|2010|Network virtualization for cloud computing.|article
+Fabio Baroncelli|Piero Castoldi|2010|Network virtualization for cloud computing.|article
+Barbara Martini|Fabio Baroncelli|2010|Network virtualization for cloud computing.|article
+Barbara Martini|Piero Castoldi|2010|Network virtualization for cloud computing.|article
+Piero Castoldi|Fabio Baroncelli|2010|Network virtualization for cloud computing.|article
+Piero Castoldi|Barbara Martini|2010|Network virtualization for cloud computing.|article
+Rimal Bhaskar Prasad|Eunmi Choi|2012|A service-oriented taxonomical spectrum, cloudy challenges and opportunities of cloud computing.|article
+Eunmi Choi|Rimal Bhaskar Prasad|2012|A service-oriented taxonomical spectrum, cloudy challenges and opportunities of cloud computing.|article
+Ken Birman|Gregory Chockler|2009|Toward a cloud computing research agenda.|article
+Ken Birman|Robbert van Renesse|2009|Toward a cloud computing research agenda.|article
+Gregory Chockler|Ken Birman|2009|Toward a cloud computing research agenda.|article
+Gregory Chockler|Robbert van Renesse|2009|Toward a cloud computing research agenda.|article
+Robbert van Renesse|Ken Birman|2009|Toward a cloud computing research agenda.|article
+Robbert van Renesse|Gregory Chockler|2009|Toward a cloud computing research agenda.|article
+Gaofeng Zhang|Yun Yang|2012|A historical probability based noise generation strategy for privacy protection in cloud computing.|article
+Gaofeng Zhang|Jinjun Chen|2012|A historical probability based noise generation strategy for privacy protection in cloud computing.|article
+Yun Yang|Gaofeng Zhang|2012|A historical probability based noise generation strategy for privacy protection in cloud computing.|article
+Yun Yang|Jinjun Chen|2012|A historical probability based noise generation strategy for privacy protection in cloud computing.|article
+Jinjun Chen|Gaofeng Zhang|2012|A historical probability based noise generation strategy for privacy protection in cloud computing.|article
+Jinjun Chen|Yun Yang|2012|A historical probability based noise generation strategy for privacy protection in cloud computing.|article
+Da Xiao|Yan Yang|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Da Xiao|Wenbin Yao|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Da Xiao|Chunhua Wu|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Da Xiao|Jianyi Liu|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Da Xiao|Yixian Yang|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Yan Yang|Da Xiao|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Yan Yang|Wenbin Yao|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Yan Yang|Chunhua Wu|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Yan Yang|Jianyi Liu|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Yan Yang|Yixian Yang|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Wenbin Yao|Da Xiao|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Wenbin Yao|Yan Yang|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Wenbin Yao|Chunhua Wu|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Wenbin Yao|Jianyi Liu|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Wenbin Yao|Yixian Yang|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Chunhua Wu|Da Xiao|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Chunhua Wu|Yan Yang|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Chunhua Wu|Wenbin Yao|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Chunhua Wu|Jianyi Liu|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Chunhua Wu|Yixian Yang|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Jianyi Liu|Da Xiao|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Jianyi Liu|Yan Yang|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Jianyi Liu|Wenbin Yao|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Jianyi Liu|Chunhua Wu|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Jianyi Liu|Yixian Yang|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Yixian Yang|Da Xiao|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Yixian Yang|Yan Yang|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Yixian Yang|Wenbin Yao|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Yixian Yang|Chunhua Wu|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Yixian Yang|Jianyi Liu|2012|Multiple-File Remote Data Checking for cloud storage.|article
+Alysson Neves Bessani|Rüdiger Kapitza|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Alysson Neves Bessani|Dana Petcu|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Alysson Neves Bessani|Paolo Romano|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Alysson Neves Bessani|Spyridon V. Gogouvitis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Alysson Neves Bessani|Dimosthenis Kyriazis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Alysson Neves Bessani|Roberto G. Cascella|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Rüdiger Kapitza|Alysson Neves Bessani|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Rüdiger Kapitza|Dana Petcu|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Rüdiger Kapitza|Paolo Romano|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Rüdiger Kapitza|Spyridon V. Gogouvitis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Rüdiger Kapitza|Dimosthenis Kyriazis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Rüdiger Kapitza|Roberto G. Cascella|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dana Petcu|Alysson Neves Bessani|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dana Petcu|Rüdiger Kapitza|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dana Petcu|Paolo Romano|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dana Petcu|Spyridon V. Gogouvitis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dana Petcu|Dimosthenis Kyriazis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dana Petcu|Roberto G. Cascella|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Paolo Romano|Alysson Neves Bessani|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Paolo Romano|Rüdiger Kapitza|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Paolo Romano|Dana Petcu|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Paolo Romano|Spyridon V. Gogouvitis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Paolo Romano|Dimosthenis Kyriazis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Paolo Romano|Roberto G. Cascella|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Spyridon V. Gogouvitis|Alysson Neves Bessani|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Spyridon V. Gogouvitis|Rüdiger Kapitza|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Spyridon V. Gogouvitis|Dana Petcu|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Spyridon V. Gogouvitis|Paolo Romano|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Spyridon V. Gogouvitis|Dimosthenis Kyriazis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Spyridon V. Gogouvitis|Roberto G. Cascella|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dimosthenis Kyriazis|Alysson Neves Bessani|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dimosthenis Kyriazis|Rüdiger Kapitza|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dimosthenis Kyriazis|Dana Petcu|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dimosthenis Kyriazis|Paolo Romano|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dimosthenis Kyriazis|Spyridon V. Gogouvitis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Dimosthenis Kyriazis|Roberto G. Cascella|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Roberto G. Cascella|Alysson Neves Bessani|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Roberto G. Cascella|Rüdiger Kapitza|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Roberto G. Cascella|Dana Petcu|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Roberto G. Cascella|Paolo Romano|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Roberto G. Cascella|Spyridon V. Gogouvitis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Roberto G. Cascella|Dimosthenis Kyriazis|2012|A look to the old-world_sky: EU-funded dependability cloud computing research.|article
+Eric Van Hensbergen|Noah Paul Evans|2010|A unified execution model for cloud computing.|article
+Eric Van Hensbergen|Phillip Stanley-Marbell|2010|A unified execution model for cloud computing.|article
+Noah Paul Evans|Eric Van Hensbergen|2010|A unified execution model for cloud computing.|article
+Noah Paul Evans|Phillip Stanley-Marbell|2010|A unified execution model for cloud computing.|article
+Phillip Stanley-Marbell|Eric Van Hensbergen|2010|A unified execution model for cloud computing.|article
+Phillip Stanley-Marbell|Noah Paul Evans|2010|A unified execution model for cloud computing.|article
+Wenjin Hu|Tao Yang|2010|The good, the bad and the ugly of consumer cloud storage.|article
+Wenjin Hu|Jeanna Neefe Matthews|2010|The good, the bad and the ugly of consumer cloud storage.|article
+Tao Yang|Wenjin Hu|2010|The good, the bad and the ugly of consumer cloud storage.|article
+Tao Yang|Jeanna Neefe Matthews|2010|The good, the bad and the ugly of consumer cloud storage.|article
+Jeanna Neefe Matthews|Wenjin Hu|2010|The good, the bad and the ugly of consumer cloud storage.|article
+Jeanna Neefe Matthews|Tao Yang|2010|The good, the bad and the ugly of consumer cloud storage.|article
+Dong Hyuk Woo|Hsien-Hsin S. Lee|2009|PROPHET: goal-oriented provisioning for highly tunable multicore processors in cloud computing.|article
+Hsien-Hsin S. Lee|Dong Hyuk Woo|2009|PROPHET: goal-oriented provisioning for highly tunable multicore processors in cloud computing.|article
+Q. Li|T. Zhang|2011|Using cloud computing to process intensive floating car data for urban traffic surveillance.|article
+Q. Li|Y. Yu|2011|Using cloud computing to process intensive floating car data for urban traffic surveillance.|article
+T. Zhang|Q. Li|2011|Using cloud computing to process intensive floating car data for urban traffic surveillance.|article
+T. Zhang|Y. Yu|2011|Using cloud computing to process intensive floating car data for urban traffic surveillance.|article
+Y. Yu|Q. Li|2011|Using cloud computing to process intensive floating car data for urban traffic surveillance.|article
+Y. Yu|T. Zhang|2011|Using cloud computing to process intensive floating car data for urban traffic surveillance.|article
+Chinyao Low|Yahsueh Chen|2011|Understanding the determinants of cloud computing adoption.|article
+Chinyao Low|Mingchang Wu|2011|Understanding the determinants of cloud computing adoption.|article
+Yahsueh Chen|Chinyao Low|2011|Understanding the determinants of cloud computing adoption.|article
+Yahsueh Chen|Mingchang Wu|2011|Understanding the determinants of cloud computing adoption.|article
+Mingchang Wu|Chinyao Low|2011|Understanding the determinants of cloud computing adoption.|article
+Mingchang Wu|Yahsueh Chen|2011|Understanding the determinants of cloud computing adoption.|article
+Mark G. Graff|Kenneth R. van Wyk|2003|Secure coding - principles and practices: designing and implementing secure applications.|book
+Kenneth R. van Wyk|Mark G. Graff|2003|Secure coding - principles and practices: designing and implementing secure applications.|book
