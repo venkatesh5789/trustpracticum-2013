@@ -36,7 +36,8 @@ public class TextFileTrustAndCoauthorshipProcessor {
 	 */
 	public int getCoauthorDistanceBeforeYear (String authorName1, String authorName2, int year) {
 		int distance = 0;
-		//TODO: Create the working of the function
+		//TODO: Shuai's method to get the coauthors and coauthors of coauthors goes here
+		//TODO: need to parse the return of the method in order to find out the 
 		return distance;	
 	}
 	
