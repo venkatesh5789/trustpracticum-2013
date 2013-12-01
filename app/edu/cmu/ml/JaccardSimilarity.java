@@ -25,8 +25,6 @@ import edu.cmu.database.DbOperations;
 public class JaccardSimilarity {
 	private static DbOperations db;
 	private static BufferedReader reader;
-	private HashSet<String> h1;
-	private HashSet<String> h2;
 	private String author1;
 	private String author2;
 	private int year;
@@ -37,10 +35,10 @@ public class JaccardSimilarity {
 		this.author2 = author2;
 		this.year = year;
 		this.db = new DbOperations();	
-		calculateSimilarity(author1, author2, year);
+		//calculateSimilarity(author1, author2, year);
 	}
 
-	public static double calculateSimilarity(String author1, String author2, int year) throws SQLException{		
+	public double calculateSimilarity(String author1, String author2, int year) throws SQLException{		
 		HashSet<String> h1 = new HashSet<String>();
 		HashSet<String> h2 = new HashSet<String>();
 		

@@ -8,6 +8,7 @@ import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashSet;
 
 import edu.cmu.database.DbOperations;
 import edu.cmu.trustprocessor.TimeScale;
@@ -215,7 +216,44 @@ public class TextFileTrustAndCoauthorshipProcessor {
 		
 		return totalCitations;
 	}
-
+	
+	public double calculateJaccardSimilarity(String authorName1, String authorName2, int year) throws SQLException{		
+		HashSet<String> h1 = new HashSet<String>();
+		HashSet<String> h2 = new HashSet<String>();
+		
+		ResultSet result1 = db.callDatabaseQuery("SELECT Title,Journal FROM coauthor.Publications WHERE Author_Title LIKE '"+ authorName1 + "%' AND Year<" + year + ";");
+		while(result1.next()) {
+			h1.add(result1.getString("Title"));
+			h1.add(result1.getString("Journal"));
+		}
+		
+		ResultSet result2 = db.callDatabaseQuery("SELECT Title,Journal FROM coauthor.Publications WHERE Author_Title LIKE '"+ authorName2 + "%' AND Year<" + year + ";");
+		while(result2.next()) {
+			h2.add(result2.getString("Title"));
+			h2.add(result2.getString("Journal"));
+		}
+		
+		double res = 0;		
+		
+		if(h1.size()>0 && h2.size() >0) {
+			int sizeh1 = h1.size();
+			//Retains all elements in h3 that are contained in h2 ie intersection
+			h1.retainAll(h2);
+			//h1 now contains the intersection of h1 and h2		
+			h2.removeAll(h1);
+			//h2 now contains unique elements
+			System.out.println("Same elements "+ h1);	
+			//Union 
+			int union = sizeh1 + h2.size();
+			int intersection = h1.size();			
+			res = (double)intersection/union;
+			System.out.println(res);
+			return res;
+		}
+		
+		return 0.0;
+	}
+	
 	private int getCountPublicationsBetweenYears(String authorName, String type, int startingYear, int endingYear) throws SQLException {
 		ResultSet result = db.callDatabaseQuery("SELECT COUNT(Author_Title) FROM coauthor.Publications WHERE Author_Title LIKE '" + authorName + "%' AND Year>" + startingYear + " AND Year<" + endingYear +  " AND Type = '" + type + "';");
 		while(result.next())
