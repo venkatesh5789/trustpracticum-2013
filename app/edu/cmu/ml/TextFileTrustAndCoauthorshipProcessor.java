@@ -1,7 +1,10 @@
 package edu.cmu.ml;
 
 import java.io.IOException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
+import edu.cmu.database.DbOperations;
 import edu.cmu.trustprocessor.TimeScale;
 import edu.cmu.trustprocessor.TrustModelWeights;
 
@@ -9,6 +12,7 @@ public class TextFileTrustAndCoauthorshipProcessor {
 	private String fileName;
 	private TextFilePublicationParser publications;
 	private TimeScale timescale;
+	private DbOperations db;
 	
 	private double alphaArticle =TrustModelWeights.alphaArticle;
 	private double alphaBook = TrustModelWeights.alphaBook;
@@ -19,11 +23,12 @@ public class TextFileTrustAndCoauthorshipProcessor {
 	private double alphaProceeding = TrustModelWeights.alphaProceeding;
 	private double alphaWWW=TrustModelWeights.alphaWWW;
 
-	public TextFileTrustAndCoauthorshipProcessor(String fileName) throws IOException {
+	public TextFileTrustAndCoauthorshipProcessor(String fileName) throws IOException, ClassNotFoundException, SQLException {
 		super();
 		this.fileName = fileName;
 		this.publications = new TextFilePublicationParser(fileName);
 		this.timescale = new TimeScale();
+		this.db = new DbOperations();
 	}
 	
 	/**
@@ -33,11 +38,18 @@ public class TextFileTrustAndCoauthorshipProcessor {
 	 * @param authorName2
 	 * @param year
 	 * @return returns 1,2 or 999 if answer is greater than 2
+	 * @throws SQLException 
 	 */
-	public int getCoauthorDistanceBeforeYear (String authorName1, String authorName2, int year) {
+	public int getCoauthorDistanceBeforeYear (String authorName1, String authorName2, int year) throws SQLException {
 		int distance = 0;
 		//TODO: Shuai's method to get the coauthors and coauthors of coauthors goes here
 		//TODO: need to parse the return of the method in order to find out the 
+		ResultSet result = db.callDatabaseQuery("SELECT DISTINCT Coauthor FROM coauthor.Coauthors WHERE Author = '" + authorName1 + "'");
+		
+		while(result.next()) {
+			if(result.getString("Coauthor").equalsIgnoreCase(authorName2))
+				return 1;
+		}
 		return distance;	
 	}
 	
