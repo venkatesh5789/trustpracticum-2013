@@ -3,6 +3,7 @@ package edu.cmu.ml;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,7 +18,8 @@ public class TextFileCoAuthorshipCreator {
 		super();
 		this.inputFileName = inputFileName;
 		this.outputFileName = outputFileName;
-		parseFileAndFillInformation(this.inputFileName, this.outputFileName);
+		//parseFileAndFillInformation(this.inputFileName, this.outputFileName);
+		generateCSVFile(this.inputFileName, this.outputFileName);
 	}
 	
 	private void parseFileAndFillInformation(String inputFileName, String outputFileName) throws IOException {
@@ -57,9 +59,23 @@ public class TextFileCoAuthorshipCreator {
 		bufferedReader.close();
 		writer.close();
 	}
-
+	
+	private void generateCSVFile(String inputFileName, String outputFileName) throws IOException {
+		FileReader f = new FileReader(inputFileName);
+		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(outputFileName, true)));
+		BufferedReader br = new BufferedReader(f);
+		String line;// = br.readLine();
+		int counter = 1;
+		while((line = br.readLine()) != null){
+			writer.println(counter + "," + line);
+			counter++;
+		}
+		br.close();
+		writer.close();
+	}
+	
 	public static void main(String[] args) throws IOException {
-		TextFileCoAuthorshipCreator p = new TextFileCoAuthorshipCreator("ds.txt","ds_coauthors.txt");
+		TextFileCoAuthorshipCreator p = new TextFileCoAuthorshipCreator("/Users/ShuaiWang/Desktop/ds.txt","/Users/ShuaiWang/Desktop/m_ds.txt");
 		System.out.println("sf");
 	}
 }

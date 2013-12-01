@@ -30,5 +30,6 @@
 	<classpathentry kind="lib" path="lib/commons-lang3-3.1.jar"/>
 	<classpathentry kind="lib" path="lib/google-collections-0.8.jar"/>
 	<classpathentry kind="lib" path="lib/hibernate-validator-4.0.2.GA.jar"/>
+	<classpathentry kind="lib" path="/Users/ShuaiWang/Desktop/mysql-connector-java-5.1.27/mysql-connector-java-5.1.27-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
