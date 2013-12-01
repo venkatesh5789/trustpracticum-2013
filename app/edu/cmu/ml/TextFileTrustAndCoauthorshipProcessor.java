@@ -1,6 +1,10 @@
 package edu.cmu.ml;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -215,16 +219,29 @@ public class TextFileTrustAndCoauthorshipProcessor {
 		return -100;
 	}
 	
+	
 	public static void main(String[] args) throws IOException, ClassNotFoundException, SQLException {
 		TextFileTrustAndCoauthorshipProcessor blah = new TextFileTrustAndCoauthorshipProcessor("ds.txt");
-		
+		ArrayList<Double> trust = new ArrayList<Double>();
+		ArrayList<Double> differences = new ArrayList<Double>();
 		ResultSet result = db.callDatabaseQuery("SELECT DISTINCT Author FROM coauthor.Coauthors ;");
 		ArrayList<String> blahasdf = new ArrayList<String>();
 		while(result.next())
 			blahasdf.add(result.getString("Author"));
 		
 		System.out.println(blahasdf.size());
-		for(String author: blahasdf)
-			System.out.println(blah.calculateTrustBeforeYear(author, 2012));
+		for(String author: blahasdf){
+			//System.out.println(blah.calculateTrustBeforeYear(author, 2012));
+			trust.add(blah.calculateTrustBeforeYear(author, 2012));
+		}
+		
+		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("/Users/ShuaiWang/Desktop/Variance.txt", true)));
+		int trustsize = trust.size();
+		for(int i = 0; i<trustsize-1; i++){
+			for(int j = i+1; j<trustsize; j++){
+				writer.print(Math.abs(trust.get(i) - trust.get(j)) + "\n");
+				//System.out.println(Math.abs(trust.get(i) - trust.get(j)));
+			}
+		}		
 	}
 }
