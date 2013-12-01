@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -42,6 +43,7 @@ public class NaiveBayesFileCreator {
 				}			
 		}
 	}
+	
 	private void writeLineForAuthors(PrintWriter writer, String authorName1, String authorName2, int year) throws SQLException {
 		String lineToBeWritten="Y\t";
 		
@@ -54,9 +56,9 @@ public class NaiveBayesFileCreator {
 		
 		int effectiveCoauthorship = ((coauthorshipHistory1 - coauthorshipHistory2) < 0)?coauthorshipHistory1 : coauthorshipHistory2;
 		
-		if(jaccardSimilarity < 0.33)
+		if(jaccardSimilarity < 0.05)
 			lineToBeWritten += "L\t";
-		else if(jaccardSimilarity < 0.66)
+		else if(jaccardSimilarity < 0.1)
 			lineToBeWritten += "M\t";
 		else 
 			lineToBeWritten += "H\t";
@@ -81,7 +83,11 @@ public class NaiveBayesFileCreator {
 			lineToBeWritten+="M";
 		else 
 			lineToBeWritten += "L";
+		
+		writer.println(lineToBeWritten);
 	}
 	
-	
+	public static void main(String[] args) throws IOException, ClassNotFoundException, SQLException {
+		NaiveBayesFileCreator blah = new NaiveBayesFileCreator("ds.txt", "blah.txt");
+	}
 }
