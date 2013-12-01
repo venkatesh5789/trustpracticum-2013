@@ -218,14 +218,13 @@ public class TextFileTrustAndCoauthorshipProcessor {
 	public static void main(String[] args) throws IOException, ClassNotFoundException, SQLException {
 		TextFileTrustAndCoauthorshipProcessor blah = new TextFileTrustAndCoauthorshipProcessor("ds.txt");
 		
-//		ResultSet result = db.callDatabaseQuery("SELECT DISTINCT Author FROM coauthor.Coauthors ;");
-//		ArrayList<String> blahasdf = new ArrayList<String>();
-//		while(result.next())
-//			blahasdf.add(result.getString("Author"));
-//		
-//		System.out.println(blahasdf.size());
-//		for(String author: blahasdf)
-//			System.out.println(blah.calculateTrustBeforeYear(author, 2012));
-		System.out.println(blah.getCoauthorDistanceBeforeYear("Hassan Artail", "Ghada Derbas", 2012));
+		ResultSet result = db.callDatabaseQuery("SELECT DISTINCT Author FROM coauthor.Coauthors ;");
+		ArrayList<String> blahasdf = new ArrayList<String>();
+		while(result.next())
+			blahasdf.add(result.getString("Author"));
+		
+		System.out.println(blahasdf.size());
+		for(String author: blahasdf)
+			System.out.println(blah.calculateTrustBeforeYear(author, 2012));
 	}
 }
