@@ -47,6 +47,17 @@ public class TextFileTrustAndCoauthorshipProcessor {
 		alphaWWW= trustModelWeights.alphaWWW;
 	}
 	
+	
+	public TextFilePublicationParser getPublications() {
+		return publications;
+	}
+
+
+	public void setPublications(TextFilePublicationParser publications) {
+		this.publications = publications;
+	}
+
+
 	/**
 	 * Function to be called in order to calculate the coauthor distance before a 
 	 * particular year
@@ -187,7 +198,7 @@ public class TextFileTrustAndCoauthorshipProcessor {
 		return publicationTrust;
 	}
 
-	public int getTotalCitationsOfAuthorByType(String authorName, String type, int year) throws SQLException {
+	private int getTotalCitationsOfAuthorByType(String authorName, String type, int year) throws SQLException {
 		int totalCitations = 0;
 		ArrayList<String> citations = new ArrayList<String>();
 		ResultSet result1 = db.callDatabaseQuery("SELECT PublicationKey FROM coauthor.Publications WHERE Author_Title LIKE '" + authorName + "%' AND Year<" + year + " AND Type = '" + type + "';");
@@ -205,7 +216,7 @@ public class TextFileTrustAndCoauthorshipProcessor {
 		return totalCitations;
 	}
 
-	public int getCountPublicationsBetweenYears(String authorName, String type, int startingYear, int endingYear) throws SQLException {
+	private int getCountPublicationsBetweenYears(String authorName, String type, int startingYear, int endingYear) throws SQLException {
 		ResultSet result = db.callDatabaseQuery("SELECT COUNT(Author_Title) FROM coauthor.Publications WHERE Author_Title LIKE '" + authorName + "%' AND Year>" + startingYear + " AND Year<" + endingYear +  " AND Type = '" + type + "';");
 		while(result.next())
 			return result.getInt("COUNT(Author_Title)");

@@ -73,4 +73,5 @@ public class JaccardSimilarity {
 	public static void main(String args[]) throws IOException, SQLException, ClassNotFoundException{	
 		JaccardSimilarity js = new JaccardSimilarity("Fathi Tenzekhti", "Khaled Day", 2013);
 	}
+
 }

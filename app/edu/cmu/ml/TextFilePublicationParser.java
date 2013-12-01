@@ -10,14 +10,14 @@ import java.util.HashMap;
 
 public class TextFilePublicationParser {
 
-	private static ArrayList<HashMap<String, String>> articleList = new ArrayList<HashMap<String,String>>();
-	private static ArrayList<HashMap<String, String>> bookList = new ArrayList<HashMap<String,String>>();
-	private static ArrayList<HashMap<String, String>> phdThesisList = new ArrayList<HashMap<String,String>>();
-	private static ArrayList<HashMap<String, String>> mastersThesisList = new ArrayList<HashMap<String,String>>();
-	private static ArrayList<HashMap<String, String>> wwwList = new ArrayList<HashMap<String,String>>();
-	private static ArrayList<HashMap<String, String>> incollectionsList = new ArrayList<HashMap<String,String>>();
-	private static ArrayList<HashMap<String, String>> inproceedingsList = new ArrayList<HashMap<String,String>>();
-	private static ArrayList<HashMap<String, String>> proceedingsList = new ArrayList<HashMap<String,String>>();
+	public static ArrayList<HashMap<String, String>> articleList = new ArrayList<HashMap<String,String>>();
+	public static ArrayList<HashMap<String, String>> bookList = new ArrayList<HashMap<String,String>>();
+	public static ArrayList<HashMap<String, String>> phdThesisList = new ArrayList<HashMap<String,String>>();
+	public static ArrayList<HashMap<String, String>> mastersThesisList = new ArrayList<HashMap<String,String>>();
+	public static ArrayList<HashMap<String, String>> wwwList = new ArrayList<HashMap<String,String>>();
+	public static ArrayList<HashMap<String, String>> incollectionsList = new ArrayList<HashMap<String,String>>();
+	public static ArrayList<HashMap<String, String>> inproceedingsList = new ArrayList<HashMap<String,String>>();
+	public static ArrayList<HashMap<String, String>> proceedingsList = new ArrayList<HashMap<String,String>>();
 	private String fileName = null;
 	
 	public TextFilePublicationParser(String fileName) throws IOException {
