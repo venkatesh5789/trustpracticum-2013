@@ -64,7 +64,7 @@ public class JaccardSimilarity {
 		System.out.println("Same elements "+ h1);	
 		//Union 
 		int union = sizeh1 + h2.size();
-		int intersection = h1.size();			
+		int intersection = h1.size();	
 		res = (double)intersection/union;
 		System.out.println(res);
 		return res;

@@ -60,30 +60,19 @@ class NBModel:
                                 logProb += math.log(self.featureCounts[(label, self.featureNameList[featureVector.index(featureValue)-1], featureValue)]/self.labelCounts[label])
                         pProbability = (self.labelCounts[label]/sum(self.labelCounts.values()))
                         probabilityPerLabel[label] = pProbability * math.exp(logProb) # Get the real probablity value from log value
-                        #self.outputFile.write( "Prior probability for class "+ label+ ": " + str(pProbability) + "\n")
                         totalProbability += probabilityPerLabel[label]
-                #self.outputFile.write("TP:" + " " + str(totalProbability) + "\n") 
                 self.outputFile.write("Likelihood for Yes or No:" + " " + str(probabilityPerLabel) + "\n")  
-                self.outputFile.write("Probability of collaboration:" + " " + (str(100*probabilityPerLabel["y"]/totalProbability)) + "%" + "\n") 
-                self.outputFile.write("Recall for class Y:" + " " + str(self.labelCounts["y"]/sum(self.labelCounts.values())) + "\n" ) 
-                self.outputFile.write("Recall for class N:" + " " + str(self.labelCounts["n"]/sum(self.labelCounts.values())) + "\n")             
+                self.outputFile.write("Probability of collaboration:" + " " + (str(100*probabilityPerLabel["y"]/totalProbability)) + "%" + "\n")          
                 return max(probabilityPerLabel, key = lambda classLabel: probabilityPerLabel[classLabel]) #Entry that has the highest probability
-                                      
-        def TestClassify(self): #Method to test the classifier from test file
+
+        def DemoClassify(self): #Method to test the classifier from test file
                 file = open(self.testFile, 'r')
                 for line in file:   #Initialize all parameters needed including feature vector
                     self.outputFile.write("-----------------------------------" + "\n")
                     vector = line.strip().lower().split('\t')                                
                     self.outputFile.write("Input Feature:"+str(vector)+"\n")
                     assigned = self.Classify(vector)                                
-                    self.outputFile.write("Classified: " + assigned + "\t" + "Given class: " + vector[0]+"\n")
-                    if assigned == vector[0]:  # Check if the classified result is the same with given label
-                        self.correct +=1
-                    else:
-                        self.wrong +=1
-                self.outputFile.write("--------------------" + "\n")
-                self.outputFile.write("Total Number: " + str(self.wrong + self.correct) + "\n")
-                self.outputFile.write("Correct Percentage: " + str(100*(self.correct/(self.wrong + self.correct +70)))+" %")
+                    self.outputFile.write("Classified: " + assigned + "\n")
 
 if __name__ == "__main__":            
             if len(sys.argv) != 5:   # Input number error check
@@ -92,4 +81,4 @@ if __name__ == "__main__":
             model = NBModel(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])
             model.GetValues()
             model.TrainClassifier()
-            model.TestClassify()
+            model.DemoClassify()

@@ -1225,7 +1225,7 @@ public class DBLPParser {
 		//PrintWriter writer = new PrintWriter("/Users/ShuaiWang/Desktop/Output.txt", "UTF-8");
 		FileWriter fstream = new FileWriter("/Users/ShuaiWang/Desktop/Crazy.txt",true);
 		BufferedWriter out = new BufferedWriter(fstream);
-		Hashtable<String,String> p = JaccardSimilarity.datapreprocess();
+		//Hashtable<String,String> p = JaccardSimilarity.datapreprocess();
 		if(authors!= null) {
 			int size = authors.size();
 			//Iterating through each pair of authors, as long as there are multiple authors of the publication
@@ -1238,7 +1238,7 @@ public class DBLPParser {
 						timebasedSecondAuthorTrust = trustProcessor.getTrustValueFromName(secondAuthor);									
 						coauthorDistance = CoAuthorGraph.getTimeDependantPathDistanceBetweenNodes(firstAuthor, secondAuthor, year, graph);	
 						//fp = new FileParser("jaccard.txt", dblp);						
-						js = JaccardSimilarity.jaccardSimilarity(p.get(firstAuthor),p.get(secondAuthor));
+						//js = JaccardSimilarity.jaccardSimilarity(p.get(firstAuthor),p.get(secondAuthor));
 						
 						if(js > 0){
 							cvalue = "Y";

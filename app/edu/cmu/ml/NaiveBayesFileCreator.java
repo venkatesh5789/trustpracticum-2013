@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Random;
 
 public class NaiveBayesFileCreator {
 	private TextFileTrustAndCoauthorshipProcessor trustModel;
@@ -15,13 +16,22 @@ public class NaiveBayesFileCreator {
 	private TextFilePublicationParser fileParser;
 	private String outputFileName;
 	
+	
+	
+	public NaiveBayesFileCreator(String inputFileName) throws IOException, ClassNotFoundException, SQLException {
+		super();
+		this.inputFileName = inputFileName;
+		this.trustModel = new TextFileTrustAndCoauthorshipProcessor(inputFileName);
+		this.fileParser = trustModel.getPublications();
+	}
+
 	public NaiveBayesFileCreator(String inputFileName, String outputFileName) throws IOException, ClassNotFoundException, SQLException {
 		super();
 		this.inputFileName = inputFileName;
 		this.outputFileName = outputFileName;
 		this.trustModel = new TextFileTrustAndCoauthorshipProcessor(inputFileName);
 		this.fileParser = trustModel.getPublications();
-		createNaiveBayesFile(this.outputFileName);
+		//createNaiveBayesFile(this.outputFileName);
 	}
 	
 	private void createNaiveBayesFile(String outputFileName) throws IOException, SQLException, ClassNotFoundException {
@@ -138,42 +148,50 @@ public class NaiveBayesFileCreator {
 	}
 	
 	private void writeLineForAuthors(PrintWriter writer, String authorName1, String authorName2, int year) throws SQLException, ClassNotFoundException {
-		String lineToBeWritten="Y\t";
+		String lineToBeWritten;
 		
 		int coauthorDistance = trustModel.getCoauthorDistanceBeforeYear(authorName1, authorName2, year);
-		Double trustValueDifference = Math.abs(trustModel.calculateTrustBeforeYear(authorName1, year) - trustModel.calculateTrustBeforeYear(authorName2, year));
+		/////////////////////////////
+		Random r = new Random(); 
+		int choice = r.nextInt(3);	
+		if(choice == 1)
+		{
+			lineToBeWritten="Y\t";
+		}else{
+			lineToBeWritten="N\t";
+		}
 		
+		Double trustValueDifference = Math.abs(trustModel.calculateTrustBeforeYear(authorName1, year) - trustModel.calculateTrustBeforeYear(authorName2, year));		
 		Double jaccardSimilarity = trustModel.calculateJaccardSimilarity(authorName1, authorName2, year);
 		
 		int coauthorshipHistory1 = trustModel.getNumberOfCoauthorsInTimeRange(authorName1, 1800, year);
 		int coauthorshipHistory2 = trustModel.getNumberOfCoauthorsInTimeRange(authorName2, 1800, year);
 		
 		int effectiveCoauthorship = ((coauthorshipHistory1 - coauthorshipHistory2) < 0)?coauthorshipHistory1 : coauthorshipHistory2;
-		
-		if(jaccardSimilarity < 0.05)
+		if(jaccardSimilarity <= 0 && choice ==0) 
 			lineToBeWritten += "L\t";
-		else if(jaccardSimilarity < 0.1)
+		else if(jaccardSimilarity <= 0 && choice ==1)
 			lineToBeWritten += "M\t";
 		else 
 			lineToBeWritten += "H\t";
 			
-		if(coauthorDistance==1)
+		if(coauthorDistance <=1)
 			lineToBeWritten+="H\t";
-		else if(coauthorDistance == 2)
+		else if(coauthorDistance  <=2 && coauthorDistance >1)
 			lineToBeWritten+="M\t";
 		else 
 			lineToBeWritten += "L\t";
 		
 		if(trustValueDifference <=1.0)
 			lineToBeWritten+="H\t";
-		else if(trustValueDifference <=3.0)
+		else if(trustValueDifference <=2.0 && trustValueDifference >1.0)
 			lineToBeWritten += "M\t";
 		else
 			lineToBeWritten += "L\t";
 		
-		if(effectiveCoauthorship > 3)
+		if(effectiveCoauthorship > 5)
 			lineToBeWritten+="H";
-		else if(effectiveCoauthorship > 1)
+		else if(effectiveCoauthorship > 1 && effectiveCoauthorship <= 5 )
 			lineToBeWritten+="M";
 		else 
 			lineToBeWritten += "L";
@@ -181,7 +199,55 @@ public class NaiveBayesFileCreator {
 		writer.println(lineToBeWritten);
 	}
 	
+	private void writeLineForDemo(PrintWriter writer, String authorName1, String authorName2, int year) throws SQLException, ClassNotFoundException {
+		String lineToBeWritten = "";
+		
+		int coauthorDistance = trustModel.getCoauthorDistanceBeforeYear(authorName1, authorName2, year);
+		
+		Double trustValueDifference = Math.abs(trustModel.calculateTrustBeforeYear(authorName1, year) - trustModel.calculateTrustBeforeYear(authorName2, year));		
+		Double jaccardSimilarity = trustModel.calculateJaccardSimilarity(authorName1, authorName2, year);
+		
+		int coauthorshipHistory1 = trustModel.getNumberOfCoauthorsInTimeRange(authorName1, 1800, year);
+		int coauthorshipHistory2 = trustModel.getNumberOfCoauthorsInTimeRange(authorName2, 1800, year);
+		
+		int effectiveCoauthorship = ((coauthorshipHistory1 - coauthorshipHistory2) < 0)?coauthorshipHistory1 : coauthorshipHistory2;
+		int choice = 0;
+		
+		if(jaccardSimilarity <= 0)
+			lineToBeWritten += "L\t";
+		else if(jaccardSimilarity <= 0.5 && jaccardSimilarity > 0)
+			lineToBeWritten += "M\t";
+		else 
+			lineToBeWritten += "H\t";
+			
+		if(coauthorDistance <=1)
+			lineToBeWritten+="H\t";
+		else if(coauthorDistance  <=2 && coauthorDistance >1)
+			lineToBeWritten+="M\t";
+		else 
+			lineToBeWritten += "L\t";
+		
+		if(trustValueDifference <=1.0)
+			lineToBeWritten+="H\t";
+		else if(trustValueDifference <=2.0 && trustValueDifference >1.0)
+			lineToBeWritten += "M\t";
+		else
+			lineToBeWritten += "L\t";
+		
+		if(effectiveCoauthorship > 5)
+			lineToBeWritten+="H";
+		else if(effectiveCoauthorship > 1 && effectiveCoauthorship <= 5 )
+			lineToBeWritten+="M";
+		else 
+			lineToBeWritten += "L";		
+		writer.println(lineToBeWritten);
+		writer.flush();
+		writer.close();
+	}
+	
 	public static void main(String[] args) throws IOException, ClassNotFoundException, SQLException {
-		NaiveBayesFileCreator blah = new NaiveBayesFileCreator("ds.txt", "blah.txt");
+		NaiveBayesFileCreator blah = new NaiveBayesFileCreator("ds.txt");
+		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("/Users/ShuaiWang/Desktop/Blah.txt", true)));
+		blah.writeLineForDemo(writer, "James Blythe", "Joseph C", 2013);
 	}
 }
