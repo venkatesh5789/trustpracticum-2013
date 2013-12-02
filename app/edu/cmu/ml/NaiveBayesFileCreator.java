@@ -199,7 +199,7 @@ public class NaiveBayesFileCreator {
 		writer.println(lineToBeWritten);
 	}
 	
-	private void writeLineForDemo(PrintWriter writer, String authorName1, String authorName2, int year) throws SQLException, ClassNotFoundException {
+	public void writeLineForDemo(PrintWriter writer, String authorName1, String authorName2, int year) throws SQLException, ClassNotFoundException {
 		String lineToBeWritten = "";
 		
 		int coauthorDistance = trustModel.getCoauthorDistanceBeforeYear(authorName1, authorName2, year);

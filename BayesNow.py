@@ -40,7 +40,7 @@ class NBModel:
         def TrainClassifier(self):
                 for fv in self.featureVectors:
                     self.labelCounts[fv[0]] += 1  #Increment count of the label class                       
-                    for counter in range(0, len(fv)-2):  #Counts the number of co-occurrences of each feature value with each class label
+                    for counter in range(0, len(fv)-1):  #Counts the number of co-occurrences of each feature value with each class label
                         self.featureCounts[(fv[0], self.featureNameList[counter-1], fv[counter])] += 1 #Stores the number in the form of 3-tuples
                                              
                 for label in self.labelCounts:  #First feature is the label class
@@ -64,9 +64,7 @@ class NBModel:
                         totalProbability += probabilityPerLabel[label]
                 #self.outputFile.write("TP:" + " " + str(totalProbability) + "\n") 
                 self.outputFile.write("Likelihood for Yes or No:" + " " + str(probabilityPerLabel) + "\n")  
-                self.outputFile.write("Probability of collaboration:" + " " + (str(100*probabilityPerLabel["y"]/totalProbability)) + "%" + "\n") 
-                self.outputFile.write("Recall for class Y:" + " " + str(self.labelCounts["y"]/sum(self.labelCounts.values())) + "\n" ) 
-                self.outputFile.write("Recall for class N:" + " " + str(self.labelCounts["n"]/sum(self.labelCounts.values())) + "\n")             
+                self.outputFile.write("Probability of collaboration:" + " " + (str(100*probabilityPerLabel["y"]/totalProbability)) + "%" + "\n")             
                 return max(probabilityPerLabel, key = lambda classLabel: probabilityPerLabel[classLabel]) #Entry that has the highest probability
                                       
         def TestClassify(self): #Method to test the classifier from test file
@@ -82,8 +80,11 @@ class NBModel:
                     else:
                         self.wrong +=1
                 self.outputFile.write("--------------------" + "\n")
+                self.outputFile.write("Wrong cases:" + " "+str(self.wrong) + "\n")
+                self.outputFile.write("Correct cases:" + " " + str(self.correct) + "\n")
                 self.outputFile.write("Total Number: " + str(self.wrong + self.correct) + "\n")
-                self.outputFile.write("Correct Percentage: " + str(100*(self.correct/(self.wrong + self.correct +70)))+" %")
+                self.outputFile.write("Recall: " + str(100*(self.wrong + self.correct) / 5009)+" %" + "\n")
+                self.outputFile.write("Precision: " + str(100*(self.correct/(self.wrong + self.correct)))+" %")
 
 if __name__ == "__main__":            
             if len(sys.argv) != 5:   # Input number error check
