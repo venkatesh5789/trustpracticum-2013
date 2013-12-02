@@ -1,1 +1,2 @@
-H	L	L	L
+H	H	H	M
+H	H	H	L

@@ -1,11 +1,10 @@
 -----------------------------------
-Input Feature:['h', 'l', 'l', 'l']
-Likelihood for Yes or No: {'y': 6.516701932766896e-11, 'n': 0.07163265813714548}
-Probability of collaboration: 9.09738950963e-08%
-Classified: n	Given class: h
---------------------
-Wrong cases: 1
-Correct cases: 0
-Total Number: 1
-Recall: 0.0199640646836 %
-Precision: 0.0 %
+Input Feature:['h', 'h', 'h', 'm']
+Likelihood for Yes or No: {'y': 0.00019798059790140568, 'n': 0.00019798059790140566}
+Probability of collaboration: 50.0%
+Classified: y
+-----------------------------------
+Input Feature:['h', 'h', 'h', 'l']
+Likelihood for Yes or No: {'y': 0.00019798059790140568, 'n': 0.00019798059790140566}
+Probability of collaboration: 50.0%
+Classified: y
