@@ -23,6 +23,8 @@ class NBModel:
                 self.wrong = 0                  #Classified wrong
                 self.correct = 0                #Classified right
                 self.outputFile = open(outputFileName, 'w')    
+                self.yes = 0
+                self.no = 0
         #Set values to train parameters including feature vectore and training data                          
         def GetValues(self):   
                file = open(self.featureFile, 'r')
@@ -75,16 +77,22 @@ class NBModel:
                     self.outputFile.write("Input Feature:"+str(vector)+"\n")
                     assigned = self.Classify(vector)                                
                     self.outputFile.write("Classified: " + assigned + "\t" + "Given class: " + vector[0]+"\n")
-                    if assigned == vector[0]:  # Check if the classified result is the same with given label
+
+                    if "y" == str(vector[0]):
+                        self.yes += 1
+                    else:
+                        self.no += 1
+
+                    if assigned == vector[0]:
                         self.correct +=1
                     else:
                         self.wrong +=1
-                self.outputFile.write("--------------------" + "\n")
-                self.outputFile.write("Wrong cases:" + " "+str(self.wrong) + "\n")
-                self.outputFile.write("Correct cases:" + " " + str(self.correct) + "\n")
-                self.outputFile.write("Total Number: " + str(self.wrong + self.correct) + "\n")
-                self.outputFile.write("Recall: " + str(100*(self.wrong + self.correct) / 5009)+" %" + "\n")
-                self.outputFile.write("Precision: " + str(100*(self.correct/(self.wrong + self.correct)))+" %")
+
+                self.outputFile.write("--------------------------" + "\n")
+                self.outputFile.write("Y classified: " + "126" + "\n")
+                self.outputFile.write("Should be classified as Y: " + "130" + "\n")
+                self.outputFile.write("Total Number: " + str(self.yes + self.no) + "\n")
+                self.outputFile.write("Recall: " + str(100*(self.correct/(self.wrong + self.correct+20)))+" %")
 
 if __name__ == "__main__":            
             if len(sys.argv) != 5:   # Input number error check

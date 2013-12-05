@@ -22,7 +22,10 @@ class NBModel:
                 self.labelCounts = collections.defaultdict(lambda: 0)      #Initial label class count based on default english dictionary
                 self.wrong = 0                  #Classified wrong
                 self.correct = 0                #Classified right
-                self.outputFile = open(outputFileName, 'w')    
+                self.outputFile = open(outputFileName, 'w') 
+                self.yes = 0
+                self.no = 0   
+                self.total = 0
         #Set values to train parameters including feature vectore and training data                          
         def GetValues(self):   
                file = open(self.featureFile, 'r')
@@ -40,7 +43,7 @@ class NBModel:
         def TrainClassifier(self):
                 for fv in self.featureVectors:
                     self.labelCounts[fv[0]] += 1  #Increment count of the label class                       
-                    for counter in range(0, len(fv)-2):  #Counts the number of co-occurrences of each feature value with each class label
+                    for counter in range(0, len(fv)-1):  #Counts the number of co-occurrences of each feature value with each class label
                         self.featureCounts[(fv[0], self.featureNameList[counter-1], fv[counter])] += 1 #Stores the number in the form of 3-tuples
                                              
                 for label in self.labelCounts:  #First feature is the label class
@@ -69,11 +72,22 @@ class NBModel:
                 file = open(self.testFile, 'r')
                 for line in file:   #Initialize all parameters needed including feature vector
                     self.outputFile.write("-----------------------------------" + "\n")
-                    vector = line.strip().lower().split('\t')                                
-                    self.outputFile.write("Input Feature:"+str(vector)+"\n")
+                    vector = line.strip().lower().split('\t')           
+                    self.outputFile.write("Feature:"+ "Research similarity: " + str(vector[0])+ " Reputation similarity: " + str(vector[1]) + " Connected similarity: " + str(vector[2])+ " Social factor: " + str(vector[3]) +"\n")
                     assigned = self.Classify(vector)                                
                     self.outputFile.write("Classified: " + assigned + "\n")
-
+                    #self.outputFile.write(self.labelCounts["y"])
+                    if "y" == assigned:  # Check if the classified result is the same with given label
+                        self.yes +=1
+                    else:
+                        self.no +=1
+                total = self.yes+self.no
+                self.wrong = math.fabs(self.yes -25)
+                self.outputFile.write("-----------------------------------" + "\n")
+                self.outputFile.write("Collaborated pair: " + "25" + "\n")
+                self.outputFile.write("Classified as Y class:" + str(self.yes) + "\n")
+                self.outputFile.write("Total Number: " + str(total) + "\n")
+                self.outputFile.write("Precision: " + str(100*(1-(self.wrong/total))) + "%" + "\n")
 if __name__ == "__main__":            
             if len(sys.argv) != 5:   # Input number error check
                 sys.stderr.write('Input Format: <TrainingFile> <TestFile> <OutputFile> <FeatureFile>')

@@ -1,0 +1,1760 @@
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 4.6368489458355784e-07, 'n': 0.1314190712960001}
+Probability of collaboration: 0.000352827983032%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.00011870333301339078, 'n': 0.19114149327212548}
+Probability of collaboration: 0.0620637932619%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.00011870333301339078, 'n': 0.19114149327212548}
+Probability of collaboration: 0.0620637932619%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.00011870333301339078, 'n': 0.19114149327212548}
+Probability of collaboration: 0.0620637932619%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.2925554926489715, 'n': 0.000359067832511978}
+Probability of collaboration: 99.8774155058%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.2925554926489715, 'n': 0.000359067832511978}
+Probability of collaboration: 99.8774155058%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.2925554926489715, 'n': 0.000359067832511978}
+Probability of collaboration: 99.8774155058%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.304921968787515, 'n': 0.5874349739895959}
+Probability of collaboration: 34.1704035874%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.304921968787515, 'n': 0.5874349739895959}
+Probability of collaboration: 34.1704035874%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.00011870333301339078, 'n': 0.19114149327212548}
+Probability of collaboration: 0.0620637932619%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.304921968787515, 'n': 0.5874349739895959}
+Probability of collaboration: 34.1704035874%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.304921968787515, 'n': 0.5874349739895959}
+Probability of collaboration: 34.1704035874%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.2925554926489715, 'n': 0.000359067832511978}
+Probability of collaboration: 99.8774155058%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 4.6368489458355784e-07, 'n': 0.1314190712960001}
+Probability of collaboration: 0.000352827983032%
+Classified: n
+-----------------------------------
+Feature:Research similarity: m Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: m Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.00011870333301339078, 'n': 0.19114149327212548}
+Probability of collaboration: 0.0620637932619%
+Classified: n
+-----------------------------------
+Feature:Research similarity: m Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 3.744725656187212e-05, 'n': 0.031016613937496974}
+Probability of collaboration: 0.120587308461%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.2925554926489715, 'n': 0.000359067832511978}
+Probability of collaboration: 99.8774155058%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.00011870333301339078, 'n': 0.19114149327212548}
+Probability of collaboration: 0.0620637932619%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.304921968787515, 'n': 0.5874349739895959}
+Probability of collaboration: 34.1704035874%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.00011870333301339078, 'n': 0.19114149327212548}
+Probability of collaboration: 0.0620637932619%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: m Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: m Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.304921968787515, 'n': 0.5874349739895959}
+Probability of collaboration: 34.1704035874%
+Classified: n
+-----------------------------------
+Feature:Research similarity: m Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.304921968787515, 'n': 0.5874349739895959}
+Probability of collaboration: 34.1704035874%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.2925554926489715, 'n': 0.000359067832511978}
+Probability of collaboration: 99.8774155058%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.00011870333301339078, 'n': 0.19114149327212548}
+Probability of collaboration: 0.0620637932619%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.304921968787515, 'n': 0.5874349739895959}
+Probability of collaboration: 34.1704035874%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: m Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.00040016006402561027, 'n': 0.29331732693077234}
+Probability of collaboration: 0.136239782016%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: m Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.00040016006402561027, 'n': 0.29331732693077234}
+Probability of collaboration: 0.136239782016%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.013605442176870746, 'n': 0.029211684673869552}
+Probability of collaboration: 31.7757009346%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.0002522445826534553, 'n': 0.01578430883355788}
+Probability of collaboration: 1.57293513205%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 0.31789494476817376, 'n': 2.445966161525737e-07}
+Probability of collaboration: 99.9999230575%
+Classified: y
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.000664387919221241, 'n': 0.03532649063714413}
+Probability of collaboration: 1.84598972259%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: m
+Likelihood for Yes or No: {'y': 1.826800279935221e-08, 'n': 0.005864053914797071}
+Probability of collaboration: 0.000311524180295%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.03583542339299567, 'n': 0.06537798493480523}
+Probability of collaboration: 35.4058063897%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 2.2007570431219603e-06, 'n': 0.10328183377295776}
+Probability of collaboration: 0.00213078144472%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.03100632843323011, 'n': 4.2314616558658954e-05}
+Probability of collaboration: 99.8637150857%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.032316982412895635, 'n': 0.06922671268996596}
+Probability of collaboration: 31.8256907828%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: m
+Likelihood for Yes or No: {'y': 0.30500233403018295, 'n': 1.4950893407859056e-10}
+Probability of collaboration: 99.999999951%
+Classified: y
+-----------------------------------
+Feature:Research similarity: l Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 4.6368489458355784e-07, 'n': 0.1314190712960001}
+Probability of collaboration: 0.000352827983032%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.2925554926489715, 'n': 0.000359067832511978}
+Probability of collaboration: 99.8774155058%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.304921968787515, 'n': 0.5874349739895959}
+Probability of collaboration: 34.1704035874%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.2925554926489715, 'n': 0.000359067832511978}
+Probability of collaboration: 99.8774155058%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 0.2925554926489715, 'n': 0.000359067832511978}
+Probability of collaboration: 99.8774155058%
+Classified: y
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: l Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 3.823815362424411e-05, 'n': 0.0604035159056778}
+Probability of collaboration: 0.0632644671211%
+Classified: n
+-----------------------------------
+Feature:Research similarity: m Reputation similarity: h Connected similarity: h Social factor: l
+Likelihood for Yes or No: {'y': 4.0941818038548193e-07, 'n': 0.11792371434139862}
+Probability of collaboration: 0.000347187808001%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: h Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.09822515332900252, 'n': 0.18563806940869257}
+Probability of collaboration: 34.6029867419%
+Classified: n
+-----------------------------------
+Feature:Research similarity: h Reputation similarity: m Connected similarity: m Social factor: l
+Likelihood for Yes or No: {'y': 0.28069055378140023, 'n': 2.1947911522737048e-07}
+Probability of collaboration: 99.9999218075%
+Classified: y
+-----------------------------------
+Collaborated pair: 25
+Classified as Y class:109
+Total Number: 351
+Precision: 76.0683760684%

@@ -162,7 +162,7 @@ public class CoAuthorGraph {
 	 */
 	public static void main(String[] args) throws JAXBException, SAXException, ParserConfigurationException {
 		//CoAuthorGraph myApp = new CoAuthorGraph("modified_dblp.xml");
-		CoAuthorGraph myApp = new CoAuthorGraph("xmlfiles/split_dblp_35.xml");
+		CoAuthorGraph myApp = new CoAuthorGraph("dblp_example.xml");
 		myApp.constructGraph();
 		//System.out.println(myApp.g.toString());
 		

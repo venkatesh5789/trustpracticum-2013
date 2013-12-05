@@ -11,12 +11,11 @@ import java.util.HashMap;
 import java.util.Random;
 
 public class NaiveBayesFileCreator {
+	
 	private TextFileTrustAndCoauthorshipProcessor trustModel;
 	private String inputFileName;
 	private TextFilePublicationParser fileParser;
 	private String outputFileName;
-	
-	
 	
 	public NaiveBayesFileCreator(String inputFileName) throws IOException, ClassNotFoundException, SQLException {
 		super();
@@ -31,7 +30,7 @@ public class NaiveBayesFileCreator {
 		this.outputFileName = outputFileName;
 		this.trustModel = new TextFileTrustAndCoauthorshipProcessor(inputFileName);
 		this.fileParser = trustModel.getPublications();
-		//createNaiveBayesFile(this.outputFileName);
+		createNaiveBayesFile(this.outputFileName);
 	}
 	
 	private void createNaiveBayesFile(String outputFileName) throws IOException, SQLException, ClassNotFoundException {
@@ -161,19 +160,26 @@ public class NaiveBayesFileCreator {
 			lineToBeWritten="N\t";
 		}
 		
-		Double trustValueDifference = Math.abs(trustModel.calculateTrustBeforeYear(authorName1, year) - trustModel.calculateTrustBeforeYear(authorName2, year));		
+		Double trustValueDifference = trustModel.calculateTrustBeforeYear(authorName1, year) - trustModel.calculateTrustBeforeYear(authorName2, year);		
 		Double jaccardSimilarity = trustModel.calculateJaccardSimilarity(authorName1, authorName2, year);
 		
 		int coauthorshipHistory1 = trustModel.getNumberOfCoauthorsInTimeRange(authorName1, 1800, year);
 		int coauthorshipHistory2 = trustModel.getNumberOfCoauthorsInTimeRange(authorName2, 1800, year);
 		
 		int effectiveCoauthorship = ((coauthorshipHistory1 - coauthorshipHistory2) < 0)?coauthorshipHistory1 : coauthorshipHistory2;
+		
+//		if(coauthorDistance == 1){
+//			lineToBeWritten += "Y\t";
+//		}else{
+//			lineToBeWritten += "N\t";
+//		}
+		
 		if(jaccardSimilarity <= 0 && choice ==0) 
-			lineToBeWritten += "L\t";
+			lineToBeWritten += "H\t";
 		else if(jaccardSimilarity <= 0 && choice ==1)
 			lineToBeWritten += "M\t";
 		else 
-			lineToBeWritten += "H\t";
+			lineToBeWritten += "L\t";
 			
 		if(coauthorDistance <=1)
 			lineToBeWritten+="H\t";
@@ -182,9 +188,9 @@ public class NaiveBayesFileCreator {
 		else 
 			lineToBeWritten += "L\t";
 		
-		if(trustValueDifference <=1.0)
+		if(trustValueDifference <0)
 			lineToBeWritten+="H\t";
-		else if(trustValueDifference <=2.0 && trustValueDifference >1.0)
+		else if(trustValueDifference <=1.0 && trustValueDifference >0)
 			lineToBeWritten += "M\t";
 		else
 			lineToBeWritten += "L\t";
@@ -211,14 +217,13 @@ public class NaiveBayesFileCreator {
 		int coauthorshipHistory2 = trustModel.getNumberOfCoauthorsInTimeRange(authorName2, 1800, year);
 		
 		int effectiveCoauthorship = ((coauthorshipHistory1 - coauthorshipHistory2) < 0)?coauthorshipHistory1 : coauthorshipHistory2;
-		int choice = 0;
-		
+
 		if(jaccardSimilarity <= 0)
-			lineToBeWritten += "L\t";
+			lineToBeWritten += "H\t";
 		else if(jaccardSimilarity <= 0.5 && jaccardSimilarity > 0)
 			lineToBeWritten += "M\t";
 		else 
-			lineToBeWritten += "H\t";
+			lineToBeWritten += "L\t";
 			
 		if(coauthorDistance <=1)
 			lineToBeWritten+="H\t";
@@ -227,9 +232,9 @@ public class NaiveBayesFileCreator {
 		else 
 			lineToBeWritten += "L\t";
 		
-		if(trustValueDifference <=1.0)
+		if(trustValueDifference <0.1)
 			lineToBeWritten+="H\t";
-		else if(trustValueDifference <=2.0 && trustValueDifference >1.0)
+		else if(trustValueDifference <=0.7 && trustValueDifference >=0.1)
 			lineToBeWritten += "M\t";
 		else
 			lineToBeWritten += "L\t";
@@ -242,12 +247,12 @@ public class NaiveBayesFileCreator {
 			lineToBeWritten += "L";		
 		writer.println(lineToBeWritten);
 		writer.flush();
-		writer.close();
+		//writer.close();
 	}
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException, SQLException {
-		NaiveBayesFileCreator blah = new NaiveBayesFileCreator("ds.txt");
-		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("/Users/ShuaiWang/Desktop/Blah.txt", true)));
-		blah.writeLineForDemo(writer, "James Blythe", "Joseph C", 2013);
+		NaiveBayesFileCreator blah = new NaiveBayesFileCreator("ds.txt","/Users/ShuaiWang/Desktop/Blan.txt");
+//		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("/Users/ShuaiWang/Desktop/Blah.txt", true)));
+//		blah.writeLineForDemo(writer, "James Blythe", "Joseph C", 2013);
 	}
 }

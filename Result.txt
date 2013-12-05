@@ -1,10 +1,5 @@
 -----------------------------------
-Input Feature:['h', 'h', 'h', 'm']
-Likelihood for Yes or No: {'y': 0.00019798059790140568, 'n': 0.00019798059790140566}
-Probability of collaboration: 50.0%
-Classified: y
------------------------------------
-Input Feature:['h', 'h', 'h', 'l']
-Likelihood for Yes or No: {'y': 0.00019798059790140568, 'n': 0.00019798059790140566}
-Probability of collaboration: 50.0%
-Classified: y
+Input Feature: Research similarity: h Reputation similarity: h Connected similarity: l Social factor: l
+Likelihood for Yes or No: {'y': 0.32326256123285463, 'n': 0.6232396304968644}
+Probability of collaboration: 34.1533874995%
+Classified: n

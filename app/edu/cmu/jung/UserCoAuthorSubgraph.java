@@ -209,6 +209,7 @@ public class UserCoAuthorSubgraph {
 	 * @throws ParserConfigurationException 
 	 */
 	public static void main(String[] args) throws JAXBException, SAXException, ParserConfigurationException {
+		
 		String inputAuthor, fileName;
 		int noOfLevels;
 		JSONArray result;
@@ -222,9 +223,7 @@ public class UserCoAuthorSubgraph {
 		fileName = input.nextLine();
 		
 		System.out.println("Enter number of sub levels- ");
-		noOfLevels = input.nextInt();
-		
-		
+		noOfLevels = input.nextInt();	
 		
 		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph(fileName);
 		

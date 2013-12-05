@@ -14,15 +14,15 @@ public class NBUserInfterface {
 		Scanner input = new Scanner(System.in);
 		String author1;
 		String author2;
-		System.out.println("\nEnter author's name- ");
+		System.out.println("Enter author's name- ");
 		author1 = input.nextLine();
 		System.out.println("Enter another author name- ");
 		author2 = input.nextLine();		
 		NaiveBayesFileCreator blah = new NaiveBayesFileCreator("ds.txt");
-		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("TwoAuthor.txt", true)));
+		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("TwoAuthor.txt", false)));
 		blah.writeLineForDemo(writer, author1, author2, 2013);
 		Runtime r = Runtime.getRuntime();
-		Process p = r.exec("python TestNBayes.py TrA.txt TwoAuthor.txt Result.txt Feature-NameandValues.txt");
+		Process p = r.exec("python TwoUNBayes.py TrA.txt TwoAuthor.txt Result.txt Feature-NameandValues.txt");
 		System.out.println("Done!!!");
 	}
 }

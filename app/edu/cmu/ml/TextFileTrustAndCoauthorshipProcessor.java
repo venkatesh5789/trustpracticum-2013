@@ -9,6 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Random;
 
 import edu.cmu.database.DbOperations;
 import edu.cmu.trustprocessor.TimeScale;
@@ -85,7 +86,9 @@ public class TextFileTrustAndCoauthorshipProcessor {
 			}
 		}
 		
-		return 999;	
+		Random r = new Random(); 
+		int choice = r.nextInt(3)+1;
+		return choice;	
 	}
 	
 	/**
