@@ -20,7 +20,7 @@ public class PrecisionTest {
 		//Test the precision of algorithm based on data
 		public static void main(String args[]) throws IOException{			
 			Runtime r = Runtime.getRuntime();
-			Process p = r.exec("python TestNBayes.py Train.txt Test_Precision.txt Prec_result.txt Feature.txt");
-			System.out.println("Precision test is done, plese refer to Prec_result.txt to see result.");
+			Process p = r.exec("python TestNBayes.py Train.txt Test_Precision.txt precision_result.txt Feature.txt");
+			System.out.println("The precision report is generated in precision_result.txt.");
 		}	
 }

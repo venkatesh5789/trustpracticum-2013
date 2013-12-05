@@ -64,7 +64,7 @@ class NBModel:
                         pProbability = (self.labelCounts[label]/sum(self.labelCounts.values()))
                         probabilityPerLabel[label] = pProbability * math.exp(logProb) # Get the real probablity value from log value
                         totalProbability += probabilityPerLabel[label]
-                self.outputFile.write("Likelihood for Yes or No:" + " " + str(probabilityPerLabel) + "\n")  
+                #self.outputFile.write("Likelihood for Yes or No:" + " " + str(probabilityPerLabel) + "\n")  
                 self.outputFile.write("Probability of collaboration:" + " " + (str(100*probabilityPerLabel["y"]/totalProbability)) + "%" + "\n")          
                 return max(probabilityPerLabel, key = lambda classLabel: probabilityPerLabel[classLabel]) #Entry that has the highest probability
 
@@ -73,9 +73,15 @@ class NBModel:
                 for line in file:   #Initialize all parameters needed including feature vector
                     self.outputFile.write("-----------------------------------" + "\n")
                     vector = line.strip().lower().split('\t')           
-                    self.outputFile.write("Feature:"+ "Research similarity: " + str(vector[0])+ " Reputation similarity: " + str(vector[1]) + " Connected similarity: " + str(vector[2])+ " Social factor: " + str(vector[3]) +"\n")
+                    self.outputFile.write("Similarity of research areas: " + str(vector[0])+ "\n")
+                    self.outputFile.write("Similarity of author reputation: " + str(vector[1]) + "\n")
+                    self.outputFile.write("Author connectedness: " + str(vector[2])+ "\n") 
+                    self.outputFile.write("Collaboration history of each author: "+ str(vector[3])+"\n")
                     assigned = self.Classify(vector)                                
-                    self.outputFile.write("Classified: " + assigned + "\n")
+                    if assigned == "y":                                
+                        self.outputFile.write("Authors are likely to collaborate"+ "\n")
+                    else:
+                        self.outputFile.write("Authors are not likely to collaborate" + "\n")
                     #self.outputFile.write(self.labelCounts["y"])
                     if "y" == assigned:  # Check if the classified result is the same with given label
                         self.yes +=1
@@ -85,8 +91,8 @@ class NBModel:
                 self.wrong = math.fabs(self.yes -25)
                 self.outputFile.write("-----------------------------------" + "\n")
                 self.outputFile.write("Collaborated pair: " + "25" + "\n")
-                self.outputFile.write("Classified as Y class:" + str(self.yes) + "\n")
-                self.outputFile.write("Total Number: " + str(total) + "\n")
+                self.outputFile.write("How many we classified:" + str(self.yes) + "\n")
+                self.outputFile.write("Total test number: " + str(total) + "\n")
                 self.outputFile.write("Precision: " + str(100*(1-(self.wrong/total))) + "%" + "\n")
 if __name__ == "__main__":            
             if len(sys.argv) != 5:   # Input number error check

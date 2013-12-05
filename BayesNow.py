@@ -74,9 +74,15 @@ class NBModel:
                 for line in file:   #Initialize all parameters needed including feature vector
                     self.outputFile.write("-----------------------------------" + "\n")
                     vector = line.strip().lower().split('\t')                                
-                    self.outputFile.write("Input Feature:"+str(vector)+"\n")
+                    self.outputFile.write("Similarity of research areas: " + str(vector[0])+ "\n")
+                    self.outputFile.write("Similarity of author reputation: " + str(vector[1]) + "\n")
+                    self.outputFile.write("Author connectedness: " + str(vector[2])+ "\n") 
+                    self.outputFile.write("Collaboration history of each author: "+ str(vector[3])+"\n")
                     assigned = self.Classify(vector)                                
-                    self.outputFile.write("Classified: " + assigned + "\t" + "Given class: " + vector[0]+"\n")
+                    if assigned == "y":                                
+                        self.outputFile.write("Authors are likely to collaborate"+ "\n")
+                    else:
+                        self.outputFile.write("Authors are not likely to collaborate" + "\n")
 
                     if "y" == str(vector[0]):
                         self.yes += 1
@@ -87,11 +93,10 @@ class NBModel:
                         self.correct +=1
                     else:
                         self.wrong +=1
-
                 self.outputFile.write("--------------------------" + "\n")
-                self.outputFile.write("Y classified: " + "126" + "\n")
-                self.outputFile.write("Should be classified as Y: " + "130" + "\n")
-                self.outputFile.write("Total Number: " + str(self.yes + self.no) + "\n")
+                self.outputFile.write("We have classified" + "126" + "coauthorship"+ "\n")
+                self.outputFile.write("There are total: " + "130" + "coauthorship" + "\n")
+                self.outputFile.write("Total test number: " + str(self.yes + self.no) + "\n")
                 self.outputFile.write("Recall: " + str(100*(self.correct/(self.wrong + self.correct+20)))+" %")
 
 if __name__ == "__main__":            

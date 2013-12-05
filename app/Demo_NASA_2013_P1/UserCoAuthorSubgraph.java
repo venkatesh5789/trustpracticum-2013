@@ -68,8 +68,8 @@ public class UserCoAuthorSubgraph {
 	/** Constructs an example directed graph with our vertex and edge classes 
 	 * @throws JAXBException */
 	public JSONArray constructGraph(String name, int noOfLevels) throws JAXBException {
-		//g = new SparseMultigraph<Node, Edge>();
-		g = new DirectedSparseMultigraph<Node, Edge>();
+		g = new SparseMultigraph<Node, Edge>();
+		//g = new DirectedSparseMultigraph<Node, Edge>();
 		JSONArray result = createNodesAndEdges(name, noOfLevels);
 		//JSONArray result = createEdges();  
 		return result;
@@ -149,7 +149,7 @@ public class UserCoAuthorSubgraph {
 			singleEdge.put("startingNode", previousNode.getUser().getName());
 			singleEdge.put("endingNode", currentAuthor.getName());
 			singleEdge.put("publicationTitle", edge.getPublicationName());
-			g.addEdge(edge , previousNode, currentNode, EdgeType.DIRECTED);
+			g.addEdge(edge , previousNode, currentNode, EdgeType.UNDIRECTED);
 
 			//add JSON object to the result
 			resultJson.put(singleEdge);
@@ -222,7 +222,7 @@ public class UserCoAuthorSubgraph {
 		//System.out.println("Enter name of file- ");
 		fileName = "dblp_example.xml";
 		
-		System.out.println("Enter number of sub levels- ");
+		System.out.println("Enter number of sub levels of coauthorship- ");
 		noOfLevels = input.nextInt();	
 		
 		UserCoAuthorSubgraph myApp = new UserCoAuthorSubgraph(fileName);

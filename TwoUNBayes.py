@@ -64,7 +64,7 @@ class NBModel:
                         pProbability = (self.labelCounts[label]/sum(self.labelCounts.values()))
                         probabilityPerLabel[label] = pProbability * math.exp(logProb) # Get the real probablity value from log value
                         totalProbability += probabilityPerLabel[label]
-                self.outputFile.write("Likelihood for Yes or No:" + " " + str(probabilityPerLabel) + "\n")  
+                #self.outputFile.write("Likelihood for collaboration or not:" + " " + str(probabilityPerLabel) + "\n")  
                 self.outputFile.write("Probability of collaboration:" + " " + (str(100*probabilityPerLabel["y"]/totalProbability)) + "%" + "\n")          
                 return max(probabilityPerLabel, key = lambda classLabel: probabilityPerLabel[classLabel]) #Entry that has the highest probability
 
@@ -73,9 +73,15 @@ class NBModel:
                 for line in file:   #Initialize all parameters needed including feature vector
                     self.outputFile.write("-----------------------------------" + "\n")
                     vector = line.strip().lower().split('\t')           
-                    self.outputFile.write("Input Feature: "+"Research similarity: " + str(vector[0])+ " Reputation similarity: " + str(vector[1]) + " Connected similarity: " + str(vector[2])+ " Social factor: " + str(vector[3])+"\n")
-                    assigned = self.Classify(vector)                                
-                    self.outputFile.write("Classified: " + assigned + "\n")
+                    self.outputFile.write("Similarity of research areas: " + str(vector[0])+ "\n")
+                    self.outputFile.write("Similarity of author reputation: " + str(vector[1]) + "\n")
+                    self.outputFile.write("Author connectedness: " + str(vector[2])+ "\n") 
+                    self.outputFile.write("Collaboration history of each author: "+ str(vector[3])+"\n")
+                    assigned = self.Classify(vector)
+                    if assigned == "y":                                
+                        self.outputFile.write("Authors are likely to collaborate"+ "\n")
+                    else:
+                        self.outputFile.write("Authors are not likely to collaborate" + "\n")
                     #self.outputFile.write(self.labelCounts["y"])
                     if "y" == assigned:  # Check if the classified result is the same with given label
                         self.yes +=1
