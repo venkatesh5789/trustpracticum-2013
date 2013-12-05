@@ -201,7 +201,8 @@ public class CoAuthorGraph {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().add(vv);
 		frame.pack();
-		frame.setVisible(true);     
+		frame.setVisible(true); 
+		
 	}
-
+	
 }
