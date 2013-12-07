@@ -90,7 +90,7 @@ class NBModel:
                 total = self.yes+self.no
                 self.wrong = math.fabs(self.yes -25)
                 self.outputFile.write("-----------------------------------" + "\n")
-                self.outputFile.write("Collaborated pair: " + "25" + "\n")
+                # self.outputFile.write("Collaborated pair: " + "25" + "\n")
                 self.outputFile.write("How many we classified:" + str(self.yes) + "\n")
                 self.outputFile.write("Total test number: " + str(total) + "\n")
                 self.outputFile.write("Precision: " + str(100*(1-(self.wrong/total))) + "%" + "\n")

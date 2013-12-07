@@ -1,4 +1,4 @@
-/*package controllers;
+package controllers;
 
 import javax.xml.bind.JAXBException;
 import javax.xml.parsers.ParserConfigurationException;
@@ -292,4 +292,3 @@ public class Application extends Controller {
 	}
 
 }
-*/

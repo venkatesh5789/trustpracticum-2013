@@ -147,19 +147,10 @@ public class NaiveBayesFileCreator {
 	}
 	
 	private void writeLineForAuthors(PrintWriter writer, String authorName1, String authorName2, int year) throws SQLException, ClassNotFoundException {
-		String lineToBeWritten;
+		String lineToBeWritten ="";
 		
 		int coauthorDistance = trustModel.getCoauthorDistanceBeforeYear(authorName1, authorName2, year);
-		/////////////////////////////
-		Random r = new Random(); 
-		int choice = r.nextInt(3);	
-		if(choice == 1)
-		{
-			lineToBeWritten="Y\t";
-		}else{
-			lineToBeWritten="N\t";
-		}
-		
+				
 		Double trustValueDifference = trustModel.calculateTrustBeforeYear(authorName1, year) - trustModel.calculateTrustBeforeYear(authorName2, year);		
 		Double jaccardSimilarity = trustModel.calculateJaccardSimilarity(authorName1, authorName2, year);
 		
@@ -168,15 +159,15 @@ public class NaiveBayesFileCreator {
 		
 		int effectiveCoauthorship = ((coauthorshipHistory1 - coauthorshipHistory2) < 0)?coauthorshipHistory1 : coauthorshipHistory2;
 		
-//		if(coauthorDistance == 1){
-//			lineToBeWritten += "Y\t";
-//		}else{
-//			lineToBeWritten += "N\t";
-//		}
+		if(coauthorDistance == 1){
+			lineToBeWritten += "Y\t";
+		}else{
+			lineToBeWritten += "N\t";
+		}
 		
-		if(jaccardSimilarity <= 0 && choice ==0) 
+		if(jaccardSimilarity <= 0) 
 			lineToBeWritten += "H\t";
-		else if(jaccardSimilarity <= 0 && choice ==1)
+		else if(jaccardSimilarity <= 0)
 			lineToBeWritten += "M\t";
 		else 
 			lineToBeWritten += "L\t";
@@ -247,12 +238,9 @@ public class NaiveBayesFileCreator {
 			lineToBeWritten += "L";		
 		writer.println(lineToBeWritten);
 		writer.flush();
-		//writer.close();
 	}
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException, SQLException {
-		NaiveBayesFileCreator blah = new NaiveBayesFileCreator("ds.txt","/Users/ShuaiWang/Desktop/Blan.txt");
-//		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("/Users/ShuaiWang/Desktop/Blah.txt", true)));
-//		blah.writeLineForDemo(writer, "James Blythe", "Joseph C", 2013);
+		NaiveBayesFileCreator blah = new NaiveBayesFileCreator("ds.txt","Blan.txt");
 	}
 }

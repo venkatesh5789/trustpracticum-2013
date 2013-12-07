@@ -68,24 +68,4 @@ public class JaccardSimilarity {
 		//System.out.println(res);
 		return res;
 	}
-	
-	public static void main(String args[]) throws IOException, SQLException, ClassNotFoundException{	
-//		JaccardSimilarity js = new JaccardSimilarity("Fathi Tenzekhti", "Khaled Day", 2013);
-//		ResultSet result = db.callDatabaseQuery("SELECT DISTINCT Author FROM coauthor.Coauthors;");
-//		PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("/Users/ShuaiWang/Desktop/Variance2.txt", true)));
-//		ArrayList<String> disa = new ArrayList<String>();
-//		ArrayList<Double> jc = new ArrayList<Double>();
-//		while(result.next()){
-//			disa.add(result.getString("Author"));
-//		}
-//		
-//		for(int i =0; i<disa.size()-1;i++){
-//			for(int j =i +1; j<disa.size();j++){
-//				Double x = js.calculateSimilarity(disa.get(i), disa.get(j), 2013);
-//				//System.out.println(x);
-//				writer.print(x + "\n");
-//			}
-//		}
-	}
-
 }

@@ -18,15 +18,15 @@ import edu.cmu.ml.NaiveBayesFileCreator;
 
 public class PrecisionTest {
 	//From scratch
-	//public static void main(String args[]) throws IOException, ClassNotFoundException, SQLException{
-		/*DbOperations db = new DbOperations();
+	public static void main(String args[]) throws IOException, ClassNotFoundException, SQLException{
+		DbOperations db = new DbOperations();
 		BufferedReader br = null;	
 		String author1;
 		String author2;
 		String sCurrentLine;
 		String line = null;
 		ArrayList<String> s = new ArrayList<String>();
-		br = new BufferedReader(new FileReader("/Users/ShuaiWang/Desktop/Au2010.csv"));
+		br = new BufferedReader(new FileReader("Au2010.csv"));
 		
 		while ((sCurrentLine = br.readLine()) != null) {
 			sCurrentLine = sCurrentLine.replaceAll("\"","");
@@ -57,19 +57,20 @@ public class PrecisionTest {
 				NaiveBayesFileCreator blah = new NaiveBayesFileCreator("ds.txt");
 				blah.writeLineForDemo(writer, author1, author2, 2013);
 				writer2.append(author1+ author2+"\n");
-				Process p = r.exec("python TestNBayes.py teas.txt TwoPrecison2.txt RePrecs2.txt Feature-NameandValues.txt");			
+				Process p = r.exec("python TestNBayes.py Train.txt TwoPrecison2.txt precision_result.txt Feature.txt");			
 				writer2.flush();
 			}
 		}	
 		//writer.append(count + "");
 		writer.close();			
-		System.out.println(count);*/
+		System.out.println(count);
+	}
 		//--------------------------
-		public static void main(String args[]) throws IOException{
-			//PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("TwoPrecison.txt", false)));
-			//PrintWriter writer2 = new PrintWriter(new BufferedWriter(new FileWriter("Names.txt", false)));
-			Runtime r = Runtime.getRuntime();
-			Process p = r.exec("python TestNBayes.py teas.txt TwoPrecison2.txt RePrecs2.txt Feature-NameandValues.txt");
-			System.out.println("Done!!!");
-		}	
+//		public static void main(String args[]) throws IOException{
+//			//PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("TwoPrecison.txt", false)));
+//			//PrintWriter writer2 = new PrintWriter(new BufferedWriter(new FileWriter("Names.txt", false)));
+//			Runtime r = Runtime.getRuntime();
+//			Process p = r.exec("python TestNBayes.py Train.txt TwoPrecison2.txt RePrecs2.txt Feature.txt");
+//			System.out.println("Done!!!");
+//		}	
 }

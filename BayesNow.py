@@ -94,10 +94,8 @@ class NBModel:
                     else:
                         self.wrong +=1
                 self.outputFile.write("--------------------------" + "\n")
-                self.outputFile.write("We have classified" + "126" + "coauthorship"+ "\n")
-                self.outputFile.write("There are total: " + "130" + "coauthorship" + "\n")
                 self.outputFile.write("Total test number: " + str(self.yes + self.no) + "\n")
-                self.outputFile.write("Recall: " + str(100*(self.correct/(self.wrong + self.correct+20)))+" %")
+                self.outputFile.write("Recall: " + str(100*(self.correct/(self.wrong + self.correct)))+" %")
 
 if __name__ == "__main__":            
             if len(sys.argv) != 5:   # Input number error check

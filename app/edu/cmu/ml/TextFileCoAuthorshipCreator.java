@@ -74,8 +74,8 @@ public class TextFileCoAuthorshipCreator {
 		writer.close();
 	}
 	
-	public static void main(String[] args) throws IOException {
-		TextFileCoAuthorshipCreator p = new TextFileCoAuthorshipCreator("/Users/ShuaiWang/Desktop/ds.txt","/Users/ShuaiWang/Desktop/m_ds.txt");
-		System.out.println("sf");
-	}
+//	public static void main(String[] args) throws IOException {
+//		TextFileCoAuthorshipCreator p = new TextFileCoAuthorshipCreator("/Users/ShuaiWang/Desktop/ds.txt","/Users/ShuaiWang/Desktop/m_ds.txt");
+//		System.out.println("sf");
+//	}
 }

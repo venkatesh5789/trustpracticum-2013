@@ -189,7 +189,7 @@ public class FullDBLPDataToTextConverter {
 			//Getting the runtime reference from system
 			Runtime runtime = Runtime.getRuntime();
 
-			System.out.println("##### Heap utilization statistics [MB] #####");
+			//System.out.println("##### Heap utilization statistics [MB] #####");
 
 			//Print used memory
 			System.out.println("Used Memory:"

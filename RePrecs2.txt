@@ -1,79 +1,9 @@
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
 Similarity of author reputation: h
-Author connectedness: m
+Author connectedness: l
 Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
+Probability of collaboration: 31.8256907828%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -105,17 +35,10 @@ Probability of collaboration: 99.8637150857%
 Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: m
+Similarity of author reputation: l
 Author connectedness: l
 Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
+Probability of collaboration: 0.00213078144472%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -123,34 +46,6 @@ Similarity of author reputation: h
 Author connectedness: l
 Collaboration history of each author: l
 Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -173,6 +68,111 @@ Author connectedness: m
 Collaboration history of each author: l
 Probability of collaboration: 99.9999218075%
 Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
@@ -203,45 +203,24 @@ Probability of collaboration: 1.84598972259%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
+Similarity of author reputation: h
 Author connectedness: m
 Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
+Probability of collaboration: 35.4058063897%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
+Similarity of author reputation: m
 Author connectedness: m
 Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
 Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -254,15 +233,22 @@ Authors are not likely to collaborate
 Similarity of research areas: h
 Similarity of author reputation: l
 Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -281,331 +267,9 @@ Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
 Author connectedness: m
 Collaboration history of each author: m
 Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: l
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 0.000311524180295%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
 Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -624,37 +288,37 @@ Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: l
-Author connectedness: m
+Author connectedness: h
 Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
+Probability of collaboration: 1.57293513205%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
+Similarity of author reputation: m
 Author connectedness: m
 Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
+Similarity of author reputation: m
 Author connectedness: m
 Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
 Author connectedness: m
 Collaboration history of each author: m
 Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -670,6 +334,13 @@ Author connectedness: m
 Collaboration history of each author: l
 Probability of collaboration: 0.0632644671211%
 Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
@@ -692,75 +363,12 @@ Collaboration history of each author: m
 Probability of collaboration: 0.000311524180295%
 Authors are not likely to collaborate
 -----------------------------------
-Similarity of research areas: l
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 0.000311524180295%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: l
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 0.000311524180295%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 31.7757009346%
-Authors are not likely to collaborate
------------------------------------
 Similarity of research areas: h
 Similarity of author reputation: m
 Author connectedness: m
 Collaboration history of each author: m
 Probability of collaboration: 99.999999951%
 Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: m
@@ -777,108 +385,45 @@ Probability of collaboration: 35.4058063897%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
 Similarity of author reputation: h
 Author connectedness: m
 Collaboration history of each author: m
 Probability of collaboration: 35.4058063897%
 Authors are not likely to collaborate
 -----------------------------------
-Similarity of research areas: l
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 0.000311524180295%
-Authors are not likely to collaborate
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
 -----------------------------------
-Similarity of research areas: l
+Similarity of research areas: h
 Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 0.000311524180295%
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
+Similarity of author reputation: h
+Author connectedness: m
 Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
+Probability of collaboration: 34.6029867419%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: m
-Author connectedness: l
+Author connectedness: m
 Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
+Probability of collaboration: 99.9999218075%
 Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -903,6 +448,188 @@ Probability of collaboration: 31.7757009346%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 99.9999230575%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 99.9999230575%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
 Similarity of author reputation: h
 Author connectedness: m
 Collaboration history of each author: m
@@ -925,9 +652,86 @@ Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
 Author connectedness: h
 Collaboration history of each author: m
 Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: l
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 0.000311524180295%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: l
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 0.000311524180295%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: l
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 0.000311524180295%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -936,6 +740,55 @@ Author connectedness: h
 Collaboration history of each author: m
 Probability of collaboration: 99.9999230575%
 Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: l
@@ -945,11 +798,11 @@ Probability of collaboration: 1.57293513205%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: m
+Similarity of author reputation: h
 Author connectedness: h
 Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
@@ -973,10 +826,10 @@ Probability of collaboration: 99.8637150857%
 Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
+Similarity of author reputation: h
 Author connectedness: l
 Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
+Probability of collaboration: 31.8256907828%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -984,6 +837,13 @@ Similarity of author reputation: l
 Author connectedness: m
 Collaboration history of each author: m
 Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: l
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 0.000311524180295%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: l
@@ -1029,34 +889,6 @@ Probability of collaboration: 1.57293513205%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 31.7757009346%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
 Similarity of author reputation: m
 Author connectedness: m
 Collaboration history of each author: m
@@ -1072,52 +904,10 @@ Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: m
-Author connectedness: h
+Author connectedness: m
 Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
+Probability of collaboration: 99.999999951%
 Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
@@ -1125,138 +915,348 @@ Author connectedness: m
 Collaboration history of each author: m
 Probability of collaboration: 35.4058063897%
 Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 31.7757009346%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 31.7757009346%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: l
 Author connectedness: m
 Collaboration history of each author: m
 Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: l
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 0.000311524180295%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 99.9999230575%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 99.9999230575%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 99.9999230575%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: l
@@ -1295,48 +1295,6 @@ Probability of collaboration: 0.0632644671211%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
 Similarity of author reputation: l
 Author connectedness: l
 Collaboration history of each author: l
@@ -1344,38 +1302,10 @@ Probability of collaboration: 0.00213078144472%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 0.0620637932619%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
 Similarity of author reputation: m
-Author connectedness: h
+Author connectedness: m
 Collaboration history of each author: l
-Probability of collaboration: 99.8774155058%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 99.8774155058%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 99.8774155058%
+Probability of collaboration: 99.9999218075%
 Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -1387,73 +1317,10 @@ Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 34.1704035874%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 34.1704035874%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
 Author connectedness: m
 Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
+Probability of collaboration: 34.6029867419%
 Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
@@ -1468,19 +1335,33 @@ Author connectedness: l
 Collaboration history of each author: l
 Probability of collaboration: 31.8256907828%
 Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 99.8774155058%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: l
 Author connectedness: h
 Collaboration history of each author: l
 Probability of collaboration: 0.0620637932619%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 34.1704035874%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -1504,6 +1385,125 @@ Collaboration history of each author: l
 Probability of collaboration: 0.0632644671211%
 Authors are not likely to collaborate
 -----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 34.1704035874%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 34.1704035874%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 34.1704035874%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 99.8774155058%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 0.0620637932619%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 0.0620637932619%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
 Similarity of research areas: l
 Similarity of author reputation: h
 Author connectedness: h
@@ -1512,17 +1512,108 @@ Probability of collaboration: 0.000352827983032%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: m
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: m
 Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.1704035874%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: m
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
 Author connectedness: l
 Collaboration history of each author: l
 Probability of collaboration: 31.8256907828%
 Authors are not likely to collaborate
 -----------------------------------
-Similarity of research areas: m
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 0.0620637932619%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 0.0620637932619%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 0.0620637932619%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 99.8774155058%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
 Similarity of author reputation: l
 Author connectedness: m
 Collaboration history of each author: l
-Probability of collaboration: 0.0620637932619%
+Probability of collaboration: 0.0632644671211%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: m
@@ -1532,12 +1623,26 @@ Collaboration history of each author: l
 Probability of collaboration: 0.120587308461%
 Authors are not likely to collaborate
 -----------------------------------
-Similarity of research areas: h
+Similarity of research areas: m
 Similarity of author reputation: m
 Author connectedness: m
 Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
+Probability of collaboration: 34.1704035874%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: m
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
@@ -1554,10 +1659,17 @@ Probability of collaboration: 0.0632644671211%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: h
+Similarity of author reputation: l
 Author connectedness: l
 Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -1568,17 +1680,17 @@ Probability of collaboration: 99.8637150857%
 Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
+Similarity of author reputation: m
 Author connectedness: l
 Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
+Similarity of author reputation: l
+Author connectedness: h
 Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
+Probability of collaboration: 0.0620637932619%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -1589,111 +1701,6 @@ Probability of collaboration: 99.8774155058%
 Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 0.0620637932619%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 34.1704035874%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 0.0620637932619%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: m
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: m
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.1704035874%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: m
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 34.1704035874%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
 Similarity of author reputation: m
 Author connectedness: h
 Collaboration history of each author: l
@@ -1701,18 +1708,11 @@ Probability of collaboration: 99.8774155058%
 Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
+Similarity of author reputation: m
 Author connectedness: h
 Collaboration history of each author: l
-Probability of collaboration: 0.0620637932619%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 34.1704035874%
-Authors are not likely to collaborate
+Probability of collaboration: 99.8774155058%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
@@ -1736,6 +1736,13 @@ Probability of collaboration: 0.000311524180295%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
 Similarity of author reputation: h
 Author connectedness: m
 Collaboration history of each author: m
@@ -1743,31 +1750,10 @@ Probability of collaboration: 35.4058063897%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: m
+Similarity of author reputation: l
 Author connectedness: m
 Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 31.7757009346%
+Probability of collaboration: 1.84598972259%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -1785,11 +1771,32 @@ Probability of collaboration: 99.9999230575%
 Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
 Similarity of author reputation: h
 Author connectedness: l
 Collaboration history of each author: l
 Probability of collaboration: 31.8256907828%
 Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: l
@@ -1806,18 +1813,11 @@ Probability of collaboration: 0.00213078144472%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
+Similarity of author reputation: m
 Author connectedness: m
 Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: m
 Similarity of author reputation: h
@@ -1827,10 +1827,10 @@ Probability of collaboration: 0.136239782016%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: l
+Similarity of author reputation: h
 Author connectedness: h
 Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
+Probability of collaboration: 31.7757009346%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -1848,6 +1848,188 @@ Probability of collaboration: 1.57293513205%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 1.84598972259%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 1.57293513205%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: l
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 0.000311524180295%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: l
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 0.000311524180295%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
 Similarity of author reputation: m
 Author connectedness: m
 Collaboration history of each author: m
@@ -1857,8 +2039,120 @@ Authors are likely to collaborate
 Similarity of research areas: h
 Similarity of author reputation: l
 Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
 Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: l
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 0.000311524180295%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 34.6029867419%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 0.0632644671211%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 31.7757009346%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 99.999999951%
+Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -1883,174 +2177,6 @@ Probability of collaboration: 0.0632644671211%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 31.7757009346%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 31.7757009346%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 1.57293513205%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: l
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 0.000311524180295%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: l
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 0.000311524180295%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 35.4058063897%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 1.84598972259%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
 Similarity of author reputation: h
 Author connectedness: m
 Collaboration history of each author: l
@@ -2063,6 +2189,13 @@ Author connectedness: m
 Collaboration history of each author: l
 Probability of collaboration: 34.6029867419%
 Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: l
@@ -2078,12 +2211,47 @@ Collaboration history of each author: m
 Probability of collaboration: 0.000311524180295%
 Authors are not likely to collaborate
 -----------------------------------
+Similarity of research areas: l
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 0.000311524180295%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: l
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 0.000311524180295%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
 Authors are likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
@@ -2092,125 +2260,6 @@ Collaboration history of each author: m
 Probability of collaboration: 35.4058063897%
 Authors are not likely to collaborate
 -----------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 99.9999218075%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 99.9999230575%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: l
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 0.000311524180295%
-Authors are not likely to collaborate
------------------------------------
 Similarity of research areas: l
 Similarity of author reputation: h
 Author connectedness: h
@@ -2233,18 +2282,11 @@ Probability of collaboration: 0.00213078144472%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: m
+Similarity of author reputation: h
 Author connectedness: l
 Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: l
@@ -2252,6 +2294,55 @@ Author connectedness: l
 Collaboration history of each author: l
 Probability of collaboration: 0.00213078144472%
 Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: m
+Collaboration history of each author: m
+Probability of collaboration: 35.4058063897%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: l
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: m
+Probability of collaboration: 0.000311524180295%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: l
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 0.00213078144472%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 31.8256907828%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: l
+Collaboration history of each author: l
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: l
@@ -2260,61 +2351,12 @@ Collaboration history of each author: m
 Probability of collaboration: 1.84598972259%
 Authors are not likely to collaborate
 -----------------------------------
-Similarity of research areas: l
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 0.000311524180295%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: l
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 0.000311524180295%
-Authors are not likely to collaborate
------------------------------------
 Similarity of research areas: h
 Similarity of author reputation: m
 Author connectedness: l
 Collaboration history of each author: l
 Probability of collaboration: 99.8637150857%
 Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: l
-Similarity of author reputation: h
-Author connectedness: h
-Collaboration history of each author: m
-Probability of collaboration: 0.000311524180295%
-Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: h
@@ -2324,18 +2366,11 @@ Probability of collaboration: 31.8256907828%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: h
+Similarity of author reputation: m
 Author connectedness: l
 Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
+Probability of collaboration: 99.8637150857%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: m
@@ -2350,41 +2385,6 @@ Author connectedness: m
 Collaboration history of each author: m
 Probability of collaboration: 35.4058063897%
 Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 0.00213078144472%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 99.8637150857%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: l
-Collaboration history of each author: l
-Probability of collaboration: 31.8256907828%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
-Collaboration history of each author: m
-Probability of collaboration: 99.999999951%
-Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: l
 Similarity of author reputation: h
@@ -2394,10 +2394,24 @@ Probability of collaboration: 0.000352827983032%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: m
+Similarity of author reputation: h
 Author connectedness: h
 Collaboration history of each author: l
-Probability of collaboration: 99.8774155058%
+Probability of collaboration: 34.1704035874%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: h
+Author connectedness: h
+Collaboration history of each author: l
+Probability of collaboration: 34.1704035874%
+Authors are not likely to collaborate
+-----------------------------------
+Similarity of research areas: h
+Similarity of author reputation: m
+Author connectedness: m
+Collaboration history of each author: l
+Probability of collaboration: 99.9999218075%
 Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
@@ -2408,13 +2422,6 @@ Probability of collaboration: 34.1704035874%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: h
-Author connectedness: m
-Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
------------------------------------
-Similarity of research areas: h
 Similarity of author reputation: m
 Author connectedness: h
 Collaboration history of each author: l
@@ -2423,17 +2430,10 @@ Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: m
-Author connectedness: h
-Collaboration history of each author: l
-Probability of collaboration: 99.8774155058%
-Authors are likely to collaborate
------------------------------------
-Similarity of research areas: h
-Similarity of author reputation: l
 Author connectedness: m
 Collaboration history of each author: l
-Probability of collaboration: 0.0632644671211%
-Authors are not likely to collaborate
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: m
 Similarity of author reputation: h
@@ -2443,11 +2443,11 @@ Probability of collaboration: 0.000347187808001%
 Authors are not likely to collaborate
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: h
+Similarity of author reputation: m
 Author connectedness: m
 Collaboration history of each author: l
-Probability of collaboration: 34.6029867419%
-Authors are not likely to collaborate
+Probability of collaboration: 99.9999218075%
+Authors are likely to collaborate
 -----------------------------------
 Similarity of research areas: h
 Similarity of author reputation: m
@@ -2456,6 +2456,6 @@ Collaboration history of each author: l
 Probability of collaboration: 99.9999218075%
 Authors are likely to collaborate
 -----------------------------------
-How many we classified:109
+How many we classified:94
 Total test number: 351
-Precision: 76.0683760684%
+Precision: 80.3418803419%

@@ -1,7 +1,7 @@
 -----------------------------------
 Similarity of research areas: h
-Similarity of author reputation: m
-Author connectedness: m
+Similarity of author reputation: l
+Author connectedness: l
 Collaboration history of each author: l
-Probability of collaboration: 99.9999826575%
-Authors are likely to collaborate
+Probability of collaboration: 9.09738950963e-08%
+Authors are not likely to collaborate
