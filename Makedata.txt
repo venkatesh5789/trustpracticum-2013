@@ -1,0 +1,66 @@
+James Janisse|Bioinformatics|IEEE Trans. Biomed. Engineering|Application of an objective method for localizing bilateral cortical FDG PET abnormalities to guide the resection of epileptic foci.
+Zahra Moussavi|Software Engineering|IEEE Trans. Biomed. Engineering|The Effect of Anthropometric Variations on Acoustical Flow Estimation: Proposing a Novel Approach for Flow Estimation Without the Need for Individual Calibration.
+Julio Gomis-Tena|Bioinformatics|IEEE Trans. Biomed. Engineering|Effects of the Antiarrhythmic Drug Dofetilide on Transmural Dispersion of Repolarization in Ventriculum. A Computer Modeling Study.
+Welf Löwe|Artificial Intelligence|Workshop on Abstract State Machines|On ASM-Based Specification of Programming Language Semantics and Reusable Correct Compilations.
+Mingyuan Gao|Bioinformatics|IEEE Trans. Biomed. Engineering|Design and Fabrication of a Magnetic Propulsion System for Self-Propelled Capsule Endoscope.
+Michal Okoniewski|Bioinformatics|IEEE Trans. Biomed. Engineering|2
+Werner John|Computer System|Proc. 11th Int. Symposium on Electromagnetic Compatibility (EMC'94)|ROSAR - Rule Oriented System for Analysis of Reflections on Printed Circuit Boards
+C. J. Date|Information Technology|Programming Language|IBM Research Report, San Jose, California|Interactive Support for Non-Programmers: The Relational and Network Approaches.
+Yevgeny Perelman|Bioinformatics|IEEE Trans. Biomed. Engineering|An Integrated System for Multichannel Neuronal Recording With Spike/LFP Separation, Integrated A/D Conversion and Threshold Detection.
+Yuri Gurevich|Programming Languages|Abstract State Machines|Investigating Java Concurrency Using Abstract State Machines.
+Bartosz Sawicki|Bioinformatics|IEEE Trans. Biomed. Engineering|2
+Sheng Liu|Bioinformatics|IEEE Trans. Biomed. Engineering|Design and Fabrication of a Magnetic Propulsion System for Self-Propelled Capsule Endoscope.
+Aradhya V. N. Manjunath|Artificial Intelligence|Speech, Audio, Image and Biomedical Signal Processing using Neural Networks|Fisher Linear Discriminant Analysis and Connectionist Model for Efficient Image Recognition.
+Horst Bunke|Artificial Intelligence|Applied Graph Theory in Computer Vision and Pattern Recognition
+Csaba Juhász|Bioinformatics|IEEE Trans. Biomed. Engineering|Application of an objective method for localizing bilateral cortical FDG PET abnormalities to guide the resection of epileptic foci.
+G. Hemantha Kumar|Artificial Intelligence|Speech, Audio, Image and Biomedical Signal Processing using Neural Networks|Fisher Linear Discriminant Analysis and Connectionist Model for Efficient Image Recognition.
+Jan Van den Bussche|Database|Abstract State Machines|Finite Cursor Machines in Database Query Processing.
+Wolfram Schulte|Programming Languages|Abstract State Machines|Investigating Java Concurrency Using Abstract State Machines.
+Michael Poppleton|Computer System|ABZ|A Pattern for Modelling Fault Tolerant Systems in Event-B.
+Javier Saiz|Bioinformatics|IEEE Trans. Biomed. Engineering|Effects of the Antiarrhythmic Drug Dofetilide on Transmural Dispersion of Repolarization in Ventriculum. A Computer Modeling Study.
+Marta Monserrat|Bioinformatics|IEEE Trans. Biomed. Engineering|Effects of the Antiarrhythmic Drug Dofetilide on Transmural Dispersion of Repolarization in Ventriculum. A Computer Modeling Study.
+Ran Ginosar|Bioinformatics|IEEE Trans. Biomed. Engineering|An Integrated System for Multichannel Neuronal Recording With Spike/LFP Separation, Integrated A/D Conversion and Threshold Detection.
+Zhenzhi Chen|Bioinformatics|IEEE Trans. Biomed. Engineering|Design and Fabrication of a Magnetic Propulsion System for Self-Propelled Capsule Endoscope.
+Gintautas Sulskus|Computer System|ABZ|A Pattern for Modelling Fault Tolerant Systems in Event-B.
+Jose Maria Ferrero|Bioinformatics|IEEE Trans. Biomed. Engineering|Effects of the Antiarrhythmic Drug Dofetilide on Transmural Dispersion of Repolarization in Ventriculum. A Computer Modeling Study.
+Akiyoshi Wakatani|Computer sytem|Computer and Information Science|Multi-step Parallel PNN Algorithm for Distributed-Memory Systems.
+João Monteiro|Artificial Intelligence|Speech, Audio, Image and Biomedical Signal Processing using Neural Networks|Segmentation and Classification of Leukocytes. Using Neural Networks: A Generalization Direction.
+Qiong Luo|Computer system|CIKM|FD-buffer: a buffer manager for databases on flash disks.
+Pedro Rodrigues|Artificial Intelligence|Speech, Audio, Image and Biomedical Signal Processing using Neural Networks|Segmentation and Classification of Leukocytes. Using Neural Networks: A Generalization Direction.
+Mark Last|Artificial Intelligence|Applied Graph Theory in Computer Vision and Pattern Recognition
+Chengzhi Hu|Bioinformatics|IEEE Trans. Biomed. Engineering|Design and Fabrication of a Magnetic Propulsion System for Self-Propelled Capsule Endoscope.
+Diane C. Chugani|Bioinformatics|IEEE Trans. Biomed. Engineering|Application of an objective method for localizing bilateral cortical FDG PET abnormalities to guide the resection of epileptic foci.
+Sai Tung On|Computer system|CIKM|FD-buffer: a buffer manager for databases on flash disks.
+Charles Wallace|Programming Languages|Abstract State Machines|Investigating Java Concurrency Using Abstract State Machines.
+Otto Muzik|Bioinformatics|IEEE Trans. Biomed. Engineering|Application of an objective method for localizing bilateral cortical FDG PET abnormalities to guide the resection of epileptic foci.
+Roland Lezuo|Computer system|ABZ|A Unified Processor Model for Compiler Verification and Simulation Using ASM.
+Yamine Aït Ameur|Information Technology|ASM|A Proof Based Approach for Formal Verification of Transactional BPEL Web Services.
+Abderrahman Matoussi|Software Engineering|ASM|Improving Traceability between KAOS Requirements Models and B Specifications.
+Andreas Heberle|Artificial Intelligence|Workshop on Abstract State Machines|On ASM-Based Specification of Programming Language Semantics and Reusable Correct Compilations.
+Abraham Kandel|Artificial Intelligence|Applied Graph Theory in Computer Vision and Pattern Recognition
+Letizia Tanca|Database|LOGIDATA+: Deductive Databases with Complex Objects|Bridging Objects with Logical Rules: Towards Object Oriented Deductive Databases.
+Idir Aït-Sadoune|Information Technology|ASM|A Proof Based Approach for Formal Verification of Transactional BPEL Web Services.
+Dorian Petit|Software Engineering|ASM|Improving Traceability between KAOS Requirements Models and B Specifications.
+Ming Wu|Computer system|CIKM|FD-buffer: a buffer manager for databases on flash disks.
+Yinan Li|Computer system|CIKM|FD-buffer: a buffer manager for databases on flash disks.
+Honghai Zhang|Bioinformatics|IEEE Trans. Biomed. Engineering|Design and Fabrication of a Magnetic Propulsion System for Self-Propelled Capsule Endoscope.
+Sorin Draghici|Bioinformatics|IEEE Trans. Biomed. Engineering|Application of an objective method for localizing bilateral cortical FDG PET abnormalities to guide the resection of epileptic foci.
+Nicu G. Fruja|Programming Languages|Abstract State Machines|An Executable Specification of C++.
+Dominik Ley|Computer System|Proc. 11th Int. Symposium on Electromagnetic Compatibility (EMC'94)|ROSAR - Rule Oriented System for Analysis of Reflections on Printed Circuit Boards
+Karen Cardona|Bioinformatics|IEEE Trans. Biomed. Engineering|Effects of the Antiarrhythmic Drug Dofetilide on Transmural Dispersion of Repolarization in Ventriculum. A Computer Modeling Study.
+E. F. Codd|Information Technology|Programming Language|IBM Research Report, San Jose, California|Interactive Support for Non-Programmers: The Relational and Network Approaches.
+Tamalika Chaira|Artificial Intelligence|IEEE Trans. Biomed. Engineering|Intuitionistic Fuzzy Segmentation of Medical Images.
+S. Noushath|Artificial Intelligence|Speech, Audio, Image and Biomedical Signal Processing using Neural Networks|Fisher Linear Discriminant Analysis and Connectionist Model for Efficient Image Recognition.
+Andreas Krall|Computer system|ABZ|A Unified Processor Model for Compiler Verification and Simulation Using ASM.
+Siamak Pourabdollah|Bioinformatics|IEEE Trans. Biomed. Engineering|Application of an objective method for localizing bilateral cortical FDG PET abnormalities to guide the resection of epileptic foci.
+Stefano Ceri|Database|LOGIDATA+: Deductive Databases with Complex Objects|Bridging Objects with Logical Rules: Towards Object Oriented Deductive Databases.
+Horatiu Jula|Programming Languages|Abstract State Machines|An Executable Specification of C++.
+Azadeh Yadollahi|Software Engineering|IEEE Trans. Biomed. Engineering|The Effect of Anthropometric Variations on Acoustical Flow Estimation: Proposing a Novel Approach for Flow Estimation Without the Need for Individual Calibration.
+Jianliang Xu|Computer system|CIKM|FD-buffer: a buffer manager for databases on flash disks.
+Manuel Ferreira|Artificial Intelligence|Speech, Audio, Image and Biomedical Signal Processing using Neural Networks|Segmentation and Classification of Leukocytes. Using Neural Networks: A Generalization Direction.
+Javier Chorro|Bioinformatics|IEEE Trans. Biomed. Engineering|Effects of the Antiarrhythmic Drug Dofetilide on Transmural Dispersion of Repolarization in Ventriculum. A Computer Modeling Study.
+Antonia Bertolino|Software Engineering|Abstract State Machines|Software Testing Research and Practice.
+Bingsheng He|Computer system|CIKM|FD-buffer: a buffer manager for databases on flash disks.
+John Lions|Communication and computer networks|Lions' Commentary on UNIX 6th Edition, with Source Code
+Egon Börger|Computation Theory|Abstract State Machines|The ASM Method: a Cornerstone in Computer Science Education.
+Joachim Müller|Computer System|Proc. 11th Int. Symposium on Electromagnetic Compatibility (EMC'94)|ROSAR - Rule Oriented System for Analysis of Reflections on Printed Circuit Boards

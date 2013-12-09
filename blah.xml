@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dblp>
+    <article>
+        <author>E. F. Codd</author>
+        <author>C. J. Date</author>
+        <cite>persons/Lions1996</cite>
+        <cited>0</cited>
+        <id>52</id>
+        <journal>IBM Research Report, San Jose, California</journal>
+        <month>June</month>
+        <title>Interactive Support for Non-Programmers: The Relational and Network Approaches.</title>
+        <volume>RJ1400</volume>
+        <year>1974</year>
+    </article>
+    <article>
+        <author>E. F. Codd</author>
+        <author>C. J. Date</author>
+        <cite>persons/Lions1996</cite>
+        <cited>0</cited>
+        <id>60</id>
+        <journal>IBM Research Report, San Jose, California</journal>
+        <month>June</month>
+        <title>Interactive Support for Non-Programmers: The Relational and Network Approaches.</title>
+        <volume>RJ1400</volume>
+        <year>1974</year>
+    </article>
+    <book>
+        <author>John Lions</author>
+        <cited>0</cited>
+        <id>63</id>
+        <isbn>1-57398-013-7</isbn>
+        <publisher>Peer-to-Peer Communications</publisher>
+        <title>Lions' Commentary on UNIX 6th Edition, with Source Code</title>
+        <url>http://www.lemis.com/grog/Documentation/Lions/index.html</url>
+        <year>1996</year>
+    </book>
+    <book>
+        <author>John Lions</author>
+        <cited>0</cited>
+        <id>65</id>
+        <isbn>1-57398-013-7</isbn>
+        <publisher>Peer-to-Peer Communications</publisher>
+        <title>Lions' Commentary on UNIX 6th Edition, with Source Code</title>
+        <url>http://www.lemis.com/grog/Documentation/Lions/index.html</url>
+        <year>1996</year>
+    </book>
+    <incollection>
+        <author>Stefano Ceri</author>
+        <author>Letizia Tanca</author>
+        <booktitle>LOGIDATA+: Deductive Databases with Complex Objects</booktitle>
+        <cited>0</cited>
+        <crossref>books/sp/Atzeni93</crossref>
+        <ee>http://dx.doi.org/10.1007/BFb0021886</ee>
+        <id>67</id>
+        <pages>7-19</pages>
+        <title>Bridging Objects with Logical Rules: Towards Object Oriented Deductive Databases.</title>
+        <url>db/journals/lncs/lncs701.html#CeriT93</url>
+        <year>1993</year>
+    </incollection>
+    <incollection>
+        <author>Stefano Ceri</author>
+        <author>Letizia Tanca</author>
+        <booktitle>LOGIDATA+: Deductive Databases with Complex Objects</booktitle>
+        <cited>0</cited>
+        <crossref>books/sp/Atzeni93</crossref>
+        <ee>http://dx.doi.org/10.1007/BFb0021886</ee>
+        <id>71</id>
+        <pages>7-19</pages>
+        <title>Bridging Objects with Logical Rules: Towards Object Oriented Deductive Databases.</title>
+        <url>db/journals/lncs/lncs701.html#CeriT93</url>
+        <year>1993</year>
+    </incollection>
+    <inproceedings>
+        <author>Werner John</author>
+        <author>Dominik Ley</author>
+        <author>Joachim Müller</author>
+        <booktitle>Proc. 11th Int. Symposium on Electromagnetic Compatibility (EMC'94)</booktitle>
+        <cited>0</cited>
+        <id>75</id>
+        <pages>40-43</pages>
+        <title>ROSAR - Rule Oriented System for Analysis of Reflections on Printed Circuit Boards</title>
+        <year>1994</year>
+    </inproceedings>
+    <inproceedings>
+        <author>Andreas Heberle</author>
+        <author>Welf Löwe</author>
+        <booktitle>Workshop on Abstract State Machines</booktitle>
+        <cited>0</cited>
+        <id>78</id>
+        <pages>68-90</pages>
+        <title>On ASM-Based Specification of Programming Language Semantics and Reusable Correct Compilations.</title>
+        <url>db/conf/asm/asm98.html#HerberleL98</url>
+        <year>1998</year>
+    </inproceedings>
+    <inproceedings>
+        <author>Yuri Gurevich</author>
+        <author>Wolfram Schulte</author>
+        <author>Charles Wallace</author>
+        <booktitle>Abstract State Machines</booktitle>
+        <cited>0</cited>
+        <crossref>conf/asm/2000</crossref>
+        <ee>http://dx.doi.org/10.1007/3-540-44518-8_10</ee>
+        <id>80</id>
+        <pages>151-176</pages>
+        <title>Investigating Java Concurrency Using Abstract State Machines.</title>
+        <url>db/conf/asm/asm2000.html#GurevichSW00</url>
+        <year>2000</year>
+    </inproceedings>
+    <inproceedings>
+        <author>Werner John</author>
+        <author>Dominik Ley</author>
+        <author>Joachim Müller</author>
+        <booktitle>Proc. 11th Int. Symposium on Electromagnetic Compatibility (EMC'94)</booktitle>
+        <cited>0</cited>
+        <id>87</id>
+        <pages>40-43</pages>
+        <title>ROSAR - Rule Oriented System for Analysis of Reflections on Printed Circuit Boards</title>
+        <year>1994</year>
+    </inproceedings>
+    <inproceedings>
+        <author>Andreas Heberle</author>
+        <author>Welf Löwe</author>
+        <booktitle>Workshop on Abstract State Machines</booktitle>
+        <cited>0</cited>
+        <id>89</id>
+        <pages>68-90</pages>
+        <title>On ASM-Based Specification of Programming Language Semantics and Reusable Correct Compilations.</title>
+        <url>db/conf/asm/asm98.html#HerberleL98</url>
+        <year>1998</year>
+    </inproceedings>
+    <inproceedings>
+        <author>Yuri Gurevich</author>
+        <author>Wolfram Schulte</author>
+        <author>Charles Wallace</author>
+        <booktitle>Abstract State Machines</booktitle>
+        <cited>0</cited>
+        <crossref>conf/asm/2000</crossref>
+        <ee>http://dx.doi.org/10.1007/3-540-44518-8_10</ee>
+        <id>91</id>
+        <pages>151-176</pages>
+        <title>Investigating Java Concurrency Using Abstract State Machines.</title>
+        <url>db/conf/asm/asm2000.html#GurevichSW00</url>
+        <year>2000</year>
+    </inproceedings>
+    <mastersthesis>
+        <author>Tatu Ylönen</author>
+        <cited>0</cited>
+        <id>94</id>
+        <school>Helsinki University of Technology, Department of Computer Science</school>
+        <title>Shadow Paging Is Feasible.</title>
+        <year>1994</year>
+    </mastersthesis>
+    <mastersthesis>
+        <author>Tatu Ylönen</author>
+        <cited>0</cited>
+        <id>95</id>
+        <school>Helsinki University of Technology, Department of Computer Science</school>
+        <title>Shadow Paging Is Feasible.</title>
+        <year>1994</year>
+    </mastersthesis>
+    <phdthesis>
+        <author>Michael J. Carey</author>
+        <cited>0</cited>
+        <id>96</id>
+        <school>College of Engineering, University of California, Berkeley</school>
+        <title>Modeling and Evaluation of Database Concurrency Control Algorithms</title>
+        <year>1983</year>
+    </phdthesis>
+    <phdthesis>
+        <author>Michael J. Carey</author>
+        <cited>0</cited>
+        <id>97</id>
+        <school>College of Engineering, University of California, Berkeley</school>
+        <title>Modeling and Evaluation of Database Concurrency Control Algorithms</title>
+        <year>1983</year>
+    </phdthesis>
+</dblp>

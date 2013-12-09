@@ -1,0 +1,37 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           					controllers.Application.index()
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               					controllers.Assets.at(path="/public", file)
+
+# Get a graph of the co-authors of an author given a level and a name
+GET     /getGraphWithoutRender/:name/:level  				controllers.Application.getGraphWithoutRender(name : String, level : Integer)
+#GET     /getGraphWithoutRender/:name/:level  				controllers.Application.generateDummyJson(name : String, level : Integer)
+
+# 
+GET     /getGraphWithRender/:name/:level  					controllers.Application.getGraphWithRender(name : String, level : Integer)
+
+# Given an author's name, get all the co-authors
+GET		/getCoAuthorInformation/:name						controllers.Application.getCoAuthorInformation(name : String)
+
+#
+GET		/getReputation/:name								controllers.Application.getReputationForAuthor(name : String)
+
+#
+#GET	/getReputationForTopic/:name/:topic					controllers.Application.getReputationForAuthorByTopic(name : String, topic : String)
+
+#
+GET		/getSocialNetwork/:name								controllers.Application.getSocialNetwork(name : String)
+
+#
+GET		/getCoAuthorsByTopic/:name/:topics					controllers.Application.getCoAuthorsByTopic(name : String, topics : String)
+
+#
+GET		/getCoAuthorsByTopicAndTime/:name/:topics/:year		controllers.Application.getCoAuthorsByTopicAndTime(name : String, topics : String, year : Long)
+
+#
+POST  	/show												controllers.Application.formSubmit()

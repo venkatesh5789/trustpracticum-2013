@@ -1,0 +1,11 @@
+run
+eclipsify
+eclipsify test
+test eclipse
+eclipse test
+eclipsify with-source=true
+eclipsifywith-source=true
+eclipsify with-source=true
+run
+eclipse
+run

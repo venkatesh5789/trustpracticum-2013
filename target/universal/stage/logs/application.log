@@ -1,0 +1,76 @@
+2013-11-01 14:27:52,350 - [INFO] - from play in main 
+Application started (Prod)
+
+2013-11-01 14:27:52,476 - [INFO] - from play in main 
+Listening for HTTP on /0:0:0:0:0:0:0:0%0:9000
+
+2013-11-01 14:28:10,522 - [ERROR] - from play in play-internal-execution-context-1 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2013-11-01 14:28:10,536 - [ERROR] - from application in play-internal-execution-context-1 
+
+
+! @6g619phl0 - Internal server error, for (GET) [/getGraphWithoutRender/Javier%20Chorro/1] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:261) [com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:261) [com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at scala.Option.map(Option.scala:145) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2.applyOrElse(PlayDefaultUpstreamHandler.scala:261) [com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$2.applyOrElse(PlayDefaultUpstreamHandler.scala:257) [com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:33) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:411) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:408) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [com.typesafe.play.play-iteratees_2.10-2.2.0.jar:2.2.0]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:37) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:133) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:58) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:254) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:249) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [org.scala-lang.scala-library-2.10.2.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at edu.cmu.DBLPProcessor.DBLPParser$HeaderHandler.addItemHeader(DBLPParser.java:890) ~[test.test-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+	at edu.cmu.DBLPProcessor.DBLPParser$HeaderHandler.endElement(DBLPParser.java:913) ~[test.test-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source) ~[xerces.xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.dtd.XMLNSDTDValidator.endNamespaceScope(Unknown Source) ~[xerces.xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.handleEndElement(Unknown Source) ~[xerces.xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.dtd.XMLDTDValidator.endElement(Unknown Source) ~[xerces.xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source) ~[xerces.xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source) ~[xerces.xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source) ~[xerces.xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xerces.xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source) ~[xerces.xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source) ~[xerces.xercesImpl-2.11.0.jar:na]
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source) ~[xerces.xercesImpl-2.11.0.jar:na]
+	at edu.cmu.DBLPProcessor.DBLPParser.getCSVFile(DBLPParser.java:837) ~[test.test-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+	at edu.cmu.DBLPProcessor.DBLPParser.parseDBLP(DBLPParser.java:77) ~[test.test-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+	at edu.cmu.dataset.DBLPDataSource.getDataset(DBLPDataSource.java:18) ~[test.test-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+	at edu.cmu.jung.UserCoAuthorSubgraph.<init>(UserCoAuthorSubgraph.java:56) ~[test.test-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+	at controllers.Application.myGraph(Application.java:66) ~[test.test-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+	at controllers.Application.getGraphWithoutRender(Application.java:163) ~[test.test-1.0-SNAPSHOT.jar:1.0-SNAPSHOT]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:77) ~[test.test-1.0-SNAPSHOT.jar:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:77) ~[test.test-1.0-SNAPSHOT.jar:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:278) ~[org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:274) ~[org.scala-lang.scala-library-2.10.2.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:29) [org.scala-lang.scala-library-2.10.2.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[com.typesafe.play.play_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[com.typesafe.akka.akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[com.typesafe.akka.akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+

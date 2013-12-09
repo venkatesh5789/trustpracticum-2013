@@ -1,0 +1,7 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/conf/application.conf,/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/target/scala-2.10/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/conf/dblp.dtd,/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/target/scala-2.10/classes/dblp.dtd)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/conf/dblp_example.xml,/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/target/scala-2.10/classes/dblp_example.xml)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/conf/routes,/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/target/scala-2.10/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/conf/trustmodel.properties,/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/target/scala-2.10/classes/trustmodel.properties)[0m
+[0m[[0mdebug[0m] [0m	(/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/conf/xbd_subset.xml,/Users/Venkatesh/Documents/workspace/NASAPracticum-2013/target/scala-2.10/classes/xbd_subset.xml)[0m
