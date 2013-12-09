@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" language="java" name="edu.cmu.ml.TextFileTrustAndCoauthorshipProcessor" project="NASAPracticum-2013" 
+    file="/NASAPracticum-2013/app/edu/cmu/ml/TextFileTrustAndCoauthorshipProcessor.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="494" width="346" x="362" y="302"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="edu.cmu.ml.NaiveBayesFileCreator" project="NASAPracticum-2013" 
+    file="/NASAPracticum-2013/app/edu/cmu/ml/NaiveBayesFileCreator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="206" width="313" x="433" y="56"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="edu.cmu.ml.TextFilePublicationParser" project="NASAPracticum-2013" 
+    file="/NASAPracticum-2013/app/edu/cmu/ml/TextFilePublicationParser.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="278" width="326" x="729" y="836"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="edu.cmu.ml.TextFileCoAuthorshipCreator" project="NASAPracticum-2013" 
+    file="/NASAPracticum-2013/app/edu/cmu/ml/TextFileCoAuthorshipCreator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="152" width="277" x="1083" y="56"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="edu.cmu.ml.JaccardSimilarity" project="NASAPracticum-2013" 
+    file="/NASAPracticum-2013/app/edu/cmu/ml/JaccardSimilarity.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="188" width="257" x="786" y="56"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="6">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="7" name="publications"/>      
+      <multiplicity id="8" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="9">    
+    <bendpoint x="738" y="302"/>    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="10" name="fileParser"/>      
+      <multiplicity id="11" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="12">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="13" name="trustModel"/>      
+      <multiplicity id="14" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
